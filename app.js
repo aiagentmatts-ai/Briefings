@@ -1,5 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
    Daily Briefings PWA — Application Logic
+   Morning briefing only
    ═══════════════════════════════════════════════════════════ */
 
 (function () {
@@ -7,29 +8,15 @@
 
   // ─── State ──────────────────────────────────────────────
   const state = {
-    mode: 'auto',         // 'auto' | 'morning' | 'evening'
     dark: false,
     screen: 'main',       // 'main' | { category object }
     scrollY: 0,
     morningData: null,
-    eveningData: null,
     loading: true,
     settingsOpen: false,
     lastUpdated: null,
     dataUrl: '',          // configurable base URL (empty = use ./data)
   };
-
-  // ─── Computed ───────────────────────────────────────────
-  function effectiveMode() {
-    if (state.mode === 'auto') {
-      return new Date().getHours() < 17 ? 'morning' : 'evening';
-    }
-    return state.mode;
-  }
-
-  function currentData() {
-    return effectiveMode() === 'morning' ? state.morningData : state.eveningData;
-  }
 
   // ─── Data Loading ───────────────────────────────────────
   function getDataBaseUrl() {
@@ -41,10 +28,7 @@
     render();
 
     const base = getDataBaseUrl().replace(/\/$/, '');
-    const urls = {
-      morning: [`${base}/morning.json`, `${base}/sample-morning.json`],
-      evening: [`${base}/evening.json`, `${base}/sample-evening.json`],
-    };
+    const candidates = [`${base}/morning.json`, `${base}/sample-morning.json`];
 
     async function tryFetch(list) {
       for (const u of list) {
@@ -57,12 +41,11 @@
     }
 
     try {
-      const [m, e] = await Promise.all([tryFetch(urls.morning), tryFetch(urls.evening)]);
-      if (m) state.morningData = m;
-      if (e) state.eveningData = e;
-
-      if (state.morningData) localStorage.setItem('db_morning', JSON.stringify(state.morningData));
-      if (state.eveningData) localStorage.setItem('db_evening', JSON.stringify(state.eveningData));
+      const m = await tryFetch(candidates);
+      if (m) {
+        state.morningData = m;
+        localStorage.setItem('db_morning', JSON.stringify(m));
+      }
       state.lastUpdated = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
     } catch (e) {
       console.warn('Fetch failed', e);
@@ -70,9 +53,6 @@
 
     if (!state.morningData) {
       try { state.morningData = JSON.parse(localStorage.getItem('db_morning')); } catch {}
-    }
-    if (!state.eveningData) {
-      try { state.eveningData = JSON.parse(localStorage.getItem('db_evening')); } catch {}
     }
 
     state.loading = false;
@@ -83,7 +63,6 @@
   function loadPrefs() {
     try {
       const saved = JSON.parse(localStorage.getItem('db_prefs') || '{}');
-      if (saved.mode) state.mode = saved.mode;
       if (saved.dark !== undefined) state.dark = saved.dark;
       if (saved.dataUrl !== undefined) state.dataUrl = saved.dataUrl;
     } catch {}
@@ -92,7 +71,6 @@
 
   function savePrefs() {
     localStorage.setItem('db_prefs', JSON.stringify({
-      mode: state.mode,
       dark: state.dark,
       dataUrl: state.dataUrl,
     }));
@@ -112,12 +90,6 @@
     return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   }
 
-  function shortDate(dateStr) {
-    if (!dateStr) return '';
-    const d = new Date(dateStr + 'T12:00:00');
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  }
-
   function truncate(str, len) {
     if (!str) return '';
     return str.length > len ? str.slice(0, len - 1) + '…' : str;
@@ -130,11 +102,6 @@
     return div.innerHTML;
   }
 
-  function formatTime(timeStr) {
-    if (!timeStr) return '';
-    return timeStr.replace(' AM', 'a').replace(' PM', 'p');
-  }
-
   // ─── Chevron SVG ────────────────────────────────────────
   const chevronBack = `<svg width="8" height="14" viewBox="0 0 8 14" fill="none"><path d="M7 1L1 7l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -145,16 +112,15 @@
     const app = $('#app');
     if (!app) return;
 
-    const mode = effectiveMode();
-    const data = currentData();
+    const data = state.morningData;
     const dateStr = data?.date ? formatDate(data.date) : formatDate();
 
     app.innerHTML = `
       <div class="status-bar-spacer"></div>
-      ${renderHeaderBar(dateStr)}
+      ${renderHeaderBar()}
       <div class="content-scroll" id="content-scroll">
-        ${renderMasthead(mode, dateStr)}
-        ${state.loading ? renderLoading() : renderScreen(mode, data)}
+        ${renderMasthead(dateStr)}
+        ${state.loading ? renderLoading() : renderScreen(data)}
       </div>
       ${renderSettingsOverlay()}
     `;
@@ -162,29 +128,22 @@
     bindEvents();
   }
 
-  function renderHeaderBar(dateStr) {
-    const mode = effectiveMode();
+  function renderHeaderBar() {
     return `
       <div class="header-bar">
         <div class="header-bar__date">${escapeHtml(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }))}</div>
         <div class="header-bar__actions">
-          <div class="mode-toggle">
-            <button class="mode-toggle__btn ${mode === 'morning' ? 'mode-toggle__btn--active' : ''}"
-                    data-action="set-mode" data-mode="morning">☀</button>
-            <button class="mode-toggle__btn ${mode === 'evening' ? 'mode-toggle__btn--active' : ''}"
-                    data-action="set-mode" data-mode="evening">◑</button>
-          </div>
           <button class="header-bar__btn" data-action="toggle-settings" aria-label="Settings">⚙</button>
         </div>
       </div>
     `;
   }
 
-  function renderMasthead(mode, dateStr) {
+  function renderMasthead(dateStr) {
     return `
       <div class="masthead" id="masthead">
         <div class="masthead__border">
-          <div class="masthead__title">${mode === 'morning' ? 'Morning Briefing' : 'Evening Briefing'}</div>
+          <div class="masthead__title">Morning Briefing</div>
         </div>
         <div class="masthead__date">${escapeHtml(dateStr)}</div>
       </div>
@@ -200,22 +159,22 @@
     `;
   }
 
-  function renderScreen(mode, data) {
-    if (!data) return renderEmpty(mode);
+  function renderScreen(data) {
+    if (!data) return renderEmpty();
 
     if (typeof state.screen === 'object') {
       return renderCategoryDetail(state.screen);
     }
 
-    return mode === 'morning' ? renderMorning(data) : renderEvening(data);
+    return renderMorning(data);
   }
 
-  function renderEmpty(mode) {
+  function renderEmpty() {
     return `
       <div class="empty-state">
-        <div class="empty-state__icon">${mode === 'morning' ? '☀️' : '🌙'}</div>
+        <div class="empty-state__icon">☀️</div>
         <div class="empty-state__title">No briefing available</div>
-        <div class="empty-state__subtitle">Your ${mode} briefing hasn't been generated yet today.</div>
+        <div class="empty-state__subtitle">Today's morning briefing hasn't been generated yet.</div>
       </div>
     `;
   }
@@ -300,111 +259,6 @@
     `;
   }
 
-  function renderEvening(data) {
-    const weather = data.weather || {};
-    const calendar = data.calendar || [];
-    const tasks = data.tasks || {};
-    const hasTravel = weather.travel && weather.travel.city;
-
-    return `
-      <div class="screen content-padding">
-        ${renderWeather(weather, hasTravel)}
-        <div class="hard-rule"></div>
-        ${renderCalendar(calendar)}
-        <div class="hard-rule"></div>
-        ${renderTasks(tasks)}
-        ${state.lastUpdated ? `<div class="last-updated">Updated ${state.lastUpdated}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function renderWeather(weather, hasTravel) {
-    const home = weather.home || {};
-    const travel = weather.travel || {};
-    return `
-      <div class="weather-section">
-        <div class="section-header">Weather</div>
-        <div class="weather-blocks" style="margin-top: 10px;">
-          <div class="weather-block ${hasTravel ? '' : 'weather-block--full'}" style="${hasTravel ? 'padding-right:14px;' : ''}">
-            <div class="weather-block__city">${escapeHtml(home.city || 'Home')}</div>
-            <div class="weather-block__temp">
-              <span class="weather-block__hi">${home.hi || '--'}°</span>
-              <span class="weather-block__lo">/ ${home.lo || '--'}°</span>
-            </div>
-            <div class="weather-block__condition">${escapeHtml(home.condition || '')}</div>
-          </div>
-          ${hasTravel ? `
-            <div class="weather-block weather-block--travel">
-              <div class="weather-block__city">✈ ${escapeHtml(travel.city)}</div>
-              <div class="weather-block__temp">
-                <span class="weather-block__hi">${travel.hi || '--'}°</span>
-                <span class="weather-block__lo">/ ${travel.lo || '--'}°</span>
-              </div>
-              <div class="weather-block__condition">${escapeHtml(travel.condition || '')}</div>
-            </div>
-          ` : ''}
-        </div>
-      </div>
-    `;
-  }
-
-  function renderCalendar(calendar) {
-    if (!calendar.length) return '';
-    return `
-      <div class="calendar-section">
-        <div class="section-header">Tomorrow</div>
-        ${calendar.map(ev => `
-          <div class="calendar-event">
-            <div class="calendar-event__time">${escapeHtml(formatTime(ev.time))}</div>
-            <div class="calendar-event__info">
-              <div class="calendar-event__title">${escapeHtml(ev.title)}</div>
-              <div class="calendar-event__cal">
-                <div class="calendar-event__dot" style="background: ${ev.color || '#999'}"></div>
-                <span class="calendar-event__cal-name">${escapeHtml(ev.calendar || '')}</span>
-              </div>
-            </div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-
-  function renderTasks(tasks) {
-    const dueTomorrow = tasks.due_tomorrow || [];
-    const overdue = tasks.overdue || [];
-    if (!dueTomorrow.length && !overdue.length) return '';
-
-    return `
-      <div class="tasks-section">
-        <div class="section-header">Asana — Due Today</div>
-        ${dueTomorrow.length ? `
-          ${dueTomorrow.map(t => `
-            <div class="task-item">
-              <div class="task-item__check"></div>
-              <div class="task-item__info">
-                <div class="task-item__name">${escapeHtml(t.task)}</div>
-                ${t.project ? `<div class="task-item__project">${escapeHtml(t.project)}</div>` : ''}
-              </div>
-            </div>
-          `).join('')}
-        ` : ''}
-        ${overdue.length ? `
-          <div class="task-group-label">Overdue</div>
-          ${overdue.map(t => `
-            <div class="task-item task-item--overdue">
-              <div class="task-item__check"></div>
-              <div class="task-item__info">
-                <div class="task-item__name">${escapeHtml(t.task)}</div>
-                ${t.project ? `<div class="task-item__project">${escapeHtml(t.project)}</div>` : ''}
-                ${t.due ? `<div class="task-item__due">Due ${shortDate(t.due)}</div>` : ''}
-              </div>
-            </div>
-          `).join('')}
-        ` : ''}
-      </div>
-    `;
-  }
-
   // ─── Settings Overlay ───────────────────────────────────
   function renderSettingsOverlay() {
     return `
@@ -412,18 +266,6 @@
         <div class="settings-panel">
           <div class="settings-panel__handle"></div>
           <div class="settings-panel__title">Settings</div>
-
-          <div class="settings-row">
-            <span class="settings-row__label">Mode</span>
-            <div class="mode-toggle">
-              <button class="mode-toggle__btn ${state.mode === 'auto' ? 'mode-toggle__btn--active' : ''}"
-                      data-action="set-pref-mode" data-pmode="auto">Auto</button>
-              <button class="mode-toggle__btn ${state.mode === 'morning' ? 'mode-toggle__btn--active' : ''}"
-                      data-action="set-pref-mode" data-pmode="morning">☀</button>
-              <button class="mode-toggle__btn ${state.mode === 'evening' ? 'mode-toggle__btn--active' : ''}"
-                      data-action="set-pref-mode" data-pmode="evening">◑</button>
-            </div>
-          </div>
 
           <div class="settings-row">
             <span class="settings-row__label">Dark Mode</span>
@@ -441,7 +283,7 @@
                    placeholder="./data  (or https://you.github.io/repo/data)"
                    value="${escapeHtml(state.dataUrl)}"
                    data-action="set-data-url" />
-            <span class="settings-row__hint">Base URL holding morning.json + evening.json</span>
+            <span class="settings-row__hint">Base URL holding morning.json</span>
           </div>
 
           <div class="settings-row">
@@ -493,19 +335,9 @@
     const action = target.dataset.action;
 
     switch (action) {
-      case 'set-mode': {
-        state.mode = target.dataset.mode;
-        state.screen = 'main';
-        savePrefs();
-        render();
-        const scroll = $('#content-scroll');
-        if (scroll) scroll.scrollTop = 0;
-        break;
-      }
-
       case 'open-category': {
         const idx = parseInt(target.dataset.index);
-        const data = currentData();
+        const data = state.morningData;
         if (data?.sections?.[idx]) {
           state.screen = data.sections[idx];
           render();
@@ -523,14 +355,6 @@
 
       case 'toggle-settings': {
         state.settingsOpen = !state.settingsOpen;
-        render();
-        break;
-      }
-
-      case 'set-pref-mode': {
-        state.mode = target.dataset.pmode;
-        state.screen = 'main';
-        savePrefs();
         render();
         break;
       }
