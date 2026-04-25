@@ -9,7 +9,6 @@
   const state = {
     mode: 'auto',         // 'auto' | 'morning' | 'evening'
     dark: false,
-    view: 'widgets',      // 'widgets' | 'full'
     screen: 'main',       // 'main' | { category object }
     scrollY: 0,
     morningData: null,
@@ -42,7 +41,6 @@
     render();
 
     const base = getDataBaseUrl().replace(/\/$/, '');
-    const candidates = ['morning.json', 'evening.json', 'sample-morning.json', 'sample-evening.json'];
     const urls = {
       morning: [`${base}/morning.json`, `${base}/sample-morning.json`],
       evening: [`${base}/evening.json`, `${base}/sample-evening.json`],
@@ -87,7 +85,6 @@
       const saved = JSON.parse(localStorage.getItem('db_prefs') || '{}');
       if (saved.mode) state.mode = saved.mode;
       if (saved.dark !== undefined) state.dark = saved.dark;
-      if (saved.view) state.view = saved.view;
       if (saved.dataUrl !== undefined) state.dataUrl = saved.dataUrl;
     } catch {}
     applyTheme();
@@ -97,7 +94,6 @@
     localStorage.setItem('db_prefs', JSON.stringify({
       mode: state.mode,
       dark: state.dark,
-      view: state.view,
       dataUrl: state.dataUrl,
     }));
   }
@@ -157,7 +153,7 @@
       <div class="status-bar-spacer"></div>
       ${renderHeaderBar(dateStr)}
       <div class="content-scroll" id="content-scroll">
-        ${state.view === 'full' ? renderMasthead(mode, dateStr) : ''}
+        ${renderMasthead(mode, dateStr)}
         ${state.loading ? renderLoading() : renderScreen(mode, data)}
       </div>
       ${renderSettingsOverlay()}
@@ -172,12 +168,6 @@
       <div class="header-bar">
         <div class="header-bar__date">${escapeHtml(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }))}</div>
         <div class="header-bar__actions">
-          <div class="view-toggle">
-            <button class="view-toggle__btn ${state.view === 'widgets' ? 'view-toggle__btn--active' : ''}"
-                    data-action="set-view" data-view="widgets">Widgets</button>
-            <button class="view-toggle__btn ${state.view === 'full' ? 'view-toggle__btn--active' : ''}"
-                    data-action="set-view" data-view="full">Full</button>
-          </div>
           <div class="mode-toggle">
             <button class="mode-toggle__btn ${mode === 'morning' ? 'mode-toggle__btn--active' : ''}"
                     data-action="set-mode" data-mode="morning">☀</button>
@@ -217,10 +207,6 @@
       return renderCategoryDetail(state.screen);
     }
 
-    if (state.view === 'widgets') {
-      return renderWidgetHome(mode, data);
-    }
-
     return mode === 'morning' ? renderMorning(data) : renderEvening(data);
   }
 
@@ -235,225 +221,7 @@
   }
 
   // ═══════════════════════════════════════════════════════════
-  // WIDGET HOME — stack of Large + Medium + Small cards
-  // ═══════════════════════════════════════════════════════════
-
-  function renderWidgetHome(mode, data) {
-    return `
-      <div class="screen widget-stack">
-        ${renderWidgetLarge(mode, data)}
-        ${renderWidgetMedium(mode, data)}
-        ${renderWidgetSmall(mode, data)}
-        ${state.lastUpdated ? `<div class="last-updated">Updated ${state.lastUpdated}</div>` : ''}
-      </div>
-    `;
-  }
-
-  function widgetMasthead(mode, compact = true) {
-    return `
-      <div class="widget-masthead ${compact ? 'widget-masthead--compact' : ''}">
-        <div class="widget-masthead__border">
-          <div class="widget-masthead__title">${mode === 'morning' ? 'Morning Briefing' : 'Evening Briefing'}</div>
-        </div>
-      </div>
-    `;
-  }
-
-  // ─── Widget: Large ──────────────────────────────────────
-  function renderWidgetLarge(mode, data) {
-    if (mode === 'morning') {
-      const sections = data.sections || [];
-      const top = sections[0]?.stories?.[0];
-      const topLabel = sections[0]?.label || '';
-      return `
-        <div class="widget-card widget-card--large">
-          ${widgetMasthead(mode, false)}
-          ${top ? `
-            <div class="widget-top-story" data-action="open-category" data-index="0">
-              <div class="widget-label">Top Story</div>
-              <div class="widget-top-story__headline">${escapeHtml(top.headline)}</div>
-              <div class="widget-mono">${escapeHtml(top.source || '')} · ${escapeHtml(top.time || '')}</div>
-            </div>
-          ` : ''}
-          <div class="widget-rule widget-rule--thick"></div>
-          <div class="widget-cat-grid">
-            ${sections.map((cat, i) => {
-              const isRight = i % 2 === 1;
-              const isBottom = i >= sections.length - (sections.length % 2 === 0 ? 2 : 1);
-              return `
-                <div class="widget-cat-cell ${!isRight ? 'widget-cat-cell--border-right' : ''} ${!isBottom ? 'widget-cat-cell--border-bottom' : ''}"
-                     data-action="open-category" data-index="${i}">
-                  <div class="widget-cat-cell__name">${escapeHtml(cat.label)}</div>
-                  <div class="widget-mono">${cat.count || cat.stories?.length || 0}</div>
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
-      `;
-    }
-    // Evening
-    const weather = data.weather || {};
-    const home = weather.home || {};
-    const travel = weather.travel || null;
-    const calendar = data.calendar || [];
-    const dueToday = (data.tasks?.due_tomorrow || []).slice(0, 3);
-    return `
-      <div class="widget-card widget-card--large" data-action="open-full">
-        ${widgetMasthead(mode, false)}
-        <div class="widget-weather-row">
-          <div class="widget-weather">
-            <div class="widget-weather__city">${escapeHtml(home.city || 'Home')}</div>
-            <div class="widget-weather__temp">${home.hi ?? '--'}° / ${home.lo ?? '--'}°</div>
-            <div class="widget-weather__cond">${escapeHtml(home.condition || '')}</div>
-          </div>
-          ${travel && travel.city ? `
-            <div class="widget-weather widget-weather--travel">
-              <div class="widget-weather__city">✈ ${escapeHtml(travel.city)}</div>
-              <div class="widget-weather__temp">${travel.hi ?? '--'}° / ${travel.lo ?? '--'}°</div>
-              <div class="widget-weather__cond">${escapeHtml(travel.condition || '')}</div>
-            </div>
-          ` : ''}
-        </div>
-        <div class="widget-rule widget-rule--thick"></div>
-        ${calendar.length ? `
-          <div class="widget-section">
-            <div class="widget-label">Tomorrow</div>
-            ${calendar.slice(0, 4).map(ev => `
-              <div class="widget-event">
-                <span class="widget-event__time">${escapeHtml(formatTime(ev.time))}</span>
-                <span class="widget-event__title">${escapeHtml(ev.title)}</span>
-              </div>
-            `).join('')}
-          </div>
-        ` : ''}
-        ${dueToday.length ? `
-          <div class="widget-rule"></div>
-          <div class="widget-section">
-            <div class="widget-label">Asana — Due Today</div>
-            ${dueToday.map(t => `
-              <div class="widget-task">
-                <div class="widget-task__check"></div>
-                <div class="widget-task__name">${escapeHtml(t.task)}</div>
-              </div>
-            `).join('')}
-          </div>
-        ` : ''}
-      </div>
-    `;
-  }
-
-  // ─── Widget: Medium ─────────────────────────────────────
-  function renderWidgetMedium(mode, data) {
-    if (mode === 'morning') {
-      const sections = data.sections || [];
-      const top = sections[0]?.stories?.[0];
-      const topLabel = sections[0]?.label || '';
-      const cats = sections.slice(0, 4);
-      return `
-        <div class="widget-card widget-card--medium">
-          ${widgetMasthead(mode)}
-          <div class="widget-medium-body">
-            ${top ? `
-              <div class="widget-medium-left" data-action="open-category" data-index="0">
-                <div class="widget-label">Top Story</div>
-                <div class="widget-medium-left__headline">${escapeHtml(truncate(top.headline, 90))}</div>
-                <div class="widget-mono">${escapeHtml(topLabel)} · ${escapeHtml(top.time || '')}</div>
-              </div>
-            ` : ''}
-            <div class="widget-medium-right">
-              ${cats.map((cat, i) => `
-                <div class="widget-medium-cat ${i < cats.length - 1 ? 'widget-medium-cat--border' : ''}"
-                     data-action="open-category" data-index="${i}">
-                  <span class="widget-medium-cat__name">${escapeHtml(cat.label)}</span>
-                  <span class="widget-mono">${cat.count || cat.stories?.length || 0}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        </div>
-      `;
-    }
-    // Evening
-    const weather = data.weather || {};
-    const home = weather.home || {};
-    const travel = weather.travel || null;
-    const calendar = (data.calendar || []).slice(0, 3);
-    return `
-      <div class="widget-card widget-card--medium" data-action="open-full">
-        ${widgetMasthead(mode)}
-        <div class="widget-medium-body">
-          <div class="widget-medium-weather">
-            <div class="widget-weather__city">${escapeHtml(home.city || 'Home')}</div>
-            <div class="widget-medium-weather__temp">${home.hi ?? '--'}°</div>
-            <div class="widget-weather__cond">${escapeHtml(home.condition || '')}</div>
-            ${travel && travel.city ? `
-              <div class="widget-medium-weather__divider"></div>
-              <div class="widget-weather__city">✈ ${escapeHtml(travel.city)}</div>
-              <div class="widget-medium-weather__temp widget-medium-weather__temp--small">${travel.hi ?? '--'}°</div>
-              <div class="widget-weather__cond">${escapeHtml(travel.condition || '')}</div>
-            ` : ''}
-          </div>
-          <div class="widget-medium-right">
-            <div class="widget-label">Tomorrow</div>
-            ${calendar.length ? calendar.map(ev => `
-              <div class="widget-event">
-                <span class="widget-event__time">${escapeHtml(formatTime(ev.time))}</span>
-                <span class="widget-event__title">${escapeHtml(truncate(ev.title, 28))}</span>
-              </div>
-            `).join('') : '<div class="widget-mono widget-mono--muted">Nothing scheduled</div>'}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // ─── Widget: Small ──────────────────────────────────────
-  function renderWidgetSmall(mode, data) {
-    if (mode === 'morning') {
-      const sections = data.sections || [];
-      const top = sections[0]?.stories?.[0];
-      const totalStories = sections.reduce((sum, s) => sum + (s.count || s.stories?.length || 0), 0);
-      const totalCats = sections.length;
-      return `
-        <div class="widget-card widget-card--small" data-action="open-category" data-index="0">
-          ${widgetMasthead(mode)}
-          <div class="widget-small-body">
-            <div class="widget-small__headline">${escapeHtml(truncate(top?.headline || '', 70))}</div>
-            <div class="widget-small__footer">
-              <div class="widget-mono">${totalCats} categories</div>
-              <div class="widget-small__count">${totalStories}</div>
-              <div class="widget-small__count-label">stories today</div>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-    // Evening
-    const weather = data.weather || {};
-    const home = weather.home || {};
-    const calendar = data.calendar || [];
-    const next = calendar[0];
-    return `
-      <div class="widget-card widget-card--small" data-action="open-full">
-        ${widgetMasthead(mode)}
-        <div class="widget-small-body">
-          <div class="widget-small__big-temp">${home.hi ?? '--'}°</div>
-          <div class="widget-small__cond">${escapeHtml(home.condition || '')}</div>
-          <div class="widget-rule"></div>
-          ${next ? `
-            <div class="widget-small__next">
-              <div class="widget-small__next-title">${escapeHtml(truncate(next.title, 22))}</div>
-              <div class="widget-mono">${escapeHtml(formatTime(next.time))}</div>
-            </div>
-          ` : `<div class="widget-mono widget-mono--muted">Nothing scheduled</div>`}
-        </div>
-      </div>
-    `;
-  }
-
-  // ═══════════════════════════════════════════════════════════
-  // FULL VIEW — existing newspaper layout
+  // FULL VIEW — newspaper layout
   // ═══════════════════════════════════════════════════════════
 
   function renderMorning(data) {
@@ -468,6 +236,7 @@
             <div class="top-story__label">Top Story</div>
             <div class="top-story__content" data-action="open-category" data-index="0">
               <div class="top-story__headline">${escapeHtml(topStory.headline)}</div>
+              ${topStory.summary ? `<div class="top-story__summary">${escapeHtml(topStory.summary)}</div>` : ''}
               <div class="top-story__meta">
                 <span class="top-story__source">${escapeHtml(topStory.source || '')} · ${escapeHtml(topStory.time || '')}</span>
                 <span class="top-story__category">${escapeHtml(topSection.label)} →</span>
@@ -645,16 +414,6 @@
           <div class="settings-panel__title">Settings</div>
 
           <div class="settings-row">
-            <span class="settings-row__label">View</span>
-            <div class="view-toggle">
-              <button class="view-toggle__btn ${state.view === 'widgets' ? 'view-toggle__btn--active' : ''}"
-                      data-action="set-view" data-view="widgets">Widgets</button>
-              <button class="view-toggle__btn ${state.view === 'full' ? 'view-toggle__btn--active' : ''}"
-                      data-action="set-view" data-view="full">Full</button>
-            </div>
-          </div>
-
-          <div class="settings-row">
             <span class="settings-row__label">Mode</span>
             <div class="mode-toggle">
               <button class="mode-toggle__btn ${state.mode === 'auto' ? 'mode-toggle__btn--active' : ''}"
@@ -715,7 +474,6 @@
       });
     }
 
-    // Bind URL input change without re-rendering on every keystroke
     const urlInput = document.querySelector('.settings-row__input');
     if (urlInput) {
       urlInput.addEventListener('change', (e) => {
@@ -730,7 +488,6 @@
     const target = e.target.closest('[data-action]');
     if (!target) return;
 
-    // Skip clicks on the URL input (it has its own change handler)
     if (target.tagName === 'INPUT') return;
 
     const action = target.dataset.action;
@@ -738,16 +495,6 @@
     switch (action) {
       case 'set-mode': {
         state.mode = target.dataset.mode;
-        state.screen = 'main';
-        savePrefs();
-        render();
-        const scroll = $('#content-scroll');
-        if (scroll) scroll.scrollTop = 0;
-        break;
-      }
-
-      case 'set-view': {
-        state.view = target.dataset.view;
         state.screen = 'main';
         savePrefs();
         render();
@@ -765,16 +512,6 @@
           const scroll = $('#content-scroll');
           if (scroll) scroll.scrollTop = 0;
         }
-        break;
-      }
-
-      case 'open-full': {
-        state.view = 'full';
-        state.screen = 'main';
-        savePrefs();
-        render();
-        const scroll = $('#content-scroll');
-        if (scroll) scroll.scrollTop = 0;
         break;
       }
 
