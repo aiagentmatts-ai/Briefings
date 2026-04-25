@@ -225,7 +225,37 @@
           }).join('')}
         </div>
 
+        ${renderMarketTable(data)}
+
         ${state.lastUpdated ? `<div class="last-updated">Updated ${state.lastUpdated}</div>` : ''}
+      </div>
+    `;
+  }
+
+  function renderMarketTable(data) {
+    const md = data?.market_data;
+    if (!md?.rows?.length) return '';
+    return `
+      <div class="market-table">
+        <div class="market-table__header">
+          <div class="market-table__title">Energy Markets</div>
+          ${md.as_of ? `<div class="market-table__as-of">${escapeHtml(md.as_of)}</div>` : ''}
+        </div>
+        <table class="market-table__grid">
+          <tbody>
+            ${md.rows.map(r => {
+              const ch = (r.change || '').trim();
+              const dir = ch.startsWith('+') ? 'up' : ch.startsWith('-') ? 'down' : 'flat';
+              return `
+                <tr class="market-table__row">
+                  <td class="market-table__name">${escapeHtml(r.market || '')}</td>
+                  <td class="market-table__price">${escapeHtml(r.price || '')}</td>
+                  <td class="market-table__change market-table__change--${dir}">${escapeHtml(ch)}</td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
       </div>
     `;
   }

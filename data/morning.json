@@ -127,5 +127,16 @@
         }
       ]
     }
-  ]
+  ],
+  "market_data": {
+    "as_of": "Apr 24 close",
+    "rows": [
+      { "market": "PJM West Hub (DA)", "price": "$42.15/MWh", "change": "+2.3%" },
+      { "market": "PJM AEP-Dayton (DA)", "price": "$38.74/MWh", "change": "+1.7%" },
+      { "market": "PJM Capacity 26/27", "price": "$269.92/MW-day", "change": "—" },
+      { "market": "Henry Hub", "price": "$3.21/MMBtu", "change": "-0.8%" },
+      { "market": "TETCO M3 (PA/NJ)", "price": "$2.95/MMBtu", "change": "-1.2%" },
+      { "market": "WTI Crude", "price": "$78.42/bbl", "change": "+0.5%" }
+    ]
+  }
 }
