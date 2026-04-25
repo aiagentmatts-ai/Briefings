@@ -3,7 +3,7 @@
    Cache-first for assets, network-first for data
    ═══════════════════════════════════════════════════════════ */
 
-const CACHE_NAME = 'daily-briefing-v5';
+const CACHE_NAME = 'daily-briefing-v6';
 const SHELL_ASSETS = [
   './',
   './index.html',

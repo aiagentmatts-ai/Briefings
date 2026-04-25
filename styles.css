@@ -415,6 +415,7 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .story-item__source,
@@ -427,6 +428,22 @@ body {
 .story-item__dot {
   font-size: 11px;
   color: var(--rule);
+}
+
+.story-item__link {
+  margin-left: auto;
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--fg);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid var(--fg);
+  padding-bottom: 1px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.story-item__link:active {
+  opacity: 0.5;
 }
 
 .story-item__flag {

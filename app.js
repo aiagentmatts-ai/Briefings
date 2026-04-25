@@ -252,6 +252,7 @@
               <span class="story-item__source">${escapeHtml(s.source || '')}</span>
               <span class="story-item__dot">·</span>
               <span class="story-item__time">${escapeHtml(s.time || '')}</span>
+              ${s.url ? `<a class="story-item__link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer">Read →</a>` : ''}
             </div>
           </div>
         `).join('')}
