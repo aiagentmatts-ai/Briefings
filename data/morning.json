@@ -1,102 +1,67 @@
 {
-  "date": "2026-04-17",
+  "date": "2026-04-25",
   "type": "morning",
-  "generated_at": "2026-04-17T07:00:00-04:00",
+  "generated_at": "2026-04-25T13:30:00-04:00",
   "sections": [
     {
       "id": "national-politics",
       "label": "National Politics",
-      "count": 6,
+      "count": 5,
       "stories": [
         {
-          "headline": "FISA Collapses Overnight — Johnson Gets Two-Week Band-Aid",
-          "summary": "Speaker Mike Johnson's compromise FISA extension failed 200-220 when Republicans broke ranks. A two-week extension passed via unanimous consent, kicking the can to early May.",
-          "source": "Punchbowl News",
-          "time": "3h ago",
+          "headline": "Patel Likely Next Cabinet-Level Official to Go, White House Official Tells Playbook",
+          "summary": "A senior White House official tells Politico the FBI director's exit is \"only a matter of time,\" with Trump fed up over the steady drumbeat of negative stories surrounding Kash Patel.",
+          "source": "Politico Playbook",
+          "time": "Today",
           "flagged": true
         },
         {
-          "headline": "GOP Can't Stop Fighting Itself — House vs. Senate Tensions Deepen",
-          "summary": "The FISA flop is one symptom of a broader Republican breakdown. Unresolved conflicts include the DHS shutdown, budget reconciliation, SAVE America Act, and appropriations.",
+          "headline": "Pentagon Unveils Record $1.5 Trillion FY27 Budget — A 44% Increase",
+          "summary": "Acting DOD Comptroller Jay Hurst called it a \"generational investment,\" but $350B of new funding hinges on a partyline reconciliation bill that's far from a sure thing in Congress.",
           "source": "Punchbowl News",
-          "time": "3h ago",
+          "time": "Today",
+          "flagged": true
+        },
+        {
+          "headline": "Witkoff and Kushner Head to Pakistan to Restart Iran Negotiations",
+          "summary": "VP Vance is on standby as the White House signals \"some progress from the Iranian side\" — even as Sen. Wicker calls for Trump to scrap the ceasefire and restart the war.",
+          "source": "Politico Playbook",
+          "time": "Today",
           "flagged": false
         },
         {
-          "headline": "NJ-11 Result: Mejia Wins by 20 Points",
-          "summary": "Democrat Analilia Mejia cruised to victory in the NJ-11 special election, beating Republican Joe Hathaway by 20 points — exceeding most projections.",
+          "headline": "Cherfilus-McCormick Resigns Ten Minutes Before Ethics Sanctions Hearing",
+          "summary": "The Florida Democrat — facing federal charges over diverted COVID-19 relief funds — stepped down minutes before the panel was set to recommend sanctions, instantly stripping it of jurisdiction.",
           "source": "Punchbowl News",
-          "time": "4h ago",
+          "time": "This week",
           "flagged": false
         },
         {
-          "headline": "Cherfilus-McCormick Ethics: CBC Faces Expulsion Vote April 21",
-          "summary": "Rep. Sheila Cherfilus-McCormick faces a full House Ethics Committee sanction hearing after 26 ethics violations were found, including allegedly stealing $5M from FEMA.",
-          "source": "Punchbowl News",
-          "time": "4h ago",
-          "flagged": false
-        },
-        {
-          "headline": "~20 House Republicans Outraised by Democratic Challengers",
-          "summary": "Q1 FEC analysis finds roughly 20 House Republicans outraised by Democratic challengers. PA incumbent Scott Perry outraised by Janelle Stelson, who holds more cash-on-hand.",
-          "source": "Punchbowl News",
-          "time": "5h ago",
-          "flagged": false
-        },
-        {
-          "headline": "Iran War Powers: CPC Pushing Weekly House Votes",
-          "summary": "The Congressional Progressive Caucus discussed forcing repeated House votes on Iran war powers resolutions, putting every House Republican on record.",
-          "source": "Punchbowl News",
-          "time": "6h ago",
+          "headline": "DOJ Drops Federal Reserve Renovation Probe, Clearing Path for Warsh Confirmation",
+          "summary": "Sen. Thom Tillis is expected to lift his blockade of Kevin Warsh as Fed Chair after the administration moved its inquiry into the central bank's headquarters renovation to a different authority.",
+          "source": "Politico Playbook",
+          "time": "Today",
           "flagged": false
         }
       ]
     },
     {
-      "id": "pa-nj-politics",
+      "id": "pa-politics",
       "label": "PA & NJ Politics",
-      "count": 6,
+      "count": 2,
       "stories": [
         {
-          "headline": "PECO Withdraws 12.5% Rate Hike — Shapiro Claims $510M Win",
-          "summary": "PECO withdrew its proposed 12.5% electric and 11.4% gas rate increase after direct pressure from Gov. Shapiro, who called the request 'pure greed.' 1.7 million Pennsylvanians will collectively save $510 million.",
-          "source": "WHYY / Inquirer",
-          "time": "2h ago",
-          "flagged": true
-        },
-        {
-          "headline": "Data Center Moratorium Battle Intensifies in PA Legislature",
-          "summary": "Multiple competing bills target data centers in eastern PA — from moratoriums to fast-track permitting. Two bipartisan oversight bills already passed the PA House.",
-          "source": "LehighValleyLive",
-          "time": "4h ago",
+          "headline": "Shapiro Tests Political Muscle in Swing-State Midterms",
+          "summary": "Pennsylvania Gov. Josh Shapiro is leveraging his political operation in the 2026 PA midterms — with a lot on the line for his presidential outlook.",
+          "source": "PoliticsPA Playbook",
+          "time": "Yesterday",
           "flagged": false
         },
         {
-          "headline": "PA-07 Democratic Primary: Questions Around Brooks Campaign",
-          "summary": "With the May 19 primary a month away, questions are surfacing around Bob Brooks' campaign in PA-07 (Lehigh Valley).",
-          "source": "Politics PA",
-          "time": "5h ago",
-          "flagged": false
-        },
-        {
-          "headline": "Stelson Tops All PA Congressional Candidates in Q1 Fundraising",
-          "summary": "Democratic challenger Janelle Stelson outraised every congressional candidate in Pennsylvania in Q1 2026, nearly doubling incumbent Rep. Scott Perry's haul.",
-          "source": "Politics PA",
-          "time": "5h ago",
-          "flagged": false
-        },
-        {
-          "headline": "Nuclear Waste Cleanup Begins in Armstrong County, PA",
-          "summary": "The federal government began long-awaited cleanup of a nuclear waste dump in Parks Township, near Apollo — site of decades of cancer cases and lawsuits.",
-          "source": "CBS News",
-          "time": "6h ago",
-          "flagged": false
-        },
-        {
-          "headline": "PA Counties Insurance Pool Drops 287(g)/ICE Coverage",
-          "summary": "The PA Counties Risk Pool voted to exclude liability coverage for 287(g) immigration enforcement partnerships with ICE. Counties will need alternative coverage.",
-          "source": "Pittsburgh Post-Gazette",
-          "time": "7h ago",
+          "headline": "Fitzpatrick Says He'd Leave the GOP \"100%\" If PA Had Open Primaries",
+          "summary": "On Punchbowl's Fly Out Day, Rep. Brian Fitzpatrick (R-Bucks) called the two-party system \"inherently divisive\" and said he'd register Independent if Pennsylvania let him.",
+          "source": "Punchbowl News",
+          "time": "This week",
           "flagged": false
         }
       ]
@@ -104,35 +69,42 @@
     {
       "id": "energy-industry",
       "label": "Energy Industry",
-      "count": 4,
+      "count": 3,
       "stories": [
         {
-          "headline": "PECO Withdrawal — Regulatory Landmark for PA Utility Market",
-          "summary": "PECO's withdrawal of its rate increases is the most significant PA utility regulatory event this week. Sets a political template for how Shapiro will approach future large IOU rate filings.",
-          "source": "WHYY / Inquirer",
-          "time": "2h ago",
-          "flagged": true
-        },
-        {
-          "headline": "Energy Market Dashboard: Oil Elevated, Gas Near 17-Month Lows",
-          "summary": "WTI ~$92/bbl (Hormuz tensions), Henry Hub $2.68/MMBtu (+1.16%), Central App Coal ~$87/ton, RGGI ~$25/ton. Oil risk premium intact; gas oversupply weighing.",
-          "source": "EIA / CME",
-          "time": "1h ago",
-          "flagged": true
-        },
-        {
-          "headline": "FERC Co-Location: Reply Briefs Due Today",
-          "summary": "Deadline for reply briefs in FERC's proceeding directing PJM to establish co-location rules for large loads with grid-connected generation. Final order expected in coming months.",
-          "source": "FERC.gov",
-          "time": "3h ago",
-          "flagged": false
-        },
-        {
-          "headline": "PA Data Center Energy Stakes — Grid Impact Analysis",
-          "summary": "Large data center load growth in PA would increase PJM capacity and transmission costs. Ratepayer protection — whether connection costs are socialized — is the core interest.",
+          "headline": "NERC Sounds Alarm on Sudden Data Center Load Losses",
+          "summary": "The reliability watchdog flagged a series of \"widespread and unexpected\" customer-initiated load reductions in 2024–2025 — events where 1,000 MW or more dropped off the bulk power system.",
           "source": "Utility Dive",
-          "time": "5h ago",
+          "time": "Today",
+          "flagged": true
+        },
+        {
+          "headline": "DTE Proposes $474M Michigan Rate Hike",
+          "summary": "DTE Energy filed a $474M general rate case in Michigan amid mounting utility-side pressure from AI data center load planning.",
+          "source": "Utility Dive",
+          "time": "Yesterday",
           "flagged": false
+        },
+        {
+          "headline": "U.S. Electricity Prices Rose 9% Year-Over-Year in February",
+          "summary": "EIA data shows February's residential electricity prices climbed 9% YoY — fresh evidence that load growth from data centers is starting to flow through to consumer bills.",
+          "source": "Utility Dive (EIA)",
+          "time": "Yesterday",
+          "flagged": false
+        }
+      ]
+    },
+    {
+      "id": "pittsburgh-sports",
+      "label": "Pittsburgh Sports",
+      "count": 1,
+      "stories": [
+        {
+          "headline": "Pirates 6, Brewers 0 — Skenes Nearly Perfect, Griffin Goes Yard on 20th Birthday",
+          "summary": "Paul Skenes (4-1) carried a perfect game into the seventh, finishing with 1 hit, 7 K, 0 BB over 7 shutout IP (93 pitches, 62 strikes); 20-year-old Konnor Griffin hit his first career HR and drove in 3 RBI, with additional run-scoring from Gonzales (4th), Cruz (5th force-out), and Horwitz (6th).",
+          "source": "ESPN / MLB.com",
+          "time": "Yesterday",
+          "flagged": true
         }
       ]
     }
