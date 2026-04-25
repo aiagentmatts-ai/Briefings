@@ -4,64 +4,36 @@
   "generated_at": "2026-04-25T08:08:00-04:00",
   "sections": [
     {
-      "id": "national-politics",
-      "label": "National Politics",
-      "count": 5,
-      "stories": [
-        {
-          "headline": "Patel Likely Next Cabinet-Level Official to Go, White House Official Tells Playbook",
-          "summary": "A senior White House official told Politico the FBI director's exit is \"only a matter of time,\" with Trump described as fed up over the steady drumbeat of negative coverage of Kash Patel — including the recent leaks about his use of the Bureau jet and his relationship with country singer Alexis Wilkins. The official said no successor has been settled on, but Trump has been venting privately and in Oval Office meetings that Patel \"isn't worth the headache.\" Allies in Congress have begun quietly floating replacement names, and any change would mark the third high-profile cabinet-level departure since January.",
-          "source": "Politico Playbook",
-          "time": "Today",
-          "flagged": true
-        },
-        {
-          "headline": "Pentagon Unveils Record $1.5 Trillion FY27 Budget — A 44% Increase",
-          "summary": "Acting DOD Comptroller Jay Hurst rolled out the FY27 request as a \"generational investment,\" with the topline jumping from roughly $1.04T to $1.5T year-over-year. About $350B of the new spending — earmarked for shipbuilding, missile defense, and munitions stockpile rebuilds — is contingent on a partyline reconciliation bill that Senate Republicans are still struggling to whip. SASC Chair Roger Wicker called the request \"the floor, not the ceiling,\" while moderate Republicans warned the reconciliation pathway is \"very much in doubt\" without offsetting cuts.",
-          "source": "Punchbowl News",
-          "time": "Today",
-          "flagged": true
-        },
-        {
-          "headline": "Witkoff and Kushner Head to Pakistan to Restart Iran Negotiations",
-          "summary": "Steve Witkoff and Jared Kushner are en route to Islamabad to reopen back-channel talks with Iranian counterparts, with VP Vance on standby to join if a framework emerges. The White House signaled \"some progress from the Iranian side\" on enrichment caps, but Sen. Roger Wicker publicly called for Trump to scrap the existing ceasefire and restart kinetic operations, calling Tehran's compliance \"performative.\" The trip is the first formal diplomatic move since the June strikes and comes as the IAEA reports Iran's stockpile of 60%-enriched uranium has grown ~12% since January.",
-          "source": "Politico Playbook",
-          "time": "Today",
-          "flagged": false
-        },
-        {
-          "headline": "Cherfilus-McCormick Resigns Ten Minutes Before Ethics Sanctions Hearing",
-          "summary": "Florida Democrat Sheila Cherfilus-McCormick stepped down from her FL-20 seat ten minutes before the House Ethics Committee was set to recommend formal sanctions over her diversion of COVID-19 relief funds through her family's healthcare company. The resignation instantly stripped the panel of jurisdiction, halting the report's release. She still faces an active federal indictment on wire fraud and campaign finance counts; Gov. Ron DeSantis is expected to call a special election within 60 days for the safe-D Broward County seat.",
-          "source": "Punchbowl News",
-          "time": "This week",
-          "flagged": false
-        },
-        {
-          "headline": "DOJ Drops Federal Reserve Renovation Probe, Clearing Path for Warsh Confirmation",
-          "summary": "The Justice Department transferred its inquiry into the Fed's $2.5B Eccles Building renovation to the Fed's own Inspector General, ending the criminal-track investigation that had stalled Kevin Warsh's nomination as Fed Chair. Sen. Thom Tillis (R-NC), who had publicly held the nomination over the probe, told reporters he'll lift his hold \"this week\" once the formal handoff letter is filed. With Tillis off the fence, Warsh's path to a floor vote opens up before Memorial Day, ending months of vacancy speculation at the central bank.",
-          "source": "Politico Playbook",
-          "time": "Today",
-          "flagged": false
-        }
-      ]
-    },
-    {
       "id": "pa-politics",
       "label": "PA & NJ Politics",
-      "count": 2,
+      "count": 4,
       "stories": [
         {
-          "headline": "Shapiro Tests Political Muscle in Swing-State Midterms",
-          "summary": "Pennsylvania Gov. Josh Shapiro is putting his political operation to work across the 2026 PA midterms, headlining fundraisers for state-row Dems and quietly directing his Pennsylvania Forward PAC to spend in three competitive state Senate races. Operatives close to Shapiro told PoliticsPA the goal is \"a clean win up and down the ballot\" — and a high-profile demonstration of his coattails ahead of an expected 2028 presidential run. Republicans counter that off-year wins in PA tell you little about general-election viability, pointing to similar moves by Tom Wolf that didn't translate nationally.",
-          "source": "PoliticsPA Playbook",
+          "headline": "NJ BPU Cancels Larrabee Transmission Agreement with PJM as Offshore Wind Pipeline Collapses",
+          "summary": "The New Jersey Board of Public Utilities on April 23 voted to cancel its 2021 Larrabee Pre-Built Infrastructure agreement with PJM Interconnection, the transmission package designed to interconnect the state's offshore wind portfolio. The Sherrill Administration's BPU said \"New Jersey is now facing a situation in which there will be no identified, large-scale in-state generation projects under active development that can make use of\" the deal — citing the cancellation of TotalEnergies projects in a White House settlement and indefinite stalls on the rest of the queue. BPU left a door open to alternative pathways under future FERC guidance \"should they be pursued.\"",
+          "source": "Heatmap News / Utility Dive",
+          "time": "Yesterday",
+          "flagged": true
+        },
+        {
+          "headline": "Shapiro Tests Political Muscle in PA Midterms — Eyes State Legislative Flip + Congressional Slate",
+          "summary": "Pennsylvania Gov. Josh Shapiro is leveraging his political operation across competitive 2026 PA primaries, simultaneously pushing to flip the state legislature for the first time in decades and shaping the Democratic slate in congressional swing seats. House Majority PAC and Congressional Leadership Fund have both already poured millions into reservations across PA's four big races, per PoliticsPA. Cook Political Report calls a six-point Democratic generic-ballot lead in toss-up districts a \"flashing red warning light\" for Republicans — including PA-01's Brian Fitzpatrick, who Planned Parenthood is targeting with a six-figure pressure campaign over Medicaid funding.",
+          "source": "AP / PoliticsPA / POLITICO",
           "time": "Yesterday",
           "flagged": false
         },
         {
-          "headline": "Fitzpatrick Says He'd Leave the GOP \"100%\" If PA Had Open Primaries",
-          "summary": "On Punchbowl's Fly Out Day interview, Rep. Brian Fitzpatrick (R-Bucks) called the two-party system \"inherently divisive\" and said he would register Independent immediately if Pennsylvania allowed it. Fitzpatrick — one of just three House Republicans in a Harris-won district — has co-sponsored Rep. Jared Golden's open-primaries bill and said similar reform efforts are \"the only thing that breaks the fever.\" Pennsylvania remains one of nine states with fully closed primaries; reform legislation has stalled in Harrisburg every session since 2019.",
-          "source": "Punchbowl News",
-          "time": "This week",
+          "headline": "Garrity Blocks $1M Treasury Payment for Shapiro Residence Security Upgrades",
+          "summary": "Pennsylvania Treasurer Stacy Garrity — also the probable Republican gubernatorial nominee — announced Thursday that Treasury declined to cut a $1 million payment for security upgrades to Gov. Shapiro's private residence following last year's attack on the official Harrisburg residence. \"Treasury does not have the legal authority to use taxpayer funds for improvements to private property,\" Garrity said. The move frames an early 2026 line of attack and forces Shapiro's team to find an alternative funding mechanism while a security review remains open.",
+          "source": "PoliticsPA",
+          "time": "Yesterday",
+          "flagged": false
+        },
+        {
+          "headline": "Brooks Up 7 in PA-07 Democratic Primary; AOC Endorses Rabb in PA-03",
+          "summary": "A Congressional Progressive Caucus PAC poll has Bob Brooks, president of the Pennsylvania Professional Fire Fighters, leading the PA-07 Democratic primary by seven points over his nearest rival. Separately, U.S. Rep. Alexandria Ocasio-Cortez has endorsed state Rep. Chris Rabb for the PA-03 Democratic nomination. Both races are central to the state's congressional map heading into November, and PA-07 in particular is on every national handicapper's toss-up list. State Sen. Dan Laughlin (R-Erie) is meanwhile floating a redistricting reform \"draft\" plan as mid-cycle gerrymandering accelerates nationally.",
+          "source": "PoliticsPA / abc27",
+          "time": "Yesterday",
           "flagged": false
         }
       ]
@@ -72,24 +44,59 @@
       "count": 3,
       "stories": [
         {
-          "headline": "NERC Sounds Alarm on Sudden Data Center Load Losses",
-          "summary": "The North American Electric Reliability Corporation flagged a string of \"widespread and unexpected\" customer-initiated load reductions in 2024–2025, including multiple events where 1,000 MW or more dropped off the bulk power system within seconds. NERC says the trips — driven by data center protective relays reacting to grid disturbances — are now large enough to threaten frequency stability, and called for new ride-through standards modeled on FERC Order 901. The watchdog is recommending mandatory voltage and frequency ride-through requirements for hyperscale loads above 75 MW, a first for non-generation customers.",
+          "headline": "NERC Sounds Alarm on Sudden Data Center Load Losses, Eyes Mandatory Ride-Through Standards",
+          "summary": "The North American Electric Reliability Corporation flagged a string of \"widespread and unexpected\" customer-initiated load reductions in 2024–2025, including multiple events where 1,000 MW or more dropped off the bulk power system within seconds when data center protective relays reacted to grid disturbances. NERC says the trips are now large enough to threaten frequency stability and is recommending FERC Order 901-style mandatory voltage and frequency ride-through standards for hyperscale loads — a first for non-generation customers. PJM operators have flagged similar behavior in 2025 dispatch reviews; any new standard would land directly on co-op and IOU large-load interconnection agreements.",
           "source": "Utility Dive",
           "time": "Today",
           "flagged": true
         },
         {
-          "headline": "DTE Proposes $474M Michigan Rate Hike",
-          "summary": "DTE Energy filed a $474M general rate case with the Michigan Public Service Commission, citing $5.2B in capital spending tied to grid hardening, distribution upgrades, and new generation needed to serve roughly 2.1 GW of incoming AI data center load. If approved as filed, the average residential bill would climb about $13/month starting Q2 2026. Consumer advocates including the Citizens Utility Board are expected to push back on the data-center cost allocation, arguing residential ratepayers shouldn't subsidize the buildout.",
+          "headline": "DTE Files $474M Michigan Rate Case to Cover ~2.1 GW of Incoming Data Center Load",
+          "summary": "DTE Energy filed a $474M general rate case with the Michigan Public Service Commission, citing $5.2B in capital spending tied to grid hardening, distribution upgrades, and new generation needed to serve roughly 2.1 GW of incoming AI data center load. If approved as filed, the average residential bill rises about $13/month starting Q2 2026. Michigan's Citizens Utility Board is expected to push back hard on the cost-allocation methodology — a fight that will be watched closely by PA PUC and NJ BPU staff as similar dockets queue up.",
           "source": "Utility Dive",
           "time": "Yesterday",
           "flagged": false
         },
         {
-          "headline": "U.S. Electricity Prices Rose 9% Year-Over-Year in February",
-          "summary": "EIA data shows February residential electricity prices climbed 9% YoY — the steepest 12-month jump since the 2022 gas crisis — with the largest spikes in PJM (+14%) and ERCOT (+11%). Analysts attribute the move to data-center load growth, transmission build costs, and capacity-market price increases now flowing through to consumer bills. The trend is putting fresh pressure on state regulators to scrutinize how utilities are allocating data-center-driven costs between large industrial customers and residential ratepayers.",
+          "headline": "U.S. Electricity Prices Rose 9% YoY in February — Steepest Jump Since 2022 Gas Crisis",
+          "summary": "EIA data show February residential electricity prices climbed 9% year-over-year, the steepest 12-month jump since the 2022 gas crisis, with PJM (+14%) and ERCOT (+11%) leading the regional spreads. Analysts attribute the move to data-center load growth, transmission build costs, and capacity-market price increases now flowing through to bills. The trend is putting fresh pressure on state regulators — including PA's PUC and NJ's BPU — to scrutinize how utilities are allocating data-center-driven costs between large industrial customers and residential ratepayers.",
           "source": "Utility Dive (EIA)",
           "time": "Yesterday",
+          "flagged": false
+        }
+      ]
+    },
+    {
+      "id": "national-politics",
+      "label": "National Politics",
+      "count": 4,
+      "stories": [
+        {
+          "headline": "Patel Likely Next Cabinet-Level Official to Go, Senior White House Source Tells Playbook",
+          "summary": "A senior White House official told Politico the FBI director's exit is \"only a matter of time,\" with Trump described as fed up over the steady drumbeat of negative coverage of Kash Patel — including The Atlantic's reporting on \"conspicuous inebriation and unexplained absences\" (which Patel is suing over) and the NYT's account of an FBI security detail for his girlfriend Alexis Wilkins. Press secretary Karoline Leavitt defended Patel as \"a critical player on the law and order team,\" but the source said the volume of negative stories is \"not a good look for a Cabinet secretary\" ahead of the midterms. Trump has already fired AG Pam Bondi, DHS's Kristi Noem, and Labor's Lori Chavez-DeRemer in the current purge.",
+          "source": "Politico Playbook",
+          "time": "Today",
+          "flagged": true
+        },
+        {
+          "headline": "Witkoff and Kushner Head to Pakistan to Restart Iran Talks; Wicker Calls to Scrap Ceasefire",
+          "summary": "Steve Witkoff and Jared Kushner are en route to Islamabad to reopen back-channel talks with Iran, with VP JD Vance \"on standby\" to join if a framework emerges. Press Secretary Leavitt said the White House has seen \"some progress from the Iranian side\" on enrichment caps. SASC Chair Roger Wicker (R-Miss.) publicly called for Trump to scrap the existing ceasefire and restart kinetic operations, calling Tehran's compliance \"performative.\" Hardliners in Tehran have meanwhile slammed their own negotiators for being willing to talk about the nuclear program at all, per WSJ.",
+          "source": "Politico Playbook / WSJ",
+          "time": "Today",
+          "flagged": false
+        },
+        {
+          "headline": "DOJ Drops Fed Renovation Probe; Tillis Set to Lift Hold on Warsh Confirmation",
+          "summary": "The Justice Department transferred its inquiry into the Federal Reserve's $2.5B Eccles Building renovation to the Fed's own Inspector General, ending the criminal-track investigation that had stalled Kevin Warsh's nomination as Fed Chair. White House spokesperson Kush Desai said taxpayers \"deserve answers\" but framed the move as elevating, not dropping, the matter. Sen. Thom Tillis (R-N.C.), who'd publicly held the nomination over the probe, is expected to lift his hold this week — opening Warsh's path to a floor vote before Memorial Day and ending months of vacancy speculation at the central bank.",
+          "source": "Politico Playbook",
+          "time": "Today",
+          "flagged": false
+        },
+        {
+          "headline": "Cherfilus-McCormick Resigns 10 Minutes Before Ethics Sanctions Hearing",
+          "summary": "Florida Democrat Sheila Cherfilus-McCormick resigned from FL-21 ten minutes before the House Ethics Committee was set to recommend formal sanctions over her diversion of COVID-19 disaster relief funds — a move that instantly stripped the panel of jurisdiction. Ethics Chair Michael Guest (R-Miss.) gaveled the hearing out after four minutes: \"In light of Ms. McCormick's resignation earlier today, the Committee on Ethics has now lost jurisdiction.\" Cherfilus-McCormick still faces a federal indictment alleging she diverted ~$5M in FEMA funds; an Ethics subcommittee had already found her guilty of more than two dozen violations.",
+          "source": "Punchbowl News",
+          "time": "This week",
           "flagged": false
         }
       ]
@@ -100,8 +107,8 @@
       "count": 1,
       "stories": [
         {
-          "headline": "Pirates 6, Brewers 0 — Skenes Nearly Perfect, Griffin Goes Yard on 20th Birthday",
-          "summary": "Paul Skenes (4-1) carried a perfect game into the seventh before a leadoff single broke it up, finishing with 1 hit, 7 K, 0 BB over 7 shutout IP on 93 pitches (62 strikes). Twenty-year-old Konnor Griffin — celebrating his birthday — hit his first career home run, a two-run shot off Freddy Peralta in the fourth, and finished 2-for-4 with 3 RBI. Nick Gonzales added a solo shot in the 4th, Oneil Cruz drove in a run on a 5th-inning fielder's choice, and Spencer Horwitz capped the scoring with a 6th-inning RBI single. The Pirates move to 13-9 and head to St. Louis for a three-game set starting tonight.",
+          "headline": "Pirates 6, Brewers 0 — Skenes One-Hits Milwaukee, Griffin Goes Yard on 20th Birthday",
+          "summary": "Paul Skenes (4-1) carried a no-hit bid into the seventh before Jake Bauers' two-out single broke it up, finishing with 7 IP, 1 H, 0 R, 7 K, 0 BB at American Family Field. Twenty-year-old Konnor Griffin — celebrating his birthday — went 3-for-4 with his first career home run (a 386-ft solo shot to right-center in the 3rd) and three RBI, including a two-run single in the 8th. Nick Gonzales and Santiago Horwitz added run-scoring contributions. The Pirates move to 15-11 and play game two of the series in Milwaukee tonight.",
           "source": "ESPN / MLB.com",
           "time": "Yesterday",
           "flagged": true
