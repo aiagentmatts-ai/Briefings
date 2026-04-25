@@ -3,13 +3,13 @@
    Cache-first for assets, network-first for data
    ═══════════════════════════════════════════════════════════ */
 
-const CACHE_NAME = 'daily-briefing-v2';
+const CACHE_NAME = 'daily-briefing-v3';
 const SHELL_ASSETS = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/manifest.json',
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './manifest.json',
 ];
 
 // Install: pre-cache app shell
