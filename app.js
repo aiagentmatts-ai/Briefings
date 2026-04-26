@@ -16,11 +16,26 @@
     settingsOpen: false,
     lastUpdated: null,
     dataUrl: '',          // configurable base URL (empty = use ./data)
+    feedback: [],         // [{ id, text, ts }]
+    improvements: [],     // [{ id, title, description, source_feedback, estimated_effort }]
+    improvementDecisions: {}, // { [id]: 'approved' | 'dismissed' }
+    pendingDelete: null,  // feedback id awaiting confirm-tap
+    toast: null,          // { text, ts } — transient flash message
   };
 
   // ─── Data Loading ───────────────────────────────────────
   function getDataBaseUrl() {
     return (state.dataUrl && state.dataUrl.trim()) || './data';
+  }
+
+  async function tryFetch(list) {
+    for (const u of list) {
+      try {
+        const r = await fetch(`${u}?t=${Date.now()}`);
+        if (r.ok) return await r.json();
+      } catch {}
+    }
+    return null;
   }
 
   async function loadData() {
@@ -29,16 +44,6 @@
 
     const base = getDataBaseUrl().replace(/\/$/, '');
     const candidates = [`${base}/morning.json`, `${base}/sample-morning.json`];
-
-    async function tryFetch(list) {
-      for (const u of list) {
-        try {
-          const r = await fetch(`${u}?t=${Date.now()}`);
-          if (r.ok) return await r.json();
-        } catch {}
-      }
-      return null;
-    }
 
     try {
       const m = await tryFetch(candidates);
@@ -57,6 +62,23 @@
 
     state.loading = false;
     render();
+
+    loadImprovements();
+  }
+
+  async function loadImprovements() {
+    const base = getDataBaseUrl().replace(/\/$/, '');
+    const data = await tryFetch([`${base}/improvements.json`]);
+    if (data && Array.isArray(data.items)) {
+      state.improvements = data.items;
+      localStorage.setItem('db_improvements', JSON.stringify(data));
+    } else {
+      try {
+        const cached = JSON.parse(localStorage.getItem('db_improvements') || 'null');
+        if (cached && Array.isArray(cached.items)) state.improvements = cached.items;
+      } catch {}
+    }
+    if (state.settingsOpen) render();
   }
 
   // ─── Persistence ────────────────────────────────────────
@@ -78,6 +100,66 @@
 
   function applyTheme() {
     document.documentElement.setAttribute('data-theme', state.dark ? 'dark' : 'light');
+  }
+
+  function loadFeedback() {
+    try {
+      const raw = JSON.parse(localStorage.getItem('db_feedback') || '[]');
+      if (Array.isArray(raw)) state.feedback = raw;
+    } catch {}
+  }
+
+  function saveFeedback() {
+    localStorage.setItem('db_feedback', JSON.stringify(state.feedback));
+  }
+
+  function loadDecisions() {
+    try {
+      const raw = JSON.parse(localStorage.getItem('db_improvement_decisions') || '{}');
+      if (raw && typeof raw === 'object') state.improvementDecisions = raw;
+    } catch {}
+  }
+
+  function saveDecisions() {
+    localStorage.setItem('db_improvement_decisions', JSON.stringify(state.improvementDecisions));
+  }
+
+  function showToast(text) {
+    state.toast = { text, ts: Date.now() };
+    render();
+    setTimeout(() => {
+      if (state.toast && Date.now() - state.toast.ts >= 1900) {
+        state.toast = null;
+        render();
+      }
+    }, 2000);
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(
+        () => showToast('Copied'),
+        () => fallbackCopy(text)
+      );
+    } else {
+      fallbackCopy(text);
+    }
+  }
+
+  function fallbackCopy(text) {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      showToast('Copied');
+    } catch {
+      showToast('Copy failed');
+    }
   }
 
   // ─── Helpers ────────────────────────────────────────────
@@ -123,9 +205,15 @@
         ${state.loading ? renderLoading() : renderScreen(data)}
       </div>
       ${renderSettingsOverlay()}
+      ${renderToast()}
     `;
 
     bindEvents();
+  }
+
+  function renderToast() {
+    if (!state.toast) return '';
+    return `<div class="toast">${escapeHtml(state.toast.text)}</div>`;
   }
 
   function renderHeaderBar() {
@@ -321,9 +409,132 @@
             <span class="settings-row__label">Refresh</span>
             <button class="settings-row__action" data-action="refresh">Reload now</button>
           </div>
+
+          <hr class="settings-divider" />
+
+          ${renderFeedbackSection()}
+
+          <hr class="settings-divider" />
+
+          ${renderImprovementsSection()}
+
+          ${renderApprovedSection()}
         </div>
       </div>
     `;
+  }
+
+  function renderFeedbackSection() {
+    const items = state.feedback || [];
+    return `
+      <div class="settings-panel__title">Report a bug or idea</div>
+
+      <div class="settings-row settings-row--stack">
+        <textarea class="feedback-textarea"
+                  id="feedback-textarea"
+                  rows="4"
+                  placeholder="What broke, what's clunky, what would you like to see?"></textarea>
+        <div class="feedback-actions">
+          <button class="settings-row__action" data-action="add-feedback">Add to inbox</button>
+        </div>
+      </div>
+
+      <div class="feedback-inbox-header">
+        <span class="feedback-inbox-header__count">Inbox · ${items.length} ${items.length === 1 ? 'item' : 'items'}</span>
+        ${items.length ? `<button class="feedback-inbox-header__copy" data-action="copy-feedback-inbox">Copy ⧉</button>` : ''}
+      </div>
+
+      ${items.length === 0 ? `
+        <div class="feedback-empty">No feedback yet. Type a bug or idea above and tap Add.</div>
+      ` : `
+        <div class="feedback-list">
+          ${items.map(item => `
+            <div class="feedback-list__row">
+              <div class="feedback-list__date">${escapeHtml(formatShortDate(item.ts))}</div>
+              <div class="feedback-list__text">${escapeHtml(item.text)}</div>
+              <button class="feedback-list__delete ${state.pendingDelete === item.id ? 'feedback-list__delete--pending' : ''}"
+                      data-action="delete-feedback"
+                      data-id="${escapeHtml(item.id)}">${state.pendingDelete === item.id ? 'Tap again' : '✕'}</button>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    `;
+  }
+
+  function renderImprovementsSection() {
+    const items = state.improvements || [];
+    const decisions = state.improvementDecisions || {};
+    const suggested = items.filter(it => !decisions[it.id]);
+
+    return `
+      <div class="settings-panel__title">
+        Suggested improvements
+        ${suggested.length ? `<span class="settings-panel__count">${suggested.length} new</span>` : ''}
+      </div>
+
+      ${suggested.length === 0 ? `
+        <div class="feedback-empty">No suggestions yet. After you copy your inbox to Claude, suggestions will show up here.</div>
+      ` : `
+        <div class="improvement-list">
+          ${suggested.map(it => `
+            <div class="improvement-card">
+              <div class="improvement-card__title">${escapeHtml(it.title || '')}</div>
+              ${it.description ? `<div class="improvement-card__body">${escapeHtml(it.description)}</div>` : ''}
+              ${Array.isArray(it.source_feedback) && it.source_feedback.length ? `
+                <div class="improvement-card__source">From: ${it.source_feedback.map(s => `"${escapeHtml(s)}"`).join(' · ')}</div>
+              ` : ''}
+              <div class="improvement-card__actions">
+                <button class="improvement-card__btn improvement-card__btn--pick"
+                        data-action="pick-improvement" data-id="${escapeHtml(it.id)}">Pick ✓</button>
+                <button class="improvement-card__btn improvement-card__btn--dismiss"
+                        data-action="dismiss-improvement" data-id="${escapeHtml(it.id)}">Dismiss ✕</button>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `}
+    `;
+  }
+
+  function renderApprovedSection() {
+    const items = state.improvements || [];
+    const decisions = state.improvementDecisions || {};
+    const approved = items.filter(it => decisions[it.id] === 'approved');
+    if (!approved.length) return '';
+
+    return `
+      <hr class="settings-divider" />
+      <div class="settings-panel__title">
+        Approved — ready to build
+        <span class="settings-panel__count">${approved.length} ${approved.length === 1 ? 'item' : 'items'}</span>
+      </div>
+
+      <div class="approved-list">
+        ${approved.map(it => `
+          <div class="approved-list__row">
+            <span class="approved-list__check">✓</span>
+            <span class="approved-list__title">${escapeHtml(it.title || '')}</span>
+            <button class="approved-list__undo"
+                    data-action="unpick-improvement"
+                    data-id="${escapeHtml(it.id)}"
+                    aria-label="Move back to suggestions">↩</button>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="feedback-actions feedback-actions--full">
+        <button class="settings-row__action" data-action="copy-approved-list">Copy approved list to clipboard ⧉</button>
+      </div>
+    `;
+  }
+
+  function formatShortDate(ts) {
+    if (!ts) return '';
+    try {
+      const d = new Date(ts);
+      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    } catch { return ''; }
   }
 
   // ─── Event Binding ──────────────────────────────────────
@@ -402,6 +613,91 @@
         loadData();
         break;
       }
+
+      case 'add-feedback': {
+        const ta = document.getElementById('feedback-textarea');
+        const text = (ta?.value || '').trim();
+        if (!text) return;
+        const entry = {
+          id: 'fb_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7),
+          text,
+          ts: Date.now(),
+        };
+        state.feedback.unshift(entry);
+        saveFeedback();
+        render();
+        break;
+      }
+
+      case 'delete-feedback': {
+        const id = target.dataset.id;
+        if (state.pendingDelete !== id) {
+          state.pendingDelete = id;
+          render();
+          setTimeout(() => {
+            if (state.pendingDelete === id) {
+              state.pendingDelete = null;
+              render();
+            }
+          }, 2500);
+        } else {
+          state.feedback = state.feedback.filter(f => f.id !== id);
+          state.pendingDelete = null;
+          saveFeedback();
+          render();
+        }
+        break;
+      }
+
+      case 'copy-feedback-inbox': {
+        const items = state.feedback || [];
+        if (!items.length) return;
+        const today = new Date().toISOString().slice(0, 10);
+        const lines = items.map(it => {
+          const d = new Date(it.ts).toISOString().slice(0, 10);
+          return `- ${d} — ${it.text}`;
+        });
+        const payload =
+          `Briefing app feedback (${items.length} ${items.length === 1 ? 'item' : 'items'}, exported ${today}):\n` +
+          lines.join('\n') +
+          `\n\nPlease update data/improvements.json with proposed improvements.`;
+        copyToClipboard(payload);
+        break;
+      }
+
+      case 'pick-improvement': {
+        const id = target.dataset.id;
+        state.improvementDecisions[id] = 'approved';
+        saveDecisions();
+        render();
+        break;
+      }
+
+      case 'dismiss-improvement': {
+        const id = target.dataset.id;
+        state.improvementDecisions[id] = 'dismissed';
+        saveDecisions();
+        render();
+        break;
+      }
+
+      case 'unpick-improvement': {
+        const id = target.dataset.id;
+        delete state.improvementDecisions[id];
+        saveDecisions();
+        render();
+        break;
+      }
+
+      case 'copy-approved-list': {
+        const decisions = state.improvementDecisions || {};
+        const approved = (state.improvements || []).filter(it => decisions[it.id] === 'approved');
+        if (!approved.length) return;
+        const lines = approved.map((it, i) => `${i + 1}. ${it.title}${it.description ? ' — ' + it.description : ''}`);
+        const payload = `Approved improvements to implement:\n` + lines.join('\n');
+        copyToClipboard(payload);
+        break;
+      }
     }
   }
 
@@ -410,6 +706,8 @@
   // ─── Init ───────────────────────────────────────────────
   function init() {
     loadPrefs();
+    loadFeedback();
+    loadDecisions();
     render();
     loadData();
   }

@@ -108,6 +108,27 @@ The first section's first story is treated as the "Top Story" in widgets. `count
 
 Set `weather.travel` to an object (same shape as `home`) when traveling tomorrow — the widgets will render a second weather column with a ✈ marker.
 
+### Improvements list (`data/improvements.json`)
+
+The Settings page has a "Report a bug or idea" inbox. The user copies the inbox to clipboard and pastes it to Claude. Claude then writes/updates this file:
+
+```json
+{
+  "generated_at": "2026-04-26T08:00:00-04:00",
+  "items": [
+    {
+      "id": "imp_2026-04-26_001",
+      "title": "Responsive top-story headline",
+      "description": "Cap headline at 3 lines on screens <380px with ellipsis + tap-to-expand.",
+      "source_feedback": ["Top story headline wraps awkwardly on small screens"],
+      "estimated_effort": "S"
+    }
+  ]
+}
+```
+
+Each item the user picks moves into a local "approved" queue inside the app (stored in `localStorage["db_improvement_decisions"]`). The user later copies that approved list to Claude in a coding session to actually implement the change.
+
 ## Pointing the iPhone app at the published URL
 
 By default the app fetches from `./data` (relative to where it's hosted). If you host the briefings at a different URL than the app code (e.g., the briefings live in a separate private gist or a different repo), open the app → **⚙ Settings** → **Briefings URL** and paste the base URL there. The app caches the value and refetches.
