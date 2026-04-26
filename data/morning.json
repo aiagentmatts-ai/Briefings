@@ -139,8 +139,24 @@
     {
       "id": "pittsburgh-sports",
       "label": "Pittsburgh Sports",
-      "count": 1,
+      "count": 4,
       "stories": [
+        {
+          "headline": "Penguins Stay Alive 4-2 in Game 4 — Crosby Passes Gretzky for Most Career Playoff Goals vs Flyers",
+          "summary": "Sidney Crosby (1G, 1A) scored his 16th career playoff goal against Philadelphia, passing Gretzky and Malkin (15 each), and Rickard Rakell added a goal and assist as Pittsburgh staved off elimination 4-2; Flyers lead the first-round series 3-1 with Game 5 Monday at PPG Paints.",
+          "source": "NHL.com",
+          "time": "Yesterday",
+          "flagged": true,
+          "url": "https://www.nhl.com/news/pittsburgh-penguins-philadelphia-flyers-game-4-recap-april-25-2026"
+        },
+        {
+          "headline": "Steelers Wrap 2026 Draft — Iheanachor (OT) at 21, Trade Up for Allar (QB, Penn State) in Round 3",
+          "summary": "Pittsburgh opened with Arizona State OT Max Iheanachor at No. 21, added Alabama WR Germie Bernard at 47 (from Indianapolis), and traded back into Round 3 to grab Penn State QB Drew Allar at 76; Day 3 added CB Daylen Everette, OL Gennings Dunker (Iowa), Navy WR Eli Heidenreich, and S Robert Spears-Jennings.",
+          "source": "Steelers.com / CBS Sports",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.steelers.com/draft/"
+        },
         {
           "headline": "Pirates Take Series in Milwaukee, 6-3 in 10 Innings — Reynolds Drives in 2 in 10th",
           "summary": "Nick Gonzales' go-ahead single and Bryan Reynolds' two-run hit in the 10th lifted the Pirates over the Brewers 6-3 to clinch the series; Mitch Keller went 5 IP, 5 H, 3 ER, 2 BB, 6 K in his start Saturday.",
@@ -148,6 +164,14 @@
           "time": "Yesterday",
           "flagged": false,
           "url": "https://www.mlb.com/pirates/scores"
+        },
+        {
+          "headline": "Riverhounds Open USL Cup with 3-0 Home Win — Amann Brace, Viera's First Pro Goal",
+          "summary": "Pittsburgh dispatched Greenville Triumph 3-0 in the USL Cup opener at Highmark Stadium; Trevor Amann scored twice and Max Viera netted his first professional goal.",
+          "source": "Riverhounds.com / Pittsburgh Soccer Now",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.riverhounds.com/news/2026/04/25/amann-viera-agostoni-usl-cup-win-greenville/"
         }
       ]
     }
