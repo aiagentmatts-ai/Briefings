@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-25",
+  "date": "2026-04-26",
   "type": "morning",
-  "generated_at": "2026-04-25T13:30:00-04:00",
+  "generated_at": "2026-04-26T08:30:00-04:00",
   "sections": [
     {
       "id": "national-politics",
@@ -9,33 +9,33 @@
       "count": 4,
       "stories": [
         {
-          "headline": "Pentagon Rolls Out $1.5T FY27 Budget — 44% Jump Hinged on Reconciliation Bill",
-          "summary": "Acting DOD Comptroller Jay Hurst unveiled a $1.5 trillion FY2027 spend plan, a 44% increase over current funding, with $350 billion of new money contingent on passing a partyline reconciliation bill.",
-          "source": "Punchbowl News",
+          "headline": "WH Official Tells Politico Patel Is 'Likely Next' Cabinet-Level Official to Go",
+          "summary": "A top White House official told Politico's Dasha Burns that FBI Director Kash Patel is the likely next senior official out, calling it 'only a matter of time' as Trump tires of negative-press distractions ahead of the midterms.",
+          "source": "Politico Playbook",
           "time": "Today",
           "flagged": true,
-          "url": "https://punchbowl.news/article/defense/dod-budget-battles/"
-        },
-        {
-          "headline": "Federal Appeals Court Strikes Down Trump Asylum Ban 2-1",
-          "summary": "A divided D.C. Circuit panel ruled Trump illegally ended asylum processing by declaring an immigrant 'invasion'; the administration vowed to appeal to the Supreme Court.",
-          "source": "Politico Playbook / CNN",
-          "time": "Today",
-          "flagged": false,
           "url": "https://www.politico.com/newsletters/playbook"
         },
         {
-          "headline": "Treasury Sanctions Iran-Linked Shipping Network as Witkoff, Kushner Travel to Pakistan",
-          "summary": "The Treasury slapped sanctions on ships doing business with Iran (China-focused) as Witkoff and Kushner head to Pakistan to restart talks; Iran says no direct negotiations are scheduled.",
-          "source": "Politico Playbook / WSJ",
-          "time": "Today",
-          "flagged": false,
-          "url": "https://www.politico.com/newsletters/playbook"
-        },
-        {
-          "headline": "Trump to Attend White House Correspondents' Dinner as Sitting President for First Time",
-          "summary": "Trump returns from a Mar-a-Lago crypto event to the Washington Hilton tonight, his first WHCD as president; he is expected to bring jokes after years of resisting the dinner.",
+          "headline": "DOJ Drops Fed HQ Renovation Probe, Clearing Tillis Hold on Warsh Confirmation",
+          "summary": "The Justice Department dropped its probe of the Fed's headquarters renovation, ending the leverage Sen. Thom Tillis (R-N.C.) was using to block Kevin Warsh's confirmation as the next Fed chair replacing outgoing Jerome Powell.",
           "source": "Politico Playbook",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.politico.com/newsletters/playbook"
+        },
+        {
+          "headline": "D.C. Circuit Strikes Down Trump Asylum Ban 2-1; Administration Vows SCOTUS Appeal",
+          "summary": "A divided D.C. Circuit panel ruled Trump illegally ended asylum processing by declaring an 'invasion' of immigrants, jeopardizing migrants' lives; the administration said it will appeal to the Supreme Court.",
+          "source": "Politico Playbook / CNN",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.politico.com/newsletters/playbook"
+        },
+        {
+          "headline": "Witkoff, Kushner Travel to Pakistan as Treasury Sanctions Iran-Linked Shipping Network",
+          "summary": "Special envoy Steve Witkoff and Jared Kushner travel to Pakistan today to restart Iran talks (with VP Vance on standby) as Treasury sanctioned ships doing business with Iran with a focus on China.",
+          "source": "Politico Playbook / WSJ",
           "time": "Today",
           "flagged": false,
           "url": "https://www.politico.com/newsletters/playbook"
@@ -45,28 +45,44 @@
     {
       "id": "pa-politics",
       "label": "PA & NJ Politics",
-      "count": 3,
+      "count": 5,
       "stories": [
         {
-          "headline": "Fitzpatrick Says He'd Leave GOP for Independent If PA Had Open Primaries",
-          "summary": "Rep. Brian Fitzpatrick (R-PA-01) told Punchbowl's Fly Out Day he '100%' would register as Independent under open primaries, calling the two-party system 'inherently divisive' and citing Washington's 1796 farewell address.",
-          "source": "Punchbowl News",
-          "time": "This week",
+          "headline": "Shapiro Tests Political Muscle in PA Midterms — Pushing Dems to Take State Legislature for First Time in Decades",
+          "summary": "Gov. Josh Shapiro is using his reelection campaign to push favored candidates in competitive PA congressional primaries and to flip the General Assembly to Democrats, testing political capital that could shape his 2028 presidential outlook.",
+          "source": "PoliticsPA / AP",
+          "time": "Friday",
           "flagged": true,
-          "url": "https://punchbowl.news/article/politics/fitzpatrick-fly-out-day/"
+          "url": "https://www.politicspa.com"
         },
         {
-          "headline": "PA Sen. Dan Laughlin Pitches 'Draft' Plan for Drawing Congressional Districts",
-          "summary": "State Sen. Dan Laughlin (R-Erie) proposed an alternative to mid-cycle partisan redistricting after Texas, Florida, California and Virginia all redrew maps to favor their parties.",
-          "source": "abc27 / PoliticsPA",
-          "time": "Yesterday",
+          "headline": "Treasurer Garrity Blocks $1M Payment for Security Upgrades at Shapiro's Private Residence",
+          "summary": "PA Treasurer Stacy Garrity — likely GOP gubernatorial nominee — declined to pay for security upgrades at Gov. Shapiro's private home after last year's attack on the official residence, citing no legal authority to use taxpayer funds on private property.",
+          "source": "PoliticsPA",
+          "time": "Friday",
           "flagged": false,
-          "url": "https://www.abc27.com"
+          "url": "https://www.politicspa.com"
+        },
+        {
+          "headline": "Brooks Leads PA-07 Dem Primary by 7 Points in Progressive Caucus PAC Poll",
+          "summary": "PA Professional Fire Fighters president Bob Brooks holds a seven-point lead in the Democratic primary for the 7th Congressional District in a poll sponsored by the Congressional Progressive Caucus PAC.",
+          "source": "PoliticsPA",
+          "time": "Friday",
+          "flagged": false,
+          "url": "https://www.politicspa.com"
+        },
+        {
+          "headline": "PA Supreme Court Weighing Challenge to DOS Voter-Registration Match Policy",
+          "summary": "Potter County Commissioner Robert Rossman is asking the PA Supreme Court to overturn the Department of State's 2018 guidance that voter registration applications cannot be rejected if applicant data doesn't match government databases.",
+          "source": "Votebeat PA / PoliticsPA",
+          "time": "This week",
+          "flagged": false,
+          "url": "https://www.votebeat.org/pennsylvania"
         },
         {
           "headline": "Philadelphia Council Adopts Nation's Most Aggressive ICE-Restriction Package",
-          "summary": "Philadelphia City Council on Thursday approved a high-profile legislative package restricting federal immigration enforcement, placing the city at the front of local resistance to Trump's deportation campaign.",
-          "source": "Philadelphia Inquirer",
+          "summary": "Philadelphia City Council on Thursday approved a high-profile legislative package restricting federal immigration enforcement, placing the city at the forefront of local resistance to Trump's deportation campaign.",
+          "source": "Philadelphia Inquirer / PoliticsPA",
           "time": "This week",
           "flagged": false,
           "url": "https://www.inquirer.com"
@@ -76,23 +92,39 @@
     {
       "id": "energy-industry",
       "label": "Energy Industry",
-      "count": 3,
+      "count": 5,
       "stories": [
         {
-          "headline": "Henry Hub Futures Fall 3.6% to $2.52/MMBtu — Lowest Since Oct 2024",
-          "summary": "U.S. natural gas futures dropped 3.6% Friday to $2.52/MMBtu as warmer-than-normal spring temperatures pushed working storage roughly 8% above the seasonal norm for the week ended April 24.",
-          "source": "Trading Economics / Natural Gas Intel",
-          "time": "Yesterday",
-          "flagged": false,
-          "url": "https://tradingeconomics.com/commodity/natural-gas"
+          "headline": "NERC Alert: Sudden Data-Center Load Losses of 1,000+ MW Hitting the Bulk Power System",
+          "summary": "The North American Electric Reliability Corp. issued an alert and recommendations after a series of 'widespread and unexpected' customer-initiated load reductions in 2024-2025 dropped 1,000 MW or more off the bulk power system at a time.",
+          "source": "Utility Dive",
+          "time": "This week",
+          "flagged": true,
+          "url": "https://www.utilitydive.com/news/data-center-load-disruptions-nerc-alert-recommendations/818036/"
         },
         {
-          "headline": "WTI Crude Settles at $94.40 — Down 1% on Iran-Pakistan Talks Optimism",
-          "summary": "WTI front-month fell more than 1% to $94.40 Friday as the White House confirmed Witkoff and Kushner would travel to Pakistan to restart Iran negotiations, easing the geopolitical risk premium.",
-          "source": "CNBC",
+          "headline": "PJM Market Monitor Opposes Waivers for Constellation's Three Mile Island Restart",
+          "summary": "PJM's independent market monitor is opposing waivers Constellation is seeking for the Three Mile Island nuclear restart — a directly relevant Susquehanna-adjacent fight as PJM weighs how to treat large new behind-the-meter and co-located loads.",
+          "source": "Utility Dive",
+          "time": "Wednesday",
+          "flagged": true,
+          "url": "https://www.utilitydive.com/"
+        },
+        {
+          "headline": "New Jersey Effectively Concedes on Offshore Wind — At Least For Now",
+          "summary": "Heatmap reports NJ is admitting defeat on offshore wind in the near term as the Murphy administration's signature climate plank stalls under federal hostility, supply-chain costs and developer cancellations.",
+          "source": "Heatmap News / Utility Dive",
           "time": "Yesterday",
           "flagged": false,
-          "url": "https://www.cnbc.com/2026/04/24/oil-price-wti-brent-after-israel-lebanon-ceasefire-extension.html"
+          "url": "https://heatmap.news/sparks/new-jersey-offshore-wind"
+        },
+        {
+          "headline": "EIA: U.S. Average Retail Electricity Prices Rose 9% YoY in February",
+          "summary": "Average U.S. retail electricity prices climbed 9% year-over-year in February per EIA data, with industrial and commercial classes leading the jump as data-center load growth strains capacity supply.",
+          "source": "Utility Dive / EIA",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.utilitydive.com/"
         },
         {
           "headline": "NJ BPU's Guhl-Sadovy Lays Out Affordability Playbook as NJ Bills Climb 16.9%",
@@ -110,12 +142,12 @@
       "count": 1,
       "stories": [
         {
-          "headline": "Keller Faces Misiorowski Tonight as Pirates Try to Build on Skenes' One-Hitter",
-          "summary": "Mitch Keller (2-1, 2.79 ERA) gets the ball at Milwaukee tonight at 6:10 ET facing Jacob Misiorowski (1-2, 3.04); the Pirates (15-11) are coming off Skenes' 7 IP, 1 H, 7 K masterpiece Friday.",
-          "source": "MLB.com",
-          "time": "Tonight",
+          "headline": "Pirates Take Series in Milwaukee, 6-3 in 10 Innings — Reynolds Drives in 2 in 10th",
+          "summary": "Nick Gonzales' go-ahead single and Bryan Reynolds' two-run hit in the 10th lifted the Pirates over the Brewers 6-3 to clinch the series; Mitch Keller went 5 IP, 5 H, 3 ER, 2 BB, 6 K in his start Saturday.",
+          "source": "MLB.com / WTMJ",
+          "time": "Yesterday",
           "flagged": false,
-          "url": "https://www.mlb.com/gameday/pirates-vs-brewers/2026/04/25/823799/live"
+          "url": "https://www.mlb.com/pirates/scores"
         }
       ]
     }
@@ -123,12 +155,12 @@
   "market_data": {
     "as_of": "Apr 24 close",
     "rows": [
-      { "market": "PJM West Hub (DA)", "price": "n/a", "change": "—" },
-      { "market": "PJM AEP-Dayton (DA)", "price": "n/a", "change": "—" },
+      { "market": "PJM West Hub (DA)", "price": "$43.20/MWh", "change": "—" },
+      { "market": "PJM AEP-Dayton (DA)", "price": "$68.97/MWh", "change": "—" },
       { "market": "PJM Capacity 26/27", "price": "$329.17/MW-day", "change": "—" },
       { "market": "Henry Hub (NYMEX)", "price": "$2.52/MMBtu", "change": "-3.6%" },
       { "market": "TETCO M3 (PA/NJ)", "price": "n/a", "change": "—" },
-      { "market": "WTI Crude (NYMEX)", "price": "$94.40/bbl", "change": "-1.0%" }
+      { "market": "WTI Crude (NYMEX)", "price": "$94.70/bbl", "change": "-1.0%" }
     ]
   }
 }
