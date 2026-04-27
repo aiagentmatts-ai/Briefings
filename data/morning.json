@@ -1,7 +1,7 @@
 {
-  "date": "2026-04-26",
+  "date": "2026-04-27",
   "type": "morning",
-  "generated_at": "2026-04-26T08:30:00-04:00",
+  "generated_at": "2026-04-27T08:30:00-04:00",
   "sections": [
     {
       "id": "national-politics",
@@ -9,169 +9,145 @@
       "count": 4,
       "stories": [
         {
-          "headline": "WH Official Tells Politico Patel Is 'Likely Next' Cabinet-Level Official to Go",
-          "summary": "A top White House official told Politico's Dasha Burns that FBI Director Kash Patel is the likely next senior official out, calling it 'only a matter of time' as Trump tires of negative-press distractions ahead of the midterms.",
-          "source": "Politico Playbook",
+          "headline": "Hill Faces 'Brutal' Week: FISA 702 Expires Thursday, DHS Funding Runs Dry April 30, Budget Resolution Due Wednesday",
+          "summary": "Speaker Mike Johnson is racing to pass a revised FISA Section 702 reauthorization, the Senate-passed budget DHS resolution, and a farm bill this week as DHS hits day 72 of shutdown and Sec. Markwayne Mullin warns pay stops April 30.",
+          "source": "Punchbowl AM",
           "time": "Today",
-          "flagged": true,
-          "url": "https://www.politico.com/newsletters/playbook"
-        },
-        {
-          "headline": "DOJ Drops Fed HQ Renovation Probe, Clearing Tillis Hold on Warsh Confirmation",
-          "summary": "The Justice Department dropped its probe of the Fed's headquarters renovation, ending the leverage Sen. Thom Tillis (R-N.C.) was using to block Kevin Warsh's confirmation as the next Fed chair replacing outgoing Jerome Powell.",
-          "source": "Politico Playbook",
-          "time": "Yesterday",
           "flagged": false,
-          "url": "https://www.politico.com/newsletters/playbook"
+          "url": "https://punchbowl.news/archive/42726-am/"
         },
         {
-          "headline": "D.C. Circuit Strikes Down Trump Asylum Ban 2-1; Administration Vows SCOTUS Appeal",
-          "summary": "A divided D.C. Circuit panel ruled Trump illegally ended asylum processing by declaring an 'invasion' of immigrants, jeopardizing migrants' lives; the administration said it will appeal to the Supreme Court.",
-          "source": "Politico Playbook / CNN",
-          "time": "Yesterday",
-          "flagged": false,
-          "url": "https://www.politico.com/newsletters/playbook"
-        },
-        {
-          "headline": "Witkoff, Kushner Travel to Pakistan as Treasury Sanctions Iran-Linked Shipping Network",
-          "summary": "Special envoy Steve Witkoff and Jared Kushner travel to Pakistan today to restart Iran talks (with VP Vance on standby) as Treasury sanctioned ships doing business with Iran with a focus on China.",
-          "source": "Politico Playbook / WSJ",
+          "headline": "WHCD Gunman Cole Allen Faces Federal Court Today; Wiles to Review Secret Service Posture",
+          "summary": "Suspected White House Correspondents' Dinner shooter Cole Tomas Allen, 31, of Torrance, Calif., appears in federal court today on two gun charges; WH Chief of Staff Susie Wiles will meet Secret Service and DHS leadership this week to review presidential event protocols.",
+          "source": "Politico Playbook / Punchbowl",
           "time": "Today",
           "flagged": false,
           "url": "https://www.politico.com/newsletters/playbook"
+        },
+        {
+          "headline": "King Charles III Arrives for State Visit; Joint-Session Address Tuesday",
+          "summary": "King Charles III and Queen Camilla begin a four-day U.S. state visit today with tea at the White House, with the king set to address a joint meeting of Congress on Tuesday — the first British monarch to do so since Queen Elizabeth II in 1991.",
+          "source": "Politico Playbook",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://www.politico.com/newsletters/playbook"
+        },
+        {
+          "headline": "Senate Banking Wednesday Vote on Warsh as Fed Chair; Powell's Final FOMC Presser Same Day",
+          "summary": "The Senate Banking Committee will vote Wednesday on Kevin Warsh's nomination to succeed Jerome Powell as Federal Reserve chair; Powell holds his final FOMC press conference at 2:30 p.m. Wednesday.",
+          "source": "Punchbowl AM",
+          "time": "This week",
+          "flagged": false,
+          "url": "https://punchbowl.news/archive/42726-am/"
         }
       ]
     },
     {
       "id": "pa-politics",
       "label": "PA & NJ Politics",
-      "count": 5,
+      "count": 4,
       "stories": [
         {
-          "headline": "Shapiro Tests Political Muscle in PA Midterms — Pushing Dems to Take State Legislature for First Time in Decades",
-          "summary": "Gov. Josh Shapiro is using his reelection campaign to push favored candidates in competitive PA congressional primaries and to flip the General Assembly to Democrats, testing political capital that could shape his 2028 presidential outlook.",
-          "source": "PoliticsPA / AP",
-          "time": "Friday",
+          "headline": "Middlesex Township Residents Confront 'Shotgun Marriage' as Central PA's First Hyperscale Data Center Begins Site Work",
+          "summary": "Site work at central Pennsylvania's first hyperscale data center in Middlesex Township has neighbors complaining of trucks and blasting, the first concrete community-impact dispute as Pennsylvania's data center buildout moves from siting to construction.",
+          "source": "PennLive (via PoliticsPA)",
+          "time": "Today",
           "flagged": true,
-          "url": "https://www.politicspa.com"
+          "url": "https://www.pennlive.com"
         },
         {
-          "headline": "Treasurer Garrity Blocks $1M Payment for Security Upgrades at Shapiro's Private Residence",
-          "summary": "PA Treasurer Stacy Garrity — likely GOP gubernatorial nominee — declined to pay for security upgrades at Gov. Shapiro's private home after last year's attack on the official residence, citing no legal authority to use taxpayer funds on private property.",
-          "source": "PoliticsPA",
-          "time": "Friday",
-          "flagged": false,
-          "url": "https://www.politicspa.com"
-        },
-        {
-          "headline": "Brooks Leads PA-07 Dem Primary by 7 Points in Progressive Caucus PAC Poll",
-          "summary": "PA Professional Fire Fighters president Bob Brooks holds a seven-point lead in the Democratic primary for the 7th Congressional District in a poll sponsored by the Congressional Progressive Caucus PAC.",
-          "source": "PoliticsPA",
-          "time": "Friday",
-          "flagged": false,
-          "url": "https://www.politicspa.com"
-        },
-        {
-          "headline": "PA Supreme Court Weighing Challenge to DOS Voter-Registration Match Policy",
-          "summary": "Potter County Commissioner Robert Rossman is asking the PA Supreme Court to overturn the Department of State's 2018 guidance that voter registration applications cannot be rejected if applicant data doesn't match government databases.",
-          "source": "Votebeat PA / PoliticsPA",
-          "time": "This week",
-          "flagged": false,
-          "url": "https://www.votebeat.org/pennsylvania"
-        },
-        {
-          "headline": "Philadelphia Council Adopts Nation's Most Aggressive ICE-Restriction Package",
-          "summary": "Philadelphia City Council on Thursday approved a high-profile legislative package restricting federal immigration enforcement, placing the city at the forefront of local resistance to Trump's deportation campaign.",
-          "source": "Philadelphia Inquirer / PoliticsPA",
-          "time": "This week",
+          "headline": "Rep. Brian Fitzpatrick Endorses Shapiro for Reelection — and a 2028 Presidential Run",
+          "summary": "Bucks County Republican Rep. Brian Fitzpatrick told the Inquirer Gov. Josh Shapiro will win reelection and should run for president in 2028, a notable cross-party endorsement from a swing-district incumbent.",
+          "source": "Philadelphia Inquirer (via PoliticsPA)",
+          "time": "Today",
           "flagged": false,
           "url": "https://www.inquirer.com"
+        },
+        {
+          "headline": "PA Human Relations Commission Drops Below Quorum as Shapiro Holds Off on Appointments",
+          "summary": "The 70-year-old Pennsylvania Human Relations Commission has fallen from seven to five commissioners — below the six required for a quorum — and its executive director plans to leave in June, with the Shapiro administration declining to say when new appointments will come.",
+          "source": "PA Capital-Star (via PoliticsPA)",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://www.penncapital-star.com"
+        },
+        {
+          "headline": "Republican State Leadership Committee Adds PA to 2026 Legislative Target List",
+          "summary": "The RSLC told Broad + Liberty it believes Republicans can flip the PA House and hold their state Senate majority in 2026 even with Shapiro atop the Democratic ticket — signaling outside money inbound for state legislative races.",
+          "source": "Broad + Liberty (via PoliticsPA)",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://broadandliberty.com"
         }
       ]
     },
     {
       "id": "energy-industry",
       "label": "Energy Industry",
-      "count": 5,
+      "count": 4,
       "stories": [
         {
-          "headline": "NERC Alert: Sudden Data-Center Load Losses of 1,000+ MW Hitting the Bulk Power System",
-          "summary": "The North American Electric Reliability Corp. issued an alert and recommendations after a series of 'widespread and unexpected' customer-initiated load reductions in 2024-2025 dropped 1,000 MW or more off the bulk power system at a time.",
+          "headline": "PJM Market Monitor Asks FERC to Reject Hull Street's 1.3 GW Gas Plant Buy from Rockland Capital",
+          "summary": "Monitoring Analytics urged FERC on Apr. 24 to reject Hull Street Energy's purchase of the 677-MW Lee County (Ill.) and 590-MW Tait (Ohio) gas plants from Rockland Capital, warning the new owner could redirect the plants from PJM's capacity market to data center loads and shift costs to other customers.",
           "source": "Utility Dive",
-          "time": "This week",
+          "time": "Yesterday",
           "flagged": true,
-          "url": "https://www.utilitydive.com/news/data-center-load-disruptions-nerc-alert-recommendations/818036/"
+          "url": "https://www.utilitydive.com/news/pjm-market-monitor-hull-street-rockland-data-centers/818520/"
         },
         {
-          "headline": "PJM Market Monitor Opposes Waivers for Constellation's Three Mile Island Restart",
-          "summary": "PJM's independent market monitor is opposing waivers Constellation is seeking for the Three Mile Island nuclear restart — a directly relevant Susquehanna-adjacent fight as PJM weighs how to treat large new behind-the-meter and co-located loads.",
-          "source": "Utility Dive",
+          "headline": "Interior Sec. Burgum Testifies Wednesday Before Senate Energy and Natural Resources",
+          "summary": "Interior Secretary Doug Burgum is scheduled to appear before Senate ENR at 9:30 a.m. Wednesday — likely to face questioning on public-lands leasing, Susquehanna/Talen-style colocation precedent, and DOI permitting timelines.",
+          "source": "Punchbowl AM",
           "time": "Wednesday",
-          "flagged": true,
-          "url": "https://www.utilitydive.com/"
-        },
-        {
-          "headline": "New Jersey Effectively Concedes on Offshore Wind — At Least For Now",
-          "summary": "Heatmap reports NJ is admitting defeat on offshore wind in the near term as the Murphy administration's signature climate plank stalls under federal hostility, supply-chain costs and developer cancellations.",
-          "source": "Heatmap News / Utility Dive",
-          "time": "Yesterday",
           "flagged": false,
-          "url": "https://heatmap.news/sparks/new-jersey-offshore-wind"
+          "url": "https://punchbowl.news/archive/42726-am/"
         },
         {
-          "headline": "EIA: U.S. Average Retail Electricity Prices Rose 9% YoY in February",
-          "summary": "Average U.S. retail electricity prices climbed 9% year-over-year in February per EIA data, with industrial and commercial classes leading the jump as data-center load growth strains capacity supply.",
-          "source": "Utility Dive / EIA",
-          "time": "Yesterday",
+          "headline": "EPA Administrator Zeldin Testifies Wednesday Before Senate Environment and Public Works",
+          "summary": "EPA Administrator Lee Zeldin will appear before Senate EPW at 2:30 p.m. Wednesday — set against this week's separate suit by cities arguing EPA failed to uphold the soot (PM2.5) standard.",
+          "source": "Punchbowl AM / Utility Dive",
+          "time": "Wednesday",
           "flagged": false,
-          "url": "https://www.utilitydive.com/"
+          "url": "https://punchbowl.news/archive/42726-am/"
         },
         {
-          "headline": "NJ BPU's Guhl-Sadovy Lays Out Affordability Playbook as NJ Bills Climb 16.9%",
-          "summary": "BPU President Christine Guhl-Sadovy is pushing accelerated solar/storage procurement and structural cost-recovery reforms after NJ ratepayers absorbed a 16.9% YoY price increase — the steepest in the country.",
+          "headline": "House GOP Files Bill to Extend Renewables Tax Credits; NextEra Contracts 4 GW of New Generation in Q1",
+          "summary": "House Republicans introduced legislation to extend clean-energy tax credits — a notable break with the Trump-era IRA repeal push — as NextEra reported 4 GW of new generation contracted in Q1 and Cities sued EPA over the soot standard.",
           "source": "Utility Dive",
-          "time": "This week",
-          "flagged": true,
-          "url": "https://www.utilitydive.com/news/new-jerseys-approach-to-rising-electricity-prices-bpu-president-guhl-sadovy/817889/"
+          "time": "Today",
+          "flagged": false,
+          "url": "https://www.utilitydive.com/news/utility-dive-newsletter-april-27-2026"
         }
       ]
     },
     {
       "id": "pittsburgh-sports",
       "label": "Pittsburgh Sports",
-      "count": 4,
+      "count": 3,
       "stories": [
         {
-          "headline": "Penguins Stay Alive 4-2 in Game 4 — Crosby Passes Gretzky for Most Career Playoff Goals vs Flyers",
-          "summary": "Sidney Crosby (1G, 1A) scored his 16th career playoff goal against Philadelphia, passing Gretzky and Malkin (15 each), and Rickard Rakell added a goal and assist as Pittsburgh staved off elimination 4-2; Flyers lead the first-round series 3-1 with Game 5 Monday at PPG Paints.",
-          "source": "NHL.com",
+          "headline": "Steelers Wrap 2026 Draft: Allar in Round 3, Iheanachor Round 1, Bernard Round 2 — McCarthy's First Class Targets QB, OL, WR",
+          "summary": "Pittsburgh closed the 2026 NFL Draft with Penn State QB Drew Allar in Round 3, Arizona State OL Max Iheanachor at the top of Round 1, Alabama WR Germie Bernard in Round 2 (after a trade up with Indianapolis), and Notre Dame DT Gabriel Rubio in Round 6 — head coach Mike McCarthy's first class as Pittsburgh awaits Aaron Rodgers' decision.",
+          "source": "ESPN / Behind the Steel Curtain",
           "time": "Yesterday",
-          "flagged": true,
+          "flagged": false,
+          "url": "https://www.espn.com/nfl/draft2026/story/_/id/48452091/pittsburgh-steelers-nfl-draft-picks-2026-selection-analysis-depth-chart"
+        },
+        {
+          "headline": "Penguins Stay Alive 4-2 in Game 4 vs. Flyers — Crosby and Rakell Each Goal-and-Assist; Game 5 Wednesday in Philly",
+          "summary": "Sidney Crosby and Rickard Rakell each had a goal and an assist (Letang scored, Dewar added an empty-netter) as the Penguins beat the Flyers 4-2 in Game 4 of the East First Round to cut the series deficit to 3-1; Game 5 is Wednesday in Philadelphia.",
+          "source": "NHL.com",
+          "time": "Saturday",
+          "flagged": false,
           "url": "https://www.nhl.com/news/pittsburgh-penguins-philadelphia-flyers-game-4-recap-april-25-2026"
         },
         {
-          "headline": "Steelers Wrap 2026 Draft — Iheanachor (OT) at 21, Trade Up for Allar (QB, Penn State) in Round 3",
-          "summary": "Pittsburgh opened with Arizona State OT Max Iheanachor at No. 21, added Alabama WR Germie Bernard at 47 (from Indianapolis), and traded back into Round 3 to grab Penn State QB Drew Allar at 76; Day 3 added CB Daylen Everette, OL Gennings Dunker (Iowa), Navy WR Eli Heidenreich, and S Robert Spears-Jennings.",
-          "source": "Steelers.com / CBS Sports",
+          "headline": "Pirates Blanked 5-0 in Milwaukee as Kyle Harrison K's 12 — Bucs Strike Out 18, Drop Series Finale",
+          "summary": "Kyle Harrison struck out 12 over six scoreless innings as Milwaukee beat Pittsburgh 5-0 to avoid the sweep; Carmen Mlodzinski (1-2) gave up all five runs in the fourth, and the Pirates (16-12) struck out 18 times before opening a series tonight at home vs. St. Louis.",
+          "source": "MLB.com / Altoona Mirror",
           "time": "Yesterday",
           "flagged": false,
-          "url": "https://www.steelers.com/draft/"
-        },
-        {
-          "headline": "Pirates Take Series in Milwaukee, 6-3 in 10 Innings — Reynolds Drives in 2 in 10th",
-          "summary": "Nick Gonzales' go-ahead single and Bryan Reynolds' two-run hit in the 10th lifted the Pirates over the Brewers 6-3 to clinch the series; Mitch Keller went 5 IP, 5 H, 3 ER, 2 BB, 6 K in his start Saturday.",
-          "source": "MLB.com / WTMJ",
-          "time": "Yesterday",
-          "flagged": false,
-          "url": "https://www.mlb.com/pirates/scores"
-        },
-        {
-          "headline": "Riverhounds Open USL Cup with 3-0 Home Win — Amann Brace, Viera's First Pro Goal",
-          "summary": "Pittsburgh dispatched Greenville Triumph 3-0 in the USL Cup opener at Highmark Stadium; Trevor Amann scored twice and Max Viera netted his first professional goal.",
-          "source": "Riverhounds.com / Pittsburgh Soccer Now",
-          "time": "Yesterday",
-          "flagged": false,
-          "url": "https://www.riverhounds.com/news/2026/04/25/amann-viera-agostoni-usl-cup-win-greenville/"
+          "url": "https://www.mlb.com/gameday/pirates-vs-brewers/2026/04/26/823797/live"
         }
       ]
     }
@@ -179,12 +155,12 @@
   "market_data": {
     "as_of": "Apr 24 close",
     "rows": [
-      { "market": "PJM West Hub (DA)", "price": "$43.20/MWh", "change": "—" },
-      { "market": "PJM AEP-Dayton (DA)", "price": "$68.97/MWh", "change": "—" },
+      { "market": "PJM West Hub (DA)", "price": "n/a", "change": "—" },
+      { "market": "PJM AEP-Dayton (DA)", "price": "n/a", "change": "—" },
       { "market": "PJM Capacity 26/27", "price": "$329.17/MW-day", "change": "—" },
-      { "market": "Henry Hub (NYMEX)", "price": "$2.52/MMBtu", "change": "-3.6%" },
+      { "market": "Henry Hub (NYMEX)", "price": "$2.56/MMBtu", "change": "+1.6%" },
       { "market": "TETCO M3 (PA/NJ)", "price": "n/a", "change": "—" },
-      { "market": "WTI Crude (NYMEX)", "price": "$94.70/bbl", "change": "-1.0%" }
+      { "market": "WTI Crude (NYMEX)", "price": "$94.40/bbl", "change": "-0.3%" }
     ]
   }
 }
