@@ -1,44 +1,83 @@
 {
-  "date": "2026-04-27",
+  "date": "2026-04-28",
   "type": "morning",
-  "generated_at": "2026-04-27T08:30:00-04:00",
+  "generated_at": "2026-04-28T16:30:00-04:00",
   "sections": [
+    {
+      "id": "energy-industry",
+      "label": "Energy Industry",
+      "count": 4,
+      "stories": [
+        {
+          "headline": "PJM Market Monitor Asks FERC to Reject Hull Street's $1.3 GW Buy of Lee County, Tait Gas Peakers — Same Data-Center-Carve-Out Pattern as Talen-Amazon",
+          "summary": "Monitoring Analytics urged FERC to block Hull Street Energy's purchase of two gas peakers totaling 1,267 MW from Rockland Capital (677-MW Lee County in Illinois and 590-MW Tait near Dayton), warning the deal could pull capacity out of PJM's market to serve data centers and shift costs to other customers — the same fight Allegheny is watching at Susquehanna.",
+          "source": "Utility Dive",
+          "time": "Yesterday",
+          "flagged": true,
+          "url": "https://www.utilitydive.com/news/pjm-market-monitor-hull-street-rockland-data-centers/818520/"
+        },
+        {
+          "headline": "Talen-Amazon Susquehanna ISA Restructure: BTM-to-Front-of-Meter Transition Tied to Spring 2026 Refueling Outage",
+          "summary": "Talen and Amazon's expanded 1,920-MW PPA from Susquehanna (through 2042) is set to transition from the existing 300-MW behind-the-meter setup to a grid-connected, front-of-the-meter arrangement during this spring's scheduled refueling outage — the workaround for FERC's November 2024 ISA rejection that AEP and Exelon helped force.",
+          "source": "Power / RTO Insider",
+          "time": "This week",
+          "flagged": true,
+          "url": "https://www.powermag.com/talen-amazon-launch-18b-nuclear-ppa-a-grid-connected-ipp-model-for-the-data-center-era/"
+        },
+        {
+          "headline": "Two More Offshore Wind Projects Scrapped; NYISO Warns Extended Heat Wave Could Cripple New York Grid This Summer",
+          "summary": "Utility Dive reports two more East Coast offshore wind projects pulled this week as developers cite cost and permitting headwinds, while NYISO told regulators an extended summer heat wave could push the New York grid past reliability margins — same load-growth-vs-supply squeeze PJM is facing.",
+          "source": "Utility Dive",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://www.utilitydive.com/"
+        },
+        {
+          "headline": "Consumers Energy Q1 Sales Boosted by Industrial/Data-Center Loads as Coal Plant Emergency-Order Costs Rise",
+          "summary": "Michigan's Consumers Energy reported industrial-load growth (largely data centers) drove Q1 sales up while costs from federal emergency orders keeping coal units running climbed — a preview of the cost-allocation fight Pennsylvania co-ops will face if PJM emergency-orders MISO/PJM coal units this summer.",
+          "source": "Utility Dive",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://www.utilitydive.com/"
+        }
+      ]
+    },
     {
       "id": "national-politics",
       "label": "National Politics",
       "count": 4,
       "stories": [
         {
-          "headline": "Hill Faces 'Brutal' Week: FISA 702 Expires Thursday, DHS Funding Runs Dry April 30, Budget Resolution Due Wednesday",
-          "summary": "Speaker Mike Johnson is racing to pass a revised FISA Section 702 reauthorization, the Senate-passed budget DHS resolution, and a farm bill this week as DHS hits day 72 of shutdown and Sec. Markwayne Mullin warns pay stops April 30.",
+          "headline": "House GOP Week Unraveling Before Tuesday Lunch: FISA 702 Stuck in Rules, DHS Funding Cliff Thursday (Day 73), Budget Resolution Whip Count Soft",
+          "summary": "Speaker Mike Johnson is fighting on four fronts — Rules recessed Monday night without a path on FISA Section 702 (lapses Thursday), the Senate-passed DHS bill is being rewritten to restore ICE/Border Patrol funding before April 30 pay cliff, the budget resolution lacks votes, and the farm bill is hung up on pesticide labeling and E15.",
           "source": "Punchbowl AM",
           "time": "Today",
           "flagged": false,
-          "url": "https://punchbowl.news/archive/42726-am/"
+          "url": "https://punchbowl.news/archive/42826-am/"
         },
         {
-          "headline": "WHCD Gunman Cole Allen Faces Federal Court Today; Wiles to Review Secret Service Posture",
-          "summary": "Suspected White House Correspondents' Dinner shooter Cole Tomas Allen, 31, of Torrance, Calif., appears in federal court today on two gun charges; WH Chief of Staff Susie Wiles will meet Secret Service and DHS leadership this week to review presidential event protocols.",
-          "source": "Politico Playbook / Punchbowl",
-          "time": "Today",
-          "flagged": false,
-          "url": "https://www.politico.com/newsletters/playbook"
-        },
-        {
-          "headline": "King Charles III Arrives for State Visit; Joint-Session Address Tuesday",
-          "summary": "King Charles III and Queen Camilla begin a four-day U.S. state visit today with tea at the White House, with the king set to address a joint meeting of Congress on Tuesday — the first British monarch to do so since Queen Elizabeth II in 1991.",
+          "headline": "King Charles III Addresses Joint Meeting of Congress at 3 PM — First Royal Address Since Queen Elizabeth in 1991",
+          "summary": "King Charles will deliver the first royal address to Congress in 35 years today at 3 p.m., with aides previewing pointed references to NATO, AUKUS, Ukraine and the Royal Navy — a direct push back against Trump-Hegseth dismissals of UK security commitments; bilateral with Trump at 11:40 a.m., state dinner at 8:05 p.m.",
           "source": "Politico Playbook",
-          "time": "Today",
+          "time": "3 PM today",
           "flagged": false,
-          "url": "https://www.politico.com/newsletters/playbook"
+          "url": "https://www.politico.com/newsletters/playbook/2026/04/28/how-to-decode-the-kings-speech-00307123"
         },
         {
-          "headline": "Senate Banking Wednesday Vote on Warsh as Fed Chair; Powell's Final FOMC Presser Same Day",
-          "summary": "The Senate Banking Committee will vote Wednesday on Kevin Warsh's nomination to succeed Jerome Powell as Federal Reserve chair; Powell holds his final FOMC press conference at 2:30 p.m. Wednesday.",
-          "source": "Punchbowl AM",
-          "time": "This week",
+          "headline": "Trump Rejects Iran Strait of Hormuz Proposal; Energy Markets Bracing for Another Price Spike",
+          "summary": "Trump told top advisers he is not satisfied with Iran's latest Strait of Hormuz reopening offer (no path on nuclear program); WTI closed near $96/bbl Monday on the supply-risk premium, with energy advisers warning Truth Social posts can only quell concern so long.",
+          "source": "Politico Playbook / NYT",
+          "time": "Today",
           "flagged": false,
-          "url": "https://punchbowl.news/archive/42726-am/"
+          "url": "https://www.politico.com/newsletters/playbook/2026/04/28/how-to-decode-the-kings-speech-00307123"
+        },
+        {
+          "headline": "DeSantis Releases Florida Map Targeting 24R-4D Split; Special Session on Redistricting Begins Today",
+          "summary": "Florida Gov. Ron DeSantis released a proposed congressional map Monday cutting the Democratic delegation from 8 to 4 — Castor, Soto, Frost, Wasserman Schultz, Frankel, Wilson and Moskowitz are the most squeezed; Florida special session opens today with a possible House/Senate floor vote tomorrow, Democrats vow court fight.",
+          "source": "Punchbowl AM",
+          "time": "Today",
+          "flagged": false,
+          "url": "https://punchbowl.news/archive/42826-am/"
         }
       ]
     },
@@ -48,75 +87,36 @@
       "count": 4,
       "stories": [
         {
-          "headline": "Middlesex Township Residents Confront 'Shotgun Marriage' as Central PA's First Hyperscale Data Center Begins Site Work",
-          "summary": "Site work at central Pennsylvania's first hyperscale data center in Middlesex Township has neighbors complaining of trucks and blasting, the first concrete community-impact dispute as Pennsylvania's data center buildout moves from siting to construction.",
-          "source": "PennLive (via PoliticsPA)",
-          "time": "Today",
-          "flagged": true,
-          "url": "https://www.pennlive.com"
-        },
-        {
-          "headline": "Rep. Brian Fitzpatrick Endorses Shapiro for Reelection — and a 2028 Presidential Run",
-          "summary": "Bucks County Republican Rep. Brian Fitzpatrick told the Inquirer Gov. Josh Shapiro will win reelection and should run for president in 2028, a notable cross-party endorsement from a swing-district incumbent.",
-          "source": "Philadelphia Inquirer (via PoliticsPA)",
+          "headline": "Five Living Former PA Governors (Wolf, Corbett, Rendell, Schweiker, Ridge) Call on State Leaders to Make Shapiro's Security a Priority After WHCD Shooting",
+          "summary": "All five of Pennsylvania's living former governors issued a joint statement urging state leaders to prioritize Gov. Josh Shapiro's protection following the third assassination attempt on President Trump at Saturday's White House Correspondents' Dinner, calling political-violence prevention 'nonpartisan and a priority.'",
+          "source": "TribLive / PoliticsPA",
           "time": "Today",
           "flagged": false,
-          "url": "https://www.inquirer.com"
+          "url": "https://triblive.com/"
         },
         {
-          "headline": "PA Human Relations Commission Drops Below Quorum as Shapiro Holds Off on Appointments",
-          "summary": "The 70-year-old Pennsylvania Human Relations Commission has fallen from seven to five commissioners — below the six required for a quorum — and its executive director plans to leave in June, with the Shapiro administration declining to say when new appointments will come.",
-          "source": "PA Capital-Star (via PoliticsPA)",
-          "time": "Today",
+          "headline": "Fitzpatrick Sits With Punchbowl: Moderate GOP Survival, Shutdowns, Working With Shapiro and Fetterman",
+          "summary": "Rep. Brian Fitzpatrick (R-PA-01) gave Punchbowl a wide-ranging interview last week on being a moderate in today's GOP, the 73-day DHS shutdown dynamic, and his cross-party relationships with Gov. Josh Shapiro and Sen. John Fetterman — relevant for any PREA outreach to PA-01 or to the Shapiro orbit.",
+          "source": "PoliticsPA / Punchbowl",
+          "time": "This week",
           "flagged": false,
-          "url": "https://www.penncapital-star.com"
+          "url": "https://www.politicspa.com/"
         },
         {
-          "headline": "Republican State Leadership Committee Adds PA to 2026 Legislative Target List",
-          "summary": "The RSLC told Broad + Liberty it believes Republicans can flip the PA House and hold their state Senate majority in 2026 even with Shapiro atop the Democratic ticket — signaling outside money inbound for state legislative races.",
-          "source": "Broad + Liberty (via PoliticsPA)",
-          "time": "Today",
-          "flagged": false,
-          "url": "https://broadandliberty.com"
-        }
-      ]
-    },
-    {
-      "id": "energy-industry",
-      "label": "Energy Industry",
-      "count": 4,
-      "stories": [
-        {
-          "headline": "PJM Market Monitor Asks FERC to Reject Hull Street's 1.3 GW Gas Plant Buy from Rockland Capital",
-          "summary": "Monitoring Analytics urged FERC on Apr. 24 to reject Hull Street Energy's purchase of the 677-MW Lee County (Ill.) and 590-MW Tait (Ohio) gas plants from Rockland Capital, warning the new owner could redirect the plants from PJM's capacity market to data center loads and shift costs to other customers.",
-          "source": "Utility Dive",
+          "headline": "PA House Committee Advances Bipartisan Bills to Abolish Death Penalty",
+          "summary": "A Pennsylvania House committee on Monday passed a pair of bills to end capital punishment in the commonwealth with support from members of both parties — would resolve decades of de facto moratorium under successive governors with no executions carried out.",
+          "source": "PennLive / PoliticsPA",
           "time": "Yesterday",
-          "flagged": true,
-          "url": "https://www.utilitydive.com/news/pjm-market-monitor-hull-street-rockland-data-centers/818520/"
+          "flagged": false,
+          "url": "https://www.pennlive.com/"
         },
         {
-          "headline": "Interior Sec. Burgum Testifies Wednesday Before Senate Energy and Natural Resources",
-          "summary": "Interior Secretary Doug Burgum is scheduled to appear before Senate ENR at 9:30 a.m. Wednesday — likely to face questioning on public-lands leasing, Susquehanna/Talen-style colocation precedent, and DOI permitting timelines.",
-          "source": "Punchbowl AM",
-          "time": "Wednesday",
+          "headline": "16th State Senate Dem Primary Debate Tonight: Pinsley vs. Merkl-Gump in Lehigh Valley Open Seat",
+          "summary": "Lehigh Valley Public Media hosts the only Democratic primary debate tonight between Lehigh County Controller Mark Pinsley and Erica Merkl-Gump in the 16th State Senate District (open Lisa Boscola seat); winner faces a competitive general — a seat to watch on the Senate Consumer Protection / Energy committee makeup.",
+          "source": "LehighValleyNews / PoliticsPA",
+          "time": "Tonight",
           "flagged": false,
-          "url": "https://punchbowl.news/archive/42726-am/"
-        },
-        {
-          "headline": "EPA Administrator Zeldin Testifies Wednesday Before Senate Environment and Public Works",
-          "summary": "EPA Administrator Lee Zeldin will appear before Senate EPW at 2:30 p.m. Wednesday — set against this week's separate suit by cities arguing EPA failed to uphold the soot (PM2.5) standard.",
-          "source": "Punchbowl AM / Utility Dive",
-          "time": "Wednesday",
-          "flagged": false,
-          "url": "https://punchbowl.news/archive/42726-am/"
-        },
-        {
-          "headline": "House GOP Files Bill to Extend Renewables Tax Credits; NextEra Contracts 4 GW of New Generation in Q1",
-          "summary": "House Republicans introduced legislation to extend clean-energy tax credits — a notable break with the Trump-era IRA repeal push — as NextEra reported 4 GW of new generation contracted in Q1 and Cities sued EPA over the soot standard.",
-          "source": "Utility Dive",
-          "time": "Today",
-          "flagged": false,
-          "url": "https://www.utilitydive.com/news/utility-dive-newsletter-april-27-2026"
+          "url": "https://www.lehighvalleynews.com/"
         }
       ]
     },
@@ -126,41 +126,41 @@
       "count": 3,
       "stories": [
         {
-          "headline": "Steelers Wrap 2026 Draft: Allar in Round 3, Iheanachor Round 1, Bernard Round 2 — McCarthy's First Class Targets QB, OL, WR",
-          "summary": "Pittsburgh closed the 2026 NFL Draft with Penn State QB Drew Allar in Round 3, Arizona State OL Max Iheanachor at the top of Round 1, Alabama WR Germie Bernard in Round 2 (after a trade up with Indianapolis), and Notre Dame DT Gabriel Rubio in Round 6 — head coach Mike McCarthy's first class as Pittsburgh awaits Aaron Rodgers' decision.",
-          "source": "ESPN / Behind the Steel Curtain",
-          "time": "Yesterday",
+          "headline": "Penguins Stave Off Elimination 3-2 — Letang Game-Winner (Second Straight), Crosby Two Assists; Down 3-2, Game 6 Wednesday in Philly",
+          "summary": "Kris Letang scored the game-winner for the second straight game and Sidney Crosby added two assists as Pittsburgh beat the Flyers 3-2 in Game 5 to force a Game 6 — Soderblom and Dewar also scored, Bump and Sanheim for Philadelphia; series now 3-2 Flyers, Game 6 Wednesday 7:30 p.m. at Xfinity Mobile Arena.",
+          "source": "NHL.com / ESPN",
+          "time": "Last night",
           "flagged": false,
-          "url": "https://www.espn.com/nfl/draft2026/story/_/id/48452091/pittsburgh-steelers-nfl-draft-picks-2026-selection-analysis-depth-chart"
+          "url": "https://www.nhl.com/news/philadelphia-flyers-pittsburgh-penguins-game-5-recap-april-27-2026"
         },
         {
-          "headline": "Penguins Stay Alive 4-2 in Game 4 vs. Flyers — Crosby and Rakell Each Goal-and-Assist; Game 5 Wednesday in Philly",
-          "summary": "Sidney Crosby and Rickard Rakell each had a goal and an assist (Letang scored, Dewar added an empty-netter) as the Penguins beat the Flyers 4-2 in Game 4 of the East First Round to cut the series deficit to 3-1; Game 5 is Wednesday in Philadelphia.",
-          "source": "NHL.com",
+          "headline": "Pirates' Near-No-Hitter Broken Up in 7th, Then Cardinals Rally in 9th to Steal a 4-2 Win at PNC",
+          "summary": "Pittsburgh carried a perfect game into the 7th before Alec Burleson's infield single broke it up, then the Cardinals rallied for four runs in the 9th — Pedro Pagés HR, Jose Fermin bases-clearing double down the left-field line — to flip a 2-1 deficit into a 4-2 win and drop the Bucs to 16-14; series finale tonight vs. St. Louis.",
+          "source": "ESPN / Bucs Dugout",
+          "time": "Yesterday",
+          "flagged": false,
+          "url": "https://www.espn.com/mlb/matchup?gameId=401815111"
+        },
+        {
+          "headline": "Steelers Wrap 10-Pick 2026 Draft Class: Iheanachor (Round 1 OL), Bernard (Round 2 WR), Allar (Round 3 QB) Headline McCarthy's First Class",
+          "summary": "Pittsburgh's draft class is set: Arizona State OL Max Iheanachor in Round 1 (No. 21), Alabama WR Germie Bernard in Round 2 (after a trade up with Indianapolis), Penn State QB Drew Allar plus Georgia CB Daylen Everette and Iowa G Gennings Dunker in Round 3, Iowa WR Kaden Wetjen, Indiana FB Riley Nowakowski, Notre Dame DE Gabriel Rubio, Oklahoma S Robert Spears-Jennings, and Navy RB/WR Eli Heidenreich rounding out the class.",
+          "source": "Steelers.com / Sportsnet Pittsburgh",
           "time": "Saturday",
           "flagged": false,
-          "url": "https://www.nhl.com/news/pittsburgh-penguins-philadelphia-flyers-game-4-recap-april-25-2026"
-        },
-        {
-          "headline": "Pirates Blanked 5-0 in Milwaukee as Kyle Harrison K's 12 — Bucs Strike Out 18, Drop Series Finale",
-          "summary": "Kyle Harrison struck out 12 over six scoreless innings as Milwaukee beat Pittsburgh 5-0 to avoid the sweep; Carmen Mlodzinski (1-2) gave up all five runs in the fourth, and the Pirates (16-12) struck out 18 times before opening a series tonight at home vs. St. Louis.",
-          "source": "MLB.com / Altoona Mirror",
-          "time": "Yesterday",
-          "flagged": false,
-          "url": "https://www.mlb.com/gameday/pirates-vs-brewers/2026/04/26/823797/live"
+          "url": "https://www.espn.com/nfl/draft2026/story/_/id/48452091/pittsburgh-steelers-nfl-draft-picks-2026-selection-analysis-depth-chart"
         }
       ]
     }
   ],
   "market_data": {
-    "as_of": "Apr 24 close",
+    "as_of": "Apr 27 close",
     "rows": [
       { "market": "PJM West Hub (DA)", "price": "n/a", "change": "—" },
       { "market": "PJM AEP-Dayton (DA)", "price": "n/a", "change": "—" },
       { "market": "PJM Capacity 26/27", "price": "$329.17/MW-day", "change": "—" },
-      { "market": "Henry Hub (NYMEX)", "price": "$2.56/MMBtu", "change": "+1.6%" },
+      { "market": "Henry Hub (NYMEX)", "price": "$2.52/MMBtu", "change": "-1.6%" },
       { "market": "TETCO M3 (PA/NJ)", "price": "n/a", "change": "—" },
-      { "market": "WTI Crude (NYMEX)", "price": "$94.40/bbl", "change": "-0.3%" }
+      { "market": "WTI Crude (NYMEX)", "price": "$96.13/bbl", "change": "+1.8%" }
     ]
   }
 }
