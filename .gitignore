@@ -1,3 +1,5 @@
 design/
 serve.ps1
 .claude/
+.scrape-output/
+__pycache__/

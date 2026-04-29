@@ -1,0 +1,42 @@
+name: Refresh PA GA Guide data
+
+on:
+  schedule:
+    # Sunday 11:00 UTC = 7am EDT / 6am EST. Fixed UTC keeps the schedule
+    # predictable across the DST switchover.
+    - cron: '0 11 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install scraper dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape palegis.us
+        run: python scripts/scrape-palegis.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name 'pa-ga-guide-bot'
+          git config user.email 'pa-ga-guide-bot@users.noreply.github.com'
+          # Explicit paths only. rea-overlay.json is intentionally NOT staged
+          # so the hand-curated REA layer can never be clobbered by a refresh.
+          git add pa-ga-guide/data/legislators.json pa-ga-guide/data/bills.json
+          if git diff --staged --quiet; then
+            echo "No changes from palegis.us this week."
+          else
+            git commit -m "Refresh PA GA Guide data from palegis.us"
+            git push
+          fi
