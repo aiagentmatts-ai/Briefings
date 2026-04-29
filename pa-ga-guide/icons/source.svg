@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PA GA Guide app icon — Federal blue ground, Source Serif "PA", brass underline.
+     Rasterize via icons/render-icons.ps1. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e5491"/>
+      <stop offset="100%" stop-color="#1f3a68"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="60%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.25)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle-friendly fill (iOS clips rectangular icons to its rounded mask). -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#vignette)"/>
+
+  <!-- Wordmark -->
+  <text x="512" y="600"
+        text-anchor="middle"
+        font-family="'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif"
+        font-weight="600"
+        font-size="540"
+        letter-spacing="-12"
+        fill="#f6f2ea">PA</text>
+
+  <!-- Brass underline -->
+  <rect x="372" y="700" width="280" height="14" rx="3" fill="#a87c3d"/>
+
+  <!-- Subtle GA label below -->
+  <text x="512" y="820"
+        text-anchor="middle"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="600"
+        font-size="80"
+        letter-spacing="14"
+        fill="#a87c3d">GA · GUIDE</text>
+</svg>
