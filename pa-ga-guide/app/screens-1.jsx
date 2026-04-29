@@ -24,7 +24,7 @@ function TabBar({ active, go }) {
 function MemberRow({ m, onClick, showCmte }) {
   return (
     <div className="row" onClick={onClick}>
-      <PortraitAvatar id={m.id} size={48}/>
+      <PortraitAvatar id={m.id} photo={m.photo} size={48}/>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 2 }}>
           <div style={{ fontSize: 15, fontWeight: 600, letterSpacing: -0.2, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>
@@ -157,7 +157,7 @@ function ProfileScreen({ id, go }) {
         <div style={{ padding: '4px 16px 16px' }}>
           <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <div className="brief-photo">
-              <Portrait id={m.id} w={96} h={120}/>
+              <Portrait id={m.id} photo={m.photo} w={96} h={120}/>
             </div>
             <div style={{ flex: 1, minWidth: 0, paddingTop: 4 }}>
               <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--ink-3)', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 4 }}>

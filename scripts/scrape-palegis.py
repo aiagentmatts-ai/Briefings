@@ -123,6 +123,7 @@ class Member:
             "office": self.office,
             "phone": self.phone,
             "email": self.email,
+            "photo": f"https://www.palegis.us/resources/images/members/300/{self.palegis_id}.jpg",
         }
         return out
 

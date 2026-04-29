@@ -1,5 +1,7 @@
-// Stylized "official portrait" SVG — generated per-legislator.
-// Hash the id → consistent palette + features. No real photos.
+// Per-legislator portrait. Prefers the real palegis.us photo when provided
+// (via the `photo` URL prop, populated by the scraper). Falls back to a
+// stylized SVG so the layout never breaks while photos are loading or
+// missing.
 
 (function() {
   const PALETTES = [
@@ -12,7 +14,27 @@
   ];
   function hash(s) { let h = 0; for (let i=0;i<s.length;i++) h = (h*31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
 
-  function Portrait({ id, gender = 'auto', initials, w = 96, h = 120, square = true }) {
+  function Portrait({ id, photo, gender = 'auto', initials, w = 96, h = 120, square = true }) {
+    const [photoFailed, setPhotoFailed] = React.useState(false);
+    if (photo && !photoFailed) {
+      return (
+        <img
+          src={photo}
+          alt=""
+          width={w}
+          height={h}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          onError={() => setPhotoFailed(true)}
+          style={{
+            width: w, height: h,
+            borderRadius: square ? 4 : '50%',
+            objectFit: 'cover', objectPosition: 'center top',
+            display: 'block', background: '#3a4d6b',
+          }}
+        />
+      );
+    }
     const seed = hash(id);
     const p = PALETTES[seed % PALETTES.length];
     const fem = gender === 'f' || (gender === 'auto' && seed % 3 === 0);
@@ -82,12 +104,12 @@
   }
 
   // tiny avatar variant — round, just face
-  function PortraitAvatar({ id, size = 44 }) {
+  function PortraitAvatar({ id, photo, size = 44 }) {
     return (
       <div style={{ width: size, height: size, borderRadius: '50%', overflow: 'hidden', flexShrink: 0,
         background: '#3a4d6b', boxShadow: 'inset 0 0 0 0.5px rgba(0,0,0,0.1)' }}>
         <div style={{ width: size, height: size * 1.25, marginTop: -size * 0.05 }}>
-          <Portrait id={id} w={size} h={size * 1.25} square={true}/>
+          <Portrait id={id} photo={photo} w={size} h={size * 1.25} square={true}/>
         </div>
       </div>
     );
