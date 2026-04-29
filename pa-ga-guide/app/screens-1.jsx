@@ -4,6 +4,7 @@
 function TabBar({ active, go }) {
   const tabs = [
     { id: 'search',    label: 'Search',    icon: 'search' },
+    { id: 'tracked',   label: 'Tracked',   icon: 'bill' },
     { id: 'bookmarks', label: 'Bookmarks', icon: 'bookmark' },
     { id: 'committees',label: 'Committees',icon: 'cmt' },
     { id: 'settings',  label: 'Settings',  icon: 'gear' },
