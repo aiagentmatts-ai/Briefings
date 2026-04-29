@@ -1,6 +1,6 @@
 {
   "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py from www.palegis.us. Edit overlays in rea-overlay.json, not here.",
-  "lastSync": "2026-04-29T21:35:23Z",
+  "lastSync": "2026-04-29T23:02:03Z",
   "members": [
     {
       "id": "saval",
@@ -36,7 +36,8 @@
         "floor": 5
       },
       "phone": "(717) 787-5662",
-      "email": "saval@pasenate.com"
+      "email": "saval@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1921.jpg"
     },
     {
       "id": "tartaglione",
@@ -72,7 +73,8 @@
         "floor": 4
       },
       "phone": "(717) 787-1141",
-      "email": "tartaglione@pasenate.com"
+      "email": "tartaglione@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/277.jpg"
     },
     {
       "id": "street",
@@ -108,7 +110,8 @@
         "floor": 5
       },
       "phone": "(717) 787-6735",
-      "email": "street@pasenate.com"
+      "email": "street@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1767.jpg"
     },
     {
       "id": "haywood",
@@ -144,7 +147,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-1427",
-      "email": "senatorhaywood@pasenate.com"
+      "email": "senatorhaywood@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1689.jpg"
     },
     {
       "id": "picozzi",
@@ -188,7 +192,8 @@
         "floor": 1
       },
       "phone": "(717) 787-9608",
-      "email": "jpicozzi@pasen.gov"
+      "email": "jpicozzi@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/2036.jpg"
     },
     {
       "id": "farry",
@@ -232,7 +237,8 @@
         "floor": 3
       },
       "phone": "(717) 787-5072",
-      "email": "ffarry@pasen.gov"
+      "email": "ffarry@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1169.jpg"
     },
     {
       "id": "hughes",
@@ -263,7 +269,8 @@
         "floor": 5
       },
       "phone": "(717) 787-7112",
-      "email": "hughes@pasenate.com"
+      "email": "hughes@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/152.jpg"
     },
     {
       "id": "williams",
@@ -296,7 +303,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-5970",
-      "email": "williams@pasenate.com"
+      "email": "williams@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/153.jpg"
     },
     {
       "id": "kane",
@@ -330,7 +338,8 @@
         "floor": 4
       },
       "phone": "(717) 787-4712",
-      "email": "kane@pasenate.com"
+      "email": "kane@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1925.jpg"
     },
     {
       "id": "santarsiero",
@@ -366,7 +375,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7305",
-      "email": "senatorsantarsiero@pasenate.com"
+      "email": "senatorsantarsiero@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1179.jpg"
     },
     {
       "id": "schwank",
@@ -399,7 +409,8 @@
         "floor": 4
       },
       "phone": "(717) 787-8925",
-      "email": "senatorschwank@pasenate.com"
+      "email": "senatorschwank@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1234.jpg"
     },
     {
       "id": "collett",
@@ -435,7 +446,8 @@
         "floor": 4
       },
       "phone": "(717) 787-6599",
-      "email": "senatorcollett@pasenate.com"
+      "email": "senatorcollett@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1799.jpg"
     },
     {
       "id": "martin",
@@ -467,7 +479,8 @@
         "floor": 2
       },
       "phone": "(717) 787-6535",
-      "email": "smartin@pasen.gov"
+      "email": "smartin@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1763.jpg"
     },
     {
       "id": "miller",
@@ -504,7 +517,8 @@
         "floor": 3
       },
       "phone": "(717) 787-7105",
-      "email": "miller@pasenate.com"
+      "email": "miller@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2009.jpg"
     },
     {
       "id": "kim",
@@ -539,7 +553,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-6801",
-      "email": "pkim@pasenate.com"
+      "email": "pkim@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1636.jpg"
     },
     {
       "id": "coleman",
@@ -584,7 +599,8 @@
         "floor": 4
       },
       "phone": "(717) 787-1349",
-      "email": "jcoleman@pasen.gov"
+      "email": "jcoleman@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/2008.jpg"
     },
     {
       "id": "cappelletti",
@@ -618,7 +634,8 @@
         "floor": 1
       },
       "phone": "(717) 787-5544",
-      "email": "cappelletti@pasenate.com"
+      "email": "cappelletti@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1923.jpg"
     },
     {
       "id": "boscola",
@@ -655,7 +672,8 @@
         "floor": 4
       },
       "phone": "(717) 787-4236",
-      "email": "boscola@pasenate.com"
+      "email": "boscola@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/179.jpg"
     },
     {
       "id": "comitta",
@@ -691,7 +709,8 @@
         "floor": 4
       },
       "phone": "(717) 787-5709",
-      "email": "ccomitta@pasenate.com"
+      "email": "ccomitta@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1790.jpg"
     },
     {
       "id": "baker",
@@ -733,7 +752,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7428",
-      "email": "lbaker@pasen.gov"
+      "email": "lbaker@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1077.jpg"
     },
     {
       "id": "hutchinson",
@@ -776,7 +796,8 @@
         "floor": 3
       },
       "phone": "(717) 787-9684",
-      "email": "shutchinson@pasen.gov"
+      "email": "shutchinson@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1629.jpg"
     },
     {
       "id": "flynn",
@@ -813,7 +834,8 @@
         "floor": 5
       },
       "phone": "(717) 787-6481",
-      "email": "flynn@pasenate.com"
+      "email": "flynn@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1626.jpg"
     },
     {
       "id": "yaw",
@@ -858,7 +880,8 @@
         "floor": 3
       },
       "phone": "(717) 787-3280",
-      "email": "gyaw@pasen.gov"
+      "email": "gyaw@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1186.jpg"
     },
     {
       "id": "pennycuick",
@@ -902,7 +925,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-3110",
-      "email": "tpennycuick@pasen.gov"
+      "email": "tpennycuick@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1912.jpg"
     },
     {
       "id": "dush",
@@ -951,7 +975,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-7084",
-      "email": "cdush@pasen.gov"
+      "email": "cdush@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1687.jpg"
     },
     {
       "id": "kearney",
@@ -987,7 +1012,8 @@
         "floor": 4
       },
       "phone": "(717) 787-1350",
-      "email": "senatorkearney@pasenate.com"
+      "email": "senatorkearney@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1800.jpg"
     },
     {
       "id": "culver",
@@ -1035,7 +1061,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8928",
-      "email": "lculver@pasen.gov"
+      "email": "lculver@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1202.jpg"
     },
     {
       "id": "phillipshill",
@@ -1072,7 +1099,8 @@
         "floor": 3
       },
       "phone": "(717) 787-7085",
-      "email": "kphillipshill@pasen.gov"
+      "email": "kphillipshill@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1801.jpg"
     },
     {
       "id": "argall",
@@ -1114,7 +1142,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2637",
-      "email": "dargall@pasen.gov"
+      "email": "dargall@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/69.jpg"
     },
     {
       "id": "ward",
@@ -1159,7 +1188,8 @@
         "floor": 3
       },
       "phone": "(717) 787-5490",
-      "email": "jward@pasen.gov"
+      "email": "jward@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1683.jpg"
     },
     {
       "id": "keefer",
@@ -1204,7 +1234,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8524",
-      "email": "dkeefer@pasen.gov"
+      "email": "dkeefer@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1748.jpg"
     },
     {
       "id": "stefano",
@@ -1251,7 +1282,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7175",
-      "email": "pstefano@pasen.gov"
+      "email": "pstefano@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1697.jpg"
     },
     {
       "id": "mastriano",
@@ -1296,7 +1328,8 @@
         "floor": 1
       },
       "phone": "(717) 787-4651",
-      "email": "dmastriano@pasen.gov"
+      "email": "dmastriano@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1869.jpg"
     },
     {
       "id": "rothman",
@@ -1341,7 +1374,8 @@
         "floor": 1
       },
       "phone": "(717) 787-1377",
-      "email": "grothman@pasen.gov"
+      "email": "grothman@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1733.jpg"
     },
     {
       "id": "langerholc",
@@ -1384,7 +1418,8 @@
         "floor": 2
       },
       "phone": "(717) 787-5400",
-      "email": "wlangerholc@pasen.gov"
+      "email": "wlangerholc@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1764.jpg"
     },
     {
       "id": "malone",
@@ -1420,7 +1455,8 @@
         "floor": 1
       },
       "phone": "(717) 787-4420",
-      "email": "jmalone@pasenate.com"
+      "email": "jmalone@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2061.jpg"
     },
     {
       "id": "robinson",
@@ -1464,7 +1500,8 @@
         "floor": 1
       },
       "phone": "(717) 787-5839",
-      "email": "drobinson@pasen.gov"
+      "email": "drobinson@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1924.jpg"
     },
     {
       "id": "williams38",
@@ -1497,7 +1534,8 @@
         "floor": 3
       },
       "phone": "(717) 787-6538",
-      "email": "senatorlindseywilliams@pasenate.com"
+      "email": "senatorlindseywilliams@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1803.jpg"
     },
     {
       "id": "ward39",
@@ -1517,7 +1555,8 @@
         "floor": 2
       },
       "phone": "(717) 787-6063",
-      "email": "kward@pasen.gov"
+      "email": "kward@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1188.jpg"
     },
     {
       "id": "brown",
@@ -1563,7 +1602,8 @@
         "floor": 1
       },
       "phone": "(717) 787-6123",
-      "email": "rbrown@pasen.gov"
+      "email": "rbrown@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1200.jpg"
     },
     {
       "id": "pittman",
@@ -1594,7 +1634,8 @@
         "floor": 3
       },
       "phone": "(717) 787-8724",
-      "email": "jpittman@pasen.gov"
+      "email": "jpittman@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1870.jpg"
     },
     {
       "id": "fontana",
@@ -1627,7 +1668,8 @@
         "floor": 5
       },
       "phone": "(717) 787-5300",
-      "email": "fontana@pasenate.com"
+      "email": "fontana@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1041.jpg"
     },
     {
       "id": "costa",
@@ -1657,7 +1699,8 @@
         "floor": 5
       },
       "phone": "(717) 787-7683",
-      "email": "costa@pasenate.com"
+      "email": "costa@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/254.jpg"
     },
     {
       "id": "muth",
@@ -1695,7 +1738,8 @@
         "floor": 1
       },
       "phone": "(717) 787-1398",
-      "email": "senatormuth@pasenate.com"
+      "email": "senatormuth@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1802.jpg"
     },
     {
       "id": "pisciottano",
@@ -1728,7 +1772,8 @@
         "floor": 4
       },
       "phone": "(717) 787-5580",
-      "email": "pasenatornick@pasenate.com"
+      "email": "pasenatornick@pasenate.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1900.jpg"
     },
     {
       "id": "bartolotta",
@@ -1769,7 +1814,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-1463",
-      "email": "cbartolotta@pasen.gov"
+      "email": "cbartolotta@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1698.jpg"
     },
     {
       "id": "vogel",
@@ -1812,7 +1858,8 @@
         "floor": 2
       },
       "phone": "(717) 787-3076",
-      "email": "evogel@pasen.gov"
+      "email": "evogel@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1189.jpg"
     },
     {
       "id": "gebhard",
@@ -1857,7 +1904,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-5708",
-      "email": "cgebhard@pasen.gov"
+      "email": "cgebhard@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1928.jpg"
     },
     {
       "id": "laughlin",
@@ -1900,7 +1948,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-8927",
-      "email": "dlaughlin@pasen.gov"
+      "email": "dlaughlin@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1766.jpg"
     },
     {
       "id": "brooks",
@@ -1943,7 +1992,8 @@
         "floor": 1
       },
       "phone": "(717) 787-1322",
-      "email": "mbrooks@pasen.gov"
+      "email": "mbrooks@pasen.gov",
+      "photo": "https://www.palegis.us/resources/images/members/300/1087.jpg"
     },
     {
       "id": "harkins",
@@ -1971,7 +2021,8 @@
         "floor": 3
       },
       "phone": "(717) 787-7406",
-      "email": "pharkins@pahouse.net"
+      "email": "pharkins@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1081.jpg"
     },
     {
       "id": "merski",
@@ -2009,7 +2060,8 @@
         "floor": 2
       },
       "phone": "(717) 787-4358",
-      "email": "rmerski@pahouse.net"
+      "email": "rmerski@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1822.jpg"
     },
     {
       "id": "bizzarro",
@@ -2033,7 +2085,8 @@
         "floor": 1
       },
       "phone": "(717) 772-2297",
-      "email": "rbizzarro@pahouse.net"
+      "email": "rbizzarro@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1619.jpg"
     },
     {
       "id": "banta",
@@ -2069,7 +2122,8 @@
         "floor": 1
       },
       "phone": "(717) 783-9087",
-      "email": "jbanta@pahousegop.com"
+      "email": "jbanta@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1937.jpg"
     },
     {
       "id": "weaknecht",
@@ -2102,7 +2156,8 @@
         "floor": 4
       },
       "phone": "(717) 772-9940",
-      "email": "eweaknecht@pahousegop.com"
+      "email": "eweaknecht@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2021.jpg"
     },
     {
       "id": "roae",
@@ -2131,7 +2186,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2353",
-      "email": "broae@pahousegop.com"
+      "email": "broae@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1083.jpg"
     },
     {
       "id": "wentling",
@@ -2165,7 +2221,8 @@
         "floor": 1
       },
       "phone": "(717) 783-5008",
-      "email": "pwentling@pahousegop.com"
+      "email": "pwentling@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1709.jpg"
     },
     {
       "id": "bernstine",
@@ -2199,7 +2256,8 @@
         "floor": 2
       },
       "phone": "(717) 783-8322",
-      "email": "abernstine@pahousegop.com"
+      "email": "abernstine@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1742.jpg"
     },
     {
       "id": "brown9",
@@ -2235,7 +2293,8 @@
         "floor": 1
       },
       "phone": "(717) 783-2017",
-      "email": "mbrown@pahousegop.com"
+      "email": "mbrown@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1938.jpg"
     },
     {
       "id": "brown10",
@@ -2274,7 +2333,8 @@
         "floor": 2
       },
       "phone": "(717) 783-3822",
-      "email": "abrown@pahouse.net"
+      "email": "abrown@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1919.jpg"
     },
     {
       "id": "mustello",
@@ -2307,7 +2367,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7686",
-      "email": "mmustello@pahousegop.com"
+      "email": "mmustello@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1868.jpg"
     },
     {
       "id": "lawrence",
@@ -2339,7 +2400,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6117",
-      "email": "jlawrence@pahousegop.com"
+      "email": "jlawrence@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1215.jpg"
     },
     {
       "id": "kozak",
@@ -2377,7 +2439,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 260-6432",
-      "email": "rkozak@pahousegop.com"
+      "email": "rkozak@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2022.jpg"
     },
     {
       "id": "kail",
@@ -2411,7 +2474,8 @@
         "floor": 2
       },
       "phone": "(717) 260-6144",
-      "email": "jkail@pahousegop.com"
+      "email": "jkail@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1823.jpg"
     },
     {
       "id": "matzie",
@@ -2435,7 +2499,8 @@
         "floor": 1
       },
       "phone": "(717) 787-4444",
-      "email": "rmatzie@pahouse.net"
+      "email": "rmatzie@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1173.jpg"
     },
     {
       "id": "bonner",
@@ -2472,7 +2537,8 @@
         "floor": 3
       },
       "phone": "(717) 783-6438",
-      "email": "tbonner@pahousegop.com"
+      "email": "tbonner@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1877.jpg"
     },
     {
       "id": "tomlinson",
@@ -2505,7 +2571,8 @@
         "floor": 1
       },
       "phone": "(717) 783-7319",
-      "email": "ktomlinson@pahousegop.com"
+      "email": "ktomlinson@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1876.jpg"
     },
     {
       "id": "abney",
@@ -2544,7 +2611,8 @@
         "floor": 2
       },
       "phone": "(717) 783-3783",
-      "email": "aabney@pahouse.net"
+      "email": "aabney@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1933.jpg"
     },
     {
       "id": "kinkead",
@@ -2581,7 +2649,8 @@
         "floor": 1
       },
       "phone": "(717) 787-5470",
-      "email": "ekinkead@pahouse.net"
+      "email": "ekinkead@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1896.jpg"
     },
     {
       "id": "powell",
@@ -2621,7 +2690,8 @@
         "floor": 1
       },
       "phone": "(717) 783-9114",
-      "email": "lpowell@pahouse.net"
+      "email": "lpowell@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2016.jpg"
     },
     {
       "id": "tiburcio",
@@ -2654,7 +2724,8 @@
         "floor": 1
       },
       "phone": "(717) 705-6433",
-      "email": "atiburcio@pahouse.net"
+      "email": "atiburcio@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2062.jpg"
     },
     {
       "id": "frankel",
@@ -2682,7 +2753,8 @@
         "floor": 1
       },
       "phone": "(717) 705-1875",
-      "email": "dfrankel@pahouse.net"
+      "email": "dfrankel@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/84.jpg"
     },
     {
       "id": "mayes",
@@ -2718,7 +2790,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1017",
-      "email": "lmayes@pahouse.net"
+      "email": "lmayes@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1941.jpg"
     },
     {
       "id": "markosek",
@@ -2743,7 +2816,8 @@
         "floor": 3
       },
       "phone": "(717) 772-4511",
-      "email": "bmarkosek@pahouse.net"
+      "email": "bmarkosek@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1825.jpg"
     },
     {
       "id": "friel",
@@ -2779,7 +2853,8 @@
         "floor": 1
       },
       "phone": "(717) 772-1411",
-      "email": "pfriel@pahouse.net"
+      "email": "pfriel@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1942.jpg"
     },
     {
       "id": "deasy",
@@ -2804,7 +2879,8 @@
         "floor": 2
       },
       "phone": "(717) 772-8187",
-      "email": "ddeasy@pahouse.net"
+      "email": "ddeasy@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1166.jpg"
     },
     {
       "id": "shaffer",
@@ -2837,7 +2913,8 @@
         "floor": 4
       },
       "phone": "(717) 772-9943",
-      "email": "jshaffer@pahousegop.com"
+      "email": "jshaffer@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2023.jpg"
     },
     {
       "id": "brennan",
@@ -2875,7 +2952,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-2361",
-      "email": "tbrennan@pahouse.net"
+      "email": "tbrennan@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1943.jpg"
     },
     {
       "id": "venkat",
@@ -2914,7 +2992,8 @@
         "floor": 1
       },
       "phone": "(717) 772-2363",
-      "email": "avenkat@pahouse.net"
+      "email": "avenkat@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1944.jpg"
     },
     {
       "id": "warren",
@@ -2939,7 +3018,8 @@
         "floor": 1
       },
       "phone": "(717) 787-5475",
-      "email": "pwarren@pahouse.net"
+      "email": "pwarren@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1743.jpg"
     },
     {
       "id": "mcandrew",
@@ -2974,7 +3054,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-1011",
-      "email": "jmcandrew@pahouse.net"
+      "email": "jmcandrew@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2011.jpg"
     },
     {
       "id": "steele",
@@ -3014,7 +3095,8 @@
         "floor": 1
       },
       "phone": "(717) 705-7141",
-      "email": "msteele@pahouse.net"
+      "email": "msteele@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1945.jpg"
     },
     {
       "id": "salisbury",
@@ -3050,7 +3132,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1914",
-      "email": "asalisbury@pahouse.net"
+      "email": "asalisbury@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2012.jpg"
     },
     {
       "id": "goughnour",
@@ -3089,7 +3172,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1018",
-      "email": "dgoughnour@pahouse.net"
+      "email": "dgoughnour@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2060.jpg"
     },
     {
       "id": "benham",
@@ -3125,7 +3209,8 @@
         "floor": 2
       },
       "phone": "(717) 783-0411",
-      "email": "jbenham@pahouse.net"
+      "email": "jbenham@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1899.jpg"
     },
     {
       "id": "fee",
@@ -3149,7 +3234,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-5290",
-      "email": "mfee@pahousegop.com"
+      "email": "mfee@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1625.jpg"
     },
     {
       "id": "inglis",
@@ -3188,7 +3274,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8175",
-      "email": "jinglis@pahouse.net"
+      "email": "jinglis@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2024.jpg"
     },
     {
       "id": "kuzma",
@@ -3222,7 +3309,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6122",
-      "email": "akuzma@pahousegop.com"
+      "email": "akuzma@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1946.jpg"
     },
     {
       "id": "mihalek",
@@ -3256,7 +3344,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1522",
-      "email": "nmihalek@pahousegop.com"
+      "email": "nmihalek@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1830.jpg"
     },
     {
       "id": "miller41",
@@ -3280,7 +3369,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 705-7161",
-      "email": "bmiller@pahousegop.com"
+      "email": "bmiller@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1699.jpg"
     },
     {
       "id": "mazzocco",
@@ -3313,7 +3403,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1850",
-      "email": "jmazzocco@pahouse.net"
+      "email": "jmazzocco@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2063.jpg"
     },
     {
       "id": "greiner",
@@ -3340,7 +3431,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-6422",
-      "email": "kgreiner@pahousegop.com"
+      "email": "kgreiner@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1632.jpg"
     },
     {
       "id": "gaydos",
@@ -3376,7 +3468,8 @@
         "floor": 1
       },
       "phone": "(717) 787-6651",
-      "email": "vgaydos@pahousegop.com"
+      "email": "vgaydos@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1831.jpg"
     },
     {
       "id": "kulik",
@@ -3401,7 +3494,8 @@
         "floor": 1
       },
       "phone": "(717) 783-3780",
-      "email": "akulik@pahouse.net"
+      "email": "akulik@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1744.jpg"
     },
     {
       "id": "ortitay",
@@ -3426,7 +3520,8 @@
       ],
       "office": {},
       "phone": "(717) 787-1281",
-      "email": "jortitay@pahousegop.com"
+      "email": "jortitay@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1701.jpg"
     },
     {
       "id": "dorsie",
@@ -3459,7 +3554,8 @@
         "floor": 4
       },
       "phone": "(717) 705-7167",
-      "email": "jdorsie@pahousegop.com"
+      "email": "jdorsie@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1947.jpg"
     },
     {
       "id": "oneal",
@@ -3483,7 +3579,8 @@
         "floor": 4
       },
       "phone": "(717) 787-3315",
-      "email": "toneal@pahousegop.com"
+      "email": "toneal@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1797.jpg"
     },
     {
       "id": "smithwadeel",
@@ -3519,7 +3616,8 @@
         "floor": 1
       },
       "phone": "(717) 772-0752",
-      "email": "ismithwadeel@pahouse.net"
+      "email": "ismithwadeel@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1948.jpg"
     },
     {
       "id": "cook",
@@ -3549,7 +3647,8 @@
       ],
       "office": {},
       "phone": "(717) 783-8655",
-      "email": "bcook@pahousegop.com"
+      "email": "bcook@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1745.jpg"
     },
     {
       "id": "krupa",
@@ -3588,7 +3687,8 @@
         "floor": 4
       },
       "phone": "(717) 783-5173",
-      "email": "ckrupa@pahousegop.com"
+      "email": "ckrupa@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1949.jpg"
     },
     {
       "id": "warner",
@@ -3609,7 +3709,8 @@
       ],
       "office": {},
       "phone": "(717) 787-1540",
-      "email": "rwarner@pahousegop.com"
+      "email": "rwarner@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1708.jpg"
     },
     {
       "id": "malagari",
@@ -3642,7 +3743,8 @@
       ],
       "office": {},
       "phone": "(717) 783-8515",
-      "email": "smalagari@pahouse.net"
+      "email": "smalagari@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1832.jpg"
     },
     {
       "id": "scott",
@@ -3677,7 +3779,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-0749",
-      "email": "gscott@pahouse.net"
+      "email": "gscott@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1950.jpg"
     },
     {
       "id": "cooper",
@@ -3713,7 +3816,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8939",
-      "email": "jcooper@pahousegop.com"
+      "email": "jcooper@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1951.jpg"
     },
     {
       "id": "rasel",
@@ -3749,7 +3853,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6132",
-      "email": "brasel@pahousegop.com"
+      "email": "brasel@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2025.jpg"
     },
     {
       "id": "nelson",
@@ -3786,7 +3891,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6146",
-      "email": "enelson@pahousegop.com"
+      "email": "enelson@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1738.jpg"
     },
     {
       "id": "davanzo",
@@ -3818,7 +3924,8 @@
       ],
       "office": {},
       "phone": "(717) 783-3825",
-      "email": "edavanzo@pahousegop.com"
+      "email": "edavanzo@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1875.jpg"
     },
     {
       "id": "rossi",
@@ -3853,7 +3960,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-9311",
-      "email": "lrossi@pahousegop.com"
+      "email": "lrossi@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1927.jpg"
     },
     {
       "id": "major",
@@ -3890,7 +3998,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-5327",
-      "email": "amajor@pahousegop.com"
+      "email": "amajor@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1926.jpg"
     },
     {
       "id": "hanbidge",
@@ -3927,7 +4036,8 @@
         "floor": 1
       },
       "phone": "(717) 783-4102",
-      "email": "lhanbidge@pahouse.net"
+      "email": "lhanbidge@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1834.jpg"
     },
     {
       "id": "struzzi",
@@ -3955,7 +4065,8 @@
         "floor": 2
       },
       "phone": "(717) 705-7173",
-      "email": "jstruzzi@pahousegop.com"
+      "email": "jstruzzi@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1835.jpg"
     },
     {
       "id": "bashline",
@@ -3989,7 +4100,8 @@
         "floor": 4
       },
       "phone": "(717) 772-9908",
-      "email": "jbashline@pahousegop.com"
+      "email": "jbashline@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2026.jpg"
     },
     {
       "id": "james",
@@ -4017,7 +4129,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-8188",
-      "email": "rjames@pahousegop.com"
+      "email": "rjames@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1634.jpg"
     },
     {
       "id": "rapp",
@@ -4047,7 +4160,8 @@
         "floor": 3
       },
       "phone": "(717) 787-1367",
-      "email": "krapp@pahousegop.com"
+      "email": "krapp@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1028.jpg"
     },
     {
       "id": "smith",
@@ -4081,7 +4195,8 @@
         "floor": 1
       },
       "phone": "(717) 787-3845",
-      "email": "bsmith@pahousegop.com"
+      "email": "bsmith@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1902.jpg"
     },
     {
       "id": "causer",
@@ -4107,7 +4222,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-5075",
-      "email": "mcauser@pahousegop.com"
+      "email": "mcauser@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/982.jpg"
     },
     {
       "id": "owlett",
@@ -4135,7 +4251,8 @@
         "floor": 3
       },
       "phone": "(717) 772-5371",
-      "email": "cowlett@pahousegop.com"
+      "email": "cowlett@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1796.jpg"
     },
     {
       "id": "metzgar",
@@ -4164,7 +4281,8 @@
         "floor": 2
       },
       "phone": "(717) 783-8756",
-      "email": "cmetzgar@pahousegop.com"
+      "email": "cmetzgar@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1174.jpg"
     },
     {
       "id": "bradford",
@@ -4189,7 +4307,8 @@
         "floor": 1
       },
       "phone": "(717) 772-2572",
-      "email": "mbradford@pahouse.net"
+      "email": "mbradford@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1161.jpg"
     },
     {
       "id": "rigby",
@@ -4223,7 +4342,8 @@
         "floor": 4
       },
       "phone": "(717) 772-9924",
-      "email": "jrigby@pahousegop.com"
+      "email": "jrigby@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1836.jpg"
     },
     {
       "id": "burns",
@@ -4248,7 +4368,8 @@
         "floor": 3
       },
       "phone": "(717) 772-8056",
-      "email": "fburns@pahouse.net"
+      "email": "fburns@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1163.jpg"
     },
     {
       "id": "kephart",
@@ -4284,7 +4405,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-7099",
-      "email": "dkephart@pahousegop.com"
+      "email": "dkephart@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1952.jpg"
     },
     {
       "id": "williams74",
@@ -4308,7 +4430,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-4103",
-      "email": "dwilliams@pahouse.net"
+      "email": "dwilliams@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1837.jpg"
     },
     {
       "id": "armanini",
@@ -4342,7 +4465,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6142",
-      "email": "marmanini@pahousegop.com"
+      "email": "marmanini@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1903.jpg"
     },
     {
       "id": "borowicz",
@@ -4376,7 +4500,8 @@
         "floor": 1
       },
       "phone": "(717) 772-9925",
-      "email": "sborowicz@pahousegop.com"
+      "email": "sborowicz@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1838.jpg"
     },
     {
       "id": "conklin",
@@ -4401,7 +4526,8 @@
         "floor": 3
       },
       "phone": "(717) 787-9473",
-      "email": "sconklin@pahouse.net"
+      "email": "sconklin@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1096.jpg"
     },
     {
       "id": "topper",
@@ -4427,7 +4553,8 @@
         "floor": 4
       },
       "phone": "(717) 787-7076",
-      "email": "jtopper@pahousegop.com"
+      "email": "jtopper@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1681.jpg"
     },
     {
       "id": "verobish",
@@ -4460,7 +4587,8 @@
         "floor": 1
       },
       "phone": "(717) 787-6419",
-      "email": "averobish@pahousegop.com"
+      "email": "averobish@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2065.jpg"
     },
     {
       "id": "barger",
@@ -4497,7 +4625,8 @@
         "floor": 4
       },
       "phone": "(717) 787-9020",
-      "email": "sbarger@pahousegop.com"
+      "email": "sbarger@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2027.jpg"
     },
     {
       "id": "irvin",
@@ -4526,7 +4655,8 @@
         "floor": 2
       },
       "phone": "(717) 787-3335",
-      "email": "rirvin@pahousegop.com"
+      "email": "rirvin@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1691.jpg"
     },
     {
       "id": "takac",
@@ -4565,7 +4695,8 @@
         "floor": 1
       },
       "phone": "(717) 772-0750",
-      "email": "ptakac@pahouse.net"
+      "email": "ptakac@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1953.jpg"
     },
     {
       "id": "flick",
@@ -4599,7 +4730,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2885",
-      "email": "jflick@pahousegop.com"
+      "email": "jflick@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1954.jpg"
     },
     {
       "id": "hamm",
@@ -4636,7 +4768,8 @@
         "floor": 4
       },
       "phone": "(717) 787-5270",
-      "email": "jhamm@pahousegop.com"
+      "email": "jhamm@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1904.jpg"
     },
     {
       "id": "rowe",
@@ -4663,7 +4796,8 @@
         "floor": 4
       },
       "phone": "(717) 787-3443",
-      "email": "drowe@pahousegop.com"
+      "email": "drowe@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1871.jpg"
     },
     {
       "id": "stambaugh",
@@ -4698,7 +4832,8 @@
         "floor": 4
       },
       "phone": "(717) 783-1593",
-      "email": "pstambaugh@pahousegop.com"
+      "email": "pstambaugh@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1905.jpg"
     },
     {
       "id": "kutz",
@@ -4738,7 +4873,8 @@
         "floor": 1
       },
       "phone": "(717) 783-2063",
-      "email": "tkutz@pahousegop.com"
+      "email": "tkutz@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1955.jpg"
     },
     {
       "id": "delozier",
@@ -4762,7 +4898,8 @@
         "floor": 3
       },
       "phone": "(717) 783-5282",
-      "email": "sdelozier@pahousegop.com"
+      "email": "sdelozier@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1167.jpg"
     },
     {
       "id": "kauffman",
@@ -4793,7 +4930,8 @@
         "floor": 3
       },
       "phone": "(717) 705-2004",
-      "email": "rkauffman@pahousegop.com"
+      "email": "rkauffman@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1022.jpg"
     },
     {
       "id": "reichard",
@@ -4828,7 +4966,8 @@
       ],
       "office": {},
       "phone": "(717) 783-5218",
-      "email": "creichard@pahousegop.com"
+      "email": "creichard@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2028.jpg"
     },
     {
       "id": "moul",
@@ -4853,7 +4992,8 @@
         "floor": 4
       },
       "phone": "(717) 783-5217",
-      "email": "dmoul@pahousegop.com"
+      "email": "dmoul@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1101.jpg"
     },
     {
       "id": "anderson",
@@ -4886,7 +5026,8 @@
         "floor": 4
       },
       "phone": "(717) 783-8783",
-      "email": "manderson@pahousegop.com"
+      "email": "manderson@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2029.jpg"
     },
     {
       "id": "jones",
@@ -4919,7 +5060,8 @@
         "floor": 2
       },
       "phone": "(717) 783-8389",
-      "email": "mjones@pahousegop.com"
+      "email": "mjones@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1842.jpg"
     },
     {
       "id": "fink",
@@ -4952,7 +5094,8 @@
         "floor": 4
       },
       "phone": "(717) 783-6426",
-      "email": "wfink@pahousegop.com"
+      "email": "wfink@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1956.jpg"
     },
     {
       "id": "hillevans",
@@ -4977,7 +5120,8 @@
         "floor": 5
       },
       "phone": "(717) 787-7514",
-      "email": "chillevans@pahouse.net"
+      "email": "chillevans@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1749.jpg"
     },
     {
       "id": "rivera",
@@ -5013,7 +5157,8 @@
         "floor": 1
       },
       "phone": "(717) 787-3555",
-      "email": "nrivera@pahouse.net"
+      "email": "nrivera@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2030.jpg"
     },
     {
       "id": "mentzer",
@@ -5043,7 +5188,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-1776",
-      "email": "smentzer@pahousegop.com"
+      "email": "smentzer@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1642.jpg"
     },
     {
       "id": "jones98",
@@ -5077,7 +5223,8 @@
         "floor": 4
       },
       "phone": "(717) 783-2076",
-      "email": "tjones@pahousegop.com"
+      "email": "tjones@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1957.jpg"
     },
     {
       "id": "zimmerman",
@@ -5111,7 +5258,8 @@
         "floor": 4
       },
       "phone": "(717) 787-3531",
-      "email": "dzimmerman@pahousegop.com"
+      "email": "dzimmerman@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1711.jpg"
     },
     {
       "id": "cutler",
@@ -5138,7 +5286,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-6424",
-      "email": "bcutler@pahousegop.com"
+      "email": "bcutler@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1105.jpg"
     },
     {
       "id": "schlegel",
@@ -5171,7 +5320,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1815",
-      "email": "jschlegel@pahousegop.com"
+      "email": "jschlegel@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1958.jpg"
     },
     {
       "id": "diamond",
@@ -5199,7 +5349,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2686",
-      "email": "rdiamond@pahousegop.com"
+      "email": "rdiamond@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1686.jpg"
     },
     {
       "id": "davidson",
@@ -5238,7 +5389,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-9342",
-      "email": "ndavidson@pahouse.net"
+      "email": "ndavidson@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2031.jpg"
     },
     {
       "id": "madsen",
@@ -5273,7 +5425,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-2362",
-      "email": "dmadsen@pahouse.net"
+      "email": "dmadsen@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1959.jpg"
     },
     {
       "id": "fleming",
@@ -5311,7 +5464,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-0674",
-      "email": "jfleming@pahouse.net"
+      "email": "jfleming@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1960.jpg"
     },
     {
       "id": "mehaffie",
@@ -5347,7 +5501,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2684",
-      "email": "tmehaffie@pahousegop.com"
+      "email": "tmehaffie@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1751.jpg"
     },
     {
       "id": "stehr",
@@ -5378,7 +5533,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6134",
-      "email": "jstehr@pahousegop.com"
+      "email": "jstehr@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1961.jpg"
     },
     {
       "id": "stender",
@@ -5411,7 +5567,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-3485",
-      "email": "mstender@pahousegop.com"
+      "email": "mstender@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2014.jpg"
     },
     {
       "id": "leadbeter",
@@ -5444,7 +5601,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1102",
-      "email": "rleadbeter@pahousegop.com"
+      "email": "rleadbeter@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1962.jpg"
     },
     {
       "id": "pickett",
@@ -5480,7 +5638,8 @@
         "floor": 3
       },
       "phone": "(717) 783-8238",
-      "email": "tpickett@pahousegop.com"
+      "email": "tpickett@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/97.jpg"
     },
     {
       "id": "fritz",
@@ -5518,7 +5677,8 @@
         "floor": 4
       },
       "phone": "(717) 783-2910",
-      "email": "jfritz@pahousegop.com"
+      "email": "jfritz@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1752.jpg"
     },
     {
       "id": "mullins",
@@ -5558,7 +5718,8 @@
         "floor": 1
       },
       "phone": "(717) 783-5043",
-      "email": "kmullins@pahouse.net"
+      "email": "kmullins@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1844.jpg"
     },
     {
       "id": "donahue",
@@ -5597,7 +5758,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8981",
-      "email": "kdonahue@pahouse.net"
+      "email": "kdonahue@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1963.jpg"
     },
     {
       "id": "kosierowski",
@@ -5637,7 +5799,8 @@
         "floor": 5
       },
       "phone": "(717) 783-4874",
-      "email": "bkosierowski@pahouse.net"
+      "email": "bkosierowski@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1866.jpg"
     },
     {
       "id": "madden",
@@ -5662,7 +5825,8 @@
         "floor": 3
       },
       "phone": "(717) 787-5811",
-      "email": "mmadden@pahouse.net"
+      "email": "mmadden@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1753.jpg"
     },
     {
       "id": "watro",
@@ -5702,7 +5866,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6136",
-      "email": "dwatro@pahousegop.com"
+      "email": "dwatro@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1964.jpg"
     },
     {
       "id": "walsh",
@@ -5735,7 +5900,8 @@
         "floor": 4
       },
       "phone": "(717) 787-1117",
-      "email": "jwalsh@pahousegop.com"
+      "email": "jwalsh@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2032.jpg"
     },
     {
       "id": "haddock",
@@ -5775,7 +5941,8 @@
         "floor": 1
       },
       "phone": "(717) 787-3589",
-      "email": "jhaddock@pahouse.net"
+      "email": "jhaddock@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1966.jpg"
     },
     {
       "id": "ryncavage",
@@ -5810,7 +5977,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-2041",
-      "email": "aryncavage@pahousegop.com"
+      "email": "aryncavage@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1967.jpg"
     },
     {
       "id": "pugh",
@@ -5843,7 +6011,8 @@
         "floor": 4
       },
       "phone": "(717) 787-3798",
-      "email": "bpugh@pahousegop.com"
+      "email": "bpugh@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2033.jpg"
     },
     {
       "id": "pashinski",
@@ -5868,7 +6037,8 @@
         "floor": 2
       },
       "phone": "(717) 783-0686",
-      "email": "epashinski@pahouse.net"
+      "email": "epashinski@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1112.jpg"
     },
     {
       "id": "heffley",
@@ -5893,7 +6063,8 @@
         "floor": 2
       },
       "phone": "(717) 260-6139",
-      "email": "dheffley@pahousegop.com"
+      "email": "dheffley@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1211.jpg"
     },
     {
       "id": "twardzik",
@@ -5929,7 +6100,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8956",
-      "email": "ttwardzik@pahousegop.com"
+      "email": "ttwardzik@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1906.jpg"
     },
     {
       "id": "barton",
@@ -5961,7 +6133,8 @@
         "floor": 1
       },
       "phone": "(717) 787-9029",
-      "email": "jbarton@pahousegop.com"
+      "email": "jbarton@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1968.jpg"
     },
     {
       "id": "kerwin",
@@ -5994,7 +6167,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6148",
-      "email": "jkerwin@pahousegop.com"
+      "email": "jkerwin@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1907.jpg"
     },
     {
       "id": "rusnock",
@@ -6032,7 +6206,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-3290",
-      "email": "jrusnock@pahouse.net"
+      "email": "jrusnock@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2034.jpg"
     },
     {
       "id": "guzman",
@@ -6067,7 +6242,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-3525",
-      "email": "mguzman@pahouse.net"
+      "email": "mguzman@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1908.jpg"
     },
     {
       "id": "gillen",
@@ -6091,7 +6267,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-8550",
-      "email": "mgillen@pahousegop.com"
+      "email": "mgillen@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1209.jpg"
     },
     {
       "id": "cepedafreytiz",
@@ -6130,7 +6307,8 @@
         "floor": 1
       },
       "phone": "(717) 772-1858",
-      "email": "jcepedafreytiz@pahouse.net"
+      "email": "jcepedafreytiz@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1969.jpg"
     },
     {
       "id": "maloney",
@@ -6154,7 +6332,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 260-6161",
-      "email": "dmaloney@pahousegop.com"
+      "email": "dmaloney@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1226.jpg"
     },
     {
       "id": "mackenzie",
@@ -6189,7 +6368,8 @@
         "floor": 4
       },
       "phone": "(717) 783-1673",
-      "email": "mmackenzie@pahousegop.com"
+      "email": "mmackenzie@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1909.jpg"
     },
     {
       "id": "schlossberg",
@@ -6213,7 +6393,8 @@
         "floor": 1
       },
       "phone": "(717) 705-1869",
-      "email": "mschlossberg@pahouse.net"
+      "email": "mschlossberg@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1649.jpg"
     },
     {
       "id": "mcneill",
@@ -6237,7 +6418,8 @@
       ],
       "office": {},
       "phone": "(717) 772-9902",
-      "email": "jmcneill@pahouse.net"
+      "email": "jmcneill@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1793.jpg"
     },
     {
       "id": "schweyer",
@@ -6266,7 +6448,8 @@
         "floor": 1
       },
       "phone": "(717) 787-2909",
-      "email": "pschweyer@pahouse.net"
+      "email": "pschweyer@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1706.jpg"
     },
     {
       "id": "samuelson",
@@ -6291,7 +6474,8 @@
         "floor": 2
       },
       "phone": "(717) 705-1881",
-      "email": "ssamuelson@pahouse.net"
+      "email": "ssamuelson@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/80.jpg"
     },
     {
       "id": "freeman",
@@ -6316,7 +6500,8 @@
         "floor": 2
       },
       "phone": "(717) 783-3815",
-      "email": "rfreeman@pahouse.net"
+      "email": "rfreeman@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/136.jpg"
     },
     {
       "id": "emrick",
@@ -6341,7 +6526,8 @@
         "floor": 4
       },
       "phone": "(717) 260-6159",
-      "email": "jemrick@pahousegop.com"
+      "email": "jemrick@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1207.jpg"
     },
     {
       "id": "flood",
@@ -6377,7 +6563,8 @@
         "floor": 4
       },
       "phone": "(717) 783-8573",
-      "email": "aflood@pahousegop.com"
+      "email": "aflood@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1910.jpg"
     },
     {
       "id": "olsommer",
@@ -6414,7 +6601,8 @@
         "floor": 1
       },
       "phone": "(717) 783-2037",
-      "email": "jolsommer@pahousegop.com"
+      "email": "jolsommer@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2018.jpg"
     },
     {
       "id": "prokopiak",
@@ -6453,7 +6641,8 @@
         "floor": 1
       },
       "phone": "(717) 787-1292",
-      "email": "jprokopiak@pahouse.net"
+      "email": "jprokopiak@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2017.jpg"
     },
     {
       "id": "davis",
@@ -6477,7 +6666,8 @@
         "floor": 3
       },
       "phone": "(717) 783-4903",
-      "email": "tdavis@pahouse.net"
+      "email": "tdavis@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1204.jpg"
     },
     {
       "id": "hogan",
@@ -6511,7 +6701,8 @@
         "floor": 1
       },
       "phone": "(717) 260-6140",
-      "email": "jhogan@pahousegop.com"
+      "email": "jhogan@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1971.jpg"
     },
     {
       "id": "labs",
@@ -6544,7 +6735,8 @@
         "floor": 1
       },
       "phone": "(717) 787-8556",
-      "email": "slabs@pahousegop.com"
+      "email": "slabs@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1911.jpg"
     },
     {
       "id": "munroe",
@@ -6583,7 +6775,8 @@
         "floor": 1
       },
       "phone": "(717) 772-1983",
-      "email": "bmunroe@pahouse.net"
+      "email": "bmunroe@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1972.jpg"
     },
     {
       "id": "staats",
@@ -6608,7 +6801,8 @@
         "floor": 1
       },
       "phone": "(717) 783-3154",
-      "email": "cstaats@pahousegop.com"
+      "email": "cstaats@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1707.jpg"
     },
     {
       "id": "ciresi",
@@ -6633,7 +6827,8 @@
         "floor": 3
       },
       "phone": "(717) 783-4086",
-      "email": "jciresi@pahouse.net"
+      "email": "jciresi@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1847.jpg"
     },
     {
       "id": "scheuren",
@@ -6666,7 +6861,8 @@
         "floor": 1
       },
       "phone": "(717) 787-9501",
-      "email": "dscheuren@pahousegop.com"
+      "email": "dscheuren@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1973.jpg"
     },
     {
       "id": "daley",
@@ -6697,7 +6893,8 @@
         "floor": 2
       },
       "phone": "(717) 787-9475",
-      "email": "mdaley@pahouse.net"
+      "email": "mdaley@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1622.jpg"
     },
     {
       "id": "briggs",
@@ -6722,7 +6919,8 @@
         "floor": 3
       },
       "phone": "(717) 705-7011",
-      "email": "tbriggs@pahouse.net"
+      "email": "tbriggs@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1159.jpg"
     },
     {
       "id": "webster",
@@ -6758,7 +6956,8 @@
         "floor": 1
       },
       "phone": "(717) 787-0419",
-      "email": "jwebster@pahouse.net"
+      "email": "jwebster@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1848.jpg"
     },
     {
       "id": "cerrato",
@@ -6794,7 +6993,8 @@
         "floor": 1
       },
       "phone": "(717) 772-1999",
-      "email": "mcerrato@pahouse.net"
+      "email": "mcerrato@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1974.jpg"
     },
     {
       "id": "guenst",
@@ -6833,7 +7033,8 @@
         "floor": 1
       },
       "phone": "(717) 705-2044",
-      "email": "nguenst@pahouse.net"
+      "email": "nguenst@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1913.jpg"
     },
     {
       "id": "sanchez",
@@ -6875,7 +7076,8 @@
         "floor": 3
       },
       "phone": "(717) 783-7619",
-      "email": "bsanchez@pahouse.net"
+      "email": "bsanchez@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1849.jpg"
     },
     {
       "id": "nelson154",
@@ -6912,7 +7114,8 @@
         "floor": 3
       },
       "phone": "(717) 783-1079",
-      "email": "nnelson@pahouse.net"
+      "email": "nnelson@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1914.jpg"
     },
     {
       "id": "otten",
@@ -6950,7 +7153,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-5009",
-      "email": "dotten@pahouse.net"
+      "email": "dotten@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1850.jpg"
     },
     {
       "id": "pielli",
@@ -6989,7 +7193,8 @@
         "floor": 1
       },
       "phone": "(717) 705-2075",
-      "email": "cpielli@pahouse.net"
+      "email": "cpielli@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1975.jpg"
     },
     {
       "id": "shusterman",
@@ -7028,7 +7233,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7524",
-      "email": "mshusterman@pahouse.net"
+      "email": "mshusterman@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1851.jpg"
     },
     {
       "id": "sappey",
@@ -7064,7 +7270,8 @@
         "floor": 1
       },
       "phone": "(717) 772-9973",
-      "email": "csappey@pahouse.net"
+      "email": "csappey@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1852.jpg"
     },
     {
       "id": "kazeem",
@@ -7099,7 +7306,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-5881",
-      "email": "ckazeem@pahouse.net"
+      "email": "ckazeem@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1976.jpg"
     },
     {
       "id": "williams160",
@@ -7136,7 +7344,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-3038",
-      "email": "cwilliams@pahousegop.com"
+      "email": "cwilliams@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1916.jpg"
     },
     {
       "id": "krueger",
@@ -7160,7 +7369,8 @@
         "floor": 5
       },
       "phone": "(717) 705-2567",
-      "email": "lkrueger@pahouse.net"
+      "email": "lkrueger@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1735.jpg"
     },
     {
       "id": "delloso",
@@ -7185,7 +7395,8 @@
         "floor": 3
       },
       "phone": "(717) 783-6437",
-      "email": "ddelloso@pahouse.net"
+      "email": "ddelloso@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1853.jpg"
     },
     {
       "id": "boyd",
@@ -7224,7 +7435,8 @@
         "floor": 1
       },
       "phone": "(717) 783-8099",
-      "email": "hboyd@pahouse.net"
+      "email": "hboyd@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2015.jpg"
     },
     {
       "id": "curry",
@@ -7259,7 +7471,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-4907",
-      "email": "gcurry@pahouse.net"
+      "email": "gcurry@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1932.jpg"
     },
     {
       "id": "omara",
@@ -7292,7 +7505,8 @@
         "floor": 2
       },
       "phone": "(717) 783-4090",
-      "email": "jomara@pahouse.net"
+      "email": "jomara@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1855.jpg"
     },
     {
       "id": "vitali",
@@ -7316,7 +7530,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-7647",
-      "email": "gvitali@pahouse.net"
+      "email": "gvitali@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/210.jpg"
     },
     {
       "id": "howard",
@@ -7352,7 +7567,8 @@
         "floor": 1
       },
       "phone": "(717) 783-4088",
-      "email": "khoward@pahouse.net"
+      "email": "khoward@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1856.jpg"
     },
     {
       "id": "borowski",
@@ -7391,7 +7607,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-2005",
-      "email": "lborowski@pahouse.net"
+      "email": "lborowski@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1977.jpg"
     },
     {
       "id": "klunk",
@@ -7425,7 +7642,8 @@
         "floor": 1
       },
       "phone": "(717) 787-4790",
-      "email": "kklunk@pahousegop.com"
+      "email": "kklunk@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1694.jpg"
     },
     {
       "id": "white",
@@ -7449,7 +7667,8 @@
         "floor": 4
       },
       "phone": "(717) 787-6740",
-      "email": "mwhite@pahousegop.com"
+      "email": "mwhite@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1732.jpg"
     },
     {
       "id": "benninghoff",
@@ -7481,7 +7700,8 @@
         "floor": 2
       },
       "phone": "(717) 783-1918",
-      "email": "kbenninghoff@pahousegop.com"
+      "email": "kbenninghoff@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/215.jpg"
     },
     {
       "id": "dougherty",
@@ -7516,7 +7736,8 @@
       ],
       "office": {},
       "phone": "(717) 783-4944",
-      "email": "sdougherty@pahouse.net"
+      "email": "sdougherty@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2035.jpg"
     },
     {
       "id": "gallagher",
@@ -7548,7 +7769,8 @@
       ],
       "office": {},
       "phone": "(717) 787-4331",
-      "email": "pgallagher@pahouse.net"
+      "email": "pgallagher@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1978.jpg"
     },
     {
       "id": "neilson",
@@ -7573,7 +7795,8 @@
         "floor": 1
       },
       "phone": "(717) 772-4032",
-      "email": "eneilson@pahouse.net"
+      "email": "eneilson@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1615.jpg"
     },
     {
       "id": "isaacson",
@@ -7612,7 +7835,8 @@
         "floor": 3
       },
       "phone": "(717) 783-8098",
-      "email": "misaacson@pahouse.net"
+      "email": "misaacson@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1857.jpg"
     },
     {
       "id": "rader",
@@ -7637,7 +7861,8 @@
         "floor": 4
       },
       "phone": "(717) 787-7732",
-      "email": "jrader@pahousegop.com"
+      "email": "jrader@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1703.jpg"
     },
     {
       "id": "hohenstein",
@@ -7669,7 +7894,8 @@
       ],
       "office": {},
       "phone": "(717) 783-4087",
-      "email": "jhohenstein@pahouse.net"
+      "email": "jhohenstein@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1858.jpg"
     },
     {
       "id": "marcell",
@@ -7702,7 +7928,8 @@
         "floor": 1
       },
       "phone": "(717) 772-9926",
-      "email": "kmarcell@pahousegop.com"
+      "email": "kmarcell@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1979.jpg"
     },
     {
       "id": "dawkins",
@@ -7730,7 +7957,8 @@
         "floor": 1
       },
       "phone": "(717) 787-1354",
-      "email": "jdawkins@pahouse.net"
+      "email": "jdawkins@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1685.jpg"
     },
     {
       "id": "giral",
@@ -7766,7 +7994,8 @@
         "floor": 2
       },
       "phone": "(717) 787-1407",
-      "email": "jgiral@pahouse.net"
+      "email": "jgiral@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1980.jpg"
     },
     {
       "id": "kenyatta",
@@ -7802,7 +8031,8 @@
         "floor": 3
       },
       "phone": "(717) 787-9471",
-      "email": "mkenyatta@pahouse.net"
+      "email": "mkenyatta@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1860.jpg"
     },
     {
       "id": "waxman",
@@ -7838,7 +8068,8 @@
         "floor": 2
       },
       "phone": "(717) 783-4072",
-      "email": "bwaxman@pahouse.net"
+      "email": "bwaxman@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1981.jpg"
     },
     {
       "id": "mako",
@@ -7875,7 +8106,8 @@
         "floor": 4
       },
       "phone": "(717) 772-5398",
-      "email": "zmako@pahousegop.com"
+      "email": "zmako@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1758.jpg"
     },
     {
       "id": "fiedler",
@@ -7903,7 +8135,8 @@
         "floor": 3
       },
       "phone": "(717) 787-5774",
-      "email": "efiedler@pahouse.net"
+      "email": "efiedler@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1861.jpg"
     },
     {
       "id": "young",
@@ -7940,7 +8173,8 @@
         "floor": 1
       },
       "phone": "(717) 783-8634",
-      "email": "ryoung@pahouse.net"
+      "email": "ryoung@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1917.jpg"
     },
     {
       "id": "harris",
@@ -7968,7 +8202,8 @@
         "floor": 5
       },
       "phone": "(717) 783-1540",
-      "email": "jharris@pahouse.net"
+      "email": "jharris@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1633.jpg"
     },
     {
       "id": "day",
@@ -8002,7 +8237,8 @@
         "floor": 4
       },
       "phone": "(717) 787-1000",
-      "email": "gday@pahousegop.com"
+      "email": "gday@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1190.jpg"
     },
     {
       "id": "krajewski",
@@ -8038,7 +8274,8 @@
         "floor": 1
       },
       "phone": "(717) 783-1000",
-      "email": "rkrajewski@pahouse.net"
+      "email": "rkrajewski@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1918.jpg"
     },
     {
       "id": "probst",
@@ -8077,7 +8314,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 772-1421",
-      "email": "tprobst@pahouse.net"
+      "email": "tprobst@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1982.jpg"
     },
     {
       "id": "green",
@@ -8112,7 +8350,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 705-1876",
-      "email": "ggreen@pahouse.net"
+      "email": "ggreen@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1874.jpg"
     },
     {
       "id": "mcclinton",
@@ -8137,7 +8376,8 @@
         "floor": 1
       },
       "phone": "(717) 772-9850",
-      "email": "jmcclinton@pahouse.net"
+      "email": "jmcclinton@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1734.jpg"
     },
     {
       "id": "cephas",
@@ -8174,7 +8414,8 @@
         "floor": 3
       },
       "phone": "(717) 783-2192",
-      "email": "mcephas@pahouse.net"
+      "email": "mcephas@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1759.jpg"
     },
     {
       "id": "wallen",
@@ -8208,7 +8449,8 @@
         "floor": 1
       },
       "phone": "(717) 783-8875",
-      "email": "cwallen@pahousegop.com"
+      "email": "cwallen@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/2064.jpg"
     },
     {
       "id": "khan",
@@ -8244,7 +8486,8 @@
         "floor": 1
       },
       "phone": "(717) 783-4945",
-      "email": "tkhan@pahouse.net"
+      "email": "tkhan@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1983.jpg"
     },
     {
       "id": "harris195",
@@ -8282,7 +8525,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-3480",
-      "email": "kharris@pahouse.net"
+      "email": "kharris@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2020.jpg"
     },
     {
       "id": "burgos",
@@ -8307,7 +8551,8 @@
         "floor": 1
       },
       "phone": "(717) 772-2004",
-      "email": "dburgos@pahouse.net"
+      "email": "dburgos@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1863.jpg"
     },
     {
       "id": "parker",
@@ -8346,7 +8591,8 @@
         "floor": 1
       },
       "phone": "(717) 787-7727",
-      "email": "dparker@pahouse.net"
+      "email": "dparker@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1920.jpg"
     },
     {
       "id": "gleim",
@@ -8379,7 +8625,8 @@
         "floor": 4
       },
       "phone": "(717) 772-2280",
-      "email": "bgleim@pahousegop.com"
+      "email": "bgleim@pahousegop.com",
+      "photo": "https://www.palegis.us/resources/images/members/300/1864.jpg"
     },
     {
       "id": "rabb",
@@ -8412,7 +8659,8 @@
         "floor": 3
       },
       "phone": "(717) 783-2178",
-      "email": "crabb@pahouse.net"
+      "email": "crabb@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1760.jpg"
     },
     {
       "id": "carroll",
@@ -8450,7 +8698,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 787-3181",
-      "email": "acarroll@pahouse.net"
+      "email": "acarroll@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/2019.jpg"
     },
     {
       "id": "solomon",
@@ -8475,7 +8724,8 @@
         "floor": 3
       },
       "phone": "(717) 787-4117",
-      "email": "jsolomon@pahouse.net"
+      "email": "jsolomon@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1761.jpg"
     },
     {
       "id": "bellmon",
@@ -8513,7 +8763,8 @@
         "building": "East Wing"
       },
       "phone": "(717) 783-4111",
-      "email": "abellmon@pahouse.net"
+      "email": "abellmon@pahouse.net",
+      "photo": "https://www.palegis.us/resources/images/members/300/1984.jpg"
     }
   ]
 }
