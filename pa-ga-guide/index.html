@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PA GA Guide</title>
+  <link rel="stylesheet" href="app/style.css"/>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #2a2620; font-family: -apple-system, system-ui, sans-serif; overflow: hidden; }
+    body { display: flex; align-items: center; justify-content: center; box-sizing: border-box; }
+    .stage { display: flex; align-items: center; justify-content: center; transform-origin: center center; }
+    .credit { position: fixed; bottom: 14px; left: 0; right: 0; text-align: center; font-size: 11px; color: rgba(255,255,255,0.4); pointer-events: none; }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="app/data.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <div class="credit">PA GA Guide · prototype · data updates monthly from palegis.us</div>
+
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="app/Portrait.jsx"></script>
+  <script type="text/babel" src="app/atoms.jsx"></script>
+  <script type="text/babel" src="app/screens-1.jsx"></script>
+  <script type="text/babel" src="app/screens-2.jsx"></script>
+
+  <script type="text/babel">
+    function App() {
+      // fit device into viewport
+      const stageRef = React.useRef(null);
+      React.useEffect(() => {
+        const fit = () => {
+          const el = stageRef.current; if (!el) return;
+          const pad = 40;
+          const sx = (window.innerWidth - pad) / 402;
+          const sy = (window.innerHeight - pad) / 874;
+          const s = Math.min(1, sx, sy);
+          el.style.transform = `scale(${s})`;
+        };
+        fit();
+        window.addEventListener('resize', fit);
+        return () => window.removeEventListener('resize', fit);
+      }, []);
+
+      // simple stack-based router
+      const [stack, setStack] = React.useState([{ screen: 'search' }]);
+      const [tab, setTab] = React.useState('search');
+
+      const go = (screen, params = {}) => {
+        if (screen === 'back') {
+          setStack(s => s.length > 1 ? s.slice(0, -1) : s);
+          return;
+        }
+        // tab switches reset the stack to a tab root
+        if (['search','bookmarks','committees','settings'].includes(screen)) {
+          setTab(screen);
+          setStack([{ screen, ...params }]);
+        } else {
+          setStack(s => [...s, { screen, ...params }]);
+        }
+      };
+
+      const current = stack[stack.length - 1];
+
+      const renderScreen = () => {
+        switch (current.screen) {
+          case 'search':     return <SearchScreen go={go}/>;
+          case 'bookmarks':  return <BookmarksScreen go={go}/>;
+          case 'committees': return <CommitteesScreen go={go}/>;
+          case 'settings':   return <SettingsScreen go={go}/>;
+          case 'profile':    return <ProfileScreen id={current.id} go={go}/>;
+          case 'bills':      return <BillsScreen id={current.id} go={go}/>;
+          case 'committee':  return <CommitteeScreen name={current.name} go={go}/>;
+          default:           return <SearchScreen go={go}/>;
+        }
+      };
+
+      // hide tabbar on detail screens
+      const showTab = ['search','bookmarks','committees','settings'].includes(current.screen);
+
+      return (
+        <div className="stage" ref={stageRef}>
+          <IOSDevice>
+            <div className="app" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+              <div style={{ height: 50 }}/>{/* status bar spacer */}
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
+                {renderScreen()}
+              </div>
+              {showTab && <TabBar active={tab} go={go}/>}
+            </div>
+          </IOSDevice>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e47fec0c7d5b4b30851b3e2ea4a35607"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
