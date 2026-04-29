@@ -6,7 +6,7 @@
    offline once it has been opened with a connection at least once.
 */
 
-const CACHE = 'pa-ga-guide-v1';
+const CACHE = 'pa-ga-guide-v2';
 
 const PRECACHE = [
   './',
@@ -19,6 +19,9 @@ const PRECACHE = [
   './app/atoms.jsx',
   './app/screens-1.jsx',
   './app/screens-2.jsx',
+  './data/legislators.json',
+  './data/bills.json',
+  './data/rea-overlay.json',
   './vendor/react.production.min.js',
   './vendor/react-dom.production.min.js',
   './icons/icon-180.png',
@@ -42,15 +45,33 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Cache-first for everything within scope; fall back to network and populate cache.
-// Cross-origin GETs (Babel CDN if used, Google Fonts) get the same treatment.
+// Strategy:
+// - /data/*.json → network-first, fall back to cache (weekly refreshes flow through;
+//   offline still works from the last good copy).
+// - Everything else within scope → cache-first, populate on miss. Includes the
+//   vendored React/Babel and cross-origin Google Fonts.
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  const isData = url.pathname.includes('/pa-ga-guide/data/') && url.pathname.endsWith('.json');
+
+  if (isData) {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE).then((cache) => cache.put(event.request, clone));
+        }
+        return response;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
       return fetch(event.request).then((response) => {
-        // Only cache successful, basic/cors responses (skip opaque to avoid bloat).
         if (response && response.status === 200 && (response.type === 'basic' || response.type === 'cors')) {
           const clone = response.clone();
           caches.open(CACHE).then((cache) => cache.put(event.request, clone));
