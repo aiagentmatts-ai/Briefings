@@ -892,6 +892,71 @@ def collect_committees(palegis_to_id: dict[str, str]) -> list[dict]:
     return [c.to_json() for c in committees]
 
 
+_BILL_NUM_RE = re.compile(r"^\s*(SB|HB|SR|HR|SCR|HCR)\s*0*(\d+)\s*$", re.I)
+
+
+def bill_number_to_slug(num: str) -> tuple[str, str] | None:
+    """'SB 992' -> ('sb992', 'SB 992'). None if unparseable."""
+    m = _BILL_NUM_RE.match(num)
+    if not m:
+        return None
+    return f"{m.group(1).lower()}{m.group(2)}", f"{m.group(1).upper()} {int(m.group(2))}"
+
+
+def collect_tracked_bills(overlay_path: Path, members: list[Member]) -> list[dict]:
+    """Build a flat list of bills explicitly tracked via rea-overlay.json's reaBills.
+
+    Reads the overlay (never writes it), fetches each bill's detail page from
+    palegis, and attaches the prime sponsor's canonical_id + display name so
+    the front-end can cross-link to the legislator profile. Bills the overlay
+    lists but palegis doesn't know about (made-up prototype seeds, expired
+    session numbers) are skipped silently.
+    """
+    if not overlay_path.exists():
+        print(f"  ! overlay not found at {overlay_path}; skipping tracked bills", file=sys.stderr)
+        return []
+    try:
+        overlay = json.loads(overlay_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"  ! could not read overlay: {e}", file=sys.stderr)
+        return []
+    nums = list(overlay.get("reaBills") or [])
+    if not nums:
+        return []
+
+    palegis_to_member = {m.palegis_id: m for m in members}
+    out: list[dict] = []
+    for raw in nums:
+        parsed_num = bill_number_to_slug(raw)
+        if not parsed_num:
+            continue
+        slug, canonical_num = parsed_num
+        url = f"{BASE}/legislation/bills/{SESSION_YEAR}/{slug}"
+        try:
+            html = fetch(url)
+        except requests.RequestException as e:
+            print(f"  ! tracked bill fetch failed for {raw}: {e}", file=sys.stderr)
+            continue
+        parsed = parse_bill_detail(html)
+        if not parsed.get("num"):
+            # Page returned 200 but didn't look like a bill page — skip.
+            continue
+        sponsor = palegis_to_member.get(parsed.get("primeSponsorId") or "")
+        out.append({
+            "num": parsed["num"],
+            "title": parsed["title"],
+            "status": parsed["status"],
+            "statusKind": derive_status_kind(parsed["status"]),
+            "topic": derive_topic(parsed["title"]),
+            "lastAction": parsed["lastAction"],
+            "primeSponsorId": sponsor.canonical_id if sponsor else "",
+            "primeSponsorName": sponsor.name if sponsor else "",
+            "primeSponsorChamber": sponsor.chamber if sponsor else "",
+        })
+    print(f"Tracked bills: {len(out)}/{len(nums)} resolved on palegis", file=sys.stderr)
+    return out
+
+
 def collect_bills(members: list[Member]) -> dict[str, list[dict]]:
     bills_by_sponsor: dict[str, list[dict]] = {}
     bill_cache: dict[str, dict] = {}
@@ -932,7 +997,13 @@ def collect_bills(members: list[Member]) -> dict[str, list[dict]]:
     return bills_by_sponsor
 
 
-def write_outputs(out_dir: Path, members: list[Member], bills_by_sponsor: dict, committees: list[dict]) -> None:
+def write_outputs(
+    out_dir: Path,
+    members: list[Member],
+    bills_by_sponsor: dict,
+    committees: list[dict],
+    tracked_bills: list[dict],
+) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     legislators = {
@@ -941,9 +1012,10 @@ def write_outputs(out_dir: Path, members: list[Member], bills_by_sponsor: dict, 
         "members": [m.to_json() for m in members],
     }
     bills = {
-        "_comment": "Objective bills + committee data. Populated by scripts/scrape-palegis.py from www.palegis.us. The 'rea' flag is NOT set here — it is derived at load time from rea-overlay.json's 'reaBills' list.",
+        "_comment": "Objective bills + committee data. Populated by scripts/scrape-palegis.py from www.palegis.us. The 'rea' flag is NOT set here — it is derived at load time from rea-overlay.json's 'reaBills' list. trackedBills is the resolved detail for every bill in rea-overlay.json's reaBills (independent of who prime-sponsored it).",
         "billsBySponsor": bills_by_sponsor,
         "committees": committees,
+        "trackedBills": tracked_bills,
     }
 
     legislators_path = out_dir / "legislators.json"
@@ -977,8 +1049,11 @@ def main(argv: Iterable[str] | None = None) -> int:
     enrich_all_bios(members)
     committees = collect_committees(palegis_to_id)
     bills_by_sponsor = collect_bills(members)
+    # Tracked bills come from the hand-curated overlay. We READ it; never write.
+    overlay_path = REPO_ROOT / "pa-ga-guide" / "data" / "rea-overlay.json"
+    tracked_bills = collect_tracked_bills(overlay_path, members)
 
-    write_outputs(out_dir, members, bills_by_sponsor, committees)
+    write_outputs(out_dir, members, bills_by_sponsor, committees, tracked_bills)
     return 0
 
 

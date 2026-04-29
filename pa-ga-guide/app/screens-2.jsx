@@ -1,5 +1,106 @@
 // PA GA Guide — Bills list, Committee detail, Bookmarks, Settings.
 
+// ── SCREEN: Tracked Bills ────────────────────────────────────────
+// Shows every bill listed in rea-overlay.json's reaBills, resolved by the
+// scraper into trackedBills. This is the authoritative REA tracking view —
+// independent of the per-member prime-sponsor cap on billsBySponsor.
+function TrackedScreen({ go }) {
+  const all = window.TRACKED_BILLS || [];
+  const [chamber, setChamber] = React.useState('all');  // all | S | H
+  const [statusKind, setStatusKind] = React.useState('all'); // all | go | wait | stop
+
+  const filtered = all.filter(b => {
+    if (chamber !== 'all' && b.primeSponsorChamber !== chamber) return false;
+    if (statusKind !== 'all' && b.statusKind !== statusKind) return false;
+    return true;
+  });
+
+  // Sort: most recently active first, then by chamber, then number.
+  const sorted = [...filtered].sort((a, b) => {
+    const order = { go: 0, wait: 1, stop: 2 };
+    if (order[a.statusKind] !== order[b.statusKind]) {
+      return (order[a.statusKind] ?? 9) - (order[b.statusKind] ?? 9);
+    }
+    return a.num.localeCompare(b.num, undefined, { numeric: true });
+  });
+
+  return (
+    <>
+      <div style={{ padding: '8px 16px 4px' }}>
+        <div className="serif" style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5, marginBottom: 4 }}>Tracked Bills</div>
+        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>
+          {all.length} bills tracked · {all.filter(b => b.statusKind === 'go').length} moving · {all.filter(b => b.statusKind === 'stop').length} stalled
+        </div>
+      </div>
+      <div style={{ padding: '0 16px 8px' }}>
+        <div style={{ display: 'flex', gap: 6, overflowX: 'auto', paddingBottom: 6 }}>
+          {[['all','All chambers'],['S','Senate'],['H','House']].map(([id,l]) =>
+            <div key={id} className={'chip' + (chamber === id ? ' active' : '')} onClick={() => setChamber(id)}>{l}</div>
+          )}
+          <div style={{ width: 1, background: 'var(--line)', margin: '6px 4px', flexShrink: 0 }}/>
+          {[['all','All status'],['go','Moving'],['wait','Pending'],['stop','Stalled']].map(([id,l]) =>
+            <div key={id} className={'chip' + (statusKind === id ? ' active' : '')} onClick={() => setStatusKind(id)}>{l}</div>
+          )}
+        </div>
+      </div>
+      <div className="scroll">
+        <div className="section-head">
+          <span className="label">{sorted.length} bill{sorted.length === 1 ? '' : 's'}</span>
+        </div>
+        <div className="card" style={{ margin: '0 16px' }}>
+          {sorted.map((b, i) => (
+            <TrackedBillRow
+              key={b.num + '-' + i}
+              b={b}
+              onSponsor={b.primeSponsorId ? () => go('profile', { id: b.primeSponsorId }) : null}
+            />
+          ))}
+          {sorted.length === 0 && (
+            <div style={{ padding: '32px 16px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
+              No bills match these filters
+            </div>
+          )}
+        </div>
+        <div className="tab-padding"/>
+      </div>
+    </>
+  );
+}
+
+function TrackedBillRow({ b, onSponsor }) {
+  const stopProp = (e) => { e.stopPropagation(); e.preventDefault(); };
+  return (
+    <a href={palegisUrl(b.num)} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div className="bill rea">
+        <div className="head">
+          <span className="num">{b.num}</span>
+          <span className="tag coop" style={{ height: 16, fontSize: 10, padding: '0 6px' }}>REA</span>
+          <div style={{ flex: 1 }}/>
+          <Icon name="ext" size={13} color="var(--ink-4)"/>
+        </div>
+        <div className="summary">{b.title || '(no synopsis on palegis)'}</div>
+        <div className={'status ' + statusClass(b.statusKind)} style={{ marginBottom: b.primeSponsorName ? 4 : 0 }}>
+          <span className="dot"/>
+          <span>{b.status || '—'}</span>
+          {b.lastAction && <>
+            <span style={{ color: 'var(--ink-4)' }}>·</span>
+            <span>{b.lastAction}</span>
+          </>}
+        </div>
+        {b.primeSponsorName && (
+          <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>
+            Prime:{' '}
+            <span
+              onClick={onSponsor ? (e) => { stopProp(e); onSponsor(); } : undefined}
+              style={{ color: onSponsor ? 'var(--fed-blue)' : 'var(--ink-3)', cursor: onSponsor ? 'pointer' : 'default', fontWeight: onSponsor ? 500 : 400 }}
+            >{b.primeSponsorName}</span>
+          </div>
+        )}
+      </div>
+    </a>
+  );
+}
+
 function BillsScreen({ id, go }) {
   const m = LEGISLATORS.find(x => x.id === id);
   const all = (BILLS_BY_SPONSOR[id] || []);

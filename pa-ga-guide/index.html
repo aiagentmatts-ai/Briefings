@@ -98,7 +98,7 @@
           setStack(s => s.length > 1 ? s.slice(0, -1) : s);
           return;
         }
-        if (['search','bookmarks','committees','settings'].includes(screen)) {
+        if (['search','tracked','bookmarks','committees','settings'].includes(screen)) {
           setTab(screen);
           setStack([{ screen, ...params }]);
         } else {
@@ -111,6 +111,7 @@
       const renderScreen = () => {
         switch (current.screen) {
           case 'search':     return <SearchScreen go={go}/>;
+          case 'tracked':    return <TrackedScreen go={go}/>;
           case 'bookmarks':  return <BookmarksScreen go={go}/>;
           case 'committees': return <CommitteesScreen go={go}/>;
           case 'settings':   return <SettingsScreen go={go}/>;
@@ -121,7 +122,7 @@
         }
       };
 
-      const showTab = ['search','bookmarks','committees','settings'].includes(current.screen);
+      const showTab = ['search','tracked','bookmarks','committees','settings'].includes(current.screen);
 
       const inner = (
         <div className="app" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>

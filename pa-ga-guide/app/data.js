@@ -41,5 +41,8 @@ window.dataReady = (async () => {
   window.BILLS_BY_SPONSOR = billsBySponsor;
 
   window.COMMITTEES = bills.committees || [];
+  // Bills explicitly tracked via rea-overlay.json's reaBills; resolved by the
+  // scraper into full detail. Tag each as REA-relevant by definition.
+  window.TRACKED_BILLS = (bills.trackedBills || []).map(b => ({ ...b, rea: true }));
   window.LAST_SYNC  = legs.lastSync;
 })();
