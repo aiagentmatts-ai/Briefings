@@ -17,7 +17,10 @@
 
   <link rel="stylesheet" href="app/style.css"/>
   <style>
-    html, body { margin: 0; padding: 0; height: 100%; background: #2a2620; font-family: -apple-system, system-ui, sans-serif; overflow: hidden; }
+    /* 100dvh follows the dynamic iOS viewport (URL bar in/out, safe areas)
+       — pure 100% on html/body produced an unscrollable inner column on
+       installed iOS PWAs. */
+    html, body { margin: 0; padding: 0; height: 100vh; height: 100dvh; background: #2a2620; font-family: -apple-system, system-ui, sans-serif; overflow: hidden; }
     body { display: flex; align-items: center; justify-content: center; box-sizing: border-box; }
     .stage { display: flex; align-items: center; justify-content: center; transform-origin: center center; }
     .credit { position: fixed; bottom: 14px; left: 0; right: 0; text-align: center; font-size: 11px; color: rgba(255,255,255,0.4); pointer-events: none; }
@@ -31,7 +34,8 @@
     }
     .standalone-root {
       width: 100%;
-      height: 100%;
+      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       background: var(--paper, #f6f2ea);

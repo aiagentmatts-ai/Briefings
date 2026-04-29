@@ -269,14 +269,17 @@
 /* scrollable area inside phone */
 .scroll {
   flex: 1;
+  min-height: 0;       /* allow flex child to shrink so overflow takes effect */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;  /* don't bubble to body / iOS rubber-band */
+  touch-action: pan-y;
 }
 .scroll::-webkit-scrollbar { display: none; }
 .scroll { scrollbar-width: none; }
 
-/* keyboard hint padding so tabbar doesn't overlap */
-.tab-padding { height: 92px; }
+/* keyboard hint padding so tabbar doesn't overlap; extra to clear iOS home indicator */
+.tab-padding { height: calc(92px + env(safe-area-inset-bottom, 0px)); }
 
 /* CO-OP banner */
 .coop-banner {
