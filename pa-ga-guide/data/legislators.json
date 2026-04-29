@@ -1,0 +1,218 @@
+{
+  "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py (Phase 2). Currently a hand-curated bootstrap matching the prototype seed data.",
+  "lastSync": "2026-04-01T03:00:00Z",
+  "members": [
+    {
+      "id": "yaw",
+      "chamber": "S",
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23,
+      "initials": "GY",
+      "counties": ["Bradford", "Lycoming", "Sullivan", "Susquehanna", "Union"],
+      "role": "Majority Caucus Secretary",
+      "committees": [
+        { "name": "Environmental Resources & Energy", "role": "CHAIR" },
+        { "name": "Banking & Insurance" },
+        { "name": "Education" },
+        { "name": "Judiciary" }
+      ],
+      "office": { "room": "362", "building": "Main Capitol", "wing": "East Wing", "floor": 3 },
+      "phone": "(717) 787-3280",
+      "email": "gyaw@pasen.gov"
+    },
+    {
+      "id": "phillipshill",
+      "chamber": "S",
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28,
+      "initials": "KP",
+      "counties": ["York"],
+      "role": "Majority Whip",
+      "committees": [
+        { "name": "Communications & Technology", "role": "CHAIR" },
+        { "name": "Appropriations" },
+        { "name": "Finance" }
+      ],
+      "office": { "room": "362", "building": "Main Capitol", "wing": "East Wing", "floor": 3 },
+      "phone": "(717) 787-6538",
+      "email": "kphillipshill@pasen.gov"
+    },
+    {
+      "id": "hutchinson",
+      "chamber": "S",
+      "name": "Scott Hutchinson",
+      "party": "R",
+      "district": 21,
+      "initials": "SH",
+      "counties": ["Butler", "Forest", "Venango", "Warren"],
+      "role": "Majority Caucus Chair",
+      "committees": [
+        { "name": "Finance", "role": "CHAIR" },
+        { "name": "Banking" },
+        { "name": "Game & Fisheries" }
+      ],
+      "office": { "room": "286", "building": "Main Capitol", "wing": "East Wing", "floor": 2 },
+      "phone": "(717) 787-9684",
+      "email": "shutchinson@pasen.gov"
+    },
+    {
+      "id": "boscola",
+      "chamber": "S",
+      "name": "Lisa M. Boscola",
+      "party": "D",
+      "district": 18,
+      "initials": "LB",
+      "counties": ["Lehigh", "Northampton", "Monroe"],
+      "role": "Democratic Caucus Secretary",
+      "committees": [
+        { "name": "State Government", "role": "MIN. CHAIR" },
+        { "name": "Appropriations" },
+        { "name": "Education" }
+      ],
+      "office": { "room": "535", "building": "Main Capitol", "wing": "East Wing", "floor": 5 },
+      "phone": "(717) 787-4236",
+      "email": "lboscola@pasenate.com"
+    },
+    {
+      "id": "costa",
+      "chamber": "S",
+      "name": "Jay Costa",
+      "party": "D",
+      "district": 43,
+      "initials": "JC",
+      "counties": ["Allegheny"],
+      "role": "Democratic Floor Leader",
+      "committees": [
+        { "name": "Rules & Executive Nominations" },
+        { "name": "Appropriations" },
+        { "name": "Finance" }
+      ],
+      "office": { "room": "535", "building": "Main Capitol", "wing": "East Wing", "floor": 5 },
+      "phone": "(717) 787-7683",
+      "email": "jcosta@pasenate.com"
+    },
+    {
+      "id": "argall",
+      "chamber": "S",
+      "name": "David G. Argall",
+      "party": "R",
+      "district": 29,
+      "initials": "DA",
+      "counties": ["Schuylkill", "Carbon"],
+      "role": "",
+      "committees": [
+        { "name": "State Government", "role": "CHAIR" },
+        { "name": "Education" }
+      ],
+      "office": { "room": "171", "building": "Main Capitol", "wing": "North Office", "floor": 1 },
+      "phone": "(717) 787-2637",
+      "email": "dargall@pasen.gov"
+    },
+    {
+      "id": "bartolotta",
+      "chamber": "S",
+      "name": "Camera Bartolotta",
+      "party": "R",
+      "district": 46,
+      "initials": "CB",
+      "counties": ["Beaver", "Greene", "Washington"],
+      "role": "",
+      "committees": [
+        { "name": "Labor & Industry", "role": "CHAIR" },
+        { "name": "Banking" }
+      ],
+      "office": { "room": "286", "building": "Main Capitol", "wing": "East Wing", "floor": 2 },
+      "phone": "(717) 787-1463",
+      "email": "cbartolotta@pasen.gov"
+    },
+    {
+      "id": "causer",
+      "chamber": "H",
+      "name": "Martin T. Causer",
+      "party": "R",
+      "district": 67,
+      "initials": "MC",
+      "counties": ["Cameron", "McKean", "Potter"],
+      "role": "Republican Whip",
+      "committees": [
+        { "name": "Agriculture & Rural Affairs", "role": "MIN. CHAIR" },
+        { "name": "Game & Fisheries" },
+        { "name": "Consumer Affairs" }
+      ],
+      "office": { "room": "413", "building": "Main Capitol", "wing": "East Wing", "floor": 4 },
+      "phone": "(717) 772-9908",
+      "email": "mcauser@pahousegop.com"
+    },
+    {
+      "id": "nelson",
+      "chamber": "H",
+      "name": "Eric R. Nelson",
+      "party": "R",
+      "district": 57,
+      "initials": "EN",
+      "counties": ["Westmoreland"],
+      "role": "",
+      "committees": [
+        { "name": "Consumer Affairs" },
+        { "name": "Insurance" },
+        { "name": "Liquor Control" }
+      ],
+      "office": { "room": "423", "building": "Irvis Office Bldg", "wing": "", "floor": 4 },
+      "phone": "(717) 260-6144",
+      "email": "enelson@pahousegop.com"
+    },
+    {
+      "id": "kim",
+      "chamber": "H",
+      "name": "Patty Kim",
+      "party": "D",
+      "district": 103,
+      "initials": "PK",
+      "counties": ["Dauphin"],
+      "role": "",
+      "committees": [
+        { "name": "Children & Youth" },
+        { "name": "Tourism & Recreational Development" }
+      ],
+      "office": { "room": "108", "building": "Irvis Office Bldg", "wing": "", "floor": 1 },
+      "phone": "(717) 783-1610",
+      "email": "pkim@pahouse.net"
+    },
+    {
+      "id": "struzzi",
+      "chamber": "H",
+      "name": "James Struzzi",
+      "party": "R",
+      "district": 62,
+      "initials": "JS",
+      "counties": ["Indiana"],
+      "role": "",
+      "committees": [
+        { "name": "Consumer Affairs", "role": "MIN. CHAIR" },
+        { "name": "Transportation" }
+      ],
+      "office": { "room": "422", "building": "Irvis Office Bldg", "wing": "", "floor": 4 },
+      "phone": "(717) 705-1923",
+      "email": "jstruzzi@pahousegop.com"
+    },
+    {
+      "id": "matzie",
+      "chamber": "H",
+      "name": "Robert F. Matzie",
+      "party": "D",
+      "district": 16,
+      "initials": "RM",
+      "counties": ["Allegheny", "Beaver"],
+      "role": "Consumer Affairs Cmte CHAIR",
+      "committees": [
+        { "name": "Consumer Affairs", "role": "CHAIR" },
+        { "name": "Liquor Control" }
+      ],
+      "office": { "room": "38B", "building": "East Wing", "wing": "", "floor": "EB" },
+      "phone": "(717) 787-4444",
+      "email": "rmatzie@pahouse.net"
+    }
+  ]
+}

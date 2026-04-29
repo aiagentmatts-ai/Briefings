@@ -1,0 +1,92 @@
+{
+  "_comment": "Objective bills + committee data. Populated by scripts/scrape-palegis.py (Phase 2). Currently a hand-curated bootstrap matching the prototype seed data. The 'rea' flag is NOT set here — it is derived at load time from rea-overlay.json's 'reaBills' list.",
+  "billsBySponsor": {
+    "yaw": [
+      { "num": "SB 832", "title": "Net-metering caps update for distributed generation", "role": "PRIME", "status": "Reported out of cmte", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 18" },
+      { "num": "SB 401", "title": "Forestry tax stability for sustainably-managed timberland", "role": "PRIME", "status": "In Finance Cmte", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 22" },
+      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" },
+      { "num": "SB 119", "title": "Rural emergency communications grants", "role": "CO-SPONSOR", "status": "Passed Senate 47-3", "statusKind": "go", "topic": "Telecom", "lastAction": "Mar 28" },
+      { "num": "SB 88",  "title": "Cooperative governance modernization", "role": "PRIME", "status": "In Banking Cmte", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 14" },
+      { "num": "SR 12",  "title": "Recognizing Pennsylvania electric cooperatives", "role": "PRIME", "status": "Adopted", "statusKind": "go", "topic": "Energy", "lastAction": "Mar 03" },
+      { "num": "SB 712", "title": "Watershed restoration grants", "role": "PRIME", "status": "In Env. Resources", "statusKind": "wait", "topic": "Energy", "lastAction": "Apr 02" }
+    ],
+    "causer": [
+      { "num": "HB 1024", "title": "Rural broadband co-op grants (PA Rural Broadband Act)", "role": "PRIME", "status": "In Consumer Affairs", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 22" },
+      { "num": "HB 873",  "title": "Right-of-way clearance standards for utilities", "role": "CO-SPONSOR", "status": "Passed House 168-32", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 15" },
+      { "num": "HB 412",  "title": "Net-metering update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
+      { "num": "HB 388",  "title": "Agricultural tax credit expansion", "role": "PRIME", "status": "First consideration", "statusKind": "wait", "topic": "Ag", "lastAction": "Mar 28" },
+      { "num": "HR 88",   "title": "Resolution honoring PA electric cooperatives", "role": "PRIME", "status": "Adopted", "statusKind": "go", "topic": "Energy", "lastAction": "Mar 03" },
+      { "num": "HB 251",  "title": "Vegetation management standards for distribution lines", "role": "CO-SPONSOR", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
+      { "num": "HB 567",  "title": "Game lands access for rural landowners", "role": "PRIME", "status": "In Game & Fisheries", "statusKind": "wait", "topic": "Ag", "lastAction": "Feb 12" }
+    ],
+    "phillipshill": [
+      { "num": "SB 624", "title": "Statewide broadband mapping authority", "role": "PRIME", "status": "In Communications", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 18" },
+      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "PRIME", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" },
+      { "num": "SB 412", "title": "Tax-credit transparency reporting", "role": "CO-SPONSOR", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 22" }
+    ],
+    "hutchinson": [
+      { "num": "SB 92",  "title": "Property-tax relief for senior homeowners", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 11" },
+      { "num": "SB 832", "title": "Net-metering caps update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of cmte", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 18" }
+    ],
+    "boscola": [
+      { "num": "SB 198", "title": "Open meetings transparency reform", "role": "PRIME", "status": "In State Govt", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 02" },
+      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" }
+    ],
+    "costa": [
+      { "num": "SB 322", "title": "Energy assistance program funding", "role": "PRIME", "status": "In Appropriations", "statusKind": "wait", "topic": "Energy", "lastAction": "Apr 15" },
+      { "num": "SB 88",  "title": "Cooperative governance modernization", "role": "CO-SPONSOR", "status": "In Banking", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 14" }
+    ],
+    "argall": [
+      { "num": "SB 156", "title": "School property tax elimination", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 14" }
+    ],
+    "bartolotta": [
+      { "num": "SB 444", "title": "Workforce apprenticeship grants", "role": "PRIME", "status": "Passed Senate", "statusKind": "go", "topic": "Tax", "lastAction": "Apr 01" },
+      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" }
+    ],
+    "nelson": [
+      { "num": "HB 412", "title": "Net-metering update for distributed generation", "role": "PRIME", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
+      { "num": "HB 251", "title": "Vegetation management standards for distribution lines", "role": "PRIME", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
+      { "num": "HB 1024", "title": "Rural broadband co-op grants", "role": "CO-SPONSOR", "status": "In Consumer Affairs", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 22" }
+    ],
+    "kim": [
+      { "num": "HB 802", "title": "Workforce housing tax credit", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 04" }
+    ],
+    "struzzi": [
+      { "num": "HB 251", "title": "Vegetation management standards for distribution lines", "role": "CO-SPONSOR", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
+      { "num": "HB 444", "title": "Truck weight limits on rural roads", "role": "PRIME", "status": "In Transportation", "statusKind": "wait", "topic": "Ag", "lastAction": "Mar 11" }
+    ],
+    "matzie": [
+      { "num": "HB 412", "title": "Net-metering update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
+      { "num": "HB 873", "title": "Right-of-way clearance standards for utilities", "role": "PRIME", "status": "Passed House", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 15" }
+    ]
+  },
+  "committees": [
+    { "id": "sen-envres",    "chamber": "S", "name": "Environmental Resources & Energy",            "chair": "yaw",          "minChair": "boscola",    "members": ["yaw","hutchinson","costa","boscola","argall","bartolotta"], "activeBills": ["SB 832","SB 712","SB 88","SB 451"] },
+    { "id": "sen-comms",     "chamber": "S", "name": "Communications & Technology",                 "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","yaw","boscola","costa","argall"],            "activeBills": ["SB 624","SB 277","SB 119"] },
+    { "id": "sen-conscom",   "chamber": "S", "name": "Consumer Protection & Professional Licensure","chair": "bartolotta",   "minChair": "boscola",    "members": ["bartolotta","phillipshill","boscola","hutchinson"],         "activeBills": ["SB 504","SB 318"] },
+    { "id": "sen-agrural",   "chamber": "S", "name": "Agriculture & Rural Affairs",                 "chair": "argall",       "minChair": "costa",      "members": ["argall","yaw","hutchinson","bartolotta","costa"],           "activeBills": ["SB 220","SB 145","SB 622"] },
+    { "id": "sen-finance",   "chamber": "S", "name": "Finance",                                     "chair": "hutchinson",   "minChair": "costa",      "members": ["hutchinson","phillipshill","costa","argall"],               "activeBills": ["SB 401","SB 99"] },
+    { "id": "sen-banking",   "chamber": "S", "name": "Banking & Insurance",                         "chair": "bartolotta",   "minChair": "boscola",    "members": ["yaw","hutchinson","bartolotta","boscola"],                  "activeBills": ["SB 712","SB 555"] },
+    { "id": "sen-localgov",  "chamber": "S", "name": "Local Government",                            "chair": "argall",       "minChair": "costa",      "members": ["argall","phillipshill","costa","boscola"],                  "activeBills": ["SB 333","SB 287"] },
+    { "id": "sen-laborind",  "chamber": "S", "name": "Labor & Industry",                            "chair": "bartolotta",   "minChair": "costa",      "members": ["bartolotta","hutchinson","costa"],                          "activeBills": ["SB 612","SB 188"] },
+    { "id": "sen-stategov",  "chamber": "S", "name": "State Government",                            "chair": "argall",       "minChair": "boscola",    "members": ["argall","boscola","phillipshill"],                          "activeBills": ["SB 102","SB 448"] },
+    { "id": "sen-transport", "chamber": "S", "name": "Transportation",                              "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","hutchinson","costa","bartolotta"],           "activeBills": ["SB 211","SB 76"] },
+    { "id": "sen-approps",   "chamber": "S", "name": "Appropriations",                              "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","costa","boscola","hutchinson","argall"],     "activeBills": ["SB 1","SB 1100","SB 1101"] },
+    { "id": "sen-rules",     "chamber": "S", "name": "Rules & Executive Nominations",               "chair": "costa",        "minChair": null,         "members": ["costa","phillipshill","hutchinson","boscola"],              "activeBills": [] },
+
+    { "id": "hse-consumer",  "chamber": "H", "name": "Consumer Protection, Technology & Utilities", "chair": "matzie",       "minChair": "struzzi",    "members": ["matzie","struzzi","nelson","causer","kim"],                 "activeBills": ["HB 1024","HB 412","HB 251","HB 873"] },
+    { "id": "hse-agrural",   "chamber": "H", "name": "Agriculture & Rural Affairs",                 "chair": "kim",          "minChair": "causer",     "members": ["causer","struzzi","nelson","kim","matzie"],                 "activeBills": ["HB 388","HB 567","HB 1188"] },
+    { "id": "hse-envres",    "chamber": "H", "name": "Environmental Resources & Energy",            "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","struzzi","kim"],                 "activeBills": ["HB 902","HB 410","HB 117"] },
+    { "id": "hse-commerce",  "chamber": "H", "name": "Commerce",                                    "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","struzzi","kim"],                          "activeBills": ["HB 644","HB 219"] },
+    { "id": "hse-insurance", "chamber": "H", "name": "Insurance",                                   "chair": "kim",          "minChair": "nelson",     "members": ["nelson","kim","struzzi"],                                   "activeBills": ["HB 712","HB 305"] },
+    { "id": "hse-finance",   "chamber": "H", "name": "Finance",                                     "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","kim"],                           "activeBills": ["HB 1101","HB 88"] },
+    { "id": "hse-localgov",  "chamber": "H", "name": "Local Government",                            "chair": "kim",          "minChair": "struzzi",    "members": ["kim","struzzi","causer","nelson"],                          "activeBills": ["HB 412","HB 1077"] },
+    { "id": "hse-laborind",  "chamber": "H", "name": "Labor & Industry",                            "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","kim"],                                    "activeBills": ["HB 533","HB 211"] },
+    { "id": "hse-transport", "chamber": "H", "name": "Transportation",                              "chair": "struzzi",      "minChair": "matzie",     "members": ["struzzi","causer","matzie","kim"],                          "activeBills": ["HB 660","HB 144","HB 821"] },
+    { "id": "hse-stategov",  "chamber": "H", "name": "State Government",                            "chair": "kim",          "minChair": "causer",     "members": ["kim","matzie","causer","nelson"],                           "activeBills": ["HB 100","HB 1422"] },
+    { "id": "hse-judiciary", "chamber": "H", "name": "Judiciary",                                   "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","kim"],                                    "activeBills": ["HB 1014","HB 290"] },
+    { "id": "hse-veterans",  "chamber": "H", "name": "Veterans Affairs & Emergency Preparedness",   "chair": "causer",       "minChair": "kim",        "members": ["causer","struzzi","kim"],                                   "activeBills": ["HB 477","HB 902"] },
+    { "id": "hse-approps",   "chamber": "H", "name": "Appropriations",                              "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","kim","struzzi"],                 "activeBills": ["HB 1","HB 1500","HB 1501"] },
+    { "id": "hse-gameFish",  "chamber": "H", "name": "Game & Fisheries",                            "chair": "causer",       "minChair": "matzie",     "members": ["causer","struzzi","nelson"],                                "activeBills": ["HB 622","HB 318"] }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "_comment": "REA editorial layer — hand-edited and committed by you. Survives every weekly data refresh from palegis.us. Three keys: (1) coopTerritory: which legislators have co-ops in their district, with a short detail string shown on the profile banner; (2) starred: legislators that appear in Bookmarks > Starred; (3) reaBills: bill numbers (matching the format in bills.json) that should be highlighted as REA-relevant. Add or remove freely; the prototype merges these in at load time.",
+
+  "coopTerritory": {
+    "yaw":        { "detail": "4 co-ops · Tri-County, Sullivan County, Claverack, Wellsboro" },
+    "hutchinson": { "detail": "3 co-ops · Central Electric, Northwestern, United" },
+    "argall":     { "detail": "1 co-op · New Enterprise" },
+    "bartolotta": { "detail": "2 co-ops · Tri-County, Allegheny" },
+    "causer":     { "detail": "2 co-ops · Tri-County, Warren Electric" },
+    "nelson":     { "detail": "1 co-op · Westmoreland Rural" },
+    "struzzi":    { "detail": "1 co-op · REA Energy" }
+  },
+
+  "starred": [
+    "yaw",
+    "phillipshill",
+    "boscola",
+    "causer",
+    "nelson",
+    "matzie"
+  ],
+
+  "reaBills": [
+    "SB 832",
+    "SB 277",
+    "SB 119",
+    "SB 88",
+    "SR 12",
+    "HB 1024",
+    "HB 873",
+    "HB 412",
+    "HR 88",
+    "HB 251",
+    "SB 322"
+  ]
+}
