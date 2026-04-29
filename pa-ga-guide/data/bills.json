@@ -1,92 +1,6638 @@
 {
-  "_comment": "Objective bills + committee data. Populated by scripts/scrape-palegis.py (Phase 2). Currently a hand-curated bootstrap matching the prototype seed data. The 'rea' flag is NOT set here — it is derived at load time from rea-overlay.json's 'reaBills' list.",
+  "_comment": "Objective bills + committee data. Populated by scripts/scrape-palegis.py from www.palegis.us. The 'rea' flag is NOT set here — it is derived at load time from rea-overlay.json's 'reaBills' list.",
   "billsBySponsor": {
-    "yaw": [
-      { "num": "SB 832", "title": "Net-metering caps update for distributed generation", "role": "PRIME", "status": "Reported out of cmte", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 18" },
-      { "num": "SB 401", "title": "Forestry tax stability for sustainably-managed timberland", "role": "PRIME", "status": "In Finance Cmte", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 22" },
-      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" },
-      { "num": "SB 119", "title": "Rural emergency communications grants", "role": "CO-SPONSOR", "status": "Passed Senate 47-3", "statusKind": "go", "topic": "Telecom", "lastAction": "Mar 28" },
-      { "num": "SB 88",  "title": "Cooperative governance modernization", "role": "PRIME", "status": "In Banking Cmte", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 14" },
-      { "num": "SR 12",  "title": "Recognizing Pennsylvania electric cooperatives", "role": "PRIME", "status": "Adopted", "statusKind": "go", "topic": "Energy", "lastAction": "Mar 03" },
-      { "num": "SB 712", "title": "Watershed restoration grants", "role": "PRIME", "status": "In Env. Resources", "statusKind": "wait", "topic": "Energy", "lastAction": "Apr 02" }
+    "saval": [
+      {
+        "num": "SB 26",
+        "title": "Repealing the Lottery Profit Margin",
+        "role": "PRIME",
+        "status": "Referred to Aging & Youth",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 02"
+      },
+      {
+        "num": "SR 30",
+        "title": "Resolution Designating March 8, 2025, as International Women's Day",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 06"
+      }
     ],
-    "causer": [
-      { "num": "HB 1024", "title": "Rural broadband co-op grants (PA Rural Broadband Act)", "role": "PRIME", "status": "In Consumer Affairs", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 22" },
-      { "num": "HB 873",  "title": "Right-of-way clearance standards for utilities", "role": "CO-SPONSOR", "status": "Passed House 168-32", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 15" },
-      { "num": "HB 412",  "title": "Net-metering update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
-      { "num": "HB 388",  "title": "Agricultural tax credit expansion", "role": "PRIME", "status": "First consideration", "statusKind": "wait", "topic": "Ag", "lastAction": "Mar 28" },
-      { "num": "HR 88",   "title": "Resolution honoring PA electric cooperatives", "role": "PRIME", "status": "Adopted", "statusKind": "go", "topic": "Energy", "lastAction": "Mar 03" },
-      { "num": "HB 251",  "title": "Vegetation management standards for distribution lines", "role": "CO-SPONSOR", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
-      { "num": "HB 567",  "title": "Game lands access for rural landowners", "role": "PRIME", "status": "In Game & Fisheries", "statusKind": "wait", "topic": "Ag", "lastAction": "Feb 12" }
+    "tartaglione": [
+      {
+        "num": "SB 24",
+        "title": "Office of New Pennsylvanians",
+        "role": "PRIME",
+        "status": "Referred to Community, Economic & Recreational Development ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 28",
+        "title": "Black Studies in K-12 Curriculum",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 29",
+        "title": "Prohibiting Employment Discrimination Based on Unemployment Status",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Labor",
+        "lastAction": ""
+      }
     ],
-    "phillipshill": [
-      { "num": "SB 624", "title": "Statewide broadband mapping authority", "role": "PRIME", "status": "In Communications", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 18" },
-      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "PRIME", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" },
-      { "num": "SB 412", "title": "Tax-credit transparency reporting", "role": "CO-SPONSOR", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 22" }
+    "street": [
+      {
+        "num": "SB 19",
+        "title": "Comprehensive Modernization of the Minimum Wage",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page ....)",
+        "statusKind": "wait",
+        "topic": "Labor",
+        "lastAction": "Apr 22"
+      },
+      {
+        "num": "SR 29",
+        "title": "Designating January 2025 as Blood Donor Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 06"
+      }
     ],
-    "hutchinson": [
-      { "num": "SB 92",  "title": "Property-tax relief for senior homeowners", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 11" },
-      { "num": "SB 832", "title": "Net-metering caps update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of cmte", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 18" }
+    "haywood": [
+      {
+        "num": "SR 18",
+        "title": "Recognizing February 2025 as “Black History Month” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 31, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 21",
+        "title": "A Resolution recognizing the month of February 2025 as \"Black History Month\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 129 ), Feb. 5, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 24",
+        "title": "Urging Congress to Pass Clear Food and Medication Labeling Guidelines",
+        "role": "PRIME",
+        "status": "Referred to Agriculture & Rural Affairs ,  Feb. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
     ],
-    "boscola": [
-      { "num": "SB 198", "title": "Open meetings transparency reform", "role": "PRIME", "status": "In State Govt", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 02" },
-      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" }
+    "picozzi": [
+      {
+        "num": "SR 16",
+        "title": "Resolution Designating January 26 through February 1, 2025 as “Catholic Schools Week” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 94",
+        "title": "Recruitment and Retention of Law Enforcement Officers, Prosecutors, and Corrections Officers",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 396 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 12"
+      },
+      {
+        "num": "SR 97",
+        "title": "Police Week and Police Officers’ Memorial Day Resolution",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 342 - 344 )",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": "May 05"
+      }
     ],
-    "costa": [
-      { "num": "SB 322", "title": "Energy assistance program funding", "role": "PRIME", "status": "In Appropriations", "statusKind": "wait", "topic": "Energy", "lastAction": "Apr 15" },
-      { "num": "SB 88",  "title": "Cooperative governance modernization", "role": "CO-SPONSOR", "status": "In Banking", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 14" }
+    "farry": [
+      {
+        "num": "SB 21",
+        "title": "Implementing Recommendations from the Stop-and-Go Legislative Task Force",
+        "role": "PRIME",
+        "status": "Referred to Law & Justice",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 28"
+      },
+      {
+        "num": "SR 56",
+        "title": "Condolence Resolution Honoring Former Representative Jerry Stern",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 173 - 174 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 24"
+      }
     ],
-    "argall": [
-      { "num": "SB 156", "title": "School property tax elimination", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Mar 14" }
+    "williams": [
+      {
+        "num": "SB 10",
+        "title": "Pennsylvania Award for Student Success Scholarship Program",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to Senate Rule 9), Nov. 12, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 150",
+        "title": "Honoring Lt. Colonel George Hardy of the Tuskegee Airmen",
+        "role": "PRIME",
+        "status": "Transmitted as directed, Sept. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
     ],
-    "bartolotta": [
-      { "num": "SB 444", "title": "Workforce apprenticeship grants", "role": "PRIME", "status": "Passed Senate", "statusKind": "go", "topic": "Tax", "lastAction": "Apr 01" },
-      { "num": "SB 277", "title": "Rural broadband expansion via co-op fiber", "role": "CO-SPONSOR", "status": "Second consideration", "statusKind": "go", "topic": "Telecom", "lastAction": "Apr 09" }
+    "kane": [
+      {
+        "num": "SB 27",
+        "title": "Moratorium on New Cyber Charter Schools",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 06"
+      }
     ],
-    "nelson": [
-      { "num": "HB 412", "title": "Net-metering update for distributed generation", "role": "PRIME", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
-      { "num": "HB 251", "title": "Vegetation management standards for distribution lines", "role": "PRIME", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
-      { "num": "HB 1024", "title": "Rural broadband co-op grants", "role": "CO-SPONSOR", "status": "In Consumer Affairs", "statusKind": "wait", "topic": "Telecom", "lastAction": "Apr 22" }
+    "schwank": [
+      {
+        "num": "SR 10",
+        "title": "Recognizing January 27, 2025, as \"International Holocaust Remembrance Day\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 11",
+        "title": "Designating January 23rd, 2025 as Maternal Health Awareness Day",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 13",
+        "title": "A Resolution recognizing January 27, 2025, as \"International Holocaust Remembrance Day\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 64 - 65 66 ), Jan. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 19",
+        "title": "Recognizing National FFA Week in Pennsylvania (February 15th through the 22nd, 2025)",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 31, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "collett": [
+      {
+        "num": "SB 45",
+        "title": "Prostitution Penalty Enhancement Legislation",
+        "role": "PRIME",
+        "status": "Second consideration",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 22"
+      },
+      {
+        "num": "SB 50",
+        "title": "Protecting Insurance Coverage for Individuals with Pre-existing Conditions",
+        "role": "PRIME",
+        "status": "Referred to Banking & Insurance ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "miller": [
+      {
+        "num": "SR 35",
+        "title": "Designating October 1, 2025, as Pennsylvania Latino and Latina Physician Day",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 10"
+      }
     ],
     "kim": [
-      { "num": "HB 802", "title": "Workforce housing tax credit", "role": "PRIME", "status": "In Finance", "statusKind": "wait", "topic": "Tax", "lastAction": "Apr 04" }
+      {
+        "num": "SR 20",
+        "title": "Korean American Day and the 50th Anniversary of the Phillip Jaisohn Memorial Foundation",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Feb. 4, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 52",
+        "title": "Prohibiting Annual or Lifetime Limits on Health Insurance Policies",
+        "role": "PRIME",
+        "status": "Referred to Banking & Insurance ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 52",
+        "title": "Recognizing Local Government Day and Week in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 20"
+      },
+      {
+        "num": "SR 83",
+        "title": "Hands Off Social Security",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Operations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 30"
+      }
     ],
-    "struzzi": [
-      { "num": "HB 251", "title": "Vegetation management standards for distribution lines", "role": "CO-SPONSOR", "status": "In Cons. Affairs", "statusKind": "wait", "topic": "Energy", "lastAction": "Feb 28" },
-      { "num": "HB 444", "title": "Truck weight limits on rural roads", "role": "PRIME", "status": "In Transportation", "statusKind": "wait", "topic": "Ag", "lastAction": "Mar 11" }
+    "coleman": [
+      {
+        "num": "SR 89",
+        "title": "Study of State-Owned Aviation Assets",
+        "role": "PRIME",
+        "status": "Transmitted as directed, Oct. 30, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 128",
+        "title": "Improving Curriculum Transparency in K-12 Schools",
+        "role": "PRIME",
+        "status": "First consideration",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 23"
+      }
+    ],
+    "cappelletti": [
+      {
+        "num": "SR 7",
+        "title": "Resolution Recognizing Dr. Martin Luther King, Jr. Holiday Week 2025 in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 32 - 33 ), Jan. 7, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 31",
+        "title": "Gun Violence Survivors Week 2025",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 06"
+      }
+    ],
+    "boscola": [
+      {
+        "num": "SB 25",
+        "title": "Professional Nursing Law Modernization",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection & Professional Licensure ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 34",
+        "title": "Community College Month 2025",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 248 - 249 )",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": "Mar 31"
+      },
+      {
+        "num": "SR 46",
+        "title": "Establishing a Consistent Year-Round Time System",
+        "role": "PRIME",
+        "status": "Transmitted as directed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 08"
+      },
+      {
+        "num": "SR 62",
+        "title": "Sexual Assault Awareness Month",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 268 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 01"
+      }
+    ],
+    "comitta": [
+      {
+        "num": "SB 11",
+        "title": "Campaign Finance Reform",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Aug. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "baker": [
+      {
+        "num": "SR 17",
+        "title": "National Wear Red Day",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 102 ), Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 23",
+        "title": "Cardiac Rehabilitation Week Resolution and Pulmonary Rehabilitation Week Resolution",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 235 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      },
+      {
+        "num": "SR 40",
+        "title": "Cardiac Rehabilitation Week Resolution and Pulmonary Rehabilitation Week Resolution",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 235 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      }
+    ],
+    "yaw": [
+      {
+        "num": "SB 69",
+        "title": "Recovery to Work Program",
+        "role": "PRIME",
+        "status": "Re-referred to Appropriations ,  Oct. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 102",
+        "title": "Impact Fee Withheld from Municipality in Certain Cases",
+        "role": "PRIME",
+        "status": "Re-referred to Appropriations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 12"
+      },
+      {
+        "num": "SR 135",
+        "title": "Veterans Day 2025",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jul 31"
+      }
+    ],
+    "pennycuick": [
+      {
+        "num": "SB 44",
+        "title": "Driver's License Restoration for Victims of Human Trafficking",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to Senate Rule 9)",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": "Apr 22"
+      }
+    ],
+    "dush": [
+      {
+        "num": "SR 26",
+        "title": "“THON Week” in PA (Feb. 21-23, 2025)",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Feb. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "kearney": [
+      {
+        "num": "SB 39",
+        "title": "Weapons in Public Parks",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 41",
+        "title": "Designating March 2025 as Irish American Heritage Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 14"
+      }
+    ],
+    "phillipshill": [
+      {
+        "num": "SB 9",
+        "title": "Save Women’s Sports Act",
+        "role": "PRIME",
+        "status": "Re-referred to Children & Youth",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 19"
+      },
+      {
+        "num": "SB 22",
+        "title": "Social Media Protections for Minors",
+        "role": "PRIME",
+        "status": "Referred to Communications & Technology ,  Jan. 24, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 28",
+        "title": "A Resolution Urging the Governor to Offer the Services of the Pennsylvania National Guard to the State of Texas in Support of Southwest Border Security",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness ,  Feb. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 38",
+        "title": "Commonwealth Fraud Prevention Act for Taxpayer Accountability",
+        "role": "PRIME",
+        "status": "Referred to Health & Human Services",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 06"
+      }
+    ],
+    "argall": [
+      {
+        "num": "SR 68",
+        "title": "Eliminating the U.S. Department of Education",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": "Apr 02"
+      }
+    ],
+    "keefer": [
+      {
+        "num": "SR 70",
+        "title": "Condolence Resolution Honoring Officer Andrew Duarte",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 353 - 354 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 06"
+      },
+      {
+        "num": "SR 190",
+        "title": "Victims of Communism Memorial Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Nov. 11, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "stefano": [
+      {
+        "num": "SR 37",
+        "title": "2025 “Sunshine Week” Resolution",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": "Mar 10"
+      }
+    ],
+    "mastriano": [
+      {
+        "num": "SR 63",
+        "title": "Resolution requesting the entire Pennsylvania Congressional Delegation to Enthusiastically support the continued “cost saving” work of D.O.G.E. as it benefits ALL Pennsylvanians.",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Operations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      }
+    ],
+    "rothman": [
+      {
+        "num": "SB 6",
+        "title": "Transparency in Permitting",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Oct. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 39",
+        "title": "80th Anniversary of the Battle of Iwo Jima",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 17"
+      }
+    ],
+    "langerholc": [
+      {
+        "num": "SB 65",
+        "title": "Enhancing the safe transportation of school children",
+        "role": "PRIME",
+        "status": "Laid on the table, Oct. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 79",
+        "title": "Extending the Statute of Limitations for Drug Delivery Resulting in Death",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 91",
+        "title": "Resolution Designating May 2025 as \"Lyme Disease and Tick-Borne Illness Awareness Month\" in PA",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 402 - 403 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 12"
+      }
+    ],
+    "robinson": [
+      {
+        "num": "SR 45",
+        "title": "Resolution Designating February 15, 2025 as \"International Childhood Cancer Day\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 17"
+      },
+      {
+        "num": "SR 58",
+        "title": "Resolution recognizing March 29th, 2025, as Vietnam War Veterans Day",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 210 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      }
+    ],
+    "williams38": [
+      {
+        "num": "SR 4",
+        "title": "A Resolution adopting Ethical Conduct Rules of the Senate.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 28 ), Jan. 7, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 5",
+        "title": "A Resolution adopting Financial Operating Rules of the Senate.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 29 ), Jan. 7, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 25",
+        "title": "Designating February 2025 as Career and Technical Education Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Feb. 13, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      }
+    ],
+    "ward39": [
+      {
+        "num": "SR 14",
+        "title": "A Resolution recognizing the distinguished career of Vincent C. DeLiberato, Jr., Esq., and honoring his service to the Commonwealth.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 68 - 69 ), Jan. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 49",
+        "title": "Establishing a Cannabis Control Board",
+        "role": "PRIME",
+        "status": "Amended in Senate Committee on Law & Justice",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 16"
+      },
+      {
+        "num": "SB 88",
+        "title": "Updating Breast Cancer Screening Coverage",
+        "role": "PRIME",
+        "status": "Act No. 52 of 2025, Nov. 24, 2025",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 160",
+        "title": "Breast Cancer Awareness Month and National Mammography Day 2025",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 926 - 927 ), Oct. 21, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 241",
+        "title": "Protecting Businesses from the PLCB’s Revenge",
+        "role": "PRIME",
+        "status": "Referred to Liquor Control ,  Sept. 11, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 756",
+        "title": "Taxation and Regulation of Skill Gaming Machines",
+        "role": "PRIME",
+        "status": "Referred to Community, Economic & Recreational Development",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": "May 13"
+      },
+      {
+        "num": "SB 822",
+        "title": "Pennsylvania Preemption Statute Regarding Firearms and Ammunition",
+        "role": "PRIME",
+        "status": "Referred to Local Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 03"
+      }
+    ],
+    "brown": [
+      {
+        "num": "SR 32",
+        "title": "Recognizing March 2025 as “National Athletic Training Month” in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 250 331.pdf#page=13' aria-label='Session journal for 03/31/2025' target='_blank'>249-250)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 31"
+      }
+    ],
+    "pittman": [
+      {
+        "num": "SR 1",
+        "title": "A Resolution adopting Ethical Conduct Rules of the Senate.",
+        "role": "PRIME",
+        "status": "Adopted, Jan. 7, 2025 (46-2)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 2",
+        "title": "A Resolution adopting Financial Operating Rules of the Senate.",
+        "role": "PRIME",
+        "status": "Introduced and adopted, Jan. 7, 2025 (46-2)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 3",
+        "title": "A Resolution adopting the Rules of the Senate for the 209th and 210th Regular Session.",
+        "role": "PRIME",
+        "status": "Introduced and adopted, Jan. 7, 2025 (46-2)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 15",
+        "title": "“Four Chaplains Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 102 ), Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 78",
+        "title": "An Act designating a bridge, identified as Bridge Key 67586, located over the South Branch of Bear Run on State Route 1053 in Banks Township, Indiana County, as the PFC John Tabacsko Memorial Bridge; designating a bridge, identified as Bridge Key 8377, carrying Pennsylvania Route 53 over Bear Rock Run in Lilly Borough, Cambria County, as the Corporal James D. Sloan Memorial Bridge; designating a bridge, identified as Bridge Key 8387, carrying Pennsylvania Route 53 over Patty's Run in Gallitzin Township, Cambria County, as the USMCR Mary A. Lidwell Memorial Bridge; designating a portion of State Route 3037 from the intersection with Waltz Mill Flats Road to Segment 0170/Offset 0950 in * * *",
+        "role": "PRIME",
+        "status": "Act No. 17 of 2025",
+        "statusKind": "go",
+        "topic": "Transportation",
+        "lastAction": "Jun 30"
+      },
+      {
+        "num": "SR 217",
+        "title": "“Four Chaplains Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 30, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 584",
+        "title": "An Act designating a bridge, identified as Bridge Key 56035, carrying U.S. Route 422 over State Route 2005 and Cherry Run in Plumcreek Township, Armstrong County, as the George W. McAuley, Jr. Memorial Bridge.",
+        "role": "PRIME",
+        "status": "Referred to Transportation",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": "Apr 09"
+      },
+      {
+        "num": "SB 1040",
+        "title": "An Act authorizing the State Treasurer to waive interest on budgetary impasse investment loans.",
+        "role": "PRIME",
+        "status": "Referred to Appropriations ,  Oct. 8, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 1068",
+        "title": "An Act providing for the abrogation of regulations relating to the CO2 Budget Trading Program.",
+        "role": "PRIME",
+        "status": "Referred to Environmental & Natural Resource Protection ,  Oct. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "fontana": [
+      {
+        "num": "SR 8",
+        "title": "Establishing an Advisory Commission to Develop a Comprehensive Plan for Public Education",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 27",
+        "title": "Neurological Injured Infant Fund",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 478 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 04"
+      }
+    ],
+    "costa": [
+      {
+        "num": "SR 12",
+        "title": "A Resolution honoring the life and achievements of former President Jimmy Carter, the 39th President of the United States.",
+        "role": "PRIME",
+        "status": "Transmitted as directed, Jan. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 22",
+        "title": "Committee Consideration of Legislation",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "muth": [
+      {
+        "num": "SR 6",
+        "title": "A Resolution adopting the Rules of the Senate for the 209th and 210th Regular Session.",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 30 ), Jan. 7, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 13",
+        "title": "Paid Sick Leave",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 28"
+      }
+    ],
+    "pisciottano": [
+      {
+        "num": "SR 9",
+        "title": "Celebrating the 85th Birthday of Former PA First Lady, Ginny Thornburgh",
+        "role": "PRIME",
+        "status": "Referred to Rules & Executive Nominations ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "bartolotta": [
+      {
+        "num": "SB 23",
+        "title": "Senior Property Tax Freeze",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      },
+      {
+        "num": "SB 54",
+        "title": "Wrongful Conviction Compensation",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 21"
+      },
+      {
+        "num": "SB 75",
+        "title": "Decriminalization of Cannabis in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "vogel": [
+      {
+        "num": "SB 35",
+        "title": "Vehicle Emissions Reform",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Feb. 4, 2025",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": ""
+      }
+    ],
+    "gebhard": [
+      {
+        "num": "SB 183",
+        "title": "Streamlining Regulatory Oversight of the Bottled Water Industry",
+        "role": "PRIME",
+        "status": "Referred to Agriculture & Rural Affairs ,  Jan. 24, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "brooks": [
+      {
+        "num": "SB 53",
+        "title": "Allowing Young Adults to Stay on Their Parent’s Health Insurance Until Age 26",
+        "role": "PRIME",
+        "status": "Referred to Banking & Insurance ,  Jan. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "SR 59",
+        "title": "Honoring the Memory of Former Senator Mary Jo White",
+        "role": "PRIME",
+        "status": "(Remarks see Senate Journal Page 227 - 229 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      }
+    ],
+    "merski": [
+      {
+        "num": "HR 48",
+        "title": "Resolution recognizing National Police Week and Peace Officers Memorial Day",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Public Safety",
+        "lastAction": "May 12"
+      }
+    ],
+    "bizzarro": [
+      {
+        "num": "HR 61",
+        "title": "Resolution recognizing April 18, 2025 as Erie Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      },
+      {
+        "num": "HR 416",
+        "title": "Resolution recognizing April 18, 2026 as Erie Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      }
+    ],
+    "banta": [
+      {
+        "num": "HR 14",
+        "title": "Volunteer Firefighter Day in PA - April 12, 2025",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 14"
+      },
+      {
+        "num": "HB 113",
+        "title": "Eliminating Negative Regulatory Impact on Electric Prices",
+        "role": "PRIME",
+        "status": "Referred to Energy ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Energy",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 114",
+        "title": "Creating an Independent Energy Office",
+        "role": "PRIME",
+        "status": "Referred to Energy ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Energy",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 172",
+        "title": "COSPONSOR MEMO – Protecting Customers from Years-Old Reassessed Water/Sewer Bills",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection, Technology & Utilities ,  Jan. 28, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 175",
+        "title": "Jimmy Stewart Day Resolution",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "May 14"
+      }
+    ],
+    "weaknecht": [
+      {
+        "num": "HR 176",
+        "title": "Fraternal Order of Police Memorial Resolution",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 421 - 422 )",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": "Apr 23"
+      },
+      {
+        "num": "HR 479",
+        "title": "Fraternal Order of Police Memorial Resolution",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": "Apr 29"
+      }
+    ],
+    "roae": [
+      {
+        "num": "HB 119",
+        "title": "Stop Changing Clocks",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Jan. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 236",
+        "title": "Removing Obscene Material from Our School Libraries (Prior HB 209, 2023-24)",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 242",
+        "title": "Recognizing the 80th Anniversary of D-Day",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 30"
+      },
+      {
+        "num": "HB 298",
+        "title": "Medical Assistance Integrity Waivers (former HB 331)",
+        "role": "PRIME",
+        "status": "Referred to Human Services ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 332",
+        "title": "House Discharge Resolution discharging Committee on Intergovernmental Affairs and Operations from further consideration of House Resolution No. 278.",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Dec. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "wentling": [
+      {
+        "num": "HR 325",
+        "title": "A Resolution designating October 3, 2025, as \"Manufacturing Day\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Sept. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "brown9": [
+      {
+        "num": "HR 10",
+        "title": "Improving Accessibility of Home and Community-Based Services Waivers",
+        "role": "PRIME",
+        "status": "Referred to Human Services ,  Jan. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 21",
+        "title": "Instituting Term Limits for U.S. Supreme Court Justices and Members of Congress",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 94",
+        "title": "Parental Choice Regarding Mask Mandates in School (Former HB 242)",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 134",
+        "title": "Improving Accessibility of Home and Community-Based Services Waivers",
+        "role": "PRIME",
+        "status": "Reported as amended",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 28"
+      },
+      {
+        "num": "HB 152",
+        "title": "Tax Exclusion for Clergy Members",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      }
+    ],
+    "mustello": [
+      {
+        "num": "HR 238",
+        "title": "Designating June 2025 as “Italian-American Heritage Month” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jun 25"
+      }
     ],
     "matzie": [
-      { "num": "HB 412", "title": "Net-metering update for distributed generation", "role": "CO-SPONSOR", "status": "Reported out of Cons. Affairs", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 09" },
-      { "num": "HB 873", "title": "Right-of-way clearance standards for utilities", "role": "PRIME", "status": "Passed House", "statusKind": "go", "topic": "Energy", "lastAction": "Apr 15" }
+      {
+        "num": "HB 81",
+        "title": "Prohibiting Additional Paper Account Statement Fees",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection & Professional Licensure",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 12"
+      },
+      {
+        "num": "HR 221",
+        "title": "“Pollinator Week” in Pennsylvania: June 16 – 22, 2025",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jun 17"
+      }
+    ],
+    "bonner": [
+      {
+        "num": "HB 27",
+        "title": "Protecting Healthcare Workers from Surgical Smoke",
+        "role": "PRIME",
+        "status": "Re-referred to Appropriations",
+        "statusKind": "wait",
+        "topic": "Labor",
+        "lastAction": "Jun 25"
+      }
+    ],
+    "tomlinson": [
+      {
+        "num": "HB 352",
+        "title": "Sterling Act Reimbursement/Commuter Tax Fairness Act (Prior HB 1148)",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      }
+    ],
+    "abney": [
+      {
+        "num": "HR 44",
+        "title": "A RESOLUTION RECOGNIZING MARCH 2025 AS \"NATIONAL SOCIAL WORKER MONTH\" IN PENNSYLVANIA",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      },
+      {
+        "num": "HR 406",
+        "title": "Recognizing March 2026 as \"National Social Work Month\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 24"
+      }
+    ],
+    "powell": [
+      {
+        "num": "HB 61",
+        "title": "Adding Dermaplaning to the Cosmetology Law – Former HB 1581",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 96",
+        "title": "International Women's Day (Prior HR327)",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 03"
+      }
+    ],
+    "tiburcio": [
+      {
+        "num": "HR 481",
+        "title": "Resolution Designating May 2, 2026, as “Negro Leagues Day\"",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 28"
+      }
+    ],
+    "frankel": [
+      {
+        "num": "HB 93",
+        "title": "Making Rosh Hashanah, Eid al-Fitr, Yom Kippur, and Eid al-Adha Official Holidays of the Commonwealth of Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 101",
+        "title": "Resolution Recognizing the Week of May 11 through May 17, 2025, as \"National Hospital Week\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 699 - 700 )",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "May 14"
+      }
+    ],
+    "friel": [
+      {
+        "num": "HR 9",
+        "title": "Designating January 2025 as “School Director Recognition Month”",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 78 ), Jan. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      }
+    ],
+    "brennan": [
+      {
+        "num": "HR 65",
+        "title": "Studying Online Platforms that Encourage Suicide (HR 25)",
+        "role": "PRIME",
+        "status": "Referred to Communications & Technology ,  Feb. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 78",
+        "title": "Studying the Commonwealth’s Response to Infants Born with Prenatal Substance Exposure",
+        "role": "PRIME",
+        "status": "Referred to Human Services ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 98",
+        "title": "Statewide Licensure of Electrical Contractors, Electricians, and Apprentice Electricians",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 114",
+        "title": "Recognizing Civic Learning Week",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 06"
+      }
+    ],
+    "venkat": [
+      {
+        "num": "HR 15",
+        "title": "Recognizing November 11, 2025 as Veterans Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Oct. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 19",
+        "title": "Jim Thorpe Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Tourism, Recreation & Economic Development ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 31",
+        "title": "Resolution – “Multiple Sclerosis Awareness Week” in PA – March 9-15, 2025",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 18"
+      },
+      {
+        "num": "HR 32",
+        "title": "Resolution - “Sunshine Week” in Pennsylvania – March 16 – 22, 2025",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Jan. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 33",
+        "title": "Resolution Recognizing April 2025, as “Limb Loss Awareness Month” in PA",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 22"
+      }
+    ],
+    "goughnour": [
+      {
+        "num": "HR 268",
+        "title": "A Resolution mourning the loss of the Honorable Matthew R. Gergely of McKeesport, Allegheny County, respected member of the House of Representatives from the 35th District, who died January 19, 2025, at 45 years of age.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 23"
+      }
+    ],
+    "benham": [
+      {
+        "num": "HR 289",
+        "title": "35th Anniversary of the Americans with Disabilities Act (ADA)",
+        "role": "PRIME",
+        "status": "Referred to Human Services ,  Aug. 4, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 300",
+        "title": "The Fairness Act",
+        "role": "PRIME",
+        "status": "Re-committed to Appropriations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 24"
+      },
+      {
+        "num": "HR 370",
+        "title": "Recognizing the 50th Anniversary of IDEA",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Dec. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "fee": [
+      {
+        "num": "HR 360",
+        "title": "A Resolution noting with sadness the death of the Honorable Katherine \"Katie\" True, former eight-term member of the House of Representatives from Lancaster County, who died October 7, 2025.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Oct. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 444",
+        "title": "Acquired Brain Injury Insurance Coverage",
+        "role": "PRIME",
+        "status": "Referred to Insurance ,  Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "inglis": [
+      {
+        "num": "HR 16",
+        "title": "Resolution – Rheumatoid Awareness Day in Pennsylvania – February 2, 2025",
+        "role": "PRIME",
+        "status": "Adopted, Feb. 4, 2025 (197-5)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "kuzma": [
+      {
+        "num": "HB 104",
+        "title": "Electronic Monitoring for Protection from Abuse Orders",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "mihalek": [
+      {
+        "num": "HB 77",
+        "title": "Food Allergy Safety Legislation",
+        "role": "PRIME",
+        "status": "Referred to Agriculture & Rural Affairs ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 102",
+        "title": "A Resolution designating the month of March 2025 as \"Colorectal Cancer Awareness Month\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "Referred to Human Services",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 10"
+      },
+      {
+        "num": "HR 257",
+        "title": "Recognizing “Diabetes Awareness Month in Pennsylvania”",
+        "role": "PRIME",
+        "status": "Adopted, Nov. 18, 2025 (198-4)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 1042",
+        "title": "Public Safety and Rehabilitation Act",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 30"
+      }
+    ],
+    "miller41": [
+      {
+        "num": "HR 118",
+        "title": "Recognizing Local Government Week & Day",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      },
+      {
+        "num": "HR 465",
+        "title": "Resolution to Recognize Local Government Day and Local Government Week",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 15"
+      },
+      {
+        "num": "HB 1112",
+        "title": "Smart Meter Opt-Out",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection, Technology & Utilities",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 03"
+      },
+      {
+        "num": "HB 1207",
+        "title": "Wording and Explanation of Constitutional Amendment Questions Prepared by the LRB",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 15"
+      },
+      {
+        "num": "HB 1208",
+        "title": "NPDES Permit Program (Comply with the NPDES Waiver Program that Exists at the Federal Level) (Prior HB 1345, 2023-2024)",
+        "role": "PRIME",
+        "status": "Referred to Environmental & Natural Resource Protection",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 15"
+      }
+    ],
+    "greiner": [
+      {
+        "num": "HR 17",
+        "title": "Designating March 15, 2026, as “Legislative Branch Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 88",
+        "title": "Purple Heart Day",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Sept. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 89",
+        "title": "National Vietnam War Veteran Day",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 12"
+      },
+      {
+        "num": "HB 105",
+        "title": "Creating a Floor for the Pennsylvania Inheritance Tax",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      }
+    ],
+    "kulik": [
+      {
+        "num": "HR 468",
+        "title": "Hunting for a Solution – Suburban Deer Populations",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 14"
+      }
+    ],
+    "ortitay": [
+      {
+        "num": "HB 289",
+        "title": "Radon Testing in Schools",
+        "role": "PRIME",
+        "status": "Laid on the table",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 23"
+      }
+    ],
+    "dorsie": [
+      {
+        "num": "HR 106",
+        "title": "Start Impeach Proceedings on York Couty Common Pleas Court Judge Steven Stambaugh",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 10"
+      },
+      {
+        "num": "HB 355",
+        "title": "Increasing Grading on Corruption of Minor Charges in Cases Where the Perpetrator is a Person of Authority",
+        "role": "PRIME",
+        "status": "Act No. 5 of 2025",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jun 27"
+      },
+      {
+        "num": "HR 438",
+        "title": "Condolence Resolution- Northern York County Regional Police Officers",
+        "role": "PRIME",
+        "status": "Removed from Uncontested Calendar",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": "Mar 23"
+      },
+      {
+        "num": "HB 454",
+        "title": "Constitutional Carry of a Firearm",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": ""
+      }
+    ],
+    "oneal": [
+      {
+        "num": "HR 45",
+        "title": "St. Patrick's Day",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 194 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 17"
+      },
+      {
+        "num": "HR 340",
+        "title": "House Discharge Resolution discharging Committee on Environmental and Natural Resource Protection from further consideration of Senate Bill No. 186.",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Feb. 3, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 362",
+        "title": "House Discharge Resolution discharging Committee on Education from further consideration of House Bill No. 158.",
+        "role": "PRIME",
+        "status": "TO CALENDAR UNDER RULE 53, Oct. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 395",
+        "title": "St. Patrick's Day",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 23"
+      }
+    ],
+    "cook": [
+      {
+        "num": "HR 184",
+        "title": "Effectively Deterring Trespassing on Private Property (former HR 284)",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      }
+    ],
+    "krupa": [
+      {
+        "num": "HR 87",
+        "title": "Foreign Ownership of Land  (Prior HR 309)",
+        "role": "PRIME",
+        "status": "Referred to Agriculture & Rural Affairs ,  Feb. 21, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 157",
+        "title": "Urging Congress to Pass the PTSD Treatment Act for Veterans",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 27"
+      }
+    ],
+    "cooper": [
+      {
+        "num": "HR 49",
+        "title": "Metastatic Breast Cancer Awareness Day Resolution",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 04"
+      }
+    ],
+    "rasel": [
+      {
+        "num": "HB 806",
+        "title": "Safeguarding Free Speech for Student Journalism",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": "Mar 04"
+      }
+    ],
+    "davanzo": [
+      {
+        "num": "HB 846",
+        "title": "Prohibiting Split Rates & Providing for Custom Fabrication on Public Works Projects",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 18"
+      }
+    ],
+    "major": [
+      {
+        "num": "HB 20",
+        "title": "A Bipartisan Path to Adult-Use Cannabis Legalization in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Health",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jul 14"
+      },
+      {
+        "num": "HR 484",
+        "title": "New Measures to Boost Housing Development in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Housing & Community Development",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 16"
+      },
+      {
+        "num": "HB 614",
+        "title": "Increasing Access to Affordable Housing with the Shared Housing and Resource Exchange (SHARE) Program",
+        "role": "PRIME",
+        "status": "Referred to Housing & Community Development ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "hanbidge": [
+      {
+        "num": "HB 35",
+        "title": "Helping First Responders Protect Our Children",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "bashline": [
+      {
+        "num": "HR 206",
+        "title": "Celebrating the 250th Birthday of the United States Army",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jun 09"
+      },
+      {
+        "num": "HR 256",
+        "title": "Childhood Cancer Awareness Month - September 2025",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Dec. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 333",
+        "title": "Feasibility Study – Senior Military College at Former Penn State Fayette Eberly Campus",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Oct. 1, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 993",
+        "title": "Recognizing Veteran-Owned Businesses in Our Communities",
+        "role": "PRIME",
+        "status": "Amended on second consideration",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Apr 20"
+      }
+    ],
+    "james": [
+      {
+        "num": "HB 71",
+        "title": "Safety Cables (Previously HB 497)",
+        "role": "PRIME",
+        "status": "Laid on the table, Sept. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "smith": [
+      {
+        "num": "HB 57",
+        "title": "Mandatory Sentences for Fentanyl Delivery",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "owlett": [
+      {
+        "num": "HB 170",
+        "title": "COSPONSOR MEMO – Bringing Pennsylvania’s Farm Vehicle Law Into the 21st Century",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Dec. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Ag",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 177",
+        "title": "COSPONSORSHIP MEMO - Helping Pennsylvania's Struggling Dairy Farmers - Three Bill Package",
+        "role": "PRIME",
+        "status": "Referred to Agriculture & Rural Affairs",
+        "statusKind": "wait",
+        "topic": "Ag",
+        "lastAction": "Mar 10"
+      },
+      {
+        "num": "HB 179",
+        "title": "COSPONSORSHIP MEMO - Helping Pennsylvania's Struggling Dairy Farmers - Three Bill Package",
+        "role": "PRIME",
+        "status": "Laid on the table, Sept. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Ag",
+        "lastAction": ""
+      }
+    ],
+    "metzgar": [
+      {
+        "num": "HB 539",
+        "title": "Limiting the Length of Freight Locomotives Operating in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection, Technology & Utilities ,  Feb. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "rigby": [
+      {
+        "num": "HR 132",
+        "title": "A RESOLUTION DESIGNATING MAY 18- 24, 2025 AS \"EMERGENCY MEDICAL SERVICES (EMS) WEEK\" IN PENNSYLVANIA",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "Mar 18"
+      },
+      {
+        "num": "HR 467",
+        "title": "Designating the week of May 17-23, 2026, as \"Emergency Medical Services (EMS) Week\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "Apr 27"
+      },
+      {
+        "num": "HB 744",
+        "title": "Gift Ban",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 03"
+      }
+    ],
+    "burns": [
+      {
+        "num": "HR 125",
+        "title": "Convention of States",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 17"
+      },
+      {
+        "num": "HB 771",
+        "title": "Requiring Voter ID",
+        "role": "PRIME",
+        "status": "Re-committed to Appropriations",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": "May 12"
+      }
+    ],
+    "kephart": [
+      {
+        "num": "HB 68",
+        "title": "Abolish Practice of Providing State Paid or Leased Vehicles to Legislators",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 756",
+        "title": "Illegal Immigration",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 03"
+      }
+    ],
+    "armanini": [
+      {
+        "num": "HB 73",
+        "title": "EMS Recruitment/Retention and Regulatory Relief (Prior HB 2659)",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 90",
+        "title": "Medical Assistance/Child Support Legislation (Former HB 53)",
+        "role": "PRIME",
+        "status": "Referred to Human Services ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 238",
+        "title": "REAL ID Application Process (HB 1243 - 2023-24 Legislative Session)",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to Senate Rule 9), Feb. 3, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 239",
+        "title": "Summary Traffic Offense Fees",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "conklin": [
+      {
+        "num": "HR 2",
+        "title": "Recognizing March 25, 2025, as “National Medal of Honor Day”",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      },
+      {
+        "num": "HR 18",
+        "title": "Career and Technical Education Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      }
+    ],
+    "barger": [
+      {
+        "num": "HB 112",
+        "title": "Extending Pennsylvania’s Lemon Law to Cover Farm Equipment",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection, Technology & Utilities ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Ag",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 129",
+        "title": "A Resolution recognizing the service of the Honorable Jerry A. Stern, an 11-term former member of the House of Representatives, and expressing condolences upon his death on December 11, 2024, in Martinsburg, Blair County, at 69 years of age.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 252 - 254 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 24"
+      },
+      {
+        "num": "HB 262",
+        "title": "Public Employees’ Bill of Rights",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 263",
+        "title": "Public Employees’ Bill of Rights",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "irvin": [
+      {
+        "num": "HB 711",
+        "title": "Exempting Community Homes for Adults with Disabilities from Discriminatory Sprinkler Requirements",
+        "role": "PRIME",
+        "status": "Laid on the table",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 13"
+      }
+    ],
+    "flick": [
+      {
+        "num": "HR 133",
+        "title": "Studying the impact of problem-solving courts",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 19"
+      },
+      {
+        "num": "HB 240",
+        "title": "Hearing Aid Test for School Bus Drivers - Previous HB 2203",
+        "role": "PRIME",
+        "status": "Act No. 4 of 2025",
+        "statusKind": "go",
+        "topic": "Education",
+        "lastAction": "Jun 27"
+      },
+      {
+        "num": "HB 269",
+        "title": "Creating Opioid Overdose Awareness Materials",
+        "role": "PRIME",
+        "status": "Referred to Health & Human Services",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 28"
+      }
+    ],
+    "hamm": [
+      {
+        "num": "HB 51",
+        "title": "Property Tax Pension Obligation Disclosure Act (Prior HB 215, 2023-2024)",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 54",
+        "title": "Keep Houses of Worship Open Durning States of Emergency",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 91",
+        "title": "Fish & Boat Commission: Right to Know",
+        "role": "PRIME",
+        "status": "Referred to Game & Fisheries ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": ""
+      }
+    ],
+    "rowe": [
+      {
+        "num": "HB 58",
+        "title": "Cosmetology Salons – Change in Location – Former HB 1582",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 59",
+        "title": "State Board of Cosmetology – Inspectors – Former HB 1590",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 63",
+        "title": "Exemption from In-Person School Safety and Security Drills (former HB2613)",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 128",
+        "title": "Jury Duty Exemption for Emergency Services Personnel",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Public Safety",
+        "lastAction": ""
+      }
+    ],
+    "stambaugh": [
+      {
+        "num": "HR 278",
+        "title": "Resolution Recognizing September 12 as \"The Day of the Bible\" in the Commonwealth of Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Jan. 28, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "delozier": [
+      {
+        "num": "HB 116",
+        "title": "Cody's Law to Protect Those That Cannot Protect Themselves",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 133",
+        "title": "Parental Rights Reinstatement",
+        "role": "PRIME",
+        "status": "Referred to Children & Youth ,  Sept. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 151",
+        "title": "Protecting Benefits for Foster Youth",
+        "role": "PRIME",
+        "status": "Referred to Children & Youth ,  Nov. 6, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 350",
+        "title": "Providing Stability for Pennsylvania Kids and their Families",
+        "role": "PRIME",
+        "status": "Referred to Judiciary",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 24"
+      }
+    ],
+    "kauffman": [
+      {
+        "num": "HB 56",
+        "title": "Felony for Falsely Reported Threats or Emergencies toward Schools",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 62",
+        "title": "Social Media Censorship",
+        "role": "PRIME",
+        "status": "Referred to Communications & Technology ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 77",
+        "title": "Study on Changing the PA General Assembly to a Part-Time Legislature",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Feb. 12, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "anderson": [
+      {
+        "num": "HR 107",
+        "title": "THON 2025:  A Home for Hope",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 232 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 19"
+      },
+      {
+        "num": "HR 260",
+        "title": "Recognizing September 25, 2025 as “Disabled American Veterans Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Dec. 16, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 320",
+        "title": "Modernizing PennDOT Practices",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Sept. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "hillevans": [
+      {
+        "num": "HB 23",
+        "title": "Modernizing Pennsylvania’s minimum wage statute",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry ,  Oct. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Labor",
+        "lastAction": ""
+      }
+    ],
+    "cutler": [
+      {
+        "num": "HB 278",
+        "title": "House Govt Oversight Committee Recommendations for Lobbying Disclosure Law Update",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": ""
+      }
+    ],
+    "schlegel": [
+      {
+        "num": "HB 1326",
+        "title": "Increasing Efficiency and Transparency in School Transportation",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": "Jun 18"
+      }
+    ],
+    "diamond": [
+      {
+        "num": "HR 20",
+        "title": "Joint State Government Commission Truck Parking Study",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 52",
+        "title": "Resolution Designating March 2025 as Problem Gambling Awareness Month",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 26"
+      }
+    ],
+    "davidson": [
+      {
+        "num": "HB 79",
+        "title": "Pennsylvania Medical Debt Relief Program",
+        "role": "PRIME",
+        "status": "Referred to Health & Human Services",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "May 22"
+      }
+    ],
+    "madsen": [
+      {
+        "num": "HB 50",
+        "title": "Updating the Water Services Act",
+        "role": "PRIME",
+        "status": "Referred to Local Government ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "mehaffie": [
+      {
+        "num": "HB 308",
+        "title": "The Jake Schwab Worker Safety Bill",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 30"
+      },
+      {
+        "num": "HR 372",
+        "title": "Resolution - December 2, 2025, \"World Nuclear Energy Day\" in PA",
+        "role": "PRIME",
+        "status": "Adopted, Dec. 17, 2025 (199-4)",
+        "statusKind": "go",
+        "topic": "Energy",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 660",
+        "title": "Appliance Energy Efficiency Standards",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection & Professional Licensure ,  Feb. 13, 2026",
+        "statusKind": "wait",
+        "topic": "Energy",
+        "lastAction": ""
+      }
+    ],
+    "stehr": [
+      {
+        "num": "HB 28",
+        "title": "Providing the Department of Health with more oversight of the physician registry under the Medical Marijuana Program (Former HB 2611)",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 301",
+        "title": "Term Limits for Members of the General Assembly (former HB 332)",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "stender": [
+      {
+        "num": "HR 177",
+        "title": "Designating April as Low Head Dam Public Safety Awareness Month",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 10"
+      },
+      {
+        "num": "HB 218",
+        "title": "Private Mortgage Insurance Tax Deduction",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 22, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      }
+    ],
+    "leadbeter": [
+      {
+        "num": "HR 185",
+        "title": "Pennsylvania House of Representatives Election Observer Program (PA HEOP)",
+        "role": "PRIME",
+        "status": "Referred to Rules",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": "Apr 09"
+      }
+    ],
+    "pickett": [
+      {
+        "num": "HB 18",
+        "title": "Improving the Efficiency of Guardianship Proceedings",
+        "role": "PRIME",
+        "status": "Act No. 39 of 2025, Oct. 27, 2025",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 68",
+        "title": "Rural Mass/Public Transit Resolution",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Ag",
+        "lastAction": "Jun 18"
+      },
+      {
+        "num": "HB 83",
+        "title": "Minor Consent to Treat (Prior HB 1537, 2023-2024)",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 88",
+        "title": "Funding County Stream Maintenance Through State Gas Leases – Former HB 2603",
+        "role": "PRIME",
+        "status": "Referred to Environmental & Natural Resource Protection ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Energy",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 89",
+        "title": "Compensation to Volunteer Fire Departments due to Motor Vehicle Accidents - Former HB 1620",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": ""
+      }
+    ],
+    "fritz": [
+      {
+        "num": "HB 1129",
+        "title": "Sale of Net Operating Losses",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 30, 2026",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "mullins": [
+      {
+        "num": "HR 159",
+        "title": "May 2025 as Amyotrophic Lateral Sclerosis (ALS) Awareness Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 423 - 424 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 23"
+      },
+      {
+        "num": "HR 473",
+        "title": "May 2026 as Amyotrophic Lateral Sclerosis (ALS) Awareness Month In Pennsylvania",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 14"
+      }
+    ],
+    "kosierowski": [
+      {
+        "num": "HB 389",
+        "title": "Supporting the Education of our Health Care Workforce",
+        "role": "PRIME",
+        "status": "Referred to Appropriations ,  Jan. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 390",
+        "title": "Supporting the Education of our Health Care Workforce",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 435",
+        "title": "Recognizing May 2026 as Osteoporosis Awareness Month",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      },
+      {
+        "num": "HB 926",
+        "title": "Co-Sponsorship: Health Care Workplace Violence Prevention Act",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "May 22"
+      }
+    ],
+    "madden": [
+      {
+        "num": "HR 43",
+        "title": "Designating the Month of April 2025 as “Sexual Assault Awareness Month”",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Jan. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 92",
+        "title": "School Transportation Consolidation Study",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Feb. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      }
+    ],
+    "ryncavage": [
+      {
+        "num": "HR 505",
+        "title": "Designating May 13th as “Gold Shield Family Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 29"
+      }
+    ],
+    "pashinski": [
+      {
+        "num": "HB 97",
+        "title": "Pet Custody in Divorce Cases",
+        "role": "PRIME",
+        "status": "Referred to Judiciary ,  Oct. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "twardzik": [
+      {
+        "num": "HR 140",
+        "title": "Resolution designating October 2025 as Polish American Heritage Month",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Oct. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "barton": [
+      {
+        "num": "HR 179",
+        "title": "Resolution Urging The Pennsylvania State University and its President to Use Transparency in Campus Closure Decisions",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": "Apr 04"
+      },
+      {
+        "num": "HR 359",
+        "title": "A Resolution expressing condolences on the death of the Honorable Edward J. Lucyk of Barnesville, Schuylkill County, former 11-term Member from the 123rd District of the House of Representatives.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Oct. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 440",
+        "title": "Designating March 8 as “Fight of the Century Day”",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      }
+    ],
+    "kerwin": [
+      {
+        "num": "HR 478",
+        "title": "A Resolution designating April 29, 2026, as \"Professional Pest Management Appreciation Day\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      }
+    ],
+    "guzman": [
+      {
+        "num": "HR 51",
+        "title": "Recognizing Dominican Republic Independence Day",
+        "role": "PRIME",
+        "status": "Referred to Appropriations ,  Feb. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 276",
+        "title": "Urging the President to seek Congressional Approval Before Using Force",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 30"
+      }
+    ],
+    "gillen": [
+      {
+        "num": "HB 31",
+        "title": "HB 31 - Establishing an Independent Redistricting Commission in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 15"
+      }
+    ],
+    "cepedafreytiz": [
+      {
+        "num": "HB 29",
+        "title": "Supporting our Diverse and Disadvantaged Business Through HUB Zones",
+        "role": "PRIME",
+        "status": "Referred to Commerce ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "maloney": [
+      {
+        "num": "HB 291",
+        "title": "Parking-Protected Bicycle Lanes",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Feb. 4, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "mackenzie": [
+      {
+        "num": "HB 17",
+        "title": "Mandating Cursive Handwriting (Formerly HB1934)",
+        "role": "PRIME",
+        "status": "Act No. 2 of 2026, Feb. 11, 2026",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "mcneill": [
+      {
+        "num": "HR 8",
+        "title": "Alopecia Areata Awareness Month - September 2025",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 24"
+      }
+    ],
+    "schweyer": [
+      {
+        "num": "HR 228",
+        "title": "Designating July 31, 2025 as “Intern Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Dec. 15, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "freeman": [
+      {
+        "num": "HR 28",
+        "title": "Recognizing March 26, 2025, as “Bangladesh Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 315 - 316 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 07"
+      }
+    ],
+    "emrick": [
+      {
+        "num": "HB 309",
+        "title": "World Cup Traveling Team Physicians",
+        "role": "PRIME",
+        "status": "Act No. 29 of 2025",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jul 07"
+      }
+    ],
+    "flood": [
+      {
+        "num": "HR 269",
+        "title": "July 2025 as Disability Pride Month in Pennsylvania",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jul 01"
+      },
+      {
+        "num": "HB 644",
+        "title": "Cosmetology Law Updates - Permitting Booth Rental in Salons",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Feb. 20, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "prokopiak": [
+      {
+        "num": "HB 213",
+        "title": "Supporting the Mental Health of our 911 Telecommunicators",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness ,  Jan. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "labs": [
+      {
+        "num": "HR 7",
+        "title": "Recognizing “National Senior Citizens Day” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 24"
+      },
+      {
+        "num": "HR 141",
+        "title": "National Public Safety Telecommunications Week -- April 13 - 19, 2025",
+        "role": "PRIME",
+        "status": "Referred to Veterans Affairs & Emergency Preparedness",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 24"
+      },
+      {
+        "num": "HR 240",
+        "title": "Subject: Protecting Victims of Stalking",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 13"
+      }
+    ],
+    "munroe": [
+      {
+        "num": "HR 153",
+        "title": "Designating November 16 through 22 as “County Row Office Employee Appreciation Week”",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Nov. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "ciresi": [
+      {
+        "num": "HB 32",
+        "title": "Increasing the Death Benefit Exclusion for the PTRR from $5,000 to $10,000.",
+        "role": "PRIME",
+        "status": "Laid on the table",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      }
+    ],
+    "daley": [
+      {
+        "num": "HR 3",
+        "title": "Designating March 2025 as \"Endometriosis Awareness Month\"",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "webster": [
+      {
+        "num": "HR 39",
+        "title": "Condolence Resolution Honoring former President Jimmy Carter",
+        "role": "PRIME",
+        "status": "Adopted, Feb. 5, 2025 (202-0)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "sanchez": [
+      {
+        "num": "HR 6",
+        "title": "Separate PIAA Playoffs for Public Schools and Private and Charter Schools",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "nelson154": [
+      {
+        "num": "HR 12",
+        "title": "Recognizing February 2025 as “Black History Month” in Pennsylvania",
+        "role": "PRIME",
+        "status": "Adopted, Feb. 5, 2025 (198-4)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 191",
+        "title": "A Resolution Designating May 6, 2025, as \"AKA Day at the Capitol in Pennsylvania\"",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 15"
+      },
+      {
+        "num": "HR 198",
+        "title": "A Resolution Designating May 6, 2025, as \"AKA Day at the Capitol\" in Pennsylvania",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "May 06"
+      }
+    ],
+    "pielli": [
+      {
+        "num": "HB 33",
+        "title": "Ensuring MMJ Products are Properly Tested",
+        "role": "PRIME",
+        "status": "Referred to Law & Justice",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 17"
+      },
+      {
+        "num": "HB 36",
+        "title": "Ensuring the Safety of Law Enforcement Officers of the Office of State Inspector General",
+        "role": "PRIME",
+        "status": "Referred to State Government",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 19"
+      }
+    ],
+    "shusterman": [
+      {
+        "num": "HB 30",
+        "title": "Modernizing Rules for Real Estate Appraisers",
+        "role": "PRIME",
+        "status": "Referred to Consumer Protection & Professional Licensure",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 18"
+      }
+    ],
+    "kazeem": [
+      {
+        "num": "HB 87",
+        "title": "Instructors for Cosmetology Apprenticeship Programs (Prior HB1966)",
+        "role": "PRIME",
+        "status": "Laid on the table",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 06"
+      }
+    ],
+    "williams160": [
+      {
+        "num": "HR 236",
+        "title": "A Resolution directing the Government Oversight Committee to conduct an investigation.",
+        "role": "PRIME",
+        "status": "Referred to Rules",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 13"
+      },
+      {
+        "num": "HB 865",
+        "title": "Ensuring Continuity of the Military Family Education Program",
+        "role": "PRIME",
+        "status": "Act No. 32 of 2025",
+        "statusKind": "go",
+        "topic": "Education",
+        "lastAction": "Jul 07"
+      }
+    ],
+    "krueger": [
+      {
+        "num": "HR 155",
+        "title": "Recognizing April 20 through 26, 2025, as “National Infertility Awareness Week”",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 445 - 446 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 24"
+      },
+      {
+        "num": "HR 447",
+        "title": "Recognizing April 19 through 25, 2026, as “National Infertility Awareness Week”",
+        "role": "PRIME",
+        "status": "Reported as committed",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      },
+      {
+        "num": "HB 459",
+        "title": "Chief Joseph J. Montgomery, Jr. Memorial Highway",
+        "role": "PRIME",
+        "status": "Referred to Transportation ,  Feb. 4, 2025",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 1259",
+        "title": "Establishing a Statewide Responsible Contractor Law",
+        "role": "PRIME",
+        "status": "Referred to Labor & Industry",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 17"
+      }
+    ],
+    "curry": [
+      {
+        "num": "HR 24",
+        "title": "January 23rd, 2025 as Maternal Health Awareness Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 23, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 26",
+        "title": "January 23rd, 2025 as Maternal Health Awareness Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 79 ), Jan. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "vitali": [
+      {
+        "num": "HR 54",
+        "title": "Designating October 2025 as “William Penn Landing Site in Chester Month”",
+        "role": "PRIME",
+        "status": "Referred to Tourism, Recreation & Economic Development ,  Feb. 5, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 59",
+        "title": "Designating November 1, 2025, as “State Correctional Institution Day” In Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Oct. 6, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 74",
+        "title": "National Epilepsy Awareness Month (November 2025)",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 04"
+      }
+    ],
+    "white": [
+      {
+        "num": "HB 85",
+        "title": "Defining Antisemitism in Pennsylvania's Human Relations Act",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 158",
+        "title": "Protect Women’s Sports Act (HB 216, 2023-2024)",
+        "role": "PRIME",
+        "status": "Re-referred to Health",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 27"
+      },
+      {
+        "num": "HR 281",
+        "title": "House Discharge Resolution discharging Committee on Education from further consideration of Senate Bill No. 9.",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Sept. 29, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 1489",
+        "title": "Lifeline Scholarship Program",
+        "role": "PRIME",
+        "status": "Referred to Education",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 21"
+      }
+    ],
+    "benninghoff": [
+      {
+        "num": "HR 291",
+        "title": "Recognizing “National Suicide Prevention Awareness Month” and “World Suicide Prevention Day.”",
+        "role": "PRIME",
+        "status": "Adopted, Sept. 30, 2025 (199-3)",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "dougherty": [
+      {
+        "num": "HB 46",
+        "title": "Increasing Access to PreK for PA Kids",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "gallagher": [
+      {
+        "num": "HR 127",
+        "title": "Recognizing March 2025 as Colorectal Cancer Awareness Month",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Mar 19"
+      }
+    ],
+    "marcell": [
+      {
+        "num": "HB 22",
+        "title": "Exempting income from Pennsylvania National Guard service from the Personal Income Tax (Former HB 2239)",
+        "role": "PRIME",
+        "status": "Referred to Finance ,  Jan. 8, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 22",
+        "title": "International Holocaust Remembrance Day",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 137 - 138 ), Feb. 5, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 70",
+        "title": "Designating June 23, 2025 as \"Widows' and Widowers' Day\" in PA",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 04"
+      },
+      {
+        "num": "HB 75",
+        "title": "Dual Recognition for Physician Assistants",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 76",
+        "title": "Dual Recognition for Physician Assistants",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 14, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 80",
+        "title": "Authorizing Pennsylvania to Join the Audiology & Speech-Language Pathology Interstate Compact",
+        "role": "PRIME",
+        "status": "Re-referred to Appropriations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 16"
+      }
+    ],
+    "giral": [
+      {
+        "num": "HR 23",
+        "title": "Studying Location-Based Pay for State Government Employees",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": "May 04"
+      },
+      {
+        "num": "HR 25",
+        "title": "Replacing the State Song",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to Senate Rule 9)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 23"
+      },
+      {
+        "num": "HR 27",
+        "title": "Urging Congress and the President to Reexamine Ethiopian U.S. Foreign Policy",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Jan. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 30",
+        "title": "Early Retirement Study",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 04"
+      }
+    ],
+    "kenyatta": [
+      {
+        "num": "HR 29",
+        "title": "Studying 24-Hour Turnaround for Campaign Contribution Disclosure",
+        "role": "PRIME",
+        "status": "Referred to Communications & Technology ,  Jan. 28, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "waxman": [
+      {
+        "num": "HR 69",
+        "title": "A RESOLUTION RECOGNIZING MARCH 2025 AS \"NATIONAL WOMEN'S HISTORY MONTH\" IN PENNSYLVANIA",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 281 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Mar 25"
+      }
+    ],
+    "mako": [
+      {
+        "num": "HR 64",
+        "title": "Declaring April 2025 as Community College Month in Pennsylvania (HR 84)",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Education",
+        "lastAction": "Apr 24"
+      },
+      {
+        "num": "HB 365",
+        "title": "Cosmetology Licensure Compact",
+        "role": "PRIME",
+        "status": "Referred to Professional Licensure ,  Jan. 27, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 384",
+        "title": "Study on Ballot Rotation to Promote Election Fairness",
+        "role": "PRIME",
+        "status": "Reported as committed, Feb. 3, 2026",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 435",
+        "title": "Removing Opacity Monitors in Pennsylvania Cement Plants",
+        "role": "PRIME",
+        "status": "Referred to Environmental & Natural Resource Protection ,  Jan. 31, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 735",
+        "title": "Promoting Fairness in Election Ballot Position",
+        "role": "PRIME",
+        "status": "Referred to State Government ,  Feb. 25, 2025",
+        "statusKind": "wait",
+        "topic": "Government",
+        "lastAction": ""
+      }
+    ],
+    "fiedler": [
+      {
+        "num": "HB 135",
+        "title": "Filing Requirements for Cooperative Entrepreneurs",
+        "role": "PRIME",
+        "status": "Re-referred to Appropriations",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 20"
+      }
+    ],
+    "harris": [
+      {
+        "num": "HR 63",
+        "title": "Study of Diversion Programs",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 27"
+      },
+      {
+        "num": "HR 267",
+        "title": "Honoring Lt. Colonel George Hardy of the Tuskegee Airmen",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 25"
+      },
+      {
+        "num": "HB 1123",
+        "title": "Updating Insurance Coverage for Colorectal Cancer Screenings",
+        "role": "PRIME",
+        "status": "Referred to Banking & Insurance ,  Nov. 5, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 1331",
+        "title": "An Act providing for the capital budget for fiscal year 2025-2026; itemizing public improvement projects, furniture and equipment projects, transportation assistance, redevelopment assistance projects, flood control projects and Pennsylvania Fish and Boat Commission projects leased or assisted by the Department of General Services and other State agencies, together with their estimated financial costs; authorizing the incurring of debt without the approval of the electors for the purpose of financing the projects to be constructed, acquired or assisted by the Department of General Services and other State agencies; authorizing the use of current revenue for the purpose of financing the * * *",
+        "role": "PRIME",
+        "status": "Referred to Appropriations ,  Oct. 3, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      }
+    ],
+    "probst": [
+      {
+        "num": "HB 26",
+        "title": "Reproductive Freedom Act (previously HB2304)",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 8, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 65",
+        "title": "Ending Familial Responsibility in Medical Bills (formerly HB 2094)",
+        "role": "PRIME",
+        "status": "Referred to Health ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "mcclinton": [
+      {
+        "num": "HR 1",
+        "title": "A Resolution adopting permanent rules for the House of Representatives, further providing for definitions, for order of business, for fiscal notes, for consideration of bills, for third consideration and final passage bills, for House and concurrent resolutions, for standing committees and subcommittees, for powers and duties of standing committees and subcommittees, for public hearings, for discharge of committees, for lay on the table and for previous question.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 11 ), Jan. 7, 2025",
+        "statusKind": "wait",
+        "topic": "Tax",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 143",
+        "title": "Recognizing Public Defenders",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 30"
+      },
+      {
+        "num": "HR 217",
+        "title": "Honoring the Philadelphia Eagles on their Super Bowl LIX Victory",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 540 - 541 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "May 07"
+      },
+      {
+        "num": "HB 439",
+        "title": "The Pennsylvania CROWN Act",
+        "role": "PRIME",
+        "status": "Act No. 54 of 2025, Nov. 25, 2025",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "cephas": [
+      {
+        "num": "HR 149",
+        "title": "Recognizing April 11, 2025, as \"Black Doula Day\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 367 - 368 )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 09"
+      },
+      {
+        "num": "HR 150",
+        "title": "A Resolution recognizing the week of April 11 through 17, 2025, as \"Black Maternal Health Week\" in Pennsylvania to bring attention to the maternal health crisis and the importance of reducing maternal mortality and morbidity among Black women and birthing persons.",
+        "role": "PRIME",
+        "status": "Referred to Children & Youth",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "Mar 31"
+      },
+      {
+        "num": "HR 181",
+        "title": "Designating April 11-17, 2025 as Black Maternal Health Week in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page 369 )",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": "Apr 09"
+      },
+      {
+        "num": "HR 379",
+        "title": "January 23rd, 2026 as Maternal Health Awareness Day in Pennsylvania",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page ), Feb. 3, 2026",
+        "statusKind": "wait",
+        "topic": "Health",
+        "lastAction": ""
+      }
+    ],
+    "khan": [
+      {
+        "num": "HR 5",
+        "title": "Celebrating the Anniversary of the Pennsylvania State Grange",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Other",
+        "lastAction": "Jun 30"
+      },
+      {
+        "num": "HR 11",
+        "title": "A Resolution recognizing the month of June 2025 as \"Lipedema Awareness Month\" in Pennsylvania.",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71)",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 24"
+      },
+      {
+        "num": "HB 24",
+        "title": "Student Bill of Rights for Off-Campus Housing",
+        "role": "PRIME",
+        "status": "Referred to Housing & Community Development ,  Jan. 8, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      },
+      {
+        "num": "HB 25",
+        "title": "Extending School Budget Deadlines in State Budget Impasses",
+        "role": "PRIME",
+        "status": "Referred to Education ,  Jan. 8, 2025",
+        "statusKind": "wait",
+        "topic": "Education",
+        "lastAction": ""
+      }
+    ],
+    "burgos": [
+      {
+        "num": "HR 85",
+        "title": "Resolution - “Natural Gas Utility Worker’s Day” in PA - March 18, 2025",
+        "role": "PRIME",
+        "status": "Adopted",
+        "statusKind": "go",
+        "topic": "Energy",
+        "lastAction": "Mar 19"
+      }
+    ],
+    "gleim": [
+      {
+        "num": "HR 13",
+        "title": "Resolution Urging State Authority to Combat Drone Threats",
+        "role": "PRIME",
+        "status": "Referred to Intergovernmental Affairs & Operations ,  Jan. 17, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      }
+    ],
+    "rabb": [
+      {
+        "num": "HB 45",
+        "title": "Establishing Consumer Protections for Automatic Contract Renewals",
+        "role": "PRIME",
+        "status": "Referred to Commerce ,  Jan. 10, 2025",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": ""
+      },
+      {
+        "num": "HR 108",
+        "title": "Honoring Pennsylvania’s Transit Workers on National Transit Worker Appreciation Day",
+        "role": "PRIME",
+        "status": "Referred to Transportation",
+        "statusKind": "wait",
+        "topic": "Labor",
+        "lastAction": "Mar 11"
+      },
+      {
+        "num": "HB 109",
+        "title": "Issuance of Permits in Environmental Justice Areas",
+        "role": "PRIME",
+        "status": "Laid on the table",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Apr 07"
+      }
+    ],
+    "carroll": [
+      {
+        "num": "HR 231",
+        "title": "LGBTQ+ Pride Month",
+        "role": "PRIME",
+        "status": "(Remarks see House Journal Page )",
+        "statusKind": "wait",
+        "topic": "Other",
+        "lastAction": "Jun 11"
+      }
+    ],
+    "bellmon": [
+      {
+        "num": "HR 139",
+        "title": "Truck Driver Appreciation Week in Pennsylvania",
+        "role": "PRIME",
+        "status": "Laid on the table (Pursuant to House Rule 71), Sept. 30, 2025",
+        "statusKind": "wait",
+        "topic": "Transportation",
+        "lastAction": ""
+      }
     ]
   },
   "committees": [
-    { "id": "sen-envres",    "chamber": "S", "name": "Environmental Resources & Energy",            "chair": "yaw",          "minChair": "boscola",    "members": ["yaw","hutchinson","costa","boscola","argall","bartolotta"], "activeBills": ["SB 832","SB 712","SB 88","SB 451"] },
-    { "id": "sen-comms",     "chamber": "S", "name": "Communications & Technology",                 "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","yaw","boscola","costa","argall"],            "activeBills": ["SB 624","SB 277","SB 119"] },
-    { "id": "sen-conscom",   "chamber": "S", "name": "Consumer Protection & Professional Licensure","chair": "bartolotta",   "minChair": "boscola",    "members": ["bartolotta","phillipshill","boscola","hutchinson"],         "activeBills": ["SB 504","SB 318"] },
-    { "id": "sen-agrural",   "chamber": "S", "name": "Agriculture & Rural Affairs",                 "chair": "argall",       "minChair": "costa",      "members": ["argall","yaw","hutchinson","bartolotta","costa"],           "activeBills": ["SB 220","SB 145","SB 622"] },
-    { "id": "sen-finance",   "chamber": "S", "name": "Finance",                                     "chair": "hutchinson",   "minChair": "costa",      "members": ["hutchinson","phillipshill","costa","argall"],               "activeBills": ["SB 401","SB 99"] },
-    { "id": "sen-banking",   "chamber": "S", "name": "Banking & Insurance",                         "chair": "bartolotta",   "minChair": "boscola",    "members": ["yaw","hutchinson","bartolotta","boscola"],                  "activeBills": ["SB 712","SB 555"] },
-    { "id": "sen-localgov",  "chamber": "S", "name": "Local Government",                            "chair": "argall",       "minChair": "costa",      "members": ["argall","phillipshill","costa","boscola"],                  "activeBills": ["SB 333","SB 287"] },
-    { "id": "sen-laborind",  "chamber": "S", "name": "Labor & Industry",                            "chair": "bartolotta",   "minChair": "costa",      "members": ["bartolotta","hutchinson","costa"],                          "activeBills": ["SB 612","SB 188"] },
-    { "id": "sen-stategov",  "chamber": "S", "name": "State Government",                            "chair": "argall",       "minChair": "boscola",    "members": ["argall","boscola","phillipshill"],                          "activeBills": ["SB 102","SB 448"] },
-    { "id": "sen-transport", "chamber": "S", "name": "Transportation",                              "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","hutchinson","costa","bartolotta"],           "activeBills": ["SB 211","SB 76"] },
-    { "id": "sen-approps",   "chamber": "S", "name": "Appropriations",                              "chair": "phillipshill", "minChair": "costa",      "members": ["phillipshill","costa","boscola","hutchinson","argall"],     "activeBills": ["SB 1","SB 1100","SB 1101"] },
-    { "id": "sen-rules",     "chamber": "S", "name": "Rules & Executive Nominations",               "chair": "costa",        "minChair": null,         "members": ["costa","phillipshill","hutchinson","boscola"],              "activeBills": [] },
-
-    { "id": "hse-consumer",  "chamber": "H", "name": "Consumer Protection, Technology & Utilities", "chair": "matzie",       "minChair": "struzzi",    "members": ["matzie","struzzi","nelson","causer","kim"],                 "activeBills": ["HB 1024","HB 412","HB 251","HB 873"] },
-    { "id": "hse-agrural",   "chamber": "H", "name": "Agriculture & Rural Affairs",                 "chair": "kim",          "minChair": "causer",     "members": ["causer","struzzi","nelson","kim","matzie"],                 "activeBills": ["HB 388","HB 567","HB 1188"] },
-    { "id": "hse-envres",    "chamber": "H", "name": "Environmental Resources & Energy",            "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","struzzi","kim"],                 "activeBills": ["HB 902","HB 410","HB 117"] },
-    { "id": "hse-commerce",  "chamber": "H", "name": "Commerce",                                    "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","struzzi","kim"],                          "activeBills": ["HB 644","HB 219"] },
-    { "id": "hse-insurance", "chamber": "H", "name": "Insurance",                                   "chair": "kim",          "minChair": "nelson",     "members": ["nelson","kim","struzzi"],                                   "activeBills": ["HB 712","HB 305"] },
-    { "id": "hse-finance",   "chamber": "H", "name": "Finance",                                     "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","kim"],                           "activeBills": ["HB 1101","HB 88"] },
-    { "id": "hse-localgov",  "chamber": "H", "name": "Local Government",                            "chair": "kim",          "minChair": "struzzi",    "members": ["kim","struzzi","causer","nelson"],                          "activeBills": ["HB 412","HB 1077"] },
-    { "id": "hse-laborind",  "chamber": "H", "name": "Labor & Industry",                            "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","kim"],                                    "activeBills": ["HB 533","HB 211"] },
-    { "id": "hse-transport", "chamber": "H", "name": "Transportation",                              "chair": "struzzi",      "minChair": "matzie",     "members": ["struzzi","causer","matzie","kim"],                          "activeBills": ["HB 660","HB 144","HB 821"] },
-    { "id": "hse-stategov",  "chamber": "H", "name": "State Government",                            "chair": "kim",          "minChair": "causer",     "members": ["kim","matzie","causer","nelson"],                           "activeBills": ["HB 100","HB 1422"] },
-    { "id": "hse-judiciary", "chamber": "H", "name": "Judiciary",                                   "chair": "matzie",       "minChair": "nelson",     "members": ["matzie","nelson","kim"],                                    "activeBills": ["HB 1014","HB 290"] },
-    { "id": "hse-veterans",  "chamber": "H", "name": "Veterans Affairs & Emergency Preparedness",   "chair": "causer",       "minChair": "kim",        "members": ["causer","struzzi","kim"],                                   "activeBills": ["HB 477","HB 902"] },
-    { "id": "hse-approps",   "chamber": "H", "name": "Appropriations",                              "chair": "matzie",       "minChair": "causer",     "members": ["matzie","causer","nelson","kim","struzzi"],                 "activeBills": ["HB 1","HB 1500","HB 1501"] },
-    { "id": "hse-gameFish",  "chamber": "H", "name": "Game & Fisheries",                            "chair": "causer",       "minChair": "matzie",     "members": ["causer","struzzi","nelson"],                                "activeBills": ["HB 622","HB 318"] }
+    {
+      "id": "sen-aging-and-youth",
+      "chamber": "S",
+      "name": "Aging & Youth",
+      "chair": "langerholc",
+      "minChair": "collett",
+      "members": [
+        "langerholc",
+        "collett",
+        "ward",
+        "ward39",
+        "culver",
+        "gebhard",
+        "pennycuick",
+        "stefano",
+        "comitta",
+        "kim",
+        "malone"
+      ],
+      "activeBills": [
+        "HB 923",
+        "HB 1058",
+        "SB 731",
+        "SB 1100",
+        "SB 1052",
+        "SB 723",
+        "SB 642",
+        "SB 482",
+        "SB 449",
+        "SB 196",
+        "SB 26",
+        "SR 139",
+        "HB 1894",
+        "HB 1600",
+        "HB 1577",
+        "HB 1576",
+        "HB 1573",
+        "HB 1528",
+        "HB 1108"
+      ]
+    },
+    {
+      "id": "sen-agrural",
+      "chamber": "S",
+      "name": "Agriculture & Rural Affairs",
+      "chair": "vogel",
+      "minChair": "schwank",
+      "members": [
+        "vogel",
+        "schwank",
+        "brooks",
+        "ward39",
+        "argall",
+        "mastriano",
+        "rothman",
+        "yaw",
+        "comitta",
+        "malone",
+        "street"
+      ],
+      "activeBills": [
+        "HB 615",
+        "SB 689",
+        "HB 324",
+        "SB 1271",
+        "SB 1242",
+        "SB 1190",
+        "SB 1135",
+        "SB 988",
+        "SB 866",
+        "SB 820",
+        "SB 629",
+        "SB 607",
+        "SB 508",
+        "SB 386",
+        "SB 339",
+        "SB 336",
+        "SB 217",
+        "SB 183",
+        "SB 108",
+        "SB 107",
+        "SB 106",
+        "SR 24",
+        "HB 1096",
+        "HB 764",
+        "HB 587",
+        "HB 77"
+      ]
+    },
+    {
+      "id": "sen-approps",
+      "chamber": "S",
+      "name": "Appropriations",
+      "chair": "martin",
+      "minChair": "hughes",
+      "members": [
+        "martin",
+        "hughes",
+        "vogel",
+        "pittman",
+        "ward39",
+        "brown",
+        "coleman",
+        "culver",
+        "dush",
+        "langerholc",
+        "laughlin",
+        "pennycuick",
+        "phillipshill",
+        "picozzi",
+        "robinson",
+        "costa",
+        "cappelletti",
+        "haywood",
+        "kearney",
+        "kim",
+        "schwank",
+        "street"
+      ],
+      "activeBills": [
+        "SB 1240",
+        "HB 1251",
+        "HB 2163",
+        "SB 323",
+        "SB 1298",
+        "SB 1296",
+        "SB 1295",
+        "SB 1287",
+        "SB 1209",
+        "SB 1174",
+        "SB 1173",
+        "SB 1172",
+        "SB 1171",
+        "SB 1170",
+        "SB 1169",
+        "SB 1168",
+        "SB 1167",
+        "SB 1166",
+        "SB 1165",
+        "SB 1164",
+        "SB 1163",
+        "SB 1162",
+        "SB 1161",
+        "SB 1080",
+        "SB 1074",
+        "SB 1004",
+        "SB 1003",
+        "SB 1002",
+        "SB 1001",
+        "SB 1218"
+      ]
+    },
+    {
+      "id": "sen-banking",
+      "chamber": "S",
+      "name": "Banking & Insurance",
+      "chair": "gebhard",
+      "minChair": "street",
+      "members": [
+        "gebhard",
+        "street",
+        "baker",
+        "ward39",
+        "martin",
+        "phillipshill",
+        "robinson",
+        "rothman",
+        "vogel",
+        "yaw",
+        "boscola",
+        "flynn",
+        "kim",
+        "williams"
+      ],
+      "activeBills": [
+        "SB 1210",
+        "SB 1211",
+        "SB 1074",
+        "HB 1704",
+        "HB 211",
+        "SB 1195",
+        "SB 1185",
+        "SB 1126",
+        "SB 1122",
+        "SB 1112",
+        "SB 1007",
+        "SB 989",
+        "SB 978",
+        "SB 967",
+        "SB 959",
+        "SB 936",
+        "SB 935",
+        "SB 905",
+        "SB 904",
+        "SB 901",
+        "SB 888",
+        "SB 884",
+        "SB 794",
+        "SB 767",
+        "SB 738",
+        "SB 622",
+        "SB 610",
+        "SB 608",
+        "SB 594",
+        "SB 578"
+      ]
+    },
+    {
+      "id": "sen-comms",
+      "chamber": "S",
+      "name": "Communications & Technology",
+      "chair": "pennycuick",
+      "minChair": "miller",
+      "members": [
+        "pennycuick",
+        "miller",
+        "phillipshill",
+        "ward39",
+        "baker",
+        "farry",
+        "gebhard",
+        "picozzi",
+        "boscola",
+        "kane",
+        "malone"
+      ],
+      "activeBills": [
+        "SB 939",
+        "SB 1090",
+        "SB 431",
+        "SB 491",
+        "SB 1015",
+        "SB 806",
+        "SB 727",
+        "SB 568",
+        "SB 373",
+        "SB 112",
+        "SB 22",
+        "SR 244",
+        "HB 997",
+        "HB 811",
+        "HB 78",
+        "SB 377",
+        "SB 376"
+      ]
+    },
+    {
+      "id": "sen-community-economic-and-recreational-development",
+      "chamber": "S",
+      "name": "Community, Economic & Recreational Development",
+      "chair": "brown",
+      "minChair": "williams",
+      "members": [
+        "brown",
+        "williams",
+        "gebhard",
+        "ward39",
+        "bartolotta",
+        "coleman",
+        "farry",
+        "robinson",
+        "stefano",
+        "yaw",
+        "fontana",
+        "kim",
+        "miller",
+        "muth"
+      ],
+      "activeBills": [
+        "SR 128",
+        "HB 1030",
+        "SB 995",
+        "SB 478",
+        "SB 1105",
+        "SB 1079",
+        "SB 823",
+        "SB 818",
+        "SB 783",
+        "SB 778",
+        "SB 756",
+        "SB 674",
+        "SB 671",
+        "SB 667",
+        "SB 626",
+        "SB 515",
+        "SB 514",
+        "SB 510",
+        "SB 465",
+        "SB 450",
+        "SB 441",
+        "SB 384",
+        "SB 330",
+        "SB 266",
+        "SB 265",
+        "SB 257",
+        "SB 235",
+        "SB 93",
+        "SB 840",
+        "SB 766"
+      ]
+    },
+    {
+      "id": "sen-conscom",
+      "chamber": "S",
+      "name": "Consumer Protection & Professional Licensure",
+      "chair": "stefano",
+      "minChair": "boscola",
+      "members": [
+        "stefano",
+        "boscola",
+        "farry",
+        "ward39",
+        "brooks",
+        "brown",
+        "culver",
+        "gebhard",
+        "keefer",
+        "phillipshill",
+        "flynn",
+        "pisciottano",
+        "santarsiero",
+        "tartaglione"
+      ],
+      "activeBills": [
+        "SB 1240",
+        "HB 1251",
+        "HB 2163",
+        "SB 331",
+        "SB 1312",
+        "SB 1302",
+        "SB 1292",
+        "SB 1291",
+        "SB 1260",
+        "SB 1254",
+        "SB 1249",
+        "SB 1243",
+        "SB 1205",
+        "SB 1182",
+        "SB 1158",
+        "SB 1133",
+        "SB 1130",
+        "SB 1129",
+        "SB 1128",
+        "SB 1119",
+        "SB 1114",
+        "SB 1055",
+        "SB 1051",
+        "SB 1043",
+        "SB 1019",
+        "SB 1005",
+        "SB 983",
+        "SB 981",
+        "SB 977",
+        "SB 992"
+      ]
+    },
+    {
+      "id": "sen-education",
+      "chamber": "S",
+      "name": "Education",
+      "chair": "culver",
+      "minChair": "williams38",
+      "members": [
+        "culver",
+        "williams38",
+        "mastriano",
+        "ward39",
+        "argall",
+        "coleman",
+        "keefer",
+        "rothman",
+        "comitta",
+        "kearney",
+        "williams"
+      ],
+      "activeBills": [
+        "SB 250",
+        "SB 598",
+        "SB 698",
+        "SB 1293",
+        "SB 1280",
+        "SB 1253",
+        "SB 1234",
+        "SB 1214",
+        "SB 1125",
+        "SB 1116",
+        "SB 1111",
+        "SB 1103",
+        "SB 1066",
+        "SB 1054",
+        "SB 1039",
+        "SB 1026",
+        "SB 999",
+        "SB 984",
+        "SB 982",
+        "SB 973",
+        "SB 969",
+        "SB 951",
+        "SB 930",
+        "SB 900",
+        "SB 858",
+        "SB 839",
+        "SB 816",
+        "SB 799",
+        "SB 791",
+        "SB 1294"
+      ]
+    },
+    {
+      "id": "sen-envres",
+      "chamber": "S",
+      "name": "Environmental Resources & Energy",
+      "chair": "yaw",
+      "minChair": "comitta",
+      "members": [
+        "yaw",
+        "comitta",
+        "hutchinson",
+        "ward39",
+        "bartolotta",
+        "laughlin",
+        "martin",
+        "vogel",
+        "kane",
+        "muth",
+        "saval"
+      ],
+      "activeBills": [
+        "SB 1068",
+        "SB 102",
+        "SB 682",
+        "SB 704",
+        "SB 1236",
+        "SB 1157",
+        "SB 1131",
+        "SB 1121",
+        "SB 1120",
+        "SB 1083",
+        "SB 1048",
+        "SB 991",
+        "SB 970",
+        "SB 925",
+        "SB 856",
+        "SB 849",
+        "SB 763",
+        "SB 736",
+        "SB 699",
+        "SB 685",
+        "SB 684",
+        "SB 681",
+        "SB 664",
+        "SB 660",
+        "SB 659",
+        "SB 624",
+        "SB 611",
+        "SB 590",
+        "SB 551",
+        "SB 712"
+      ]
+    },
+    {
+      "id": "sen-finance",
+      "chamber": "S",
+      "name": "Finance",
+      "chair": "hutchinson",
+      "minChair": "pisciottano",
+      "members": [
+        "hutchinson",
+        "pisciottano",
+        "coleman",
+        "ward39",
+        "keefer",
+        "laughlin",
+        "pennycuick",
+        "rothman",
+        "fontana",
+        "haywood",
+        "muth"
+      ],
+      "activeBills": [
+        "SB 100",
+        "SB 124",
+        "SB 474",
+        "SB 1300",
+        "SB 1297",
+        "SB 1258",
+        "SB 1255",
+        "SB 1246",
+        "SB 1219",
+        "SB 1208",
+        "SB 1202",
+        "SB 1201",
+        "SB 1199",
+        "SB 1192",
+        "SB 1175",
+        "SB 1153",
+        "SB 1141",
+        "SB 1109",
+        "SB 1106",
+        "SB 1102",
+        "SB 1084",
+        "SB 1069",
+        "SB 1031",
+        "SB 994",
+        "SB 986",
+        "SB 962",
+        "SB 949",
+        "SB 942",
+        "SB 844",
+        "SB 527"
+      ]
+    },
+    {
+      "id": "sen-game-and-fisheries",
+      "chamber": "S",
+      "name": "Game & Fisheries",
+      "chair": "rothman",
+      "minChair": "malone",
+      "members": [
+        "rothman",
+        "malone",
+        "laughlin",
+        "ward39",
+        "coleman",
+        "dush",
+        "hutchinson",
+        "picozzi",
+        "boscola",
+        "schwank",
+        "williams38"
+      ],
+      "activeBills": [
+        "SB 1020",
+        "HB 1431",
+        "SB 67",
+        "SB 1313",
+        "SB 1244",
+        "SB 1238",
+        "SB 1213",
+        "SB 1142",
+        "SB 1023",
+        "SB 1017",
+        "SB 945",
+        "SB 879",
+        "SB 845",
+        "SB 469",
+        "SB 423",
+        "SB 391",
+        "SB 303",
+        "HB 1811",
+        "HB 1507",
+        "HB 1418",
+        "HB 994",
+        "HB 968",
+        "SB 800",
+        "SB 533",
+        "SB 518",
+        "SB 517",
+        "SB 476",
+        "SB 232",
+        "HB 992",
+        "HB 103"
+      ]
+    },
+    {
+      "id": "sen-health-and-human-services",
+      "chamber": "S",
+      "name": "Health & Human Services",
+      "chair": "brooks",
+      "minChair": "haywood",
+      "members": [
+        "brooks",
+        "haywood",
+        "culver",
+        "ward39",
+        "farry",
+        "hutchinson",
+        "laughlin",
+        "stefano",
+        "ward",
+        "cappelletti",
+        "collett",
+        "schwank",
+        "street"
+      ],
+      "activeBills": [
+        "SB 899",
+        "SB 1095",
+        "SB 614",
+        "SB 1289",
+        "SB 1196",
+        "SB 1194",
+        "SB 1186",
+        "SB 1147",
+        "SB 1145",
+        "SB 1127",
+        "SB 1118",
+        "SB 1085",
+        "SB 1067",
+        "SB 1062",
+        "SB 1060",
+        "SB 1057",
+        "SB 1041",
+        "SB 1038",
+        "SB 1022",
+        "SB 1018",
+        "SB 1016",
+        "SB 965",
+        "SB 957",
+        "SB 946",
+        "SB 921",
+        "SB 909",
+        "SB 903",
+        "SB 885",
+        "SB 715",
+        "SB 461"
+      ]
+    },
+    {
+      "id": "sen-institutional-sustainability-and-innovation",
+      "chamber": "S",
+      "name": "Institutional Sustainability & Innovation",
+      "chair": "farry",
+      "minChair": "kearney",
+      "members": [
+        "farry",
+        "kearney",
+        "argall",
+        "ward39",
+        "brooks",
+        "gebhard",
+        "robinson",
+        "ward",
+        "collett",
+        "haywood",
+        "santarsiero"
+      ],
+      "activeBills": [
+        "SB 804",
+        "SB 998",
+        "HB 157",
+        "SB 811",
+        "SB 1285",
+        "SB 1206",
+        "SB 1113",
+        "SB 792",
+        "SB 760",
+        "SB 759",
+        "SB 754",
+        "SB 708",
+        "SB 692",
+        "SB 672",
+        "SB 522",
+        "SB 322",
+        "SB 320",
+        "SB 84",
+        "SB 58",
+        "HB 1460"
+      ]
+    },
+    {
+      "id": "sen-intergovernmental-operations",
+      "chamber": "S",
+      "name": "Intergovernmental Operations",
+      "chair": "coleman",
+      "minChair": "tartaglione",
+      "members": [
+        "coleman",
+        "tartaglione",
+        "dush",
+        "ward39",
+        "culver",
+        "keefer",
+        "mastriano",
+        "picozzi",
+        "cappelletti",
+        "costa",
+        "hughes"
+      ],
+      "activeBills": [
+        "SB 810",
+        "SB 657",
+        "SB 553",
+        "SB 462",
+        "SB 438",
+        "SB 222",
+        "SR 83",
+        "SR 63",
+        "SB 444",
+        "SB 367",
+        "SB 333",
+        "SB 245",
+        "SB 6"
+      ]
+    },
+    {
+      "id": "sen-judiciary",
+      "chamber": "S",
+      "name": "Judiciary",
+      "chair": "baker",
+      "minChair": "cappelletti",
+      "members": [
+        "baker",
+        "cappelletti",
+        "yaw",
+        "ward39",
+        "bartolotta",
+        "brown",
+        "dush",
+        "langerholc",
+        "mastriano",
+        "pennycuick",
+        "collett",
+        "haywood",
+        "santarsiero",
+        "saval"
+      ],
+      "activeBills": [
+        "SB 45",
+        "SB 1235",
+        "SB 1259",
+        "SB 1311",
+        "SB 1290",
+        "SB 1283",
+        "SB 1266",
+        "SB 1252",
+        "SB 1251",
+        "SB 1212",
+        "SB 1203",
+        "SB 1197",
+        "SB 1193",
+        "SB 1189",
+        "SB 1184",
+        "SB 1159",
+        "SB 1149",
+        "SB 1144",
+        "SB 1143",
+        "SB 1140",
+        "SB 1139",
+        "SB 1138",
+        "SB 1137",
+        "SB 1134",
+        "SB 1089",
+        "SB 1086",
+        "SB 1075",
+        "SB 1071",
+        "SB 1284",
+        "SB 1050"
+      ]
+    },
+    {
+      "id": "sen-laborind",
+      "chamber": "S",
+      "name": "Labor & Industry",
+      "chair": "robinson",
+      "minChair": "kane",
+      "members": [
+        "robinson",
+        "kane",
+        "bartolotta",
+        "ward39",
+        "baker",
+        "brown",
+        "laughlin",
+        "picozzi",
+        "flynn",
+        "pisciottano",
+        "tartaglione"
+      ],
+      "activeBills": [
+        "SB 1053",
+        "HB 135",
+        "SB 743",
+        "HB 274",
+        "SB 1301",
+        "SB 1269",
+        "SB 1268",
+        "SB 1257",
+        "SB 1250",
+        "SB 1247",
+        "SB 1241",
+        "SB 1215",
+        "SB 1204",
+        "SB 1198",
+        "SB 1188",
+        "SB 1151",
+        "SB 1094",
+        "SB 1093",
+        "SB 1076",
+        "SB 1059",
+        "SB 1045",
+        "SB 1042",
+        "SB 976",
+        "SB 961",
+        "SB 908",
+        "SB 906",
+        "SB 894",
+        "SB 893",
+        "SB 889",
+        "SB 867"
+      ]
+    },
+    {
+      "id": "sen-law-and-justice",
+      "chamber": "S",
+      "name": "Law & Justice",
+      "chair": "laughlin",
+      "minChair": "fontana",
+      "members": [
+        "laughlin",
+        "fontana",
+        "picozzi",
+        "ward39",
+        "farry",
+        "keefer",
+        "pennycuick",
+        "robinson",
+        "boscola",
+        "flynn",
+        "tartaglione"
+      ],
+      "activeBills": [
+        "SB 49",
+        "SB 1218",
+        "SB 1274",
+        "SB 1117",
+        "SB 1047",
+        "SB 1035",
+        "SB 1032",
+        "SB 1029",
+        "SB 985",
+        "SB 960",
+        "SB 958",
+        "SB 765",
+        "SB 732",
+        "SB 703",
+        "SB 641",
+        "SB 519",
+        "SB 370",
+        "SB 368",
+        "SB 358",
+        "SB 120",
+        "SB 76",
+        "SB 46",
+        "SB 21",
+        "HB 1702",
+        "HB 1511",
+        "HB 627",
+        "HB 559",
+        "SB 912",
+        "SB 344",
+        "SB 327"
+      ]
+    },
+    {
+      "id": "sen-localgov",
+      "chamber": "S",
+      "name": "Local Government",
+      "chair": "keefer",
+      "minChair": "kim",
+      "members": [
+        "keefer",
+        "kim",
+        "brown",
+        "ward39",
+        "culver",
+        "dush",
+        "hutchinson",
+        "mastriano",
+        "comitta",
+        "kearney",
+        "malone"
+      ],
+      "activeBills": [
+        "SB 1287",
+        "HB 1442",
+        "SR 211",
+        "SB 418",
+        "SB 1275",
+        "SB 1239",
+        "SB 1101",
+        "SB 938",
+        "SB 932",
+        "SB 920",
+        "SB 847",
+        "SB 822",
+        "SB 714",
+        "SB 688",
+        "SB 637",
+        "SB 632",
+        "SB 567",
+        "SB 489",
+        "SB 412",
+        "SB 228",
+        "SB 216",
+        "HB 2179",
+        "HB 2177",
+        "HB 2151",
+        "HB 1787",
+        "HB 1738",
+        "HB 1720",
+        "HB 1532",
+        "HB 1318",
+        "SB 1036"
+      ]
+    },
+    {
+      "id": "sen-rules",
+      "chamber": "S",
+      "name": "Rules & Executive Nominations",
+      "chair": "pittman",
+      "minChair": "costa",
+      "members": [
+        "pittman",
+        "costa",
+        "langerholc",
+        "ward39",
+        "argall",
+        "bartolotta",
+        "brooks",
+        "gebhard",
+        "rothman",
+        "stefano",
+        "ward",
+        "yaw",
+        "collett",
+        "hughes",
+        "miller",
+        "santarsiero",
+        "tartaglione"
+      ],
+      "activeBills": [
+        "SB 1218",
+        "SB 1096",
+        "SB 731",
+        "SB 275",
+        "SR 299",
+        "SR 298",
+        "SR 296",
+        "SR 290",
+        "SR 289",
+        "SR 288",
+        "SR 286",
+        "SR 283",
+        "SR 282",
+        "SR 281",
+        "SR 280",
+        "SR 279",
+        "SR 278",
+        "SR 277",
+        "SR 275",
+        "SR 274",
+        "SR 273",
+        "SR 272",
+        "SR 271",
+        "SR 270",
+        "SR 269",
+        "SR 268",
+        "SB 518",
+        "SB 467",
+        "SB 411",
+        "SB 327"
+      ]
+    },
+    {
+      "id": "sen-stategov",
+      "chamber": "S",
+      "name": "State Government",
+      "chair": "dush",
+      "minChair": "santarsiero",
+      "members": [
+        "dush",
+        "santarsiero",
+        "stefano",
+        "ward39",
+        "argall",
+        "mastriano",
+        "phillipshill",
+        "ward",
+        "muth",
+        "saval",
+        "williams"
+      ],
+      "activeBills": [
+        "HB 439",
+        "SB 734",
+        "SB 829",
+        "SB 848",
+        "SR 131",
+        "SB 1276",
+        "SB 1272",
+        "SB 1248",
+        "SB 1200",
+        "SB 1183",
+        "SB 1155",
+        "SB 1150",
+        "SB 1108",
+        "SB 1104",
+        "SB 1098",
+        "SB 1097",
+        "SB 1088",
+        "SB 1082",
+        "SB 1081",
+        "SB 1065",
+        "SB 1033",
+        "SB 1030",
+        "SB 1013",
+        "SB 1011",
+        "SB 1010",
+        "SB 1006",
+        "SB 947",
+        "SB 943",
+        "SB 940",
+        "SB 931"
+      ]
+    },
+    {
+      "id": "sen-transport",
+      "chamber": "S",
+      "name": "Transportation",
+      "chair": "ward",
+      "minChair": "flynn",
+      "members": [
+        "ward",
+        "flynn",
+        "robinson",
+        "ward39",
+        "bartolotta",
+        "brown",
+        "langerholc",
+        "rothman",
+        "stefano",
+        "vogel",
+        "kearney",
+        "miller",
+        "saval",
+        "williams38"
+      ],
+      "activeBills": [
+        "SB 1286",
+        "SB 1295",
+        "SB 1296",
+        "SB 1262",
+        "SB 1273",
+        "SB 1288",
+        "SB 1282",
+        "SB 1265",
+        "SB 1264",
+        "SB 1245",
+        "SB 1237",
+        "SB 1217",
+        "SB 1207",
+        "SB 1191",
+        "SB 1187",
+        "SB 1156",
+        "SB 1154",
+        "SB 1146",
+        "SB 1132",
+        "SB 1115",
+        "SB 1110",
+        "SB 1107",
+        "SB 1099",
+        "SB 1092",
+        "SB 1087",
+        "SB 1077",
+        "SB 1072",
+        "SB 1049",
+        "SB 1046",
+        "SB 1044"
+      ]
+    },
+    {
+      "id": "sen-urban-affairs-and-housing",
+      "chamber": "S",
+      "name": "Urban Affairs & Housing",
+      "chair": "picozzi",
+      "minChair": "saval",
+      "members": [
+        "picozzi",
+        "saval",
+        "keefer",
+        "ward39",
+        "argall",
+        "coleman",
+        "farry",
+        "vogel",
+        "fontana",
+        "miller",
+        "street"
+      ],
+      "activeBills": [
+        "HB 858",
+        "SB 979",
+        "SB 62",
+        "SB 815",
+        "SB 1299",
+        "SB 1281",
+        "SB 1279",
+        "SB 1278",
+        "SB 1277",
+        "SB 1270",
+        "SB 1267",
+        "SB 1263",
+        "SB 1256",
+        "SB 1216",
+        "SB 1152",
+        "SB 1148",
+        "SB 963",
+        "SB 876",
+        "SB 803",
+        "SB 746",
+        "SB 745",
+        "SB 673",
+        "SB 670",
+        "SB 646",
+        "SB 643",
+        "SB 618",
+        "SB 609",
+        "SB 546",
+        "SB 218",
+        "SB 345"
+      ]
+    },
+    {
+      "id": "sen-veterans-affairs-and-emergency-preparedness",
+      "chamber": "S",
+      "name": "Veterans Affairs & Emergency Preparedness",
+      "chair": "mastriano",
+      "minChair": "muth",
+      "members": [
+        "mastriano",
+        "muth",
+        "pennycuick",
+        "ward39",
+        "baker",
+        "brooks",
+        "dush",
+        "langerholc",
+        "kane",
+        "pisciottano",
+        "williams38"
+      ],
+      "activeBills": [
+        "SB 923",
+        "SB 980",
+        "SB 1303",
+        "SB 1061",
+        "SB 1037",
+        "SB 870",
+        "SB 809",
+        "SB 654",
+        "SB 633",
+        "SB 623",
+        "SB 582",
+        "SB 577",
+        "SB 552",
+        "SB 531",
+        "SB 529",
+        "SB 523",
+        "SB 419",
+        "SB 407",
+        "SB 201",
+        "SB 193",
+        "SB 110",
+        "SR 247",
+        "SR 122",
+        "SR 28",
+        "HB 2024",
+        "HB 1144",
+        "HB 1102",
+        "SB 1261",
+        "SB 1209",
+        "SB 1078"
+      ]
+    },
+    {
+      "id": "hse-aging-and-older-adult-services",
+      "chamber": "H",
+      "name": "Aging & Older Adult Services",
+      "chair": "madden",
+      "minChair": null,
+      "members": [
+        "madden",
+        "mentzer",
+        "kosierowski",
+        "benham",
+        "parker",
+        "borowski",
+        "carroll",
+        "cerrato",
+        "goughnour",
+        "harris195",
+        "khan",
+        "powell",
+        "prokopiak",
+        "rivera",
+        "smithwadeel",
+        "labs",
+        "nelson",
+        "brown9",
+        "day",
+        "gleim",
+        "jones",
+        "kozak",
+        "marcell",
+        "owlett",
+        "rasel",
+        "schlegel"
+      ],
+      "activeBills": [
+        "HR 389",
+        "HR 366",
+        "SB 731",
+        "HB 2435",
+        "HB 2342",
+        "HB 1670",
+        "HB 1611",
+        "HB 1350",
+        "HB 1310",
+        "HB 919",
+        "HB 654",
+        "HB 531",
+        "HB 527",
+        "HR 274",
+        "HR 241",
+        "HB 1894",
+        "HB 1606",
+        "HB 1528",
+        "HB 1466",
+        "HB 923",
+        "HB 372",
+        "HR 330",
+        "HR 209",
+        "HR 7"
+      ]
+    },
+    {
+      "id": "hse-agrural",
+      "chamber": "H",
+      "name": "Agriculture & Rural Affairs",
+      "chair": "pashinski",
+      "minChair": null,
+      "members": [
+        "pashinski",
+        "moul",
+        "kinkead",
+        "sappey",
+        "cepedafreytiz",
+        "dougherty",
+        "friel",
+        "green",
+        "hanbidge",
+        "howard",
+        "khan",
+        "parker",
+        "rabb",
+        "steele",
+        "takac",
+        "lawrence",
+        "cook",
+        "borowicz",
+        "hamm",
+        "jones98",
+        "kerwin",
+        "krupa",
+        "mustello",
+        "stambaugh",
+        "stender",
+        "zimmerman"
+      ],
+      "activeBills": [
+        "HR 419",
+        "HR 436",
+        "HR 378",
+        "HB 2468",
+        "HB 2298",
+        "HB 2139",
+        "HB 2071",
+        "HB 2065",
+        "HB 1930",
+        "HB 1895",
+        "HB 1456",
+        "HB 1277",
+        "HB 1241",
+        "HB 1201",
+        "HB 1132",
+        "HB 1074",
+        "HB 1059",
+        "HB 1007",
+        "HB 1006",
+        "HB 898",
+        "HB 875",
+        "HB 693",
+        "HB 436",
+        "HB 313",
+        "HB 311",
+        "HB 296",
+        "HB 295",
+        "HB 294",
+        "HB 2034",
+        "HB 1768"
+      ]
+    },
+    {
+      "id": "hse-approps",
+      "chamber": "H",
+      "name": "Appropriations",
+      "chair": "harris",
+      "minChair": null,
+      "members": [
+        "harris",
+        "struzzi",
+        "mullins",
+        "young",
+        "abney",
+        "guzman",
+        "malagari",
+        "sanchez",
+        "waxman",
+        "webster",
+        "bellmon",
+        "brennan",
+        "curry",
+        "donahue",
+        "fleming",
+        "friel",
+        "gallagher",
+        "khan",
+        "kinkead",
+        "kosierowski",
+        "madsen",
+        "mayes",
+        "salisbury",
+        "barton",
+        "mustello",
+        "flood",
+        "kail",
+        "kutz",
+        "mako",
+        "marcell",
+        "nelson",
+        "brown9",
+        "davanzo",
+        "krupa",
+        "olsommer",
+        "reichard",
+        "rigby"
+      ],
+      "activeBills": [
+        "SB 507",
+        "HB 72",
+        "HB 344",
+        "HB 830",
+        "HB 2218",
+        "HB 2413",
+        "HB 2412",
+        "HB 2402",
+        "HB 2382",
+        "HB 2347",
+        "HB 2223",
+        "HB 2211",
+        "HB 2194",
+        "HB 2106",
+        "HB 2097",
+        "HB 2094",
+        "HB 2093",
+        "HB 2091",
+        "HB 2079",
+        "HB 2076",
+        "HB 2056",
+        "HB 2052",
+        "HB 2027",
+        "HB 2025",
+        "HB 2004",
+        "HB 1990",
+        "HB 1979",
+        "HB 1978",
+        "HB 1977",
+        "HB 1964"
+      ]
+    },
+    {
+      "id": "hse-children-and-youth",
+      "chamber": "H",
+      "name": "Children & Youth",
+      "chair": "mcneill",
+      "minChair": null,
+      "members": [
+        "mcneill",
+        "klunk",
+        "hanbidge",
+        "krajewski",
+        "bellmon",
+        "boyd",
+        "cerrato",
+        "curry",
+        "fleming",
+        "guenst",
+        "howard",
+        "kazeem",
+        "mcandrew",
+        "nelson154",
+        "parker",
+        "hogan",
+        "flick",
+        "barger",
+        "kozak",
+        "mackenzie",
+        "mihalek",
+        "pugh",
+        "schlegel",
+        "verobish",
+        "wallen",
+        "walsh"
+      ],
+      "activeBills": [
+        "SB 9",
+        "HR 451",
+        "HR 450",
+        "HR 407",
+        "HB 2123",
+        "HB 2108",
+        "HB 2041",
+        "HB 2031",
+        "HB 2019",
+        "HB 1973",
+        "HB 1607",
+        "HB 1569",
+        "HB 1369",
+        "HB 1368",
+        "HB 1367",
+        "HB 1307",
+        "HB 1305",
+        "HB 1182",
+        "HB 1022",
+        "HB 1021",
+        "HB 524",
+        "HB 434",
+        "HB 432",
+        "HB 335",
+        "HB 151",
+        "HB 138",
+        "HB 133",
+        "HR 460",
+        "HR 442",
+        "HB 1936"
+      ]
+    },
+    {
+      "id": "hse-commerce",
+      "chamber": "H",
+      "name": "Commerce",
+      "chair": "conklin",
+      "minChair": null,
+      "members": [
+        "conklin",
+        "lawrence",
+        "parker",
+        "cepedafreytiz",
+        "cephas",
+        "kenyatta",
+        "pielli",
+        "rabb",
+        "bellmon",
+        "brown10",
+        "carroll",
+        "harris195",
+        "munroe",
+        "nelson154",
+        "sanchez",
+        "twardzik",
+        "brown9",
+        "labs",
+        "marcell",
+        "scheuren",
+        "barger",
+        "dorsie",
+        "gaydos",
+        "gleim",
+        "olsommer",
+        "shaffer"
+      ],
+      "activeBills": [
+        "HB 2426",
+        "HB 2391",
+        "HB 2120",
+        "HB 2388",
+        "HB 2384",
+        "HB 2383",
+        "HB 2282",
+        "HB 2278",
+        "HB 2207",
+        "HB 2180",
+        "HB 2159",
+        "HB 2113",
+        "HB 2013",
+        "HB 1927",
+        "HB 1869",
+        "HB 1833",
+        "HB 1760",
+        "HB 1751",
+        "HB 1631",
+        "HB 1458",
+        "HB 1276",
+        "HB 1190",
+        "HB 1028",
+        "HB 883",
+        "HB 747",
+        "HB 639",
+        "HB 638",
+        "HB 631",
+        "HB 2175",
+        "HB 1882"
+      ]
+    },
+    {
+      "id": "hse-committee-on-committees",
+      "chamber": "H",
+      "name": "Committee On Committees",
+      "chair": null,
+      "minChair": null,
+      "members": [
+        "pickett",
+        "daley"
+      ],
+      "activeBills": []
+    },
+    {
+      "id": "hse-communications-and-technology",
+      "chamber": "H",
+      "name": "Communications & Technology",
+      "chair": "ciresi",
+      "minChair": null,
+      "members": [
+        "ciresi",
+        "ortitay",
+        "nelson154",
+        "powell",
+        "carroll",
+        "curry",
+        "davidson",
+        "dougherty",
+        "inglis",
+        "mazzocco",
+        "prokopiak",
+        "rivera",
+        "rusnock",
+        "takac",
+        "waxman",
+        "day",
+        "gaydos",
+        "dorsie",
+        "irvin",
+        "leadbeter",
+        "nelson",
+        "reichard",
+        "rigby",
+        "stehr",
+        "verobish",
+        "wallen",
+        "borowski"
+      ],
+      "activeBills": [
+        "HR 425",
+        "HB 2314",
+        "HB 2048",
+        "HB 2288",
+        "HB 2255",
+        "HB 2230",
+        "HB 2220",
+        "HB 2215",
+        "HB 2104",
+        "HB 2089",
+        "HB 2006",
+        "HB 1954",
+        "HB 1925",
+        "HB 1857",
+        "HB 1729",
+        "HB 1625",
+        "HB 1624",
+        "HB 1513",
+        "HB 1506",
+        "HB 1493",
+        "HB 1430",
+        "HB 1219",
+        "HB 1188",
+        "HB 981",
+        "HB 972",
+        "HB 924",
+        "HB 655",
+        "HB 653",
+        "HB 2047",
+        "HB 1299"
+      ]
+    },
+    {
+      "id": "hse-consumer",
+      "chamber": "H",
+      "name": "Consumer Protection, Technology & Utilities",
+      "chair": "burgos",
+      "minChair": null,
+      "members": [
+        "burgos",
+        "metzgar",
+        "steele",
+        "borowski",
+        "gallagher",
+        "malagari",
+        "benham",
+        "cephas",
+        "haddock",
+        "hohenstein",
+        "isaacson",
+        "mullins",
+        "munroe",
+        "nelson154",
+        "pielli",
+        "tomlinson",
+        "hogan",
+        "ryncavage",
+        "williams160",
+        "kail",
+        "kauffman",
+        "kozak",
+        "kutz",
+        "major",
+        "mehaffie",
+        "mihalek"
+      ],
+      "activeBills": [
+        "HR 361",
+        "HR 152",
+        "HB 2145",
+        "HB 2377",
+        "HB 2330",
+        "HB 2313",
+        "HB 2241",
+        "HB 2236",
+        "HB 2196",
+        "HB 2184",
+        "HB 2183",
+        "HB 2175",
+        "HB 2156",
+        "HB 2140",
+        "HB 2131",
+        "HB 2085",
+        "HB 2009",
+        "HB 1996",
+        "HB 1942",
+        "HB 1928",
+        "HB 1914",
+        "HB 1892",
+        "HB 1816",
+        "HB 1797",
+        "HB 1793",
+        "HB 1780",
+        "HB 1779",
+        "HB 1778",
+        "HB 2333",
+        "HB 1964"
+      ]
+    },
+    {
+      "id": "hse-education",
+      "chamber": "H",
+      "name": "Education",
+      "chair": "schweyer",
+      "minChair": null,
+      "members": [
+        "schweyer",
+        "cutler",
+        "friel",
+        "abney",
+        "curry",
+        "isaacson",
+        "takac",
+        "kazeem",
+        "nelson154",
+        "omara",
+        "otten",
+        "probst",
+        "prokopiak",
+        "smithwadeel",
+        "young",
+        "rasel",
+        "dorsie",
+        "gleim",
+        "schlegel",
+        "watro",
+        "anderson",
+        "cooper",
+        "davanzo",
+        "kozak",
+        "mackenzie",
+        "ortitay"
+      ],
+      "activeBills": [
+        "SB 1014",
+        "HB 1814",
+        "HB 1045",
+        "HB 2441",
+        "HB 2424",
+        "HB 2375",
+        "HB 2358",
+        "HB 2354",
+        "HB 2353",
+        "HB 2352",
+        "HB 2338",
+        "HB 2323",
+        "HB 2308",
+        "HB 2293",
+        "HB 2286",
+        "HB 2275",
+        "HB 2267",
+        "HB 2253",
+        "HB 2250",
+        "HB 2240",
+        "HB 2217",
+        "HB 2209",
+        "HB 2206",
+        "HB 2199",
+        "HB 2197",
+        "HB 2157",
+        "HB 2153",
+        "HB 2149",
+        "HB 2436",
+        "HB 2425"
+      ]
+    },
+    {
+      "id": "hse-energy",
+      "chamber": "H",
+      "name": "Energy",
+      "chair": "fiedler",
+      "minChair": null,
+      "members": [
+        "fiedler",
+        "causer",
+        "steele",
+        "boyd",
+        "brown10",
+        "cerrato",
+        "davidson",
+        "donahue",
+        "friel",
+        "giral",
+        "inglis",
+        "mcandrew",
+        "pielli",
+        "rusnock",
+        "venkat",
+        "stambaugh",
+        "kephart",
+        "armanini",
+        "barton",
+        "cook",
+        "hamm",
+        "kail",
+        "mihalek",
+        "nelson",
+        "rapp",
+        "williams160"
+      ],
+      "activeBills": [
+        "HB 2347",
+        "HB 2223",
+        "HB 2076",
+        "HB 2450",
+        "HB 2429",
+        "HB 2372",
+        "HB 2359",
+        "HB 2348",
+        "HB 2264",
+        "HB 2129",
+        "HB 2063",
+        "HB 1971",
+        "HB 1539",
+        "HB 1272",
+        "HB 1155",
+        "HB 1080",
+        "HB 948",
+        "HB 782",
+        "HB 705",
+        "HB 515",
+        "HB 503",
+        "HB 502",
+        "HB 272",
+        "HB 232",
+        "HB 114",
+        "HB 113",
+        "HR 295",
+        "SB 704",
+        "HB 2151",
+        "HB 2150"
+      ]
+    },
+    {
+      "id": "hse-environmental-and-natural-resource-protection",
+      "chamber": "H",
+      "name": "Environmental & Natural Resource Protection",
+      "chair": "vitali",
+      "minChair": null,
+      "members": [
+        "vitali",
+        "rader",
+        "hohenstein",
+        "isaacson",
+        "takac",
+        "brown10",
+        "fleming",
+        "kazeem",
+        "mazzocco",
+        "otten",
+        "pielli",
+        "salisbury",
+        "steele",
+        "tiburcio",
+        "webster",
+        "day",
+        "stender",
+        "bashline",
+        "flick",
+        "james",
+        "kephart",
+        "mehaffie",
+        "pugh",
+        "twardzik",
+        "wentling",
+        "zimmerman"
+      ],
+      "activeBills": [
+        "HB 2178",
+        "HB 2246",
+        "HB 2229",
+        "HB 2161",
+        "HB 2442",
+        "HB 2360",
+        "HB 2296",
+        "HB 2249",
+        "HB 1946",
+        "HB 1886",
+        "HB 1884",
+        "HB 1711",
+        "HB 1689",
+        "HB 1686",
+        "HB 1567",
+        "HB 1547",
+        "HB 1501",
+        "HB 1415",
+        "HB 1208",
+        "HB 1187",
+        "HB 1167",
+        "HB 1164",
+        "HB 1116",
+        "HB 1038",
+        "HB 1035",
+        "HB 969",
+        "HB 958",
+        "HB 935",
+        "HB 934",
+        "HB 1759"
+      ]
+    },
+    {
+      "id": "hse-ethics-committee",
+      "chamber": "H",
+      "name": "Ethics Committee",
+      "chair": "schweyer",
+      "minChair": null,
+      "members": [
+        "schweyer",
+        "metzgar",
+        "brennan",
+        "guenst",
+        "isaacson",
+        "bonner",
+        "klunk",
+        "mako"
+      ],
+      "activeBills": []
+    },
+    {
+      "id": "hse-finance",
+      "chamber": "H",
+      "name": "Finance",
+      "chair": "samuelson",
+      "minChair": null,
+      "members": [
+        "samuelson",
+        "greiner",
+        "webster",
+        "rabb",
+        "abney",
+        "cepedafreytiz",
+        "fleming",
+        "gallagher",
+        "goughnour",
+        "harris195",
+        "krajewski",
+        "mazzocco",
+        "scott",
+        "venkat",
+        "waxman",
+        "rossi",
+        "kephart",
+        "davanzo",
+        "fritz",
+        "gaydos",
+        "jones",
+        "kutz",
+        "mako",
+        "ryncavage",
+        "stambaugh",
+        "stender"
+      ],
+      "activeBills": [
+        "HB 2340",
+        "HB 2300",
+        "HB 2305",
+        "HB 2470",
+        "HB 2459",
+        "HB 2458",
+        "HB 2457",
+        "HB 2454",
+        "HB 2453",
+        "HB 2452",
+        "HB 2451",
+        "HB 2448",
+        "HB 2447",
+        "HB 2395",
+        "HB 2373",
+        "HB 2371",
+        "HB 2370",
+        "HB 2325",
+        "HB 2324",
+        "HB 2301",
+        "HB 2295",
+        "HB 2291",
+        "HB 2247",
+        "HB 2235",
+        "HB 2234",
+        "HB 2202",
+        "HB 2201",
+        "HB 2198",
+        "HB 2090",
+        "HB 1900"
+      ]
+    },
+    {
+      "id": "hse-gameFish",
+      "chamber": "H",
+      "name": "Game & Fisheries",
+      "chair": "kulik",
+      "minChair": null,
+      "members": [
+        "kulik",
+        "maloney",
+        "merski",
+        "hohenstein",
+        "davidson",
+        "dougherty",
+        "goughnour",
+        "guenst",
+        "haddock",
+        "harris195",
+        "inglis",
+        "kazeem",
+        "rusnock",
+        "steele",
+        "young",
+        "wentling",
+        "davanzo",
+        "anderson",
+        "banta",
+        "cook",
+        "kerwin",
+        "kuzma",
+        "labs",
+        "olsommer",
+        "reichard",
+        "smith"
+      ],
+      "activeBills": [
+        "HB 2365",
+        "HB 2363",
+        "HR 468",
+        "HB 2460",
+        "HB 2440",
+        "HB 2316",
+        "HB 2311",
+        "HB 2294",
+        "HB 2137",
+        "HB 2119",
+        "HB 2114",
+        "HB 1940",
+        "HB 1917",
+        "HB 1915",
+        "HB 1659",
+        "HB 1614",
+        "HB 1588",
+        "HB 1538",
+        "HB 1366",
+        "HB 1353",
+        "HB 1075",
+        "HB 942",
+        "HB 866",
+        "HB 851",
+        "HB 763",
+        "HB 746",
+        "HB 745",
+        "HB 741",
+        "HB 1950",
+        "HB 1811"
+      ]
+    },
+    {
+      "id": "hse-gaming-oversight",
+      "chamber": "H",
+      "name": "Gaming Oversight",
+      "chair": "harkins",
+      "minChair": null,
+      "members": [
+        "harkins",
+        "diamond",
+        "merski",
+        "giral",
+        "carroll",
+        "cepedafreytiz",
+        "dougherty",
+        "friel",
+        "gallagher",
+        "guzman",
+        "harris195",
+        "mcandrew",
+        "rusnock",
+        "scott",
+        "tiburcio",
+        "fritz",
+        "tomlinson",
+        "benninghoff",
+        "hogan",
+        "kephart",
+        "mehaffie",
+        "mustello",
+        "rossi",
+        "ryncavage",
+        "watro",
+        "williams160"
+      ],
+      "activeBills": [
+        "HB 1655",
+        "SB 840",
+        "HR 60",
+        "HB 2432",
+        "HB 2213",
+        "HB 2046",
+        "HB 2038",
+        "HB 1823",
+        "HB 1637",
+        "HB 1636",
+        "HB 1635",
+        "HB 1619",
+        "HB 1141",
+        "HB 1050",
+        "HB 962",
+        "HB 696",
+        "HB 598",
+        "HB 520",
+        "HB 107",
+        "HB 44",
+        "SB 416",
+        "SB 398",
+        "HR 52"
+      ]
+    },
+    {
+      "id": "hse-government-oversight",
+      "chamber": "H",
+      "name": "Government Oversight",
+      "chair": "cephas",
+      "minChair": null,
+      "members": [
+        "cephas",
+        "williams160",
+        "mullins",
+        "otten",
+        "sanchez",
+        "bonner",
+        "kephart",
+        "krupa",
+        "diamond"
+      ],
+      "activeBills": [
+        "HR 60"
+      ]
+    },
+    {
+      "id": "hse-health",
+      "chamber": "H",
+      "name": "Health",
+      "chair": "frankel",
+      "minChair": null,
+      "members": [
+        "frankel",
+        "rapp",
+        "kosierowski",
+        "borowski",
+        "krajewski",
+        "benham",
+        "boyd",
+        "hanbidge",
+        "howard",
+        "khan",
+        "mayes",
+        "otten",
+        "sanchez",
+        "shusterman",
+        "venkat",
+        "rossi",
+        "bonner",
+        "twardzik",
+        "borowicz",
+        "brown9",
+        "day",
+        "krupa",
+        "roae",
+        "stehr",
+        "walsh",
+        "zimmerman"
+      ],
+      "activeBills": [
+        "HB 916",
+        "HR 473",
+        "HR 472",
+        "HB 2431",
+        "HB 2378",
+        "HB 2368",
+        "HB 2341",
+        "HB 2309",
+        "HB 2289",
+        "HB 2270",
+        "HB 2268",
+        "HB 2182",
+        "HB 2181",
+        "HB 2162",
+        "HB 2058",
+        "HB 2050",
+        "HB 1997",
+        "HB 1962",
+        "HB 1901",
+        "HB 1849",
+        "HB 1845",
+        "HB 1844",
+        "HB 1841",
+        "HB 1803",
+        "HB 1802",
+        "HB 1801",
+        "HB 1773",
+        "HB 1739",
+        "HB 2265",
+        "HB 2254"
+      ]
+    },
+    {
+      "id": "hse-housing-and-community-development",
+      "chamber": "H",
+      "name": "Housing & Community Development",
+      "chair": "markosek",
+      "minChair": null,
+      "members": [
+        "markosek",
+        "irvin",
+        "powell",
+        "cephas",
+        "abney",
+        "boyd",
+        "brown10",
+        "green",
+        "krajewski",
+        "madsen",
+        "mayes",
+        "probst",
+        "smithwadeel",
+        "tiburcio",
+        "waxman",
+        "major",
+        "jones98",
+        "bashline",
+        "mackenzie",
+        "rasel",
+        "rossi",
+        "shaffer",
+        "twardzik",
+        "verobish",
+        "walsh",
+        "weaknecht"
+      ],
+      "activeBills": [
+        "HB 2367",
+        "HB 2357",
+        "HB 2355",
+        "HB 344",
+        "HB 2445",
+        "HB 2434",
+        "HB 2430",
+        "HB 2428",
+        "HB 2423",
+        "HB 2306",
+        "HB 2192",
+        "HB 2160",
+        "HB 2155",
+        "HB 2132",
+        "HB 2125",
+        "HB 2098",
+        "HB 2016",
+        "HB 2010",
+        "HB 1878",
+        "HB 1798",
+        "HB 1696",
+        "HB 1603",
+        "HB 1515",
+        "HB 1463",
+        "HB 1377",
+        "HB 1370",
+        "HB 1297",
+        "HB 1293",
+        "HB 1256",
+        "HB 2186"
+      ]
+    },
+    {
+      "id": "hse-human-services",
+      "chamber": "H",
+      "name": "Human Services",
+      "chair": "williams74",
+      "minChair": null,
+      "members": [
+        "williams74",
+        "heffley",
+        "bellmon",
+        "benham",
+        "venkat",
+        "cerrato",
+        "giral",
+        "green",
+        "harris195",
+        "khan",
+        "kinkead",
+        "mayes",
+        "otten",
+        "prokopiak",
+        "rivera",
+        "pugh",
+        "flick",
+        "flood",
+        "anderson",
+        "bashline",
+        "hogan",
+        "mackenzie",
+        "reichard",
+        "schlegel",
+        "verobish",
+        "weaknecht"
+      ],
+      "activeBills": [
+        "HR 134",
+        "HR 208",
+        "HB 2456",
+        "HB 2399",
+        "HB 2322",
+        "HB 2257",
+        "HB 2164",
+        "HB 2110",
+        "HB 2060",
+        "HB 2007",
+        "HB 1939",
+        "HB 1848",
+        "HB 1808",
+        "HB 1807",
+        "HB 1721",
+        "HB 1707",
+        "HB 1628",
+        "HB 1564",
+        "HB 1470",
+        "HB 1435",
+        "HB 1345",
+        "HB 1156",
+        "HB 1128",
+        "HB 1101",
+        "HB 1068",
+        "HB 951",
+        "HB 936",
+        "HB 1974",
+        "HB 1590",
+        "HB 1429"
+      ]
+    },
+    {
+      "id": "hse-insurance",
+      "chamber": "H",
+      "name": "Insurance",
+      "chair": "warren",
+      "minChair": null,
+      "members": [
+        "warren",
+        "pickett",
+        "malagari",
+        "scott",
+        "abney",
+        "brennan",
+        "cephas",
+        "haddock",
+        "kosierowski",
+        "merski",
+        "mullins",
+        "munroe",
+        "parker",
+        "sappey",
+        "venkat",
+        "nelson",
+        "fritz",
+        "bernstine",
+        "flood",
+        "greiner",
+        "kutz",
+        "leadbeter",
+        "mentzer",
+        "olsommer",
+        "watro",
+        "zimmerman"
+      ],
+      "activeBills": [
+        "HB 1718",
+        "HB 1972",
+        "HB 2473",
+        "HB 2464",
+        "HB 2427",
+        "HB 2393",
+        "HB 2315",
+        "HB 2226",
+        "HB 2212",
+        "HB 2096",
+        "HB 2078",
+        "HB 2022",
+        "HB 1865",
+        "HB 1863",
+        "HB 1827",
+        "HB 1796",
+        "HB 1755",
+        "HB 1719",
+        "HB 1717",
+        "HB 1705",
+        "HB 1666",
+        "HB 1642",
+        "HB 1623",
+        "HB 1602",
+        "HB 1548",
+        "HB 1519",
+        "HB 1516",
+        "HB 1828",
+        "HB 1704",
+        "HB 1445"
+      ]
+    },
+    {
+      "id": "hse-intergovernmental-affairs-and-operations",
+      "chamber": "H",
+      "name": "Intergovernmental Affairs & Operations",
+      "chair": "delloso",
+      "minChair": null,
+      "members": [
+        "delloso",
+        "staats",
+        "borowski",
+        "salisbury",
+        "carroll",
+        "cepedafreytiz",
+        "davidson",
+        "donahue",
+        "dougherty",
+        "fleming",
+        "goughnour",
+        "madsen",
+        "probst",
+        "rusnock",
+        "tiburcio",
+        "kutz",
+        "rasel",
+        "barton",
+        "bernstine",
+        "borowicz",
+        "fink",
+        "jones",
+        "major",
+        "olsommer",
+        "scheuren",
+        "wallen"
+      ],
+      "activeBills": [
+        "HR 375",
+        "HR 398",
+        "HB 2057",
+        "HB 1929",
+        "HB 1907",
+        "HB 1899",
+        "HB 1804",
+        "HB 1789",
+        "HB 1695",
+        "HB 1644",
+        "HB 1601",
+        "HB 1598",
+        "HB 974",
+        "HB 868",
+        "HB 834",
+        "HB 810",
+        "HB 765",
+        "HB 346",
+        "HB 279",
+        "HB 270",
+        "HB 247",
+        "HB 169",
+        "HB 153",
+        "HB 124",
+        "HB 122",
+        "HB 119",
+        "HB 55",
+        "HB 802",
+        "HB 562",
+        "HB 513"
+      ]
+    },
+    {
+      "id": "hse-judiciary",
+      "chamber": "H",
+      "name": "Judiciary",
+      "chair": "briggs",
+      "minChair": null,
+      "members": [
+        "briggs",
+        "kauffman",
+        "pielli",
+        "hohenstein",
+        "kinkead",
+        "shusterman",
+        "abney",
+        "carroll",
+        "donahue",
+        "hanbidge",
+        "howard",
+        "kenyatta",
+        "mayes",
+        "rabb",
+        "sanchez",
+        "hamm",
+        "bonner",
+        "leadbeter",
+        "rigby",
+        "borowicz",
+        "kail",
+        "kerwin",
+        "klunk",
+        "krupa",
+        "kuzma",
+        "pugh"
+      ],
+      "activeBills": [
+        "HB 1849",
+        "HB 158",
+        "HB 2190",
+        "HR 480",
+        "HB 2477",
+        "HB 2474",
+        "HB 2462",
+        "HB 2443",
+        "HB 2392",
+        "HB 2387",
+        "HB 2381",
+        "HB 2349",
+        "HB 2346",
+        "HB 2345",
+        "HB 2344",
+        "HB 2343",
+        "HB 2339",
+        "HB 2318",
+        "HB 2299",
+        "HB 2297",
+        "HB 2292",
+        "HB 2281",
+        "HB 2279",
+        "HB 2276",
+        "HB 2273",
+        "HB 2271",
+        "HB 2261",
+        "HB 2259",
+        "HB 2258",
+        "HB 2356"
+      ]
+    },
+    {
+      "id": "hse-laborind",
+      "chamber": "H",
+      "name": "Labor & Industry",
+      "chair": "dawkins",
+      "minChair": null,
+      "members": [
+        "dawkins",
+        "james",
+        "scott",
+        "brennan",
+        "omara",
+        "donahue",
+        "giral",
+        "goughnour",
+        "green",
+        "haddock",
+        "inglis",
+        "kinkead",
+        "krajewski",
+        "merski",
+        "young",
+        "rasel",
+        "bernstine",
+        "gleim",
+        "anderson",
+        "barger",
+        "cooper",
+        "dorsie",
+        "fink",
+        "jones",
+        "reichard",
+        "rossi"
+      ],
+      "activeBills": [
+        "HR 345",
+        "SB 1053",
+        "SB 867",
+        "HB 2455",
+        "HB 2332",
+        "HB 2331",
+        "HB 2321",
+        "HB 2317",
+        "HB 2312",
+        "HB 2232",
+        "HB 2191",
+        "HB 2135",
+        "HB 2133",
+        "HB 2105",
+        "HB 2014",
+        "HB 1998",
+        "HB 1988",
+        "HB 1879",
+        "HB 1855",
+        "HB 1810",
+        "HB 1795",
+        "HB 1785",
+        "HB 1766",
+        "HB 1726",
+        "HB 1692",
+        "HB 1691",
+        "HB 1690",
+        "HB 1688",
+        "HB 2189",
+        "HB 2049"
+      ]
+    },
+    {
+      "id": "hse-liquor-control",
+      "chamber": "H",
+      "name": "Liquor Control",
+      "chair": "deasy",
+      "minChair": null,
+      "members": [
+        "deasy",
+        "fee",
+        "mcandrew",
+        "isaacson",
+        "powell",
+        "benham",
+        "brown10",
+        "giral",
+        "goughnour",
+        "guzman",
+        "kenyatta",
+        "malagari",
+        "otten",
+        "salisbury",
+        "shusterman",
+        "gaydos",
+        "fritz",
+        "mehaffie",
+        "armanini",
+        "flood",
+        "leadbeter",
+        "major",
+        "mihalek",
+        "mustello",
+        "rigby",
+        "smith"
+      ],
+      "activeBills": [
+        "SB 1218",
+        "HB 2147",
+        "HB 1702",
+        "HB 2471",
+        "HB 2421",
+        "HB 2142",
+        "HB 1618",
+        "HB 1468",
+        "HB 1455",
+        "HB 1451",
+        "HB 1413",
+        "HB 1171",
+        "HB 1118",
+        "HB 1071",
+        "HB 1041",
+        "HB 932",
+        "HB 885",
+        "HB 457",
+        "HB 450",
+        "HB 380",
+        "SB 241",
+        "HB 1173",
+        "HB 828",
+        "HB 559",
+        "HB 467"
+      ]
+    },
+    {
+      "id": "hse-localgov",
+      "chamber": "H",
+      "name": "Local Government",
+      "chair": "freeman",
+      "minChair": null,
+      "members": [
+        "freeman",
+        "miller41",
+        "sappey",
+        "borowski",
+        "donahue",
+        "hanbidge",
+        "probst",
+        "fleming",
+        "haddock",
+        "kazeem",
+        "madsen",
+        "munroe",
+        "prokopiak",
+        "salisbury",
+        "smithwadeel",
+        "kuzma",
+        "fink",
+        "jones98",
+        "watro",
+        "wentling",
+        "banta",
+        "cooper",
+        "kozak",
+        "reichard",
+        "ryncavage",
+        "weaknecht"
+      ],
+      "activeBills": [
+        "HB 2361",
+        "HB 2320",
+        "HR 368",
+        "HB 2397",
+        "HB 2389",
+        "HB 2284",
+        "HB 2185",
+        "HB 2077",
+        "HB 1960",
+        "HB 1876",
+        "HB 1765",
+        "HB 1725",
+        "HB 1685",
+        "HB 1660",
+        "HB 1658",
+        "HB 1459",
+        "HB 1320",
+        "HB 1294",
+        "HB 1214",
+        "HB 1211",
+        "HB 1204",
+        "HB 1203",
+        "HB 1196",
+        "HB 1178",
+        "HB 1175",
+        "HB 1146",
+        "HB 1086",
+        "HB 1039",
+        "HB 2179",
+        "HB 2177"
+      ]
+    },
+    {
+      "id": "hse-professional-licensure",
+      "chamber": "H",
+      "name": "Professional Licensure",
+      "chair": "burns",
+      "minChair": null,
+      "members": [
+        "burns",
+        "emrick",
+        "kosierowski",
+        "merski",
+        "davidson",
+        "gallagher",
+        "guenst",
+        "guzman",
+        "kenyatta",
+        "malagari",
+        "mullins",
+        "munroe",
+        "rivera",
+        "smithwadeel",
+        "venkat",
+        "marcell",
+        "armanini",
+        "gaydos",
+        "kuzma",
+        "major",
+        "mako",
+        "mehaffie",
+        "mentzer",
+        "scheuren",
+        "tomlinson",
+        "watro"
+      ],
+      "activeBills": [
+        "HB 2302",
+        "HB 1127",
+        "HB 1106",
+        "HB 2390",
+        "HB 2386",
+        "HB 2379",
+        "HB 2364",
+        "HB 2335",
+        "HB 2204",
+        "HB 2173",
+        "HB 2121",
+        "HB 2107",
+        "HB 2100",
+        "HB 2070",
+        "HB 2030",
+        "HB 2012",
+        "HB 2002",
+        "HB 1993",
+        "HB 1853",
+        "HB 1790",
+        "HB 1784",
+        "HB 1733",
+        "HB 1645",
+        "HB 1583",
+        "HB 1490",
+        "HB 1410",
+        "HB 1343",
+        "HB 1323",
+        "HB 2163",
+        "HB 2123"
+      ]
+    },
+    {
+      "id": "hse-rules",
+      "chamber": "H",
+      "name": "Rules",
+      "chair": "bradford",
+      "minChair": null,
+      "members": [
+        "bradford",
+        "topper",
+        "bizzarro",
+        "daley",
+        "davis",
+        "dawkins",
+        "fiedler",
+        "frankel",
+        "harkins",
+        "harris",
+        "kosierowski",
+        "krueger",
+        "matzie",
+        "mcclinton",
+        "mcneill",
+        "parker",
+        "sanchez",
+        "schlossberg",
+        "shusterman",
+        "benninghoff",
+        "cutler",
+        "delozier",
+        "fritz",
+        "kauffman",
+        "klunk",
+        "kutz",
+        "lawrence",
+        "oneal",
+        "owlett",
+        "pickett",
+        "rowe",
+        "struzzi",
+        "white"
+      ],
+      "activeBills": [
+        "HB 331",
+        "HB 274",
+        "HB 1615",
+        "HB 257",
+        "HR 383",
+        "HR 236",
+        "HR 185",
+        "HR 75",
+        "HR 73",
+        "HR 72",
+        "HR 47",
+        "HB 1788",
+        "HB 1704",
+        "HB 1702",
+        "HB 1697",
+        "HB 1676",
+        "HB 1668",
+        "HB 1667",
+        "HB 1655",
+        "HB 1651",
+        "HB 1650",
+        "HB 1646",
+        "HB 1629",
+        "HB 1627",
+        "HB 1626",
+        "HB 1610",
+        "HB 1608",
+        "HB 1606",
+        "HB 1600",
+        "HB 1599"
+      ]
+    },
+    {
+      "id": "hse-stategov",
+      "chamber": "H",
+      "name": "State Government",
+      "chair": "hillevans",
+      "minChair": null,
+      "members": [
+        "hillevans",
+        "roae",
+        "guenst",
+        "howard",
+        "kenyatta",
+        "sanchez",
+        "shusterman",
+        "webster",
+        "boyd",
+        "brennan",
+        "davidson",
+        "green",
+        "inglis",
+        "probst",
+        "waxman",
+        "brown9",
+        "banta",
+        "bonner",
+        "diamond",
+        "fink",
+        "barger",
+        "kozak",
+        "shaffer",
+        "wallen",
+        "walsh",
+        "weaknecht"
+      ],
+      "activeBills": [
+        "HB 1929",
+        "HR 469",
+        "HR 452",
+        "HB 1262",
+        "HB 2376",
+        "HB 2369",
+        "HB 2329",
+        "HB 2328",
+        "HB 2327",
+        "HB 2326",
+        "HB 2280",
+        "HB 2263",
+        "HB 2262",
+        "HB 2260",
+        "HB 2242",
+        "HB 2074",
+        "HB 2053",
+        "HB 2037",
+        "HB 2032",
+        "HB 1985",
+        "HB 1984",
+        "HB 1983",
+        "HB 1956",
+        "HB 1951",
+        "HB 1949",
+        "HB 1937",
+        "HB 1898",
+        "HB 1897",
+        "HB 1858",
+        "HB 2187"
+      ]
+    },
+    {
+      "id": "hse-tourism-recreation-and-economic-development",
+      "chamber": "H",
+      "name": "Tourism, Recreation & Economic Development",
+      "chair": "daley",
+      "minChair": null,
+      "members": [
+        "daley",
+        "warner",
+        "cerrato",
+        "bellmon",
+        "brennan",
+        "cepedafreytiz",
+        "boyd",
+        "powell",
+        "probst",
+        "prokopiak",
+        "rivera",
+        "rusnock",
+        "steele",
+        "takac",
+        "young",
+        "twardzik",
+        "armanini",
+        "cooper",
+        "smith",
+        "banta",
+        "barger",
+        "cook",
+        "flick",
+        "jones98",
+        "pickett",
+        "wentling"
+      ],
+      "activeBills": [
+        "HR 481",
+        "HR 488",
+        "HR 420",
+        "HR 448",
+        "HR 474",
+        "HB 2303",
+        "HB 2248",
+        "HB 2083",
+        "HB 2082",
+        "HB 1888",
+        "HB 1852",
+        "HB 1794",
+        "HB 1275",
+        "HB 1172",
+        "HB 1090",
+        "HB 826",
+        "HB 824",
+        "HB 635",
+        "HB 629",
+        "HB 489",
+        "HB 428",
+        "HB 121",
+        "HR 507",
+        "HR 501",
+        "HR 498",
+        "HR 497",
+        "HR 492",
+        "HR 444",
+        "HR 365",
+        "HR 223"
+      ]
+    },
+    {
+      "id": "hse-transport",
+      "chamber": "H",
+      "name": "Transportation",
+      "chair": "neilson",
+      "minChair": null,
+      "members": [
+        "neilson",
+        "benninghoff",
+        "isaacson",
+        "bellmon",
+        "curry",
+        "hohenstein",
+        "mcandrew",
+        "mullins",
+        "guzman",
+        "madsen",
+        "mazzocco",
+        "omara",
+        "powell",
+        "sappey",
+        "shusterman",
+        "tomlinson",
+        "bernstine",
+        "davanzo",
+        "labs",
+        "scheuren",
+        "smith",
+        "stambaugh",
+        "flood",
+        "hamm",
+        "ryncavage",
+        "shaffer"
+      ],
+      "activeBills": [
+        "HR 477",
+        "HB 2274",
+        "HR 410",
+        "HB 2472",
+        "HB 2469",
+        "HB 2465",
+        "HB 2463",
+        "HB 2437",
+        "HB 2433",
+        "HB 2396",
+        "HB 2366",
+        "HB 2362",
+        "HB 2337",
+        "HB 2336",
+        "HB 2334",
+        "HB 2310",
+        "HB 2304",
+        "HB 2290",
+        "HB 2287",
+        "HB 2283",
+        "HB 2272",
+        "HB 2266",
+        "HB 2233",
+        "HB 2227",
+        "HB 2221",
+        "HB 2219",
+        "HB 2214",
+        "HB 2208",
+        "HB 2210",
+        "HB 1970"
+      ]
+    },
+    {
+      "id": "hse-veterans",
+      "chamber": "H",
+      "name": "Veterans Affairs & Emergency Preparedness",
+      "chair": "solomon",
+      "minChair": null,
+      "members": [
+        "solomon",
+        "gillen",
+        "borowski",
+        "omara",
+        "webster",
+        "brown10",
+        "dougherty",
+        "guenst",
+        "haddock",
+        "inglis",
+        "munroe",
+        "pielli",
+        "sappey",
+        "scott",
+        "takac",
+        "krupa",
+        "williams160",
+        "banta",
+        "bashline",
+        "cooper",
+        "hamm",
+        "kerwin",
+        "mako",
+        "stehr",
+        "stender",
+        "watro"
+      ],
+      "activeBills": [
+        "HB 2446",
+        "HB 2439",
+        "HB 237",
+        "HR 483",
+        "HB 2449",
+        "HB 2444",
+        "HB 2438",
+        "HB 2398",
+        "HB 2394",
+        "HB 2385",
+        "HB 2319",
+        "HB 2238",
+        "HB 2200",
+        "HB 2134",
+        "HB 2086",
+        "HB 2011",
+        "HB 1982",
+        "HB 1965",
+        "HB 1941",
+        "HB 1918",
+        "HB 1791",
+        "HB 1757",
+        "HB 1712",
+        "HB 1578",
+        "HB 1557",
+        "HB 1491",
+        "HB 1452",
+        "HB 1378",
+        "HB 1303",
+        "HB 2024"
+      ]
+    }
   ]
 }

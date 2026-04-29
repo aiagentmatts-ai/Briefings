@@ -1,61 +1,624 @@
 {
-  "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py (Phase 2). Currently a hand-curated bootstrap matching the prototype seed data.",
-  "lastSync": "2026-04-01T03:00:00Z",
+  "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py from www.palegis.us. Edit overlays in rea-overlay.json, not here.",
+  "lastSync": "2026-04-29T21:35:23Z",
   "members": [
     {
-      "id": "yaw",
+      "id": "saval",
       "chamber": "S",
-      "name": "Gene Yaw",
-      "party": "R",
-      "district": 23,
-      "initials": "GY",
-      "counties": ["Bradford", "Lycoming", "Sullivan", "Susquehanna", "Union"],
-      "role": "Majority Caucus Secretary",
-      "committees": [
-        { "name": "Environmental Resources & Energy", "role": "CHAIR" },
-        { "name": "Banking & Insurance" },
-        { "name": "Education" },
-        { "name": "Judiciary" }
+      "name": "Nikil Saval",
+      "party": "D",
+      "district": 1,
+      "initials": "NS",
+      "counties": [
+        "Philadelphia"
       ],
-      "office": { "room": "362", "building": "Main Capitol", "wing": "East Wing", "floor": 3 },
-      "phone": "(717) 787-3280",
-      "email": "gyaw@pasen.gov"
+      "role": "",
+      "committees": [
+        {
+          "name": "Urban Affairs & Housing"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "543",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-5662",
+      "email": "saval@pasenate.com"
     },
     {
-      "id": "phillipshill",
+      "id": "tartaglione",
       "chamber": "S",
-      "name": "Kristin Phillips-Hill",
-      "party": "R",
-      "district": 28,
-      "initials": "KP",
-      "counties": ["York"],
-      "role": "Majority Whip",
-      "committees": [
-        { "name": "Communications & Technology", "role": "CHAIR" },
-        { "name": "Appropriations" },
-        { "name": "Finance" }
+      "name": "Christine M. Tartaglione",
+      "party": "D",
+      "district": 2,
+      "initials": "CT",
+      "counties": [
+        "Philadelphia"
       ],
-      "office": { "room": "362", "building": "Main Capitol", "wing": "East Wing", "floor": 3 },
-      "phone": "(717) 787-6538",
-      "email": "kphillipshill@pasen.gov"
+      "role": "Minority Whip",
+      "committees": [
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Law & Justice"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "458",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-1141",
+      "email": "tartaglione@pasenate.com"
     },
     {
-      "id": "hutchinson",
+      "id": "street",
       "chamber": "S",
-      "name": "Scott Hutchinson",
-      "party": "R",
-      "district": 21,
-      "initials": "SH",
-      "counties": ["Butler", "Forest", "Venango", "Warren"],
-      "role": "Majority Caucus Chair",
-      "committees": [
-        { "name": "Finance", "role": "CHAIR" },
-        { "name": "Banking" },
-        { "name": "Game & Fisheries" }
+      "name": "Sharif Street",
+      "party": "D",
+      "district": 3,
+      "initials": "SS",
+      "counties": [
+        "Philadelphia"
       ],
-      "office": { "room": "286", "building": "Main Capitol", "wing": "East Wing", "floor": 2 },
-      "phone": "(717) 787-9684",
-      "email": "shutchinson@pasen.gov"
+      "role": "",
+      "committees": [
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "535",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-6735",
+      "email": "street@pasenate.com"
+    },
+    {
+      "id": "haywood",
+      "chamber": "S",
+      "name": "Art Haywood",
+      "party": "D",
+      "district": 4,
+      "initials": "AH",
+      "counties": [
+        "Montgomery",
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "10",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-1427",
+      "email": "senatorhaywood@pasenate.com"
+    },
+    {
+      "id": "picozzi",
+      "chamber": "S",
+      "name": "Joe Picozzi",
+      "party": "R",
+      "district": 5,
+      "initials": "JP",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Urban Affairs & Housing",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Law & Justice",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "187",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-9608",
+      "email": "jpicozzi@pasen.gov"
+    },
+    {
+      "id": "farry",
+      "chamber": "S",
+      "name": "Frank A. Farry",
+      "party": "R",
+      "district": 6,
+      "initials": "FF",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Institutional Sustainability & Innovation",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Law & Justice"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "351",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-5072",
+      "email": "ffarry@pasen.gov"
+    },
+    {
+      "id": "hughes",
+      "chamber": "S",
+      "name": "Vincent J. Hughes",
+      "party": "D",
+      "district": 7,
+      "initials": "VH",
+      "counties": [
+        "Montgomery",
+        "Philadelphia"
+      ],
+      "role": "Minority Appropriations Committee Chair",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "545",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-7112",
+      "email": "hughes@pasenate.com"
+    },
+    {
+      "id": "williams",
+      "chamber": "S",
+      "name": "Anthony H. Williams",
+      "party": "D",
+      "district": 8,
+      "initials": "AW",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "11",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-5970",
+      "email": "williams@pasenate.com"
+    },
+    {
+      "id": "kane",
+      "chamber": "S",
+      "name": "John I. Kane",
+      "party": "D",
+      "district": 9,
+      "initials": "JK",
+      "counties": [
+        "Chester",
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "458",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-4712",
+      "email": "kane@pasenate.com"
+    },
+    {
+      "id": "santarsiero",
+      "chamber": "S",
+      "name": "Steven J. Santarsiero",
+      "party": "D",
+      "district": 10,
+      "initials": "SS",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "Minority Caucus Secretary",
+      "committees": [
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "182",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-7305",
+      "email": "senatorsantarsiero@pasenate.com"
+    },
+    {
+      "id": "schwank",
+      "chamber": "S",
+      "name": "Judith L. Schwank",
+      "party": "D",
+      "district": 11,
+      "initials": "JS",
+      "counties": [
+        "Berks"
+      ],
+      "role": "Minority Caucus Administrator",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Health & Human Services"
+        }
+      ],
+      "office": {
+        "room": "457",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-8925",
+      "email": "senatorschwank@pasenate.com"
+    },
+    {
+      "id": "collett",
+      "chamber": "S",
+      "name": "Maria Collett",
+      "party": "D",
+      "district": 12,
+      "initials": "MC",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "Minority Caucus Chair",
+      "committees": [
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "458",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-6599",
+      "email": "senatorcollett@pasenate.com"
+    },
+    {
+      "id": "martin",
+      "chamber": "S",
+      "name": "Scott Martin",
+      "party": "R",
+      "district": 13,
+      "initials": "SM",
+      "counties": [
+        "Berks",
+        "Lancaster"
+      ],
+      "role": "Majority Appropriations Committee Chair",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        }
+      ],
+      "office": {
+        "room": "281",
+        "building": "Main Capitol",
+        "floor": 2
+      },
+      "phone": "(717) 787-6535",
+      "email": "smartin@pasen.gov"
+    },
+    {
+      "id": "miller",
+      "chamber": "S",
+      "name": "Nick Miller",
+      "party": "D",
+      "district": 14,
+      "initials": "NM",
+      "counties": [
+        "Lehigh",
+        "Northampton"
+      ],
+      "role": "Minority Policy Committee Chairman",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "352",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-7105",
+      "email": "miller@pasenate.com"
+    },
+    {
+      "id": "kim",
+      "chamber": "S",
+      "name": "Patty Kim",
+      "party": "D",
+      "district": 15,
+      "initials": "PK",
+      "counties": [
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        }
+      ],
+      "office": {
+        "room": "17",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-6801",
+      "email": "pkim@pasenate.com"
+    },
+    {
+      "id": "coleman",
+      "chamber": "S",
+      "name": "Jarrett Coleman",
+      "party": "R",
+      "district": 16,
+      "initials": "JC",
+      "counties": [
+        "Bucks",
+        "Lehigh"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Operations",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Finance",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "459",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-1349",
+      "email": "jcoleman@pasen.gov"
+    },
+    {
+      "id": "cappelletti",
+      "chamber": "S",
+      "name": "Amanda M. Cappelletti",
+      "party": "D",
+      "district": 17,
+      "initials": "AC",
+      "counties": [
+        "Delaware",
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        }
+      ],
+      "office": {
+        "room": "183",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-5544",
+      "email": "cappelletti@pasenate.com"
     },
     {
       "id": "boscola",
@@ -64,34 +627,452 @@
       "party": "D",
       "district": 18,
       "initials": "LB",
-      "counties": ["Lehigh", "Northampton", "Monroe"],
-      "role": "Democratic Caucus Secretary",
-      "committees": [
-        { "name": "State Government", "role": "MIN. CHAIR" },
-        { "name": "Appropriations" },
-        { "name": "Education" }
+      "counties": [
+        "Lehigh",
+        "Northampton"
       ],
-      "office": { "room": "535", "building": "Main Capitol", "wing": "East Wing", "floor": 5 },
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Law & Justice"
+        }
+      ],
+      "office": {
+        "room": "458",
+        "building": "Main Capitol",
+        "floor": 4
+      },
       "phone": "(717) 787-4236",
-      "email": "lboscola@pasenate.com"
+      "email": "boscola@pasenate.com"
     },
     {
-      "id": "costa",
+      "id": "comitta",
       "chamber": "S",
-      "name": "Jay Costa",
+      "name": "Carolyn T. Comitta",
       "party": "D",
-      "district": 43,
-      "initials": "JC",
-      "counties": ["Allegheny"],
-      "role": "Democratic Floor Leader",
-      "committees": [
-        { "name": "Rules & Executive Nominations" },
-        { "name": "Appropriations" },
-        { "name": "Finance" }
+      "district": 19,
+      "initials": "CC",
+      "counties": [
+        "Chester"
       ],
-      "office": { "room": "535", "building": "Main Capitol", "wing": "East Wing", "floor": 5 },
-      "phone": "(717) 787-7683",
-      "email": "jcosta@pasenate.com"
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "457",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-5709",
+      "email": "ccomitta@pasenate.com"
+    },
+    {
+      "id": "baker",
+      "chamber": "S",
+      "name": "Lisa Baker",
+      "party": "R",
+      "district": 20,
+      "initials": "LB",
+      "counties": [
+        "Luzerne",
+        "Pike",
+        "Susquehanna",
+        "Wayne",
+        "Wyoming"
+      ],
+      "role": "Majority Caucus Administrator",
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Banking & Insurance",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "173",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-7428",
+      "email": "lbaker@pasen.gov"
+    },
+    {
+      "id": "hutchinson",
+      "chamber": "S",
+      "name": "Scott E. Hutchinson",
+      "party": "R",
+      "district": 21,
+      "initials": "SH",
+      "counties": [
+        "Butler",
+        "Clarion",
+        "Erie",
+        "Forest",
+        "Venango",
+        "Warren"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Environmental Resources & Energy",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "337",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-9684",
+      "email": "shutchinson@pasen.gov"
+    },
+    {
+      "id": "flynn",
+      "chamber": "S",
+      "name": "Marty Flynn",
+      "party": "D",
+      "district": 22,
+      "initials": "MF",
+      "counties": [
+        "Lackawanna",
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Law & Justice"
+        }
+      ],
+      "office": {
+        "room": "543",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-6481",
+      "email": "flynn@pasenate.com"
+    },
+    {
+      "id": "yaw",
+      "chamber": "S",
+      "name": "Gene Yaw",
+      "party": "R",
+      "district": 23,
+      "initials": "GY",
+      "counties": [
+        "Bradford",
+        "Lycoming",
+        "Sullivan",
+        "Tioga",
+        "Union"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental Resources & Energy",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Judiciary",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "362",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-3280",
+      "email": "gyaw@pasen.gov"
+    },
+    {
+      "id": "pennycuick",
+      "chamber": "S",
+      "name": "Tracy Pennycuick",
+      "party": "R",
+      "district": 24,
+      "initials": "TP",
+      "counties": [
+        "Berks",
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Law & Justice"
+        }
+      ],
+      "office": {
+        "room": "16",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-3110",
+      "email": "tpennycuick@pasen.gov"
+    },
+    {
+      "id": "dush",
+      "chamber": "S",
+      "name": "Cris Dush",
+      "party": "R",
+      "district": 25,
+      "initials": "CD",
+      "counties": [
+        "Cameron",
+        "Centre",
+        "Clinton",
+        "Elk",
+        "Jefferson",
+        "Mckean",
+        "Potter"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "State Government",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Intergovernmental Operations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "9",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-7084",
+      "email": "cdush@pasen.gov"
+    },
+    {
+      "id": "kearney",
+      "chamber": "S",
+      "name": "Timothy P. Kearney",
+      "party": "D",
+      "district": 26,
+      "initials": "TK",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "463",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-1350",
+      "email": "senatorkearney@pasenate.com"
+    },
+    {
+      "id": "culver",
+      "chamber": "S",
+      "name": "Lynda Schlegel Culver",
+      "party": "R",
+      "district": 27,
+      "initials": "LC",
+      "counties": [
+        "Columbia",
+        "Luzerne",
+        "Montour",
+        "Northumberland",
+        "Snyder"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Health & Human Services",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "168",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-8928",
+      "email": "lculver@pasen.gov"
+    },
+    {
+      "id": "phillipshill",
+      "chamber": "S",
+      "name": "Kristin Phillips-Hill",
+      "party": "R",
+      "district": 28,
+      "initials": "KP",
+      "counties": [
+        "York"
+      ],
+      "role": "Majority Caucus Chair",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "362",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-7085",
+      "email": "kphillipshill@pasen.gov"
     },
     {
       "id": "argall",
@@ -100,15 +1081,654 @@
       "party": "R",
       "district": 29,
       "initials": "DA",
-      "counties": ["Schuylkill", "Carbon"],
-      "role": "",
-      "committees": [
-        { "name": "State Government", "role": "CHAIR" },
-        { "name": "Education" }
+      "counties": [
+        "Carbon",
+        "Luzerne",
+        "Schuylkill"
       ],
-      "office": { "room": "171", "building": "Main Capitol", "wing": "North Office", "floor": 1 },
+      "role": "Majority Policy Committee Chairman",
+      "committees": [
+        {
+          "name": "Institutional Sustainability & Innovation",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "177",
+        "building": "Main Capitol",
+        "floor": 1
+      },
       "phone": "(717) 787-2637",
       "email": "dargall@pasen.gov"
+    },
+    {
+      "id": "ward",
+      "chamber": "S",
+      "name": "Judy Ward",
+      "party": "R",
+      "district": 30,
+      "initials": "JW",
+      "counties": [
+        "Blair",
+        "Fulton",
+        "Huntingdon",
+        "Juniata",
+        "Mifflin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Transportation",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Aging & Youth",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "362",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-5490",
+      "email": "jward@pasen.gov"
+    },
+    {
+      "id": "keefer",
+      "chamber": "S",
+      "name": "Dawn W. Keefer",
+      "party": "R",
+      "district": 31,
+      "initials": "DK",
+      "counties": [
+        "Cumberland",
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Local Government",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Urban Affairs & Housing",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Law & Justice"
+        }
+      ],
+      "office": {
+        "room": "169",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-8524",
+      "email": "dkeefer@pasen.gov"
+    },
+    {
+      "id": "stefano",
+      "chamber": "S",
+      "name": "Patrick J. Stefano",
+      "party": "R",
+      "district": 32,
+      "initials": "PS",
+      "counties": [
+        "Bedford",
+        "Fayette",
+        "Somerset",
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection & Professional Licensure",
+          "role": "CHAIR"
+        },
+        {
+          "name": "State Government",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "187",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-7175",
+      "email": "pstefano@pasen.gov"
+    },
+    {
+      "id": "mastriano",
+      "chamber": "S",
+      "name": "Doug Mastriano",
+      "party": "R",
+      "district": 33,
+      "initials": "DM",
+      "counties": [
+        "Adams",
+        "Franklin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Veterans Affairs & Emergency Preparedness",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Education",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "170",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-4651",
+      "email": "dmastriano@pasen.gov"
+    },
+    {
+      "id": "rothman",
+      "chamber": "S",
+      "name": "Greg Rothman",
+      "party": "R",
+      "district": 34,
+      "initials": "GR",
+      "counties": [
+        "Cumberland",
+        "Dauphin",
+        "Perry"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "168",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-1377",
+      "email": "grothman@pasen.gov"
+    },
+    {
+      "id": "langerholc",
+      "chamber": "S",
+      "name": "Wayne Langerholc",
+      "party": "R",
+      "district": 35,
+      "initials": "WL",
+      "counties": [
+        "Cambria",
+        "Centre",
+        "Clearfield"
+      ],
+      "role": "Majority Whip",
+      "committees": [
+        {
+          "name": "Aging & Youth",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules & Executive Nominations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "281",
+        "building": "Main Capitol",
+        "floor": 2
+      },
+      "phone": "(717) 787-5400",
+      "email": "wlangerholc@pasen.gov"
+    },
+    {
+      "id": "malone",
+      "chamber": "S",
+      "name": "James Andrew Malone",
+      "party": "D",
+      "district": 36,
+      "initials": "JM",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "184",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-4420",
+      "email": "jmalone@pasenate.com"
+    },
+    {
+      "id": "robinson",
+      "chamber": "S",
+      "name": "Devlin J. Robinson",
+      "party": "R",
+      "district": 37,
+      "initials": "DR",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Labor & Industry",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Transportation",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Law & Justice"
+        }
+      ],
+      "office": {
+        "room": "171",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-5839",
+      "email": "drobinson@pasen.gov"
+    },
+    {
+      "id": "williams38",
+      "chamber": "S",
+      "name": "Lindsey M. Williams",
+      "party": "D",
+      "district": 38,
+      "initials": "LW",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "366",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-6538",
+      "email": "senatorlindseywilliams@pasenate.com"
+    },
+    {
+      "id": "ward39",
+      "chamber": "S",
+      "name": "Kim L. Ward",
+      "party": "R",
+      "district": 39,
+      "initials": "KW",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "President Pro Tempore",
+      "committees": [],
+      "office": {
+        "room": "292",
+        "building": "Main Capitol",
+        "floor": 2
+      },
+      "phone": "(717) 787-6063",
+      "email": "kward@pasen.gov"
+    },
+    {
+      "id": "brown",
+      "chamber": "S",
+      "name": "Rosemary M. Brown",
+      "party": "R",
+      "district": 40,
+      "initials": "RB",
+      "counties": [
+        "Lackawanna",
+        "Monroe",
+        "Wayne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Community, Economic & Recreational Development",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Local Government",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "172",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-6123",
+      "email": "rbrown@pasen.gov"
+    },
+    {
+      "id": "pittman",
+      "chamber": "S",
+      "name": "Joe Pittman",
+      "party": "R",
+      "district": 41,
+      "initials": "JP",
+      "counties": [
+        "Armstrong",
+        "Indiana",
+        "Jefferson",
+        "Westmoreland"
+      ],
+      "role": "Majority Floor Leader",
+      "committees": [
+        {
+          "name": "Rules & Executive Nominations",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        }
+      ],
+      "office": {
+        "room": "350",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-8724",
+      "email": "jpittman@pasen.gov"
+    },
+    {
+      "id": "fontana",
+      "chamber": "S",
+      "name": "Wayne D. Fontana",
+      "party": "D",
+      "district": 42,
+      "initials": "WF",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Law & Justice"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
+      ],
+      "office": {
+        "room": "543",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-5300",
+      "email": "fontana@pasenate.com"
+    },
+    {
+      "id": "costa",
+      "chamber": "S",
+      "name": "Jay Costa",
+      "party": "D",
+      "district": 43,
+      "initials": "JC",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "Minority Floor Leader",
+      "committees": [
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Intergovernmental Operations"
+        }
+      ],
+      "office": {
+        "room": "535",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-7683",
+      "email": "costa@pasenate.com"
+    },
+    {
+      "id": "muth",
+      "chamber": "S",
+      "name": "Katie J. Muth",
+      "party": "D",
+      "district": 44,
+      "initials": "KM",
+      "counties": [
+        "Berks",
+        "Chester",
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "185",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-1398",
+      "email": "senatormuth@pasenate.com"
+    },
+    {
+      "id": "pisciottano",
+      "chamber": "S",
+      "name": "Nick Pisciottano",
+      "party": "D",
+      "district": 45,
+      "initials": "NP",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "460",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-5580",
+      "email": "pasenatornick@pasenate.com"
     },
     {
       "id": "bartolotta",
@@ -117,85 +1737,681 @@
       "party": "R",
       "district": 46,
       "initials": "CB",
-      "counties": ["Beaver", "Greene", "Washington"],
-      "role": "",
-      "committees": [
-        { "name": "Labor & Industry", "role": "CHAIR" },
-        { "name": "Banking" }
+      "counties": [
+        "Beaver",
+        "Greene",
+        "Washington"
       ],
-      "office": { "room": "286", "building": "Main Capitol", "wing": "East Wing", "floor": 2 },
+      "role": "Majority Caucus Secretary",
+      "committees": [
+        {
+          "name": "Labor & Industry",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Community, Economic & Recreational Development"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "19",
+        "building": "East Wing"
+      },
       "phone": "(717) 787-1463",
       "email": "cbartolotta@pasen.gov"
     },
     {
-      "id": "causer",
-      "chamber": "H",
-      "name": "Martin T. Causer",
+      "id": "vogel",
+      "chamber": "S",
+      "name": "Elder A. Vogel",
       "party": "R",
-      "district": 67,
-      "initials": "MC",
-      "counties": ["Cameron", "McKean", "Potter"],
-      "role": "Republican Whip",
-      "committees": [
-        { "name": "Agriculture & Rural Affairs", "role": "MIN. CHAIR" },
-        { "name": "Game & Fisheries" },
-        { "name": "Consumer Affairs" }
+      "district": 47,
+      "initials": "EV",
+      "counties": [
+        "Beaver",
+        "Butler",
+        "Lawrence"
       ],
-      "office": { "room": "413", "building": "Main Capitol", "wing": "East Wing", "floor": 4 },
-      "phone": "(717) 772-9908",
-      "email": "mcauser@pahousegop.com"
-    },
-    {
-      "id": "nelson",
-      "chamber": "H",
-      "name": "Eric R. Nelson",
-      "party": "R",
-      "district": 57,
-      "initials": "EN",
-      "counties": ["Westmoreland"],
       "role": "",
       "committees": [
-        { "name": "Consumer Affairs" },
-        { "name": "Insurance" },
-        { "name": "Liquor Control" }
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Appropriations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Banking & Insurance"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Urban Affairs & Housing"
+        }
       ],
-      "office": { "room": "423", "building": "Irvis Office Bldg", "wing": "", "floor": 4 },
-      "phone": "(717) 260-6144",
-      "email": "enelson@pahousegop.com"
+      "office": {
+        "room": "286",
+        "building": "Main Capitol",
+        "floor": 2
+      },
+      "phone": "(717) 787-3076",
+      "email": "evogel@pasen.gov"
     },
     {
-      "id": "kim",
+      "id": "gebhard",
+      "chamber": "S",
+      "name": "Chris Gebhard",
+      "party": "R",
+      "district": 48,
+      "initials": "CG",
+      "counties": [
+        "Berks",
+        "Lancaster",
+        "Lebanon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Banking & Insurance",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Community, Economic & Recreational Development",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Youth"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        }
+      ],
+      "office": {
+        "room": "15",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-5708",
+      "email": "cgebhard@pasen.gov"
+    },
+    {
+      "id": "laughlin",
+      "chamber": "S",
+      "name": "Daniel Laughlin",
+      "party": "R",
+      "district": 49,
+      "initials": "DL",
+      "counties": [
+        "Erie"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Law & Justice",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Game & Fisheries",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Environmental Resources & Energy"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Health & Human Services"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "20",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-8927",
+      "email": "dlaughlin@pasen.gov"
+    },
+    {
+      "id": "brooks",
+      "chamber": "S",
+      "name": "Michele Brooks",
+      "party": "R",
+      "district": 50,
+      "initials": "MB",
+      "counties": [
+        "Crawford",
+        "Lawrence",
+        "Mercer"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Health & Human Services",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection & Professional Licensure"
+        },
+        {
+          "name": "Institutional Sustainability & Innovation"
+        },
+        {
+          "name": "Rules & Executive Nominations"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "168",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-1322",
+      "email": "mbrooks@pasen.gov"
+    },
+    {
+      "id": "harkins",
       "chamber": "H",
-      "name": "Patty Kim",
+      "name": "Patrick J. Harkins",
       "party": "D",
-      "district": 103,
-      "initials": "PK",
-      "counties": ["Dauphin"],
+      "district": 1,
+      "initials": "PH",
+      "counties": [
+        "Erie"
+      ],
       "role": "",
       "committees": [
-        { "name": "Children & Youth" },
-        { "name": "Tourism & Recreational Development" }
+        {
+          "name": "Gaming Oversight",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
       ],
-      "office": { "room": "108", "building": "Irvis Office Bldg", "wing": "", "floor": 1 },
-      "phone": "(717) 783-1610",
-      "email": "pkim@pahouse.net"
+      "office": {
+        "room": "331",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 787-7406",
+      "email": "pharkins@pahouse.net"
     },
     {
-      "id": "struzzi",
+      "id": "merski",
       "chamber": "H",
-      "name": "James Struzzi",
-      "party": "R",
-      "district": 62,
-      "initials": "JS",
-      "counties": ["Indiana"],
+      "name": "Robert E. Merski",
+      "party": "D",
+      "district": 2,
+      "initials": "RM",
+      "counties": [
+        "Erie"
+      ],
       "role": "",
       "committees": [
-        { "name": "Consumer Affairs", "role": "MIN. CHAIR" },
-        { "name": "Transportation" }
+        {
+          "name": "Game & Fisheries",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Gaming Oversight",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Labor & Industry"
+        }
       ],
-      "office": { "room": "422", "building": "Irvis Office Bldg", "wing": "", "floor": 4 },
-      "phone": "(717) 705-1923",
-      "email": "jstruzzi@pahousegop.com"
+      "office": {
+        "room": "221",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 787-4358",
+      "email": "rmerski@pahouse.net"
+    },
+    {
+      "id": "bizzarro",
+      "chamber": "H",
+      "name": "Ryan A. Bizzarro",
+      "party": "D",
+      "district": 3,
+      "initials": "RB",
+      "counties": [
+        "Erie"
+      ],
+      "role": "Majority Policy Chair",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "116",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 772-2297",
+      "email": "rbizzarro@pahouse.net"
+    },
+    {
+      "id": "banta",
+      "chamber": "H",
+      "name": "Jacob D. Banta",
+      "party": "R",
+      "district": 4,
+      "initials": "JB",
+      "counties": [
+        "Erie"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "162B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-9087",
+      "email": "jbanta@pahousegop.com"
+    },
+    {
+      "id": "weaknecht",
+      "chamber": "H",
+      "name": "Eric J. Weaknecht",
+      "party": "R",
+      "district": 5,
+      "initials": "EW",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "432",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-9940",
+      "email": "eweaknecht@pahousegop.com"
+    },
+    {
+      "id": "roae",
+      "chamber": "H",
+      "name": "Brad Roae",
+      "party": "R",
+      "district": 6,
+      "initials": "BR",
+      "counties": [
+        "Crawford",
+        "Erie"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "State Government",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Health"
+        }
+      ],
+      "office": {
+        "room": "151",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-2353",
+      "email": "broae@pahousegop.com"
+    },
+    {
+      "id": "wentling",
+      "chamber": "H",
+      "name": "Parke Wentling",
+      "party": "R",
+      "district": 7,
+      "initials": "PW",
+      "counties": [
+        "Mercer"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "162A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-5008",
+      "email": "pwentling@pahousegop.com"
+    },
+    {
+      "id": "bernstine",
+      "chamber": "H",
+      "name": "Aaron Bernstine",
+      "party": "R",
+      "district": 8,
+      "initials": "AB",
+      "counties": [
+        "Butler",
+        "Lawrence"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "211",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-8322",
+      "email": "abernstine@pahousegop.com"
+    },
+    {
+      "id": "brown9",
+      "chamber": "H",
+      "name": "Marla Brown",
+      "party": "R",
+      "district": 9,
+      "initials": "MB",
+      "counties": [
+        "Lawrence"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Health"
+        }
+      ],
+      "office": {
+        "room": "149A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-2017",
+      "email": "mbrown@pahousegop.com"
+    },
+    {
+      "id": "brown10",
+      "chamber": "H",
+      "name": "Amen Brown",
+      "party": "D",
+      "district": 10,
+      "initials": "AB",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "200",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-3822",
+      "email": "abrown@pahouse.net"
+    },
+    {
+      "id": "mustello",
+      "chamber": "H",
+      "name": "Marci Mustello",
+      "party": "R",
+      "district": 11,
+      "initials": "MM",
+      "counties": [
+        "Butler"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "147A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-7686",
+      "email": "mmustello@pahousegop.com"
+    },
+    {
+      "id": "lawrence",
+      "chamber": "H",
+      "name": "John A. Lawrence",
+      "party": "R",
+      "district": 13,
+      "initials": "JL",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "105",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 260-6117",
+      "email": "jlawrence@pahousegop.com"
+    },
+    {
+      "id": "kozak",
+      "chamber": "H",
+      "name": "Roman Kozak",
+      "party": "R",
+      "district": 14,
+      "initials": "RK",
+      "counties": [
+        "Beaver"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "52B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 260-6432",
+      "email": "rkozak@pahousegop.com"
+    },
+    {
+      "id": "kail",
+      "chamber": "H",
+      "name": "Joshua D. Kail",
+      "party": "R",
+      "district": 15,
+      "initials": "JK",
+      "counties": [
+        "Beaver",
+        "Washington"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "218",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 260-6144",
+      "email": "jkail@pahousegop.com"
     },
     {
       "id": "matzie",
@@ -204,15 +2420,6100 @@
       "party": "D",
       "district": 16,
       "initials": "RM",
-      "counties": ["Allegheny", "Beaver"],
-      "role": "Consumer Affairs Cmte CHAIR",
-      "committees": [
-        { "name": "Consumer Affairs", "role": "CHAIR" },
-        { "name": "Liquor Control" }
+      "counties": [
+        "Beaver"
       ],
-      "office": { "room": "38B", "building": "East Wing", "wing": "", "floor": "EB" },
+      "role": "Majority Caucus Chair",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "146",
+        "building": "Main Capitol",
+        "floor": 1
+      },
       "phone": "(717) 787-4444",
       "email": "rmatzie@pahouse.net"
+    },
+    {
+      "id": "bonner",
+      "chamber": "H",
+      "name": "Timothy R. Bonner",
+      "party": "R",
+      "district": 17,
+      "initials": "TB",
+      "counties": [
+        "Butler",
+        "Mercer"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Government Oversight"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "314C",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-6438",
+      "email": "tbonner@pahousegop.com"
+    },
+    {
+      "id": "tomlinson",
+      "chamber": "H",
+      "name": "Kathleen C. Tomlinson",
+      "party": "R",
+      "district": 18,
+      "initials": "KT",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "161A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-7319",
+      "email": "ktomlinson@pahousegop.com"
+    },
+    {
+      "id": "abney",
+      "chamber": "H",
+      "name": "Aerion Abney",
+      "party": "D",
+      "district": 19,
+      "initials": "AA",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "218",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-3783",
+      "email": "aabney@pahouse.net"
+    },
+    {
+      "id": "kinkead",
+      "chamber": "H",
+      "name": "Emily Kinkead",
+      "party": "D",
+      "district": 20,
+      "initials": "EK",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "116B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-5470",
+      "email": "ekinkead@pahouse.net"
+    },
+    {
+      "id": "powell",
+      "chamber": "H",
+      "name": "Lindsay Powell",
+      "party": "D",
+      "district": 21,
+      "initials": "LP",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "106B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-9114",
+      "email": "lpowell@pahouse.net"
+    },
+    {
+      "id": "tiburcio",
+      "chamber": "H",
+      "name": "Ana Tiburcio",
+      "party": "D",
+      "district": 22,
+      "initials": "AT",
+      "counties": [
+        "Lehigh"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        }
+      ],
+      "office": {
+        "room": "109",
+        "building": "B East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 705-6433",
+      "email": "atiburcio@pahouse.net"
+    },
+    {
+      "id": "frankel",
+      "chamber": "H",
+      "name": "Dan Frankel",
+      "party": "D",
+      "district": 23,
+      "initials": "DF",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Health",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "152",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 705-1875",
+      "email": "dfrankel@pahouse.net"
+    },
+    {
+      "id": "mayes",
+      "chamber": "H",
+      "name": "La'Tasha D. Mayes",
+      "party": "D",
+      "district": 24,
+      "initials": "LM",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "111A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1017",
+      "email": "lmayes@pahouse.net"
+    },
+    {
+      "id": "markosek",
+      "chamber": "H",
+      "name": "Brandon J. Markosek",
+      "party": "D",
+      "district": 25,
+      "initials": "BM",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "305",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 772-4511",
+      "email": "bmarkosek@pahouse.net"
+    },
+    {
+      "id": "friel",
+      "chamber": "H",
+      "name": "Paul Friel",
+      "party": "D",
+      "district": 26,
+      "initials": "PF",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Gaming Oversight"
+        }
+      ],
+      "office": {
+        "room": "123A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-1411",
+      "email": "pfriel@pahouse.net"
+    },
+    {
+      "id": "deasy",
+      "chamber": "H",
+      "name": "Daniel J. Deasy",
+      "party": "D",
+      "district": 27,
+      "initials": "DD",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Liquor Control",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "202",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 772-8187",
+      "email": "ddeasy@pahouse.net"
+    },
+    {
+      "id": "shaffer",
+      "chamber": "H",
+      "name": "Jeremy Shaffer",
+      "party": "R",
+      "district": 28,
+      "initials": "JS",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "413",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-9943",
+      "email": "jshaffer@pahousegop.com"
+    },
+    {
+      "id": "brennan",
+      "chamber": "H",
+      "name": "Tim Brennan",
+      "party": "D",
+      "district": 29,
+      "initials": "TB",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "27B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-2361",
+      "email": "tbrennan@pahouse.net"
+    },
+    {
+      "id": "venkat",
+      "chamber": "H",
+      "name": "Arvind Venkat",
+      "party": "D",
+      "district": 30,
+      "initials": "AV",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "101B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-2363",
+      "email": "avenkat@pahouse.net"
+    },
+    {
+      "id": "warren",
+      "chamber": "H",
+      "name": "Perry S. Warren",
+      "party": "D",
+      "district": 31,
+      "initials": "PW",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Insurance",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "115",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-5475",
+      "email": "pwarren@pahouse.net"
+    },
+    {
+      "id": "mcandrew",
+      "chamber": "H",
+      "name": "Joe McAndrew",
+      "party": "D",
+      "district": 32,
+      "initials": "JM",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "5C",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-1011",
+      "email": "jmcandrew@pahouse.net"
+    },
+    {
+      "id": "steele",
+      "chamber": "H",
+      "name": "Mandy Steele",
+      "party": "D",
+      "district": 33,
+      "initials": "MS",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "111B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 705-7141",
+      "email": "msteele@pahouse.net"
+    },
+    {
+      "id": "salisbury",
+      "chamber": "H",
+      "name": "Abigail Salisbury",
+      "party": "D",
+      "district": 34,
+      "initials": "AS",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "123B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1914",
+      "email": "asalisbury@pahouse.net"
+    },
+    {
+      "id": "goughnour",
+      "chamber": "H",
+      "name": "Dan Goughnour",
+      "party": "D",
+      "district": 35,
+      "initials": "DG",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "117A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1018",
+      "email": "dgoughnour@pahouse.net"
+    },
+    {
+      "id": "benham",
+      "chamber": "H",
+      "name": "Jessica Benham",
+      "party": "D",
+      "district": 36,
+      "initials": "JB",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "219",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-0411",
+      "email": "jbenham@pahouse.net"
+    },
+    {
+      "id": "fee",
+      "chamber": "H",
+      "name": "Mindy Fee",
+      "party": "R",
+      "district": 37,
+      "initials": "MF",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Liquor Control",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "43",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-5290",
+      "email": "mfee@pahousegop.com"
+    },
+    {
+      "id": "inglis",
+      "chamber": "H",
+      "name": "John C. Inglis III",
+      "party": "D",
+      "district": 38,
+      "initials": "JI",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "125A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-8175",
+      "email": "jinglis@pahouse.net"
+    },
+    {
+      "id": "kuzma",
+      "chamber": "H",
+      "name": "Andrew Kuzma",
+      "party": "R",
+      "district": 39,
+      "initials": "AK",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "159B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6122",
+      "email": "akuzma@pahousegop.com"
+    },
+    {
+      "id": "mihalek",
+      "chamber": "H",
+      "name": "Natalie Mihalek",
+      "party": "R",
+      "district": 40,
+      "initials": "NM",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "143B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1522",
+      "email": "nmihalek@pahousegop.com"
+    },
+    {
+      "id": "miller41",
+      "chamber": "H",
+      "name": "Brett R. Miller",
+      "party": "R",
+      "district": 41,
+      "initials": "BM",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Local Government",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "54A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 705-7161",
+      "email": "bmiller@pahousegop.com"
+    },
+    {
+      "id": "mazzocco",
+      "chamber": "H",
+      "name": "Jen Mazzocco",
+      "party": "D",
+      "district": 42,
+      "initials": "JM",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "117B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1850",
+      "email": "jmazzocco@pahouse.net"
+    },
+    {
+      "id": "greiner",
+      "chamber": "H",
+      "name": "Keith J. Greiner",
+      "party": "R",
+      "district": 43,
+      "initials": "KG",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Insurance"
+        }
+      ],
+      "office": {
+        "room": "49",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-6422",
+      "email": "kgreiner@pahousegop.com"
+    },
+    {
+      "id": "gaydos",
+      "chamber": "H",
+      "name": "Valerie S. Gaydos",
+      "party": "R",
+      "district": 44,
+      "initials": "VG",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "107",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-6651",
+      "email": "vgaydos@pahousegop.com"
+    },
+    {
+      "id": "kulik",
+      "chamber": "H",
+      "name": "Anita Astorino Kulik",
+      "party": "D",
+      "district": 45,
+      "initials": "AK",
+      "counties": [
+        "Allegheny"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "101",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 783-3780",
+      "email": "akulik@pahouse.net"
+    },
+    {
+      "id": "ortitay",
+      "chamber": "H",
+      "name": "Jason Ortitay",
+      "party": "R",
+      "district": 46,
+      "initials": "JO",
+      "counties": [
+        "Allegheny",
+        "Washington"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Education"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 787-1281",
+      "email": "jortitay@pahousegop.com"
+    },
+    {
+      "id": "dorsie",
+      "chamber": "H",
+      "name": "Joseph D'Orsie",
+      "party": "R",
+      "district": 47,
+      "initials": "JD",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "428",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 705-7167",
+      "email": "jdorsie@pahousegop.com"
+    },
+    {
+      "id": "oneal",
+      "chamber": "H",
+      "name": "Timothy J. O'Neal",
+      "party": "R",
+      "district": 48,
+      "initials": "TO",
+      "counties": [
+        "Washington"
+      ],
+      "role": "Republican Whip",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "428",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-3315",
+      "email": "toneal@pahousegop.com"
+    },
+    {
+      "id": "smithwadeel",
+      "chamber": "H",
+      "name": "Ismail Smith-Wade-El",
+      "party": "D",
+      "district": 49,
+      "initials": "IS",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "103A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-0752",
+      "email": "ismithwadeel@pahouse.net"
+    },
+    {
+      "id": "cook",
+      "chamber": "H",
+      "name": "Bud Cook",
+      "party": "R",
+      "district": 50,
+      "initials": "BC",
+      "counties": [
+        "Greene",
+        "Washington"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-8655",
+      "email": "bcook@pahousegop.com"
+    },
+    {
+      "id": "krupa",
+      "chamber": "H",
+      "name": "Charity Grimm Krupa",
+      "party": "R",
+      "district": 51,
+      "initials": "CK",
+      "counties": [
+        "Fayette"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Government Oversight"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "406",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-5173",
+      "email": "ckrupa@pahousegop.com"
+    },
+    {
+      "id": "warner",
+      "chamber": "H",
+      "name": "Ryan Warner",
+      "party": "R",
+      "district": 52,
+      "initials": "RW",
+      "counties": [
+        "Fayette"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Tourism, Recreation & Economic Development",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 787-1540",
+      "email": "rwarner@pahousegop.com"
+    },
+    {
+      "id": "malagari",
+      "chamber": "H",
+      "name": "Steven R. Malagari",
+      "party": "D",
+      "district": 53,
+      "initials": "SM",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Insurance",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-8515",
+      "email": "smalagari@pahouse.net"
+    },
+    {
+      "id": "scott",
+      "chamber": "H",
+      "name": "Greg Scott",
+      "party": "D",
+      "district": 54,
+      "initials": "GS",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "5B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-0749",
+      "email": "gscott@pahouse.net"
+    },
+    {
+      "id": "cooper",
+      "chamber": "H",
+      "name": "Jill N. Cooper",
+      "party": "R",
+      "district": 55,
+      "initials": "JC",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "150",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-8939",
+      "email": "jcooper@pahousegop.com"
+    },
+    {
+      "id": "rasel",
+      "chamber": "H",
+      "name": "Brian C. Rasel",
+      "party": "R",
+      "district": 56,
+      "initials": "BR",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Housing & Community Development"
+        }
+      ],
+      "office": {
+        "room": "147B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6132",
+      "email": "brasel@pahousegop.com"
+    },
+    {
+      "id": "nelson",
+      "chamber": "H",
+      "name": "Eric R. Nelson",
+      "party": "R",
+      "district": 57,
+      "initials": "EN",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Insurance",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Energy"
+        }
+      ],
+      "office": {
+        "room": "121",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 260-6146",
+      "email": "enelson@pahousegop.com"
+    },
+    {
+      "id": "davanzo",
+      "chamber": "H",
+      "name": "Eric Davanzo",
+      "party": "R",
+      "district": 58,
+      "initials": "ED",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-3825",
+      "email": "edavanzo@pahousegop.com"
+    },
+    {
+      "id": "rossi",
+      "chamber": "H",
+      "name": "Leslie Rossi",
+      "party": "R",
+      "district": 59,
+      "initials": "LR",
+      "counties": [
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "51B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-9311",
+      "email": "lrossi@pahousegop.com"
+    },
+    {
+      "id": "major",
+      "chamber": "H",
+      "name": "Abby Major",
+      "party": "R",
+      "district": 60,
+      "initials": "AM",
+      "counties": [
+        "Armstrong",
+        "Westmoreland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "53B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-5327",
+      "email": "amajor@pahousegop.com"
+    },
+    {
+      "id": "hanbidge",
+      "chamber": "H",
+      "name": "Liz Hanbidge",
+      "party": "D",
+      "district": 61,
+      "initials": "LH",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "121",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 783-4102",
+      "email": "lhanbidge@pahouse.net"
+    },
+    {
+      "id": "struzzi",
+      "chamber": "H",
+      "name": "James B. Struzzi",
+      "party": "R",
+      "district": 62,
+      "initials": "JS",
+      "counties": [
+        "Indiana"
+      ],
+      "role": "Republican Appropriations Committee Chair",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "245",
+        "building": "Main Capitol",
+        "floor": 2
+      },
+      "phone": "(717) 705-7173",
+      "email": "jstruzzi@pahousegop.com"
+    },
+    {
+      "id": "bashline",
+      "chamber": "H",
+      "name": "Josh Bashline",
+      "party": "R",
+      "district": 63,
+      "initials": "JB",
+      "counties": [
+        "Armstrong",
+        "Clarion"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "412",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-9908",
+      "email": "jbashline@pahousegop.com"
+    },
+    {
+      "id": "james",
+      "chamber": "H",
+      "name": "R. Lee James",
+      "party": "R",
+      "district": 64,
+      "initials": "RJ",
+      "counties": [
+        "Crawford",
+        "Venango"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Labor & Industry",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        }
+      ],
+      "office": {
+        "room": "41A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-8188",
+      "email": "rjames@pahousegop.com"
+    },
+    {
+      "id": "rapp",
+      "chamber": "H",
+      "name": "Kathy L. Rapp",
+      "party": "R",
+      "district": 65,
+      "initials": "KR",
+      "counties": [
+        "Crawford",
+        "Forest",
+        "Warren"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Health",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Energy"
+        }
+      ],
+      "office": {
+        "room": "312",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-1367",
+      "email": "krapp@pahousegop.com"
+    },
+    {
+      "id": "smith",
+      "chamber": "H",
+      "name": "Brian Smith",
+      "party": "R",
+      "district": 66,
+      "initials": "BS",
+      "counties": [
+        "Indiana",
+        "Jefferson"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "145A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-3845",
+      "email": "bsmith@pahousegop.com"
+    },
+    {
+      "id": "causer",
+      "chamber": "H",
+      "name": "Martin T. Causer",
+      "party": "R",
+      "district": 67,
+      "initials": "MC",
+      "counties": [
+        "Cameron",
+        "Mckean",
+        "Potter"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "47",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-5075",
+      "email": "mcauser@pahousegop.com"
+    },
+    {
+      "id": "owlett",
+      "chamber": "H",
+      "name": "Clint Owlett",
+      "party": "R",
+      "district": 68,
+      "initials": "CO",
+      "counties": [
+        "Bradford",
+        "Tioga"
+      ],
+      "role": "Republican Caucus Secretary",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "316A",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 772-5371",
+      "email": "cowlett@pahousegop.com"
+    },
+    {
+      "id": "metzgar",
+      "chamber": "H",
+      "name": "Carl Walker Metzgar",
+      "party": "R",
+      "district": 69,
+      "initials": "CM",
+      "counties": [
+        "Somerset"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Ethics Committee",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "216",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-8756",
+      "email": "cmetzgar@pahousegop.com"
+    },
+    {
+      "id": "bradford",
+      "chamber": "H",
+      "name": "Matthew D. Bradford",
+      "party": "D",
+      "district": 70,
+      "initials": "MB",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "Majority Leader",
+      "committees": [
+        {
+          "name": "Rules",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "110",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 772-2572",
+      "email": "mbradford@pahouse.net"
+    },
+    {
+      "id": "rigby",
+      "chamber": "H",
+      "name": "Jim Rigby",
+      "party": "R",
+      "district": 71,
+      "initials": "JR",
+      "counties": [
+        "Cambria",
+        "Somerset"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "403",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-9924",
+      "email": "jrigby@pahousegop.com"
+    },
+    {
+      "id": "burns",
+      "chamber": "H",
+      "name": "Frank Burns",
+      "party": "D",
+      "district": 72,
+      "initials": "FB",
+      "counties": [
+        "Cambria"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Professional Licensure",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "332",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 772-8056",
+      "email": "fburns@pahouse.net"
+    },
+    {
+      "id": "kephart",
+      "chamber": "H",
+      "name": "Dallas Kephart",
+      "party": "R",
+      "district": 73,
+      "initials": "DK",
+      "counties": [
+        "Cambria",
+        "Clearfield"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Government Oversight"
+        }
+      ],
+      "office": {
+        "room": "53A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-7099",
+      "email": "dkephart@pahousegop.com"
+    },
+    {
+      "id": "williams74",
+      "chamber": "H",
+      "name": "Dan K. Williams",
+      "party": "D",
+      "district": 74,
+      "initials": "DW",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Human Services",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "36",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-4103",
+      "email": "dwilliams@pahouse.net"
+    },
+    {
+      "id": "armanini",
+      "chamber": "H",
+      "name": "Mike Armanini",
+      "party": "R",
+      "district": 75,
+      "initials": "MA",
+      "counties": [
+        "Clearfield",
+        "Elk"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "145B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6142",
+      "email": "marmanini@pahousegop.com"
+    },
+    {
+      "id": "borowicz",
+      "chamber": "H",
+      "name": "Stephanie Borowicz",
+      "party": "R",
+      "district": 76,
+      "initials": "SB",
+      "counties": [
+        "Clinton",
+        "Union"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "111",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 772-9925",
+      "email": "sborowicz@pahousegop.com"
+    },
+    {
+      "id": "conklin",
+      "chamber": "H",
+      "name": "Scott Conklin",
+      "party": "D",
+      "district": 77,
+      "initials": "SC",
+      "counties": [
+        "Centre"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "314",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 787-9473",
+      "email": "sconklin@pahouse.net"
+    },
+    {
+      "id": "topper",
+      "chamber": "H",
+      "name": "Jesse Topper",
+      "party": "R",
+      "district": 78,
+      "initials": "JT",
+      "counties": [
+        "Bedford",
+        "Fulton"
+      ],
+      "role": "Republican Leader",
+      "committees": [
+        {
+          "name": "Rules",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "423",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-7076",
+      "email": "jtopper@pahousegop.com"
+    },
+    {
+      "id": "verobish",
+      "chamber": "H",
+      "name": "Andrea C. Verobish",
+      "party": "R",
+      "district": 79,
+      "initials": "AV",
+      "counties": [
+        "Blair"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "160A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-6419",
+      "email": "averobish@pahousegop.com"
+    },
+    {
+      "id": "barger",
+      "chamber": "H",
+      "name": "Scott Barger",
+      "party": "R",
+      "district": 80,
+      "initials": "SB",
+      "counties": [
+        "Blair",
+        "Huntingdon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "409",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-9020",
+      "email": "sbarger@pahousegop.com"
+    },
+    {
+      "id": "irvin",
+      "chamber": "H",
+      "name": "Rich Irvin",
+      "party": "R",
+      "district": 81,
+      "initials": "RI",
+      "counties": [
+        "Franklin",
+        "Huntingdon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Communications & Technology"
+        }
+      ],
+      "office": {
+        "room": "209",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 787-3335",
+      "email": "rirvin@pahousegop.com"
+    },
+    {
+      "id": "takac",
+      "chamber": "H",
+      "name": "Paul Takac",
+      "party": "D",
+      "district": 82,
+      "initials": "PT",
+      "counties": [
+        "Centre"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "103B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-0750",
+      "email": "ptakac@pahouse.net"
+    },
+    {
+      "id": "flick",
+      "chamber": "H",
+      "name": "Jamie L. Flick",
+      "party": "R",
+      "district": 83,
+      "initials": "JF",
+      "counties": [
+        "Lycoming",
+        "Union"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "150",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-2885",
+      "email": "jflick@pahousegop.com"
+    },
+    {
+      "id": "hamm",
+      "chamber": "H",
+      "name": "Joe Hamm",
+      "party": "R",
+      "district": 84,
+      "initials": "JH",
+      "counties": [
+        "Lycoming",
+        "Sullivan"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "431",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-5270",
+      "email": "jhamm@pahousegop.com"
+    },
+    {
+      "id": "rowe",
+      "chamber": "H",
+      "name": "David H. Rowe",
+      "party": "R",
+      "district": 85,
+      "initials": "DR",
+      "counties": [
+        "Juniata",
+        "Mifflin",
+        "Snyder",
+        "Union"
+      ],
+      "role": "Republican Policy Chair",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "414",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-3443",
+      "email": "drowe@pahousegop.com"
+    },
+    {
+      "id": "stambaugh",
+      "chamber": "H",
+      "name": "Perry A. Stambaugh",
+      "party": "R",
+      "district": 86,
+      "initials": "PS",
+      "counties": [
+        "Juniata",
+        "Perry"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "430",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-1593",
+      "email": "pstambaugh@pahousegop.com"
+    },
+    {
+      "id": "kutz",
+      "chamber": "H",
+      "name": "Thomas H. Kutz",
+      "party": "R",
+      "district": 87,
+      "initials": "TK",
+      "counties": [
+        "Cumberland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "149B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-2063",
+      "email": "tkutz@pahousegop.com"
+    },
+    {
+      "id": "delozier",
+      "chamber": "H",
+      "name": "Sheryl M. Delozier",
+      "party": "R",
+      "district": 88,
+      "initials": "SD",
+      "counties": [
+        "Cumberland"
+      ],
+      "role": "Republican Caucus Administrator",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "315J",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-5282",
+      "email": "sdelozier@pahousegop.com"
+    },
+    {
+      "id": "kauffman",
+      "chamber": "H",
+      "name": "Rob W. Kauffman",
+      "party": "R",
+      "district": 89,
+      "initials": "RK",
+      "counties": [
+        "Franklin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "313",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 705-2004",
+      "email": "rkauffman@pahousegop.com"
+    },
+    {
+      "id": "reichard",
+      "chamber": "H",
+      "name": "Chad G. Reichard",
+      "party": "R",
+      "district": 90,
+      "initials": "CR",
+      "counties": [
+        "Franklin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-5218",
+      "email": "creichard@pahousegop.com"
+    },
+    {
+      "id": "moul",
+      "chamber": "H",
+      "name": "Dan Moul",
+      "party": "R",
+      "district": 91,
+      "initials": "DM",
+      "counties": [
+        "Adams"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "416",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-5217",
+      "email": "dmoul@pahousegop.com"
+    },
+    {
+      "id": "anderson",
+      "chamber": "H",
+      "name": "Marc S. Anderson",
+      "party": "R",
+      "district": 92,
+      "initials": "MA",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "428",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-8783",
+      "email": "manderson@pahousegop.com"
+    },
+    {
+      "id": "jones",
+      "chamber": "H",
+      "name": "Mike Jones",
+      "party": "R",
+      "district": 93,
+      "initials": "MJ",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "210",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-8389",
+      "email": "mjones@pahousegop.com"
+    },
+    {
+      "id": "fink",
+      "chamber": "H",
+      "name": "Wendy Fink",
+      "party": "R",
+      "district": 94,
+      "initials": "WF",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "410",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-6426",
+      "email": "wfink@pahousegop.com"
+    },
+    {
+      "id": "hillevans",
+      "chamber": "H",
+      "name": "Carol Hill-Evans",
+      "party": "D",
+      "district": 95,
+      "initials": "CH",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "State Government",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "528E",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 787-7514",
+      "email": "chillevans@pahouse.net"
+    },
+    {
+      "id": "rivera",
+      "chamber": "H",
+      "name": "Nikki Rivera",
+      "party": "D",
+      "district": 96,
+      "initials": "NR",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "109A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-3555",
+      "email": "nrivera@pahouse.net"
+    },
+    {
+      "id": "mentzer",
+      "chamber": "H",
+      "name": "Steven C. Mentzer",
+      "party": "R",
+      "district": 97,
+      "initials": "SM",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "41B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-1776",
+      "email": "smentzer@pahousegop.com"
+    },
+    {
+      "id": "jones98",
+      "chamber": "H",
+      "name": "Tom Jones",
+      "party": "R",
+      "district": 98,
+      "initials": "TJ",
+      "counties": [
+        "Lancaster",
+        "Lebanon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "411",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-2076",
+      "email": "tjones@pahousegop.com"
+    },
+    {
+      "id": "zimmerman",
+      "chamber": "H",
+      "name": "David H. Zimmerman",
+      "party": "R",
+      "district": 99,
+      "initials": "DZ",
+      "counties": [
+        "Berks",
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Insurance"
+        }
+      ],
+      "office": {
+        "room": "420",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-3531",
+      "email": "dzimmerman@pahousegop.com"
+    },
+    {
+      "id": "cutler",
+      "chamber": "H",
+      "name": "Bryan Cutler",
+      "party": "R",
+      "district": 100,
+      "initials": "BC",
+      "counties": [
+        "Lancaster"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "45",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-6424",
+      "email": "bcutler@pahousegop.com"
+    },
+    {
+      "id": "schlegel",
+      "chamber": "H",
+      "name": "John A. Schlegel",
+      "party": "R",
+      "district": 101,
+      "initials": "JS",
+      "counties": [
+        "Lebanon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "163A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1815",
+      "email": "jschlegel@pahousegop.com"
+    },
+    {
+      "id": "diamond",
+      "chamber": "H",
+      "name": "Russ Diamond",
+      "party": "R",
+      "district": 102,
+      "initials": "RD",
+      "counties": [
+        "Lebanon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Gaming Oversight",
+          "role": "CHAIR"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "155",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-2686",
+      "email": "rdiamond@pahousegop.com"
+    },
+    {
+      "id": "davidson",
+      "chamber": "H",
+      "name": "Nathan Davidson",
+      "party": "D",
+      "district": 103,
+      "initials": "ND",
+      "counties": [
+        "Cumberland",
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "4E",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-9342",
+      "email": "ndavidson@pahouse.net"
+    },
+    {
+      "id": "madsen",
+      "chamber": "H",
+      "name": "Dave Madsen",
+      "party": "D",
+      "district": 104,
+      "initials": "DM",
+      "counties": [
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "25B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-2362",
+      "email": "dmadsen@pahouse.net"
+    },
+    {
+      "id": "fleming",
+      "chamber": "H",
+      "name": "Justin C. Fleming",
+      "party": "D",
+      "district": 105,
+      "initials": "JF",
+      "counties": [
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "27A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-0674",
+      "email": "jfleming@pahouse.net"
+    },
+    {
+      "id": "mehaffie",
+      "chamber": "H",
+      "name": "Thomas L. Mehaffie",
+      "party": "R",
+      "district": 106,
+      "initials": "TM",
+      "counties": [
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {
+        "room": "144",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-2684",
+      "email": "tmehaffie@pahousegop.com"
+    },
+    {
+      "id": "stehr",
+      "chamber": "H",
+      "name": "Joanne Stehr",
+      "party": "R",
+      "district": 107,
+      "initials": "JS",
+      "counties": [
+        "Northumberland",
+        "Schuylkill"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "141A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6134",
+      "email": "jstehr@pahousegop.com"
+    },
+    {
+      "id": "stender",
+      "chamber": "H",
+      "name": "Michael Stender",
+      "party": "R",
+      "district": 108,
+      "initials": "MS",
+      "counties": [
+        "Montour",
+        "Northumberland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "51",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-3485",
+      "email": "mstender@pahousegop.com"
+    },
+    {
+      "id": "leadbeter",
+      "chamber": "H",
+      "name": "Robert Leadbeter",
+      "party": "R",
+      "district": 109,
+      "initials": "RL",
+      "counties": [
+        "Columbia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "141B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-1102",
+      "email": "rleadbeter@pahousegop.com"
+    },
+    {
+      "id": "pickett",
+      "chamber": "H",
+      "name": "Tina Pickett",
+      "party": "R",
+      "district": 110,
+      "initials": "TP",
+      "counties": [
+        "Bradford",
+        "Wyoming"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Committee On Committees",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Insurance",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "315A",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-8238",
+      "email": "tpickett@pahousegop.com"
+    },
+    {
+      "id": "fritz",
+      "chamber": "H",
+      "name": "Jonathan Fritz",
+      "party": "R",
+      "district": 111,
+      "initials": "JF",
+      "counties": [
+        "Susquehanna",
+        "Wayne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Gaming Oversight",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "414",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-2910",
+      "email": "jfritz@pahousegop.com"
+    },
+    {
+      "id": "mullins",
+      "chamber": "H",
+      "name": "Kyle J. Mullins",
+      "party": "D",
+      "district": 112,
+      "initials": "KM",
+      "counties": [
+        "Lackawanna"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Government Oversight"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "103",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 783-5043",
+      "email": "kmullins@pahouse.net"
+    },
+    {
+      "id": "donahue",
+      "chamber": "H",
+      "name": "Kyle Donahue",
+      "party": "D",
+      "district": 113,
+      "initials": "KD",
+      "counties": [
+        "Lackawanna"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "104",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-8981",
+      "email": "kdonahue@pahouse.net"
+    },
+    {
+      "id": "kosierowski",
+      "chamber": "H",
+      "name": "Bridget M. Kosierowski",
+      "party": "D",
+      "district": 114,
+      "initials": "BK",
+      "counties": [
+        "Lackawanna"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Professional Licensure",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "527E",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 783-4874",
+      "email": "bkosierowski@pahouse.net"
+    },
+    {
+      "id": "madden",
+      "chamber": "H",
+      "name": "Maureen E. Madden",
+      "party": "D",
+      "district": 115,
+      "initials": "MM",
+      "counties": [
+        "Monroe"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "326",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-5811",
+      "email": "mmadden@pahouse.net"
+    },
+    {
+      "id": "watro",
+      "chamber": "H",
+      "name": "Dane Watro",
+      "party": "R",
+      "district": 116,
+      "initials": "DW",
+      "counties": [
+        "Luzerne",
+        "Schuylkill"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "164B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6136",
+      "email": "dwatro@pahousegop.com"
+    },
+    {
+      "id": "walsh",
+      "chamber": "H",
+      "name": "Jamie Walsh",
+      "party": "R",
+      "district": 117,
+      "initials": "JW",
+      "counties": [
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "408",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-1117",
+      "email": "jwalsh@pahousegop.com"
+    },
+    {
+      "id": "haddock",
+      "chamber": "H",
+      "name": "Jim Haddock",
+      "party": "D",
+      "district": 118,
+      "initials": "JH",
+      "counties": [
+        "Lackawanna",
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "101A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-3589",
+      "email": "jhaddock@pahouse.net"
+    },
+    {
+      "id": "ryncavage",
+      "chamber": "H",
+      "name": "Alec J. Ryncavage",
+      "party": "R",
+      "district": 119,
+      "initials": "AR",
+      "counties": [
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "52A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-2041",
+      "email": "aryncavage@pahousegop.com"
+    },
+    {
+      "id": "pugh",
+      "chamber": "H",
+      "name": "Brenda M. Pugh",
+      "party": "R",
+      "district": 120,
+      "initials": "BP",
+      "counties": [
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "423",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-3798",
+      "email": "bpugh@pahousegop.com"
+    },
+    {
+      "id": "pashinski",
+      "chamber": "H",
+      "name": "Eddie Day Pashinski",
+      "party": "D",
+      "district": 121,
+      "initials": "EP",
+      "counties": [
+        "Luzerne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "212",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-0686",
+      "email": "epashinski@pahouse.net"
+    },
+    {
+      "id": "heffley",
+      "chamber": "H",
+      "name": "Doyle Heffley",
+      "party": "R",
+      "district": 122,
+      "initials": "DH",
+      "counties": [
+        "Carbon"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Human Services",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "214",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 260-6139",
+      "email": "dheffley@pahousegop.com"
+    },
+    {
+      "id": "twardzik",
+      "chamber": "H",
+      "name": "Tim Twardzik",
+      "party": "R",
+      "district": 123,
+      "initials": "TT",
+      "counties": [
+        "Schuylkill"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Housing & Community Development"
+        }
+      ],
+      "office": {
+        "room": "106",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-8956",
+      "email": "ttwardzik@pahousegop.com"
+    },
+    {
+      "id": "barton",
+      "chamber": "H",
+      "name": "Jamie Barton",
+      "party": "R",
+      "district": 124,
+      "initials": "JB",
+      "counties": [
+        "Berks",
+        "Schuylkill"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        }
+      ],
+      "office": {
+        "room": "160B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-9029",
+      "email": "jbarton@pahousegop.com"
+    },
+    {
+      "id": "kerwin",
+      "chamber": "H",
+      "name": "Joe Kerwin",
+      "party": "R",
+      "district": 125,
+      "initials": "JK",
+      "counties": [
+        "Dauphin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "115",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 260-6148",
+      "email": "jkerwin@pahousegop.com"
+    },
+    {
+      "id": "rusnock",
+      "chamber": "H",
+      "name": "Jacklyn Rusnock",
+      "party": "D",
+      "district": 126,
+      "initials": "JR",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "4F",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-3290",
+      "email": "jrusnock@pahouse.net"
+    },
+    {
+      "id": "guzman",
+      "chamber": "H",
+      "name": "Manuel Guzman",
+      "party": "D",
+      "district": 127,
+      "initials": "MG",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "32",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-3525",
+      "email": "mguzman@pahouse.net"
+    },
+    {
+      "id": "gillen",
+      "chamber": "H",
+      "name": "Mark M. Gillen",
+      "party": "R",
+      "district": 128,
+      "initials": "MG",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Veterans Affairs & Emergency Preparedness",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "18",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-8550",
+      "email": "mgillen@pahousegop.com"
+    },
+    {
+      "id": "cepedafreytiz",
+      "chamber": "H",
+      "name": "Johanny Cepeda-Freytiz",
+      "party": "D",
+      "district": 129,
+      "initials": "JC",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "104A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-1858",
+      "email": "jcepedafreytiz@pahouse.net"
+    },
+    {
+      "id": "maloney",
+      "chamber": "H",
+      "name": "David M. Maloney",
+      "party": "R",
+      "district": 130,
+      "initials": "DM",
+      "counties": [
+        "Berks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Game & Fisheries",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "7",
+        "building": "East Wing"
+      },
+      "phone": "(717) 260-6161",
+      "email": "dmaloney@pahousegop.com"
+    },
+    {
+      "id": "mackenzie",
+      "chamber": "H",
+      "name": "Milou Mackenzie",
+      "party": "R",
+      "district": 131,
+      "initials": "MM",
+      "counties": [
+        "Lehigh",
+        "Montgomery",
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "405",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-1673",
+      "email": "mmackenzie@pahousegop.com"
+    },
+    {
+      "id": "schlossberg",
+      "chamber": "H",
+      "name": "Michael H. Schlossberg",
+      "party": "D",
+      "district": 132,
+      "initials": "MS",
+      "counties": [
+        "Lehigh"
+      ],
+      "role": "Majority Whip",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "121",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 705-1869",
+      "email": "mschlossberg@pahouse.net"
+    },
+    {
+      "id": "mcneill",
+      "chamber": "H",
+      "name": "Jeanne McNeill",
+      "party": "D",
+      "district": 133,
+      "initials": "JM",
+      "counties": [
+        "Lehigh"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 772-9902",
+      "email": "jmcneill@pahouse.net"
+    },
+    {
+      "id": "schweyer",
+      "chamber": "H",
+      "name": "Peter Schweyer",
+      "party": "D",
+      "district": 134,
+      "initials": "PS",
+      "counties": [
+        "Lehigh"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Ethics Committee",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "128",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-2909",
+      "email": "pschweyer@pahouse.net"
+    },
+    {
+      "id": "samuelson",
+      "chamber": "H",
+      "name": "Steve Samuelson",
+      "party": "D",
+      "district": 135,
+      "initials": "SS",
+      "counties": [
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "208",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 705-1881",
+      "email": "ssamuelson@pahouse.net"
+    },
+    {
+      "id": "freeman",
+      "chamber": "H",
+      "name": "Robert Freeman",
+      "party": "D",
+      "district": 136,
+      "initials": "RF",
+      "counties": [
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Local Government",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "207",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-3815",
+      "email": "rfreeman@pahouse.net"
+    },
+    {
+      "id": "emrick",
+      "chamber": "H",
+      "name": "Joe Emrick",
+      "party": "R",
+      "district": 137,
+      "initials": "JE",
+      "counties": [
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Professional Licensure",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "401",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 260-6159",
+      "email": "jemrick@pahousegop.com"
+    },
+    {
+      "id": "flood",
+      "chamber": "H",
+      "name": "Ann Flood",
+      "party": "R",
+      "district": 138,
+      "initials": "AF",
+      "counties": [
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "402",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 783-8573",
+      "email": "aflood@pahousegop.com"
+    },
+    {
+      "id": "olsommer",
+      "chamber": "H",
+      "name": "Jeff Olsommer",
+      "party": "R",
+      "district": 139,
+      "initials": "JO",
+      "counties": [
+        "Pike",
+        "Wayne"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        }
+      ],
+      "office": {
+        "room": "164",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-2037",
+      "email": "jolsommer@pahousegop.com"
+    },
+    {
+      "id": "prokopiak",
+      "chamber": "H",
+      "name": "Jim Prokopiak",
+      "party": "D",
+      "district": 140,
+      "initials": "JP",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "121B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-1292",
+      "email": "jprokopiak@pahouse.net"
+    },
+    {
+      "id": "davis",
+      "chamber": "H",
+      "name": "Tina M. Davis",
+      "party": "D",
+      "district": 141,
+      "initials": "TD",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "Majority Caucus Secretary",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "331",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-4903",
+      "email": "tdavis@pahouse.net"
+    },
+    {
+      "id": "hogan",
+      "chamber": "H",
+      "name": "Joe Hogan",
+      "party": "R",
+      "district": 142,
+      "initials": "JH",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "161B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 260-6140",
+      "email": "jhogan@pahousegop.com"
+    },
+    {
+      "id": "labs",
+      "chamber": "H",
+      "name": "Shelby Labs",
+      "party": "R",
+      "district": 143,
+      "initials": "SL",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "153B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-8556",
+      "email": "slabs@pahousegop.com"
+    },
+    {
+      "id": "munroe",
+      "chamber": "H",
+      "name": "Brian Munroe",
+      "party": "D",
+      "district": 144,
+      "initials": "BM",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "104B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-1983",
+      "email": "bmunroe@pahouse.net"
+    },
+    {
+      "id": "staats",
+      "chamber": "H",
+      "name": "Craig T. Staats",
+      "party": "R",
+      "district": 145,
+      "initials": "CS",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "110",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 783-3154",
+      "email": "cstaats@pahousegop.com"
+    },
+    {
+      "id": "ciresi",
+      "chamber": "H",
+      "name": "Joe Ciresi",
+      "party": "D",
+      "district": 146,
+      "initials": "JC",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "325",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-4086",
+      "email": "jciresi@pahouse.net"
+    },
+    {
+      "id": "scheuren",
+      "chamber": "H",
+      "name": "Donna Scheuren",
+      "party": "R",
+      "district": 147,
+      "initials": "DS",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "159A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-9501",
+      "email": "dscheuren@pahousegop.com"
+    },
+    {
+      "id": "daley",
+      "chamber": "H",
+      "name": "Mary Jo Daley",
+      "party": "D",
+      "district": 148,
+      "initials": "MD",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Tourism, Recreation & Economic Development",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Committee On Committees"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "225",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 787-9475",
+      "email": "mdaley@pahouse.net"
+    },
+    {
+      "id": "briggs",
+      "chamber": "H",
+      "name": "Tim Briggs",
+      "party": "D",
+      "district": 149,
+      "initials": "TB",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "302",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 705-7011",
+      "email": "tbriggs@pahouse.net"
+    },
+    {
+      "id": "webster",
+      "chamber": "H",
+      "name": "Joe Webster",
+      "party": "D",
+      "district": 150,
+      "initials": "JW",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "125B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-0419",
+      "email": "jwebster@pahouse.net"
+    },
+    {
+      "id": "cerrato",
+      "chamber": "H",
+      "name": "Melissa Cerrato",
+      "party": "D",
+      "district": 151,
+      "initials": "MC",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "122",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 772-1999",
+      "email": "mcerrato@pahouse.net"
+    },
+    {
+      "id": "guenst",
+      "chamber": "H",
+      "name": "Nancy Guenst",
+      "party": "D",
+      "district": 152,
+      "initials": "NG",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "105B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 705-2044",
+      "email": "nguenst@pahouse.net"
+    },
+    {
+      "id": "sanchez",
+      "chamber": "H",
+      "name": "Benjamin V. Sanchez",
+      "party": "D",
+      "district": 153,
+      "initials": "BS",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Government Oversight"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Rules"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "311",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 783-7619",
+      "email": "bsanchez@pahouse.net"
+    },
+    {
+      "id": "nelson154",
+      "chamber": "H",
+      "name": "Napoleon J. Nelson",
+      "party": "D",
+      "district": 154,
+      "initials": "NN",
+      "counties": [
+        "Montgomery"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Education"
+        }
+      ],
+      "office": {
+        "room": "325",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 783-1079",
+      "email": "nnelson@pahouse.net"
+    },
+    {
+      "id": "otten",
+      "chamber": "H",
+      "name": "Danielle Friel Otten",
+      "party": "D",
+      "district": 155,
+      "initials": "DO",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Government Oversight"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "34",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-5009",
+      "email": "dotten@pahouse.net"
+    },
+    {
+      "id": "pielli",
+      "chamber": "H",
+      "name": "Chris Pielli",
+      "party": "D",
+      "district": 156,
+      "initials": "CP",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "115B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 705-2075",
+      "email": "cpielli@pahouse.net"
+    },
+    {
+      "id": "shusterman",
+      "chamber": "H",
+      "name": "Melissa L. Shusterman",
+      "party": "D",
+      "district": 157,
+      "initials": "MS",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Rules"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "114",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-7524",
+      "email": "mshusterman@pahouse.net"
+    },
+    {
+      "id": "sappey",
+      "chamber": "H",
+      "name": "Christina D. Sappey",
+      "party": "D",
+      "district": 158,
+      "initials": "CS",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "112",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 772-9973",
+      "email": "csappey@pahouse.net"
+    },
+    {
+      "id": "kazeem",
+      "chamber": "H",
+      "name": "Carol Kazeem",
+      "party": "D",
+      "district": 159,
+      "initials": "CK",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "26A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-5881",
+      "email": "ckazeem@pahouse.net"
+    },
+    {
+      "id": "williams160",
+      "chamber": "H",
+      "name": "Craig Williams",
+      "party": "R",
+      "district": 160,
+      "initials": "CW",
+      "counties": [
+        "Chester",
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Government Oversight",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "3",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-3038",
+      "email": "cwilliams@pahousegop.com"
+    },
+    {
+      "id": "krueger",
+      "chamber": "H",
+      "name": "Leanne Krueger",
+      "party": "D",
+      "district": 161,
+      "initials": "LK",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "Majority Caucus Administrator",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "512E",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 705-2567",
+      "email": "lkrueger@pahouse.net"
+    },
+    {
+      "id": "delloso",
+      "chamber": "H",
+      "name": "David M. Delloso",
+      "party": "D",
+      "district": 162,
+      "initials": "DD",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "301",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 783-6437",
+      "email": "ddelloso@pahouse.net"
+    },
+    {
+      "id": "boyd",
+      "chamber": "H",
+      "name": "Heather Boyd",
+      "party": "D",
+      "district": 163,
+      "initials": "HB",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "106A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-8099",
+      "email": "hboyd@pahouse.net"
+    },
+    {
+      "id": "curry",
+      "chamber": "H",
+      "name": "Gina H. Curry",
+      "party": "D",
+      "district": 164,
+      "initials": "GC",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "25A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-4907",
+      "email": "gcurry@pahouse.net"
+    },
+    {
+      "id": "omara",
+      "chamber": "H",
+      "name": "Jennifer O'Mara",
+      "party": "D",
+      "district": 165,
+      "initials": "JO",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "217",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-4090",
+      "email": "jomara@pahouse.net"
+    },
+    {
+      "id": "vitali",
+      "chamber": "H",
+      "name": "Greg Vitali",
+      "party": "D",
+      "district": 166,
+      "initials": "GV",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental & Natural Resource Protection",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "30",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-7647",
+      "email": "gvitali@pahouse.net"
+    },
+    {
+      "id": "howard",
+      "chamber": "H",
+      "name": "Kristine C. Howard",
+      "party": "D",
+      "district": 167,
+      "initials": "KH",
+      "counties": [
+        "Chester"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "107",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-4088",
+      "email": "khoward@pahouse.net"
+    },
+    {
+      "id": "borowski",
+      "chamber": "H",
+      "name": "Lisa A. Borowski",
+      "party": "D",
+      "district": 168,
+      "initials": "LB",
+      "counties": [
+        "Delaware"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Intergovernmental Affairs & Operations",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Local Government"
+        }
+      ],
+      "office": {
+        "room": "28B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-2005",
+      "email": "lborowski@pahouse.net"
+    },
+    {
+      "id": "klunk",
+      "chamber": "H",
+      "name": "Kate A. Klunk",
+      "party": "R",
+      "district": 169,
+      "initials": "KK",
+      "counties": [
+        "York"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "113",
+        "building": "Ryan Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 787-4790",
+      "email": "kklunk@pahousegop.com"
+    },
+    {
+      "id": "white",
+      "chamber": "H",
+      "name": "Martina A. White",
+      "party": "R",
+      "district": 170,
+      "initials": "MW",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "Republican Caucus Chair",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "412",
+        "building": "Main Capitol",
+        "floor": 4
+      },
+      "phone": "(717) 787-6740",
+      "email": "mwhite@pahousegop.com"
+    },
+    {
+      "id": "benninghoff",
+      "chamber": "H",
+      "name": "Kerry A. Benninghoff",
+      "party": "R",
+      "district": 171,
+      "initials": "KB",
+      "counties": [
+        "Centre",
+        "Mifflin"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Transportation",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "213",
+        "building": "Ryan Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-1918",
+      "email": "kbenninghoff@pahousegop.com"
+    },
+    {
+      "id": "dougherty",
+      "chamber": "H",
+      "name": "Sean Dougherty",
+      "party": "D",
+      "district": 172,
+      "initials": "SD",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-4944",
+      "email": "sdougherty@pahouse.net"
+    },
+    {
+      "id": "gallagher",
+      "chamber": "H",
+      "name": "Pat Gallagher",
+      "party": "D",
+      "district": 173,
+      "initials": "PG",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Professional Licensure"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 787-4331",
+      "email": "pgallagher@pahouse.net"
+    },
+    {
+      "id": "neilson",
+      "chamber": "H",
+      "name": "Ed Neilson",
+      "party": "D",
+      "district": 174,
+      "initials": "EN",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Transportation",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "127",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 772-4032",
+      "email": "eneilson@pahouse.net"
+    },
+    {
+      "id": "isaacson",
+      "chamber": "H",
+      "name": "MaryLouise Isaacson",
+      "party": "D",
+      "district": 175,
+      "initials": "MI",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Transportation"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "300",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-8098",
+      "email": "misaacson@pahouse.net"
+    },
+    {
+      "id": "rader",
+      "chamber": "H",
+      "name": "Jack Rader",
+      "party": "R",
+      "district": 176,
+      "initials": "JR",
+      "counties": [
+        "Monroe"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental & Natural Resource Protection",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "423",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-7732",
+      "email": "jrader@pahousegop.com"
+    },
+    {
+      "id": "hohenstein",
+      "chamber": "H",
+      "name": "Joseph C. Hohenstein",
+      "party": "D",
+      "district": 177,
+      "initials": "JH",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {},
+      "phone": "(717) 783-4087",
+      "email": "jhohenstein@pahouse.net"
+    },
+    {
+      "id": "marcell",
+      "chamber": "H",
+      "name": "Kristin Marcell",
+      "party": "R",
+      "district": 178,
+      "initials": "KM",
+      "counties": [
+        "Bucks"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Commerce"
+        }
+      ],
+      "office": {
+        "room": "153A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 772-9926",
+      "email": "kmarcell@pahousegop.com"
+    },
+    {
+      "id": "dawkins",
+      "chamber": "H",
+      "name": "Jason Dawkins",
+      "party": "D",
+      "district": 179,
+      "initials": "JD",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Labor & Industry",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "150",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 787-1354",
+      "email": "jdawkins@pahouse.net"
+    },
+    {
+      "id": "giral",
+      "chamber": "H",
+      "name": "Jose Giral",
+      "party": "D",
+      "district": 180,
+      "initials": "JG",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Energy"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Liquor Control"
+        }
+      ],
+      "office": {
+        "room": "224",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 787-1407",
+      "email": "jgiral@pahouse.net"
+    },
+    {
+      "id": "kenyatta",
+      "chamber": "H",
+      "name": "Malcolm Kenyatta",
+      "party": "D",
+      "district": 181,
+      "initials": "MK",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Judiciary"
+        },
+        {
+          "name": "Liquor Control"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "300",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 787-9471",
+      "email": "mkenyatta@pahouse.net"
+    },
+    {
+      "id": "waxman",
+      "chamber": "H",
+      "name": "Ben Waxman",
+      "party": "D",
+      "district": 182,
+      "initials": "BW",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "226",
+        "building": "Irvis Office Bldg",
+        "floor": 2
+      },
+      "phone": "(717) 783-4072",
+      "email": "bwaxman@pahouse.net"
+    },
+    {
+      "id": "mako",
+      "chamber": "H",
+      "name": "Zachary Mako",
+      "party": "R",
+      "district": 183,
+      "initials": "ZM",
+      "counties": [
+        "Lehigh",
+        "Northampton"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Ethics Committee"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Professional Licensure"
+        },
+        {
+          "name": "Veterans Affairs & Emergency Preparedness"
+        }
+      ],
+      "office": {
+        "room": "402",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-5398",
+      "email": "zmako@pahousegop.com"
+    },
+    {
+      "id": "fiedler",
+      "chamber": "H",
+      "name": "Elizabeth Fiedler",
+      "party": "D",
+      "district": 184,
+      "initials": "EF",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Energy",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "317",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 787-5774",
+      "email": "efiedler@pahouse.net"
+    },
+    {
+      "id": "young",
+      "chamber": "H",
+      "name": "Regina G. Young",
+      "party": "D",
+      "district": 185,
+      "initials": "RY",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "105A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-8634",
+      "email": "ryoung@pahouse.net"
+    },
+    {
+      "id": "harris",
+      "chamber": "H",
+      "name": "Jordan A. Harris",
+      "party": "D",
+      "district": 186,
+      "initials": "JH",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "Majority Appropriations Committee Chair",
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "512E",
+        "building": "Main Capitol",
+        "floor": 5
+      },
+      "phone": "(717) 783-1540",
+      "email": "jharris@pahouse.net"
+    },
+    {
+      "id": "day",
+      "chamber": "H",
+      "name": "Gary W. Day",
+      "party": "R",
+      "district": 187,
+      "initials": "GD",
+      "counties": [
+        "Lehigh"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Communications & Technology",
+          "role": "VICE CHAIR"
+        },
+        {
+          "name": "Environmental & Natural Resource Protection"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Health"
+        }
+      ],
+      "office": {
+        "room": "432",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 787-1000",
+      "email": "gday@pahousegop.com"
+    },
+    {
+      "id": "krajewski",
+      "chamber": "H",
+      "name": "Rick Krajewski",
+      "party": "D",
+      "district": 188,
+      "initials": "RK",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "109",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 783-1000",
+      "email": "rkrajewski@pahouse.net"
+    },
+    {
+      "id": "probst",
+      "chamber": "H",
+      "name": "Tarah Probst",
+      "party": "D",
+      "district": 189,
+      "initials": "TP",
+      "counties": [
+        "Monroe",
+        "Pike"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Local Government"
+        },
+        {
+          "name": "State Government"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        }
+      ],
+      "office": {
+        "room": "5A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 772-1421",
+      "email": "tprobst@pahouse.net"
+    },
+    {
+      "id": "green",
+      "chamber": "H",
+      "name": "G. Roni Green",
+      "party": "D",
+      "district": 190,
+      "initials": "GG",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Labor & Industry"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "28A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 705-1876",
+      "email": "ggreen@pahouse.net"
+    },
+    {
+      "id": "mcclinton",
+      "chamber": "H",
+      "name": "Joanna E. McClinton",
+      "party": "D",
+      "district": 191,
+      "initials": "JM",
+      "counties": [
+        "Delaware",
+        "Philadelphia"
+      ],
+      "role": "Speaker",
+      "committees": [
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "139",
+        "building": "Main Capitol",
+        "floor": 1
+      },
+      "phone": "(717) 772-9850",
+      "email": "jmcclinton@pahouse.net"
+    },
+    {
+      "id": "cephas",
+      "chamber": "H",
+      "name": "Morgan Cephas",
+      "party": "D",
+      "district": 192,
+      "initials": "MC",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Government Oversight",
+          "role": "CHAIR"
+        },
+        {
+          "name": "Housing & Community Development"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Consumer Protection, Technology & Utilities"
+        },
+        {
+          "name": "Insurance"
+        }
+      ],
+      "office": {
+        "room": "324",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 783-2192",
+      "email": "mcephas@pahouse.net"
+    },
+    {
+      "id": "wallen",
+      "chamber": "H",
+      "name": "Catherine I Wallen",
+      "party": "R",
+      "district": 193,
+      "initials": "CW",
+      "counties": [
+        "Adams",
+        "Cumberland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "State Government"
+        }
+      ],
+      "office": {
+        "room": "163B",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-8875",
+      "email": "cwallen@pahousegop.com"
+    },
+    {
+      "id": "khan",
+      "chamber": "H",
+      "name": "Tarik Khan",
+      "party": "D",
+      "district": 194,
+      "initials": "TK",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "121A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 783-4945",
+      "email": "tkhan@pahouse.net"
+    },
+    {
+      "id": "harris195",
+      "chamber": "H",
+      "name": "Keith S. Harris",
+      "party": "D",
+      "district": 195,
+      "initials": "KH",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Game & Fisheries"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Human Services"
+        }
+      ],
+      "office": {
+        "room": "6A",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-3480",
+      "email": "kharris@pahouse.net"
+    },
+    {
+      "id": "burgos",
+      "chamber": "H",
+      "name": "Danilo Burgos",
+      "party": "D",
+      "district": 197,
+      "initials": "DB",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Consumer Protection, Technology & Utilities",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "106",
+        "building": "Irvis Office Bldg",
+        "floor": 1
+      },
+      "phone": "(717) 772-2004",
+      "email": "dburgos@pahouse.net"
+    },
+    {
+      "id": "parker",
+      "chamber": "H",
+      "name": "Darisha K. Parker",
+      "party": "D",
+      "district": 198,
+      "initials": "DP",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Insurance"
+        },
+        {
+          "name": "Rules"
+        }
+      ],
+      "office": {
+        "room": "116A",
+        "building": "East Wing",
+        "floor": 1
+      },
+      "phone": "(717) 787-7727",
+      "email": "dparker@pahouse.net"
+    },
+    {
+      "id": "gleim",
+      "chamber": "H",
+      "name": "Barbara Gleim",
+      "party": "R",
+      "district": 199,
+      "initials": "BG",
+      "counties": [
+        "Cumberland"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Labor & Industry"
+        }
+      ],
+      "office": {
+        "room": "427",
+        "building": "Irvis Office Bldg",
+        "floor": 4
+      },
+      "phone": "(717) 772-2280",
+      "email": "bgleim@pahousegop.com"
+    },
+    {
+      "id": "rabb",
+      "chamber": "H",
+      "name": "Christopher M. Rabb",
+      "party": "D",
+      "district": 200,
+      "initials": "CR",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Agriculture & Rural Affairs"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "322",
+        "building": "Irvis Office Bldg",
+        "floor": 3
+      },
+      "phone": "(717) 783-2178",
+      "email": "crabb@pahouse.net"
+    },
+    {
+      "id": "carroll",
+      "chamber": "H",
+      "name": "Andre D. Carroll",
+      "party": "D",
+      "district": 201,
+      "initials": "AC",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Aging & Older Adult Services"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Communications & Technology"
+        },
+        {
+          "name": "Gaming Oversight"
+        },
+        {
+          "name": "Intergovernmental Affairs & Operations"
+        },
+        {
+          "name": "Judiciary"
+        }
+      ],
+      "office": {
+        "room": "6B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 787-3181",
+      "email": "acarroll@pahouse.net"
+    },
+    {
+      "id": "solomon",
+      "chamber": "H",
+      "name": "Jared G. Solomon",
+      "party": "D",
+      "district": 202,
+      "initials": "JS",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Veterans Affairs & Emergency Preparedness",
+          "role": "CHAIR"
+        }
+      ],
+      "office": {
+        "room": "323",
+        "building": "Main Capitol",
+        "floor": 3
+      },
+      "phone": "(717) 787-4117",
+      "email": "jsolomon@pahouse.net"
+    },
+    {
+      "id": "bellmon",
+      "chamber": "H",
+      "name": "Anthony A. Bellmon",
+      "party": "D",
+      "district": 203,
+      "initials": "AB",
+      "counties": [
+        "Philadelphia"
+      ],
+      "role": "",
+      "committees": [
+        {
+          "name": "Human Services"
+        },
+        {
+          "name": "Appropriations"
+        },
+        {
+          "name": "Children & Youth"
+        },
+        {
+          "name": "Commerce"
+        },
+        {
+          "name": "Tourism, Recreation & Economic Development"
+        },
+        {
+          "name": "Transportation"
+        }
+      ],
+      "office": {
+        "room": "26B",
+        "building": "East Wing"
+      },
+      "phone": "(717) 783-4111",
+      "email": "abellmon@pahouse.net"
     }
   ]
 }
