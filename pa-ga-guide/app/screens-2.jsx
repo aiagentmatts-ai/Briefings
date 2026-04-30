@@ -280,9 +280,6 @@ function SettingsScreen({ go }) {
           </div>
         </div>
 
-        <div style={{ padding: '24px 16px', textAlign: 'center', fontSize: 11, color: 'var(--ink-4)' }}>
-          Built for the Pennsylvania Rural Electric Association
-        </div>
         <div className="tab-padding"/>
       </div>
     </>
