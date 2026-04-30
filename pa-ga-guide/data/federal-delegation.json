@@ -33,7 +33,7 @@
       },
       "phone": "(202) 224-4254",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-fetterman.jpg",
       "role": null
     },
     {
@@ -67,7 +67,7 @@
       },
       "phone": "(202) 224-6324",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-mccormick.jpg",
       "role": null
     },
     {
@@ -98,7 +98,7 @@
       },
       "phone": "(202) 225-4276",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-fitzpatrick.jpg",
       "role": null
     },
     {
@@ -129,7 +129,7 @@
       },
       "phone": "(202) 225-6111",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-boyle.jpg",
       "role": "Ranking Member · Budget"
     },
     {
@@ -155,7 +155,7 @@
       },
       "phone": "(202) 225-4001",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-evans.jpg",
       "role": null
     },
     {
@@ -186,7 +186,7 @@
       },
       "phone": "(202) 225-4731",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-dean.jpg",
       "role": null
     },
     {
@@ -219,7 +219,7 @@
       },
       "phone": "(202) 225-2011",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-scanlon.jpg",
       "role": null
     },
     {
@@ -254,7 +254,7 @@
       },
       "phone": "(202) 225-4315",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-houlahan.jpg",
       "role": null
     },
     {
@@ -286,7 +286,7 @@
       },
       "phone": "(202) 225-6411",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-mackenzie.jpg",
       "role": null
     },
     {
@@ -319,7 +319,7 @@
       },
       "phone": "(202) 225-3731",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-bresnahan.jpg",
       "role": null
     },
     {
@@ -356,7 +356,7 @@
       },
       "phone": "(202) 225-6411",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-meuser.jpg",
       "role": null
     },
     {
@@ -392,7 +392,7 @@
       },
       "phone": "(202) 225-5836",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-perry.jpg",
       "role": null
     },
     {
@@ -423,7 +423,7 @@
       },
       "phone": "(202) 225-2411",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-smucker.jpg",
       "role": null
     },
     {
@@ -454,7 +454,7 @@
       },
       "phone": "(202) 225-2135",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-lee.jpg",
       "role": null
     },
     {
@@ -488,7 +488,7 @@
       },
       "phone": "(202) 225-2431",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-joyce.jpg",
       "role": null
     },
     {
@@ -522,7 +522,7 @@
       },
       "phone": "(202) 225-2065",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-reschenthaler.jpg",
       "role": null
     },
     {
@@ -567,7 +567,7 @@
       },
       "phone": "(202) 225-5121",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-thompson.jpg",
       "role": "Chair · House Agriculture"
     },
     {
@@ -597,7 +597,7 @@
       },
       "phone": "(202) 225-5406",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-kelly.jpg",
       "role": null
     },
     {
@@ -628,7 +628,7 @@
       },
       "phone": "(202) 225-2301",
       "email": null,
-      "photo": null,
+      "photo": "./data/photos/fed/us-deluzio.jpg",
       "role": null
     }
   ]
