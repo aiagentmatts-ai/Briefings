@@ -6,7 +6,7 @@
    offline once it has been opened with a connection at least once.
 */
 
-const CACHE = 'pa-ga-guide-v2';
+const CACHE = 'pa-ga-guide-v3';
 
 const PRECACHE = [
   './',
@@ -19,9 +19,11 @@ const PRECACHE = [
   './app/atoms.jsx',
   './app/screens-1.jsx',
   './app/screens-2.jsx',
+  './app/screens-3.jsx',
   './data/legislators.json',
   './data/bills.json',
   './data/rea-overlay.json',
+  './data/federal-delegation.json',
   './vendor/react.production.min.js',
   './vendor/react-dom.production.min.js',
   './icons/icon-180.png',
