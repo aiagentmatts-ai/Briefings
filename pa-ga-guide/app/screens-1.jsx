@@ -3,17 +3,18 @@
 // ── Tab bar ───────────────────────────────────────────────────────
 function TabBar({ active, go }) {
   const tabs = [
-    { id: 'search',    label: 'Search',    icon: 'search' },
-    { id: 'tracked',   label: 'Tracked',   icon: 'bill' },
-    { id: 'bookmarks', label: 'Bookmarks', icon: 'bookmark' },
-    { id: 'committees',label: 'Committees',icon: 'cmt' },
-    { id: 'settings',  label: 'Settings',  icon: 'gear' },
+    { id: 'search',    label: 'Search',  icon: 'search' },
+    { id: 'federal',   label: 'Federal', icon: 'flag' },
+    { id: 'bycoop',    label: 'Co-ops',  icon: 'bolt' },
+    { id: 'bookmarks', label: 'Saved',   icon: 'bookmark' },
+    { id: 'committees',label: 'Cmtes',   icon: 'cmt' },
+    { id: 'settings',  label: 'More',    icon: 'gear' },
   ];
   return (
     <div className="tabbar">
       {tabs.map(t => (
         <div key={t.id} className={'tab' + (active === t.id ? ' active' : '')} onClick={() => go(t.id)}>
-          <Icon name={t.icon} size={22} stroke={active === t.id ? 2 : 1.6}/>
+          <Icon name={t.icon} size={20} stroke={active === t.id ? 2 : 1.6}/>
           <span>{t.label}</span>
         </div>
       ))}
@@ -57,7 +58,7 @@ function SearchScreen({ go }) {
   const [scope, setScope] = React.useState('all'); // all | senate | house | coop
 
   const filtered = React.useMemo(() => {
-    let list = LEGISLATORS;
+    let list = LEGISLATORS.filter(m => !FEDERAL_IDS.has(m.id));
     if (scope === 'senate') list = list.filter(m => m.chamber === 'S');
     else if (scope === 'house') list = list.filter(m => m.chamber === 'H');
     else if (scope === 'coop') list = list.filter(m => m.coop);
@@ -115,7 +116,7 @@ function SearchScreen({ go }) {
 
         <div className="section-head">
           <span className="label">{q ? `${filtered.length} results` : `All members · ${filtered.length}`}</span>
-          {!q && <span className="meta">{LEGISLATORS.filter(m=>m.coop).length} in co-op territory</span>}
+          {!q && <span className="meta">{LEGISLATORS.filter(m=>!FEDERAL_IDS.has(m.id) && m.coop).length} in co-op territory</span>}
         </div>
         <div className="card" style={{ margin: '0 16px' }}>
           {filtered.map(m => (
@@ -194,33 +195,40 @@ function ProfileScreen({ id, go }) {
             </div>
             <hr className="hr" style={{ margin: '12px 0' }}/>
             <div style={{ display: 'flex', gap: 10 }}>
-              <a href={`tel:${m.phone.replace(/\D/g,'')}`} style={{ flex: 1, textDecoration: 'none' }}>
-                <div className="card" style={{ padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 8, background: 'var(--card-2)' }}>
-                  <Icon name="phone" size={16} color="var(--fed-blue)"/>
-                  <div>
-                    <div style={{ fontSize: 10, color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: 0.8 }}>Capitol</div>
-                    <div className="mono" style={{ fontSize: 12, color: 'var(--ink)' }}>{m.phone}</div>
+              {m.phone && (
+                <a href={`tel:${m.phone.replace(/\D/g,'')}`} style={{ flex: 1, textDecoration: 'none' }}>
+                  <div className="card" style={{ padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 8, background: 'var(--card-2)' }}>
+                    <Icon name="phone" size={16} color="var(--fed-blue)"/>
+                    <div>
+                      <div style={{ fontSize: 10, color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: 0.8 }}>{isFederal(m.chamber) ? 'D.C.' : 'Capitol'}</div>
+                      <div className="mono" style={{ fontSize: 12, color: 'var(--ink)' }}>{m.phone}</div>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href={`mailto:${m.email}`} style={{ flex: 1, textDecoration: 'none' }}>
-                <div className="card" style={{ padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 8, background: 'var(--card-2)' }}>
-                  <Icon name="mail" size={16} color="var(--fed-blue)"/>
-                  <div style={{ minWidth: 0 }}>
-                    <div style={{ fontSize: 10, color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: 0.8 }}>Email</div>
-                    <div style={{ fontSize: 11, color: 'var(--ink)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{m.email}</div>
+                </a>
+              )}
+              {m.email && (
+                <a href={`mailto:${m.email}`} style={{ flex: 1, textDecoration: 'none' }}>
+                  <div className="card" style={{ padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 8, background: 'var(--card-2)' }}>
+                    <Icon name="mail" size={16} color="var(--fed-blue)"/>
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ fontSize: 10, color: 'var(--ink-3)', textTransform: 'uppercase', letterSpacing: 0.8 }}>Email</div>
+                      <div style={{ fontSize: 11, color: 'var(--ink)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{m.email}</div>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              )}
             </div>
           </div>
         </div>
 
-        {/* District / counties */}
+        {/* District / counties + map */}
         <div style={{ padding: '0 16px 12px' }}>
-          <div className="card" style={{ padding: '12px 16px' }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink-3)', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 4 }}>District</div>
-            <div style={{ fontSize: 14, lineHeight: 1.4 }}>{m.counties.join(' · ')}</div>
+          <div className="card" style={{ overflow: 'hidden' }}>
+            <DistrictMap m={m}/>
+            <div style={{ padding: '12px 16px' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink-3)', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 4 }}>District</div>
+              <div style={{ fontSize: 14, lineHeight: 1.4 }}>{m.counties.join(' · ')}</div>
+            </div>
           </div>
         </div>
 
@@ -300,8 +308,127 @@ function BillRow({ b }) {
   );
 }
 
+// ── DistrictMap ──────────────────────────────────────────────────
+// Renders a static district-shape PNG when one exists at the path
+// produced by scripts/build-district-maps.mjs. If the file is missing
+// (rollout in progress, federal map not yet generated, etc.) we
+// gracefully render a placeholder strip so the profile layout stays
+// stable.
+function DistrictMap({ m }) {
+  const url = districtMapUrl(m);
+  const [failed, setFailed] = React.useState(false);
+  if (!url || failed) {
+    return (
+      <div style={{
+        height: 140, background: 'linear-gradient(135deg, var(--paper-2) 0%, #e2dac8 100%)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        color: 'var(--ink-3)', fontSize: 11, letterSpacing: 1.2, textTransform: 'uppercase', fontWeight: 600,
+      }}>
+        <Icon name="map" size={14} color="var(--ink-3)"/>
+        <span style={{ marginLeft: 6 }}>{districtLabel(m)}</span>
+      </div>
+    );
+  }
+  return (
+    <img
+      src={url}
+      alt={`District map for ${districtLabel(m)}`}
+      onError={() => setFailed(true)}
+      style={{ display: 'block', width: '100%', height: 160, objectFit: 'cover', background: 'var(--paper-2)' }}
+    />
+  );
+}
+
+// ── SCREEN: Federal Delegation ───────────────────────────────────
+// Lists the 19 PA federal members (2 senators, 17 House). Tapping a
+// row re-uses the existing state ProfileScreen — federal members
+// share the same shape, so no fork is needed.
+function FederalScreen({ go }) {
+  const all = LEGISLATORS.filter(m => FEDERAL_IDS.has(m.id));
+  const [scope, setScope] = React.useState('all'); // all | senate | house | coop
+  const [q, setQ] = React.useState('');
+
+  const filtered = React.useMemo(() => {
+    let list = all;
+    if (scope === 'senate') list = list.filter(m => m.chamber === 'US');
+    else if (scope === 'house') list = list.filter(m => m.chamber === 'UH');
+    else if (scope === 'coop') list = list.filter(m => m.coop);
+    if (q.trim()) {
+      const needle = q.toLowerCase();
+      list = list.filter(m =>
+        m.name.toLowerCase().includes(needle) ||
+        (m.counties || []).some(c => c.toLowerCase().includes(needle)) ||
+        String(m.district || '').includes(needle)
+      );
+    }
+    return list;
+  }, [scope, q, all]);
+
+  const senate = filtered.filter(m => m.chamber === 'US');
+  const house  = filtered.filter(m => m.chamber === 'UH')
+                         .sort((a, b) => Number(a.district) - Number(b.district));
+
+  return (
+    <>
+      <div style={{ padding: '8px 16px 0' }}>
+        <div className="serif" style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5, marginBottom: 4 }}>
+          Federal Delegation
+        </div>
+        <div style={{ fontSize: 12, color: 'var(--ink-3)', marginBottom: 12 }}>
+          {all.length} members · {all.filter(m => m.coop).length} in co-op territory
+        </div>
+        <div className="search">
+          <Icon name="search" size={18} color="var(--ink-3)"/>
+          <input
+            placeholder="Name, district number, county"
+            value={q} onChange={(e) => setQ(e.target.value)}
+          />
+          {q && <div onClick={() => setQ('')} style={{ cursor: 'pointer', display: 'flex' }}>
+            <Icon name="close" size={16} color="var(--ink-3)"/>
+          </div>}
+        </div>
+        <div style={{ display: 'flex', gap: 8, marginTop: 12, overflowX: 'auto', paddingBottom: 4 }}>
+          {[['all','All'],['senate','Senate'],['house','House'],['coop','Co-op only']].map(([id,l]) => (
+            <div key={id} className={'chip' + (scope === id ? ' active' : '') + (id==='coop'?' coop':'')} onClick={() => setScope(id)}>
+              {id === 'coop' && <span style={{ width:6, height:6, borderRadius:3, background: scope==='coop'?'white':'var(--rea-green)', marginRight: 6 }}/>}
+              {l}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="scroll" style={{ marginTop: 8 }}>
+        {senate.length > 0 && (
+          <>
+            <div className="section-head"><span className="label">U.S. Senate</span><span className="meta">{senate.length}</span></div>
+            <div className="card" style={{ margin: '0 16px' }}>
+              {senate.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
+            </div>
+          </>
+        )}
+        {house.length > 0 && (
+          <>
+            <div className="section-head"><span className="label">U.S. House</span><span className="meta">{house.length}</span></div>
+            <div className="card" style={{ margin: '0 16px' }}>
+              {house.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
+            </div>
+          </>
+        )}
+        {filtered.length === 0 && (
+          <div style={{ padding: '32px 16px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
+            No members match these filters
+          </div>
+        )}
+        <div className="tab-padding"/>
+      </div>
+    </>
+  );
+}
+
 window.TabBar = TabBar;
 window.MemberRow = MemberRow;
 window.SearchScreen = SearchScreen;
 window.ProfileScreen = ProfileScreen;
+window.FederalScreen = FederalScreen;
+window.DistrictMap = DistrictMap;
 window.BillRow = BillRow;

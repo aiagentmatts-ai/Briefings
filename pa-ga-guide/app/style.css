@@ -96,11 +96,18 @@
 }
 .tabbar .tab {
   display: flex; flex-direction: column; align-items: center; gap: 3px;
-  padding: 4px 8px;
-  font-size: 10px; font-weight: 500; letter-spacing: 0.1px;
+  padding: 4px 4px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0;
   color: var(--ink-3);
   flex: 1;
+  min-width: 0;
   cursor: pointer;
+}
+.tabbar .tab span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 .tabbar .tab.active { color: var(--fed-blue); }
 
