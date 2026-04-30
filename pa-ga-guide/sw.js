@@ -6,7 +6,14 @@
    offline once it has been opened with a connection at least once.
 */
 
-const CACHE = 'pa-ga-guide-v3';
+const CACHE = 'pa-ga-guide-v4';
+
+const FED_IDS = [
+  'us-fetterman','us-mccormick','us-fitzpatrick','us-boyle','us-evans','us-dean',
+  'us-scanlon','us-houlahan','us-mackenzie','us-bresnahan','us-meuser','us-perry',
+  'us-smucker','us-lee','us-joyce','us-reschenthaler','us-thompson','us-kelly',
+  'us-deluzio',
+];
 
 const PRECACHE = [
   './',
@@ -24,6 +31,7 @@ const PRECACHE = [
   './data/bills.json',
   './data/rea-overlay.json',
   './data/federal-delegation.json',
+  ...FED_IDS.map(id => `./data/photos/fed/${id}.jpg`),
   './vendor/react.production.min.js',
   './vendor/react-dom.production.min.js',
   './icons/icon-180.png',
