@@ -1,0 +1,635 @@
+{
+  "_comment": "PA Federal Delegation — 119th Congress (Jan 2025–Jan 2027). Hand-maintained, like rea-overlay.json. Schema mirrors legislators.json so existing components (MemberRow, ProfileScreen) render unchanged. Chamber values: 'US' = U.S. Senate, 'UH' = U.S. House. Senators have district: null and counties: ['Statewide']. Office, phone, committees populated with best-known starter values — refine as you confirm. Email is null because federal members use webforms; add a 'webform' field if/when you want a profile link.",
+  "lastSync": "2026-04-30",
+  "members": [
+    {
+      "id": "us-fetterman",
+      "chamber": "US",
+      "name": "John Fetterman",
+      "party": "D",
+      "district": null,
+      "counties": [
+        "Statewide"
+      ],
+      "committees": [
+        {
+          "name": "Agriculture, Nutrition, and Forestry",
+          "role": null
+        },
+        {
+          "name": "Banking, Housing, and Urban Affairs",
+          "role": null
+        },
+        {
+          "name": "Environment and Public Works",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "142",
+        "building": "Russell Senate Office Building",
+        "floor": "1",
+        "wing": null
+      },
+      "phone": "(202) 224-4254",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-mccormick",
+      "chamber": "US",
+      "name": "Dave McCormick",
+      "party": "R",
+      "district": null,
+      "counties": [
+        "Statewide"
+      ],
+      "committees": [
+        {
+          "name": "Armed Services",
+          "role": null
+        },
+        {
+          "name": "Banking, Housing, and Urban Affairs",
+          "role": null
+        },
+        {
+          "name": "Commerce, Science, and Transportation",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "B40D",
+        "building": "Dirksen Senate Office Building",
+        "floor": "B",
+        "wing": null
+      },
+      "phone": "(202) 224-6324",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-fitzpatrick",
+      "chamber": "UH",
+      "name": "Brian Fitzpatrick",
+      "party": "R",
+      "district": "1",
+      "counties": [
+        "Bucks",
+        "Montgomery"
+      ],
+      "committees": [
+        {
+          "name": "Foreign Affairs",
+          "role": null
+        },
+        {
+          "name": "Transportation and Infrastructure",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "271",
+        "building": "Cannon House Office Building",
+        "floor": "2",
+        "wing": null
+      },
+      "phone": "(202) 225-4276",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-boyle",
+      "chamber": "UH",
+      "name": "Brendan Boyle",
+      "party": "D",
+      "district": "2",
+      "counties": [
+        "Philadelphia",
+        "Montgomery"
+      ],
+      "committees": [
+        {
+          "name": "Budget",
+          "role": "Ranking Member"
+        },
+        {
+          "name": "Ways and Means",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1502",
+        "building": "Longworth House Office Building",
+        "floor": "5",
+        "wing": null
+      },
+      "phone": "(202) 225-6111",
+      "email": null,
+      "photo": null,
+      "role": "Ranking Member · Budget"
+    },
+    {
+      "id": "us-evans",
+      "chamber": "UH",
+      "name": "Dwight Evans",
+      "party": "D",
+      "district": "3",
+      "counties": [
+        "Philadelphia"
+      ],
+      "committees": [
+        {
+          "name": "Ways and Means",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1014",
+        "building": "Longworth House Office Building",
+        "floor": "10",
+        "wing": null
+      },
+      "phone": "(202) 225-4001",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-dean",
+      "chamber": "UH",
+      "name": "Madeleine Dean",
+      "party": "D",
+      "district": "4",
+      "counties": [
+        "Montgomery",
+        "Berks"
+      ],
+      "committees": [
+        {
+          "name": "Financial Services",
+          "role": null
+        },
+        {
+          "name": "Judiciary",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "120",
+        "building": "Cannon House Office Building",
+        "floor": "1",
+        "wing": null
+      },
+      "phone": "(202) 225-4731",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-scanlon",
+      "chamber": "UH",
+      "name": "Mary Gay Scanlon",
+      "party": "D",
+      "district": "5",
+      "counties": [
+        "Delaware",
+        "Philadelphia",
+        "Montgomery",
+        "Chester"
+      ],
+      "committees": [
+        {
+          "name": "Judiciary",
+          "role": null
+        },
+        {
+          "name": "Rules",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1227",
+        "building": "Longworth House Office Building",
+        "floor": "12",
+        "wing": null
+      },
+      "phone": "(202) 225-2011",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-houlahan",
+      "chamber": "UH",
+      "name": "Chrissy Houlahan",
+      "party": "D",
+      "district": "6",
+      "counties": [
+        "Chester",
+        "Berks"
+      ],
+      "committees": [
+        {
+          "name": "Armed Services",
+          "role": null
+        },
+        {
+          "name": "Foreign Affairs",
+          "role": null
+        },
+        {
+          "name": "Small Business",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1218",
+        "building": "Longworth House Office Building",
+        "floor": "12",
+        "wing": null
+      },
+      "phone": "(202) 225-4315",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-mackenzie",
+      "chamber": "UH",
+      "name": "Ryan Mackenzie",
+      "party": "R",
+      "district": "7",
+      "counties": [
+        "Lehigh",
+        "Northampton",
+        "Carbon"
+      ],
+      "committees": [
+        {
+          "name": "Education and the Workforce",
+          "role": null
+        },
+        {
+          "name": "Small Business",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1232",
+        "building": "Longworth House Office Building",
+        "floor": "12",
+        "wing": null
+      },
+      "phone": "(202) 225-6411",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-bresnahan",
+      "chamber": "UH",
+      "name": "Rob Bresnahan",
+      "party": "R",
+      "district": "8",
+      "counties": [
+        "Lackawanna",
+        "Luzerne",
+        "Wayne",
+        "Pike"
+      ],
+      "committees": [
+        {
+          "name": "Transportation and Infrastructure",
+          "role": null
+        },
+        {
+          "name": "Veterans' Affairs",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1019",
+        "building": "Longworth House Office Building",
+        "floor": "10",
+        "wing": null
+      },
+      "phone": "(202) 225-3731",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-meuser",
+      "chamber": "UH",
+      "name": "Dan Meuser",
+      "party": "R",
+      "district": "9",
+      "counties": [
+        "Schuylkill",
+        "Carbon",
+        "Columbia",
+        "Northumberland",
+        "Luzerne",
+        "Berks",
+        "Montour",
+        "Lebanon"
+      ],
+      "committees": [
+        {
+          "name": "Financial Services",
+          "role": null
+        },
+        {
+          "name": "Oversight and Accountability",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "402",
+        "building": "Cannon House Office Building",
+        "floor": "4",
+        "wing": null
+      },
+      "phone": "(202) 225-6411",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-perry",
+      "chamber": "UH",
+      "name": "Scott Perry",
+      "party": "R",
+      "district": "10",
+      "counties": [
+        "Cumberland",
+        "Dauphin",
+        "York"
+      ],
+      "committees": [
+        {
+          "name": "Foreign Affairs",
+          "role": null
+        },
+        {
+          "name": "Oversight and Accountability",
+          "role": null
+        },
+        {
+          "name": "Transportation and Infrastructure",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "2160",
+        "building": "Rayburn House Office Building",
+        "floor": "2",
+        "wing": null
+      },
+      "phone": "(202) 225-5836",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-smucker",
+      "chamber": "UH",
+      "name": "Lloyd Smucker",
+      "party": "R",
+      "district": "11",
+      "counties": [
+        "Lancaster",
+        "York"
+      ],
+      "committees": [
+        {
+          "name": "Budget",
+          "role": null
+        },
+        {
+          "name": "Ways and Means",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "302",
+        "building": "Cannon House Office Building",
+        "floor": "3",
+        "wing": null
+      },
+      "phone": "(202) 225-2411",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-lee",
+      "chamber": "UH",
+      "name": "Summer Lee",
+      "party": "D",
+      "district": "12",
+      "counties": [
+        "Allegheny",
+        "Westmoreland"
+      ],
+      "committees": [
+        {
+          "name": "Oversight and Accountability",
+          "role": null
+        },
+        {
+          "name": "Education and the Workforce",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1714",
+        "building": "Longworth House Office Building",
+        "floor": "17",
+        "wing": null
+      },
+      "phone": "(202) 225-2135",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-joyce",
+      "chamber": "UH",
+      "name": "John Joyce",
+      "party": "R",
+      "district": "13",
+      "counties": [
+        "Adams",
+        "Bedford",
+        "Blair",
+        "Cumberland",
+        "Franklin",
+        "Fulton",
+        "Huntingdon",
+        "Mifflin",
+        "Somerset"
+      ],
+      "committees": [
+        {
+          "name": "Energy and Commerce",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "152",
+        "building": "Cannon House Office Building",
+        "floor": "1",
+        "wing": null
+      },
+      "phone": "(202) 225-2431",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-reschenthaler",
+      "chamber": "UH",
+      "name": "Guy Reschenthaler",
+      "party": "R",
+      "district": "14",
+      "counties": [
+        "Fayette",
+        "Greene",
+        "Washington",
+        "Westmoreland",
+        "Somerset"
+      ],
+      "committees": [
+        {
+          "name": "Appropriations",
+          "role": null
+        },
+        {
+          "name": "Rules",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "418",
+        "building": "Cannon House Office Building",
+        "floor": "4",
+        "wing": null
+      },
+      "phone": "(202) 225-2065",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-thompson",
+      "chamber": "UH",
+      "name": "Glenn Thompson",
+      "party": "R",
+      "district": "15",
+      "counties": [
+        "Cameron",
+        "Centre",
+        "Clarion",
+        "Clearfield",
+        "Clinton",
+        "Elk",
+        "Forest",
+        "Indiana",
+        "Jefferson",
+        "Lycoming",
+        "McKean",
+        "Potter",
+        "Sullivan",
+        "Tioga",
+        "Union",
+        "Warren"
+      ],
+      "committees": [
+        {
+          "name": "Agriculture",
+          "role": "Chair"
+        },
+        {
+          "name": "Education and the Workforce",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "400",
+        "building": "Cannon House Office Building",
+        "floor": "4",
+        "wing": null
+      },
+      "phone": "(202) 225-5121",
+      "email": null,
+      "photo": null,
+      "role": "Chair · House Agriculture"
+    },
+    {
+      "id": "us-kelly",
+      "chamber": "UH",
+      "name": "Mike Kelly",
+      "party": "R",
+      "district": "16",
+      "counties": [
+        "Butler",
+        "Crawford",
+        "Erie",
+        "Lawrence",
+        "Mercer"
+      ],
+      "committees": [
+        {
+          "name": "Ways and Means",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1707",
+        "building": "Longworth House Office Building",
+        "floor": "17",
+        "wing": null
+      },
+      "phone": "(202) 225-5406",
+      "email": null,
+      "photo": null,
+      "role": null
+    },
+    {
+      "id": "us-deluzio",
+      "chamber": "UH",
+      "name": "Chris Deluzio",
+      "party": "D",
+      "district": "17",
+      "counties": [
+        "Allegheny",
+        "Beaver"
+      ],
+      "committees": [
+        {
+          "name": "Armed Services",
+          "role": null
+        },
+        {
+          "name": "Transportation and Infrastructure",
+          "role": null
+        }
+      ],
+      "office": {
+        "room": "1233",
+        "building": "Longworth House Office Building",
+        "floor": "12",
+        "wing": null
+      },
+      "phone": "(202) 225-2301",
+      "email": null,
+      "photo": null,
+      "role": null
+    }
+  ]
+}

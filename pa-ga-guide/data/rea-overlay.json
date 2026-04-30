@@ -1,179 +1,464 @@
 {
-  "_comment": "REA editorial layer — hand-edited and committed by you. Survives every weekly data refresh from palegis.us. Three keys: (1) coopTerritory: which legislators have co-ops in their district, with a short detail string shown on the profile banner; (2) starred: legislators that appear in Bookmarks > Starred; (3) reaBills: bill numbers (matching the format in bills.json) that should be highlighted as REA-relevant. Add or remove freely; the prototype merges these in at load time.",
+  "_comment": "REA editorial layer — hand-edited and committed by you. Survives every weekly data refresh from palegis.us. Three keys: (1) coopTerritory: which legislators have co-ops in their district, with a structured `coops` array (canonical PA co-op names) used for filtering. The profile banner detail string is derived at load time. Federal members (Senate + House) live in federal-delegation.json but use IDs in the same coopTerritory map. (2) starred: legislators that appear in Bookmarks > Starred. (3) reaBills: bill numbers that should be highlighted as REA-relevant.",
   "coopTerritory": {
     "anderson": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "armanini": {
-      "detail": "1 co-op · United Electric"
+      "coops": [
+        "United Electric"
+      ]
     },
     "baker": {
-      "detail": "1 co-op · Claverack"
+      "coops": [
+        "Claverack"
+      ]
     },
     "banta": {
-      "detail": "2 co-ops · Northwestern, Warren Electric"
+      "coops": [
+        "Northwestern",
+        "Warren Electric"
+      ]
     },
     "barger": {
-      "detail": "1 co-op · Valley"
+      "coops": [
+        "Valley"
+      ]
     },
     "bashline": {
-      "detail": "3 co-ops · Central Electric, REA Energy, United Electric"
+      "coops": [
+        "Central Electric",
+        "REA Energy",
+        "United Electric"
+      ]
     },
     "benninghoff": {
-      "detail": "1 co-op · Valley"
+      "coops": [
+        "Valley"
+      ]
     },
     "bernstine": {
-      "detail": "1 co-op · Central Electric"
+      "coops": [
+        "Central Electric"
+      ]
     },
     "bonner": {
-      "detail": "2 co-ops · Central Electric, Northwestern"
+      "coops": [
+        "Central Electric",
+        "Northwestern"
+      ]
     },
     "borowicz": {
-      "detail": "2 co-ops · Tri-County, United Electric"
+      "coops": [
+        "Tri-County",
+        "United Electric"
+      ]
     },
     "brooks": {
-      "detail": "2 co-ops · Northwestern, Warren Electric"
+      "coops": [
+        "Northwestern",
+        "Warren Electric"
+      ]
     },
     "burns": {
-      "detail": "1 co-op · REA Energy"
+      "coops": [
+        "REA Energy"
+      ]
     },
     "causer": {
-      "detail": "1 co-op · Tri-County"
+      "coops": [
+        "Tri-County"
+      ]
     },
     "dorsie": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "dush": {
-      "detail": "3 co-ops · Tri-County, United Electric, Valley"
+      "coops": [
+        "Tri-County",
+        "United Electric",
+        "Valley"
+      ]
     },
     "fink": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "fritz": {
-      "detail": "1 co-op · Claverack"
+      "coops": [
+        "Claverack"
+      ]
     },
     "gleim": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "hamm": {
-      "detail": "3 co-ops · Claverack, Sullivan County, Tri-County"
+      "coops": [
+        "Claverack",
+        "Sullivan County",
+        "Tri-County"
+      ]
     },
     "hutchinson": {
-      "detail": "4 co-ops · Central Electric, Northwestern, United Electric, Warren Electric"
+      "coops": [
+        "Central Electric",
+        "Northwestern",
+        "United Electric",
+        "Warren Electric"
+      ]
     },
     "irvin": {
-      "detail": "3 co-ops · Adams, New Enterprise, Valley"
+      "coops": [
+        "Adams",
+        "New Enterprise",
+        "Valley"
+      ]
     },
     "james": {
-      "detail": "3 co-ops · Central Electric, Northwestern, Warren Electric"
+      "coops": [
+        "Central Electric",
+        "Northwestern",
+        "Warren Electric"
+      ]
     },
     "jones": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "kauffman": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "keefer": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "kephart": {
-      "detail": "2 co-ops · REA Energy, United Electric"
+      "coops": [
+        "REA Energy",
+        "United Electric"
+      ]
     },
     "klunk": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "krupa": {
-      "detail": "1 co-op · Somerset"
+      "coops": [
+        "Somerset"
+      ]
     },
     "kutz": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "langerholc": {
-      "detail": "2 co-ops · REA Energy, United Electric"
+      "coops": [
+        "REA Energy",
+        "United Electric"
+      ]
     },
     "laughlin": {
-      "detail": "1 co-op · Northwestern"
+      "coops": [
+        "Northwestern"
+      ]
     },
     "major": {
-      "detail": "2 co-ops · Central Electric, REA Energy"
+      "coops": [
+        "Central Electric",
+        "REA Energy"
+      ]
     },
     "mastriano": {
-      "detail": "2 co-ops · Adams, Valley"
+      "coops": [
+        "Adams",
+        "Valley"
+      ]
     },
     "metzgar": {
-      "detail": "2 co-ops · Bedford, Somerset"
+      "coops": [
+        "Bedford",
+        "Somerset"
+      ]
     },
     "moul": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "mustello": {
-      "detail": "1 co-op · Central Electric"
+      "coops": [
+        "Central Electric"
+      ]
     },
     "owlett": {
-      "detail": "3 co-ops · Claverack, Sullivan County, Tri-County"
+      "coops": [
+        "Claverack",
+        "Sullivan County",
+        "Tri-County"
+      ]
     },
     "pickett": {
-      "detail": "2 co-ops · Claverack, Tri-County"
+      "coops": [
+        "Claverack",
+        "Tri-County"
+      ]
     },
     "pittman": {
-      "detail": "3 co-ops · Central Electric, REA Energy, United Electric"
+      "coops": [
+        "Central Electric",
+        "REA Energy",
+        "United Electric"
+      ]
     },
     "rapp": {
-      "detail": "4 co-ops · Central Electric, Northwestern, United Electric, Warren Electric"
+      "coops": [
+        "Central Electric",
+        "Northwestern",
+        "United Electric",
+        "Warren Electric"
+      ]
     },
     "reichard": {
-      "detail": "1 co-op · Valley"
+      "coops": [
+        "Valley"
+      ]
     },
     "rigby": {
-      "detail": "4 co-ops · Bedford, REA Energy, Somerset, United Electric"
+      "coops": [
+        "Bedford",
+        "REA Energy",
+        "Somerset",
+        "United Electric"
+      ]
     },
     "roae": {
-      "detail": "1 co-op · Northwestern"
+      "coops": [
+        "Northwestern"
+      ]
     },
     "rossi": {
-      "detail": "2 co-ops · REA Energy, Somerset"
+      "coops": [
+        "REA Energy",
+        "Somerset"
+      ]
     },
     "rothman": {
-      "detail": "1 co-op · Adams"
+      "coops": [
+        "Adams"
+      ]
     },
     "shaffer": {
-      "detail": "1 co-op · Central Electric"
+      "coops": [
+        "Central Electric"
+      ]
     },
     "smith": {
-      "detail": "2 co-ops · REA Energy, United Electric"
+      "coops": [
+        "REA Energy",
+        "United Electric"
+      ]
     },
     "stambaugh": {
-      "detail": "1 co-op · Valley"
+      "coops": [
+        "Valley"
+      ]
     },
     "stefano": {
-      "detail": "4 co-ops · Bedford, New Enterprise, Somerset, Valley"
+      "coops": [
+        "Bedford",
+        "New Enterprise",
+        "Somerset",
+        "Valley"
+      ]
     },
     "struzzi": {
-      "detail": "1 co-op · REA Energy"
+      "coops": [
+        "REA Energy"
+      ]
     },
     "takac": {
-      "detail": "2 co-ops · United Electric, Valley"
+      "coops": [
+        "United Electric",
+        "Valley"
+      ]
     },
     "topper": {
-      "detail": "4 co-ops · Bedford, New Enterprise, Somerset, Valley"
+      "coops": [
+        "Bedford",
+        "New Enterprise",
+        "Somerset",
+        "Valley"
+      ]
     },
     "vogel": {
-      "detail": "1 co-op · Central Electric"
+      "coops": [
+        "Central Electric"
+      ]
     },
     "ward": {
-      "detail": "4 co-ops · Bedford, New Enterprise, REA Energy, Valley"
+      "coops": [
+        "Bedford",
+        "New Enterprise",
+        "REA Energy",
+        "Valley"
+      ]
     },
     "ward39": {
-      "detail": "1 co-op · Somerset"
+      "coops": [
+        "Somerset"
+      ]
     },
     "warner": {
-      "detail": "1 co-op · Somerset"
+      "coops": [
+        "Somerset"
+      ]
     },
     "williams38": {
-      "detail": "1 co-op · Central Electric"
+      "coops": [
+        "Central Electric"
+      ]
     },
     "yaw": {
-      "detail": "3 co-ops · Claverack, Sullivan County, Tri-County"
+      "coops": [
+        "Claverack",
+        "Sullivan County",
+        "Tri-County"
+      ]
+    },
+    "us-fetterman": {
+      "coops": [
+        "Adams",
+        "Bedford",
+        "Central Electric",
+        "Claverack",
+        "New Enterprise",
+        "Northwestern",
+        "REA Energy",
+        "Somerset",
+        "Sullivan County",
+        "Tri-County",
+        "United Electric",
+        "Valley",
+        "Warren Electric"
+      ]
+    },
+    "us-mccormick": {
+      "coops": [
+        "Adams",
+        "Bedford",
+        "Central Electric",
+        "Claverack",
+        "New Enterprise",
+        "Northwestern",
+        "REA Energy",
+        "Somerset",
+        "Sullivan County",
+        "Tri-County",
+        "United Electric",
+        "Valley",
+        "Warren Electric"
+      ]
+    },
+    "us-fitzpatrick": {
+      "coops": []
+    },
+    "us-boyle": {
+      "coops": []
+    },
+    "us-evans": {
+      "coops": []
+    },
+    "us-dean": {
+      "coops": []
+    },
+    "us-scanlon": {
+      "coops": []
+    },
+    "us-houlahan": {
+      "coops": []
+    },
+    "us-mackenzie": {
+      "coops": []
+    },
+    "us-bresnahan": {
+      "coops": [
+        "Claverack"
+      ]
+    },
+    "us-meuser": {
+      "coops": [
+        "Claverack",
+        "Sullivan County",
+        "Tri-County"
+      ]
+    },
+    "us-perry": {
+      "coops": [
+        "Adams"
+      ]
+    },
+    "us-smucker": {
+      "coops": [
+        "Adams"
+      ]
+    },
+    "us-lee": {
+      "coops": []
+    },
+    "us-joyce": {
+      "coops": [
+        "Adams",
+        "Bedford",
+        "New Enterprise",
+        "REA Energy",
+        "Somerset",
+        "Valley"
+      ]
+    },
+    "us-reschenthaler": {
+      "coops": [
+        "Bedford",
+        "REA Energy",
+        "Somerset"
+      ]
+    },
+    "us-thompson": {
+      "coops": [
+        "Central Electric",
+        "Claverack",
+        "Northwestern",
+        "REA Energy",
+        "Sullivan County",
+        "Tri-County",
+        "United Electric",
+        "Valley",
+        "Warren Electric"
+      ]
+    },
+    "us-kelly": {
+      "coops": [
+        "Central Electric",
+        "Northwestern",
+        "Warren Electric"
+      ]
+    },
+    "us-deluzio": {
+      "coops": [
+        "Central Electric"
+      ]
     }
   },
   "starred": [
@@ -182,7 +467,9 @@
     "boscola",
     "causer",
     "nelson",
-    "matzie"
+    "matzie",
+    "us-mccormick",
+    "us-thompson"
   ],
   "reaBills": [
     "SB 832",

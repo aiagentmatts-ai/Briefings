@@ -56,6 +56,7 @@
   <script type="text/babel" src="app/atoms.jsx"></script>
   <script type="text/babel" src="app/screens-1.jsx"></script>
   <script type="text/babel" src="app/screens-2.jsx"></script>
+  <script type="text/babel" src="app/screens-3.jsx"></script>
 
   <script type="text/babel">
     // True when launched from iOS home screen (Add to Home Screen) or any
@@ -98,7 +99,7 @@
           setStack(s => s.length > 1 ? s.slice(0, -1) : s);
           return;
         }
-        if (['search','tracked','bookmarks','committees','settings'].includes(screen)) {
+        if (['search','federal','bycoop','bookmarks','committees','settings'].includes(screen)) {
           setTab(screen);
           setStack([{ screen, ...params }]);
         } else {
@@ -111,7 +112,9 @@
       const renderScreen = () => {
         switch (current.screen) {
           case 'search':     return <SearchScreen go={go}/>;
-          case 'tracked':    return <TrackedScreen go={go}/>;
+          case 'federal':    return <FederalScreen go={go}/>;
+          case 'bycoop':     return <ByCoopScreen go={go}/>;
+          case 'coop':       return <CoopDetailScreen name={current.name} go={go}/>;
           case 'bookmarks':  return <BookmarksScreen go={go}/>;
           case 'committees': return <CommitteesScreen go={go}/>;
           case 'settings':   return <SettingsScreen go={go}/>;
@@ -122,7 +125,7 @@
         }
       };
 
-      const showTab = ['search','tracked','bookmarks','committees','settings'].includes(current.screen);
+      const showTab = ['search','federal','bycoop','bookmarks','committees','settings'].includes(current.screen);
 
       const inner = (
         <div className="app" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
