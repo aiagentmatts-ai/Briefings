@@ -85,21 +85,20 @@
   color: var(--ink);
 }
 
-/* tab bar — explicit env() with fallback so the bg always extends through
-   the home-indicator safe area, even on iOS Safari builds where max() of
-   env() doesn't compute as expected inside a position:fixed child. */
+/* tab bar — sits at the bottom of the .app flex column as a regular
+   non-shrinking child. Avoids position:fixed entirely because iOS PWA
+   standalone mode has long-standing quirks where fixed elements get
+   constrained to a layout viewport that ends above the home-indicator
+   safe area, leaving an exposed strip below the bar. */
 .tabbar {
-  position: fixed; bottom: 0; left: 0; right: 0;
+  flex-shrink: 0;
   display: flex; justify-content: space-around;
   padding-top: 8px;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: env(safe-area-inset-bottom, 10px);
-  background: rgba(246,242,234,0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--paper);
   border-top: 1px solid var(--line);
-  z-index: 10;
 }
 .tabbar .tab {
   display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -293,8 +292,10 @@
 .scroll::-webkit-scrollbar { display: none; }
 .scroll { scrollbar-width: none; }
 
-/* keyboard hint padding so tabbar doesn't overlap; extra to clear iOS home indicator */
-.tab-padding { height: calc(80px + env(safe-area-inset-bottom, 0px)); }
+/* small breathing room at the bottom of each screen's scroll content.
+   The tab bar is now in normal flex flow (not position:fixed), so there's
+   no need to reserve its full height here — just a few pixels of buffer. */
+.tab-padding { height: 16px; }
 
 /* CO-OP banner */
 .coop-banner {
