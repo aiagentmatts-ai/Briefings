@@ -6,7 +6,7 @@
    offline once it has been opened with a connection at least once.
 */
 
-const CACHE = 'pa-ga-guide-v11';
+const CACHE = 'pa-ga-guide-v12';
 
 const FED_IDS = [
   'us-fetterman','us-mccormick','us-fitzpatrick','us-boyle','us-evans','us-dean',
