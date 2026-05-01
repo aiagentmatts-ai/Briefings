@@ -13,7 +13,7 @@ function TabBar({ active, go }) {
     <div className="tabbar">
       {tabs.map(t => (
         <div key={t.id} className={'tab' + (active === t.id ? ' active' : '')} onClick={() => go(t.id)}>
-          <Icon name={t.icon} size={20} stroke={active === t.id ? 2 : 1.6}/>
+          <Icon name={t.icon} size={26} stroke={active === t.id ? 2 : 1.6}/>
           <span>{t.label}</span>
         </div>
       ))}
@@ -94,7 +94,10 @@ function SearchScreen({ go }) {
     return [...list].sort((a, b) => lastName(a.name).localeCompare(lastName(b.name)));
   }, [q, scope]);
 
-  const recent = LEGISLATORS.filter(m => ['causer','yaw','phillipshill','nelson'].includes(m.id));
+  const recent = React.useMemo(() => {
+    const ids = getRecentVisits();
+    return ids.map(id => LEGISLATORS.find(m => m.id === id)).filter(m => m && !m.vacant);
+  }, []);
 
   return (
     <>
@@ -123,11 +126,11 @@ function SearchScreen({ go }) {
       </div>
 
       <div className="scroll" style={{ marginTop: 8 }}>
-        {!q && (
+        {!q && recent.length > 0 && (
           <>
             <div className="section-head"><span className="label">Recent</span></div>
             <div className="card" style={{ margin: '0 16px' }}>
-              {recent.map((m, i) => (
+              {recent.map((m) => (
                 <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>
               ))}
             </div>
@@ -157,6 +160,9 @@ function SearchScreen({ go }) {
 // ── SCREEN: Profile (D1 briefing) ────────────────────────────────
 function ProfileScreen({ id, go }) {
   const m = LEGISLATORS.find(x => x.id === id);
+  React.useEffect(() => {
+    if (m && !m.vacant) recordVisit(m.id);
+  }, [m && m.id]);
   if (!m) return null;
 
   return (
