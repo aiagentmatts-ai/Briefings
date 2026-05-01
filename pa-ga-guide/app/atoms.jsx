@@ -117,9 +117,29 @@ function officialPageLabel(m) {
   return 'View on palegis.us';
 }
 
+// Recently visited members (localStorage-backed, ordered most-recent first).
+const _RECENT_KEY = 'paga.recent';
+const _RECENT_MAX = 6;
+function recordVisit(id) {
+  if (!id) return;
+  try {
+    const raw = localStorage.getItem(_RECENT_KEY);
+    const list = Array.isArray(JSON.parse(raw || 'null')) ? JSON.parse(raw) : [];
+    const next = [id, ...list.filter(x => x !== id)].slice(0, _RECENT_MAX);
+    localStorage.setItem(_RECENT_KEY, JSON.stringify(next));
+  } catch {}
+}
+function getRecentVisits() {
+  try {
+    const list = JSON.parse(localStorage.getItem(_RECENT_KEY) || '[]');
+    return Array.isArray(list) ? list : [];
+  } catch { return []; }
+}
+
 Object.assign(window, {
   Icon,
   partyLabel, chamberLabel, chamberPrefix, districtLabel, isFederal,
   buildingShort, officeShort, lastName, firstName, statusClass, fmtDate, palegisUrl,
   officialPageUrl, officialPageLabel,
+  recordVisit, getRecentVisits,
 });
