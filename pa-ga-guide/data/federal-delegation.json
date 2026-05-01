@@ -34,6 +34,7 @@
       "phone": "(202) 224-4254",
       "email": null,
       "photo": "./data/photos/fed/us-fetterman.jpg",
+      "officialUrl": "https://www.fetterman.senate.gov",
       "role": null
     },
     {
@@ -68,6 +69,7 @@
       "phone": "(202) 224-6324",
       "email": null,
       "photo": "./data/photos/fed/us-mccormick.jpg",
+      "officialUrl": "https://www.mccormick.senate.gov",
       "role": null
     },
     {
@@ -99,6 +101,7 @@
       "phone": "(202) 225-4276",
       "email": null,
       "photo": "./data/photos/fed/us-fitzpatrick.jpg",
+      "officialUrl": "https://fitzpatrick.house.gov",
       "role": null
     },
     {
@@ -130,6 +133,7 @@
       "phone": "(202) 225-6111",
       "email": null,
       "photo": "./data/photos/fed/us-boyle.jpg",
+      "officialUrl": "https://boyle.house.gov",
       "role": "Ranking Member · Budget"
     },
     {
@@ -156,6 +160,7 @@
       "phone": "(202) 225-4001",
       "email": null,
       "photo": "./data/photos/fed/us-evans.jpg",
+      "officialUrl": "https://evans.house.gov",
       "role": null
     },
     {
@@ -187,6 +192,7 @@
       "phone": "(202) 225-4731",
       "email": null,
       "photo": "./data/photos/fed/us-dean.jpg",
+      "officialUrl": "https://dean.house.gov",
       "role": null
     },
     {
@@ -220,6 +226,7 @@
       "phone": "(202) 225-2011",
       "email": null,
       "photo": "./data/photos/fed/us-scanlon.jpg",
+      "officialUrl": "https://scanlon.house.gov",
       "role": null
     },
     {
@@ -255,6 +262,7 @@
       "phone": "(202) 225-4315",
       "email": null,
       "photo": "./data/photos/fed/us-houlahan.jpg",
+      "officialUrl": "https://houlahan.house.gov",
       "role": null
     },
     {
@@ -287,6 +295,7 @@
       "phone": "(202) 225-6411",
       "email": null,
       "photo": "./data/photos/fed/us-mackenzie.jpg",
+      "officialUrl": "https://mackenzie.house.gov",
       "role": null
     },
     {
@@ -320,6 +329,7 @@
       "phone": "(202) 225-3731",
       "email": null,
       "photo": "./data/photos/fed/us-bresnahan.jpg",
+      "officialUrl": "https://bresnahan.house.gov",
       "role": null
     },
     {
@@ -357,6 +367,7 @@
       "phone": "(202) 225-6411",
       "email": null,
       "photo": "./data/photos/fed/us-meuser.jpg",
+      "officialUrl": "https://meuser.house.gov",
       "role": null
     },
     {
@@ -393,6 +404,7 @@
       "phone": "(202) 225-5836",
       "email": null,
       "photo": "./data/photos/fed/us-perry.jpg",
+      "officialUrl": "https://perry.house.gov",
       "role": null
     },
     {
@@ -424,6 +436,7 @@
       "phone": "(202) 225-2411",
       "email": null,
       "photo": "./data/photos/fed/us-smucker.jpg",
+      "officialUrl": "https://smucker.house.gov",
       "role": null
     },
     {
@@ -455,6 +468,7 @@
       "phone": "(202) 225-2135",
       "email": null,
       "photo": "./data/photos/fed/us-lee.jpg",
+      "officialUrl": "https://summerlee.house.gov",
       "role": null
     },
     {
@@ -489,6 +503,7 @@
       "phone": "(202) 225-2431",
       "email": null,
       "photo": "./data/photos/fed/us-joyce.jpg",
+      "officialUrl": "https://johnjoyce.house.gov",
       "role": null
     },
     {
@@ -523,6 +538,7 @@
       "phone": "(202) 225-2065",
       "email": null,
       "photo": "./data/photos/fed/us-reschenthaler.jpg",
+      "officialUrl": "https://reschenthaler.house.gov",
       "role": null
     },
     {
@@ -568,6 +584,7 @@
       "phone": "(202) 225-5121",
       "email": null,
       "photo": "./data/photos/fed/us-thompson.jpg",
+      "officialUrl": "https://thompson.house.gov",
       "role": "Chair · House Agriculture"
     },
     {
@@ -598,6 +615,7 @@
       "phone": "(202) 225-5406",
       "email": null,
       "photo": "./data/photos/fed/us-kelly.jpg",
+      "officialUrl": "https://kelly.house.gov",
       "role": null
     },
     {
@@ -629,6 +647,7 @@
       "phone": "(202) 225-2301",
       "email": null,
       "photo": "./data/photos/fed/us-deluzio.jpg",
+      "officialUrl": "https://deluzio.house.gov",
       "role": null
     }
   ]

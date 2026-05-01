@@ -489,7 +489,15 @@ def _extract_capitol_block(s: BeautifulSoup) -> tuple[dict, str]:
     return office, phone
 
 
-_BADGE_ROLE_RE = re.compile(r"\b(Chair|Vice\s*Chair|Minority\s*Chair|Ex[\s-]*Officio)\b", re.I)
+_BADGE_ROLE_RE = re.compile(
+    r"\b(Republican\s*Chair|Democratic\s*Chair|Minority\s*Chair|Vice\s*Chair|Chair|Ex[\s-]*Officio)\b",
+    re.I,
+)
+# Senate committees label the minority leader "Minority Chair"; House committees
+# use the party label ("Republican Chair" / "Democratic Chair"). All three map to
+# the same min_chair slot.
+_MIN_CHAIR_RE = re.compile(r"\b(?:Minority|Republican|Democratic)\s*Chair\b", re.I)
+_PLAIN_CHAIR_RE = re.compile(r"^\s*Chair\s*$", re.I)
 
 
 def _extract_committees(s: BeautifulSoup) -> list[dict]:
@@ -509,16 +517,16 @@ def _extract_committees(s: BeautifulSoup) -> list[dict]:
         if row:
             badge = row.find("span", class_="badge")
             if badge:
-                txt = badge.get_text(" ", strip=True)
+                txt = re.sub(r"\s+", " ", badge.get_text(" ", strip=True)).strip()
                 rm = _BADGE_ROLE_RE.search(txt)
                 if rm:
-                    raw = rm.group(1).lower().replace("  ", " ").strip()
-                    if raw == "chair":
-                        role = "CHAIR"
-                    elif raw == "minority chair":
+                    raw = re.sub(r"\s+", " ", rm.group(1).lower()).strip()
+                    if raw in {"minority chair", "republican chair", "democratic chair"}:
                         role = "MIN. CHAIR"
                     elif raw == "vice chair":
                         role = "VICE CHAIR"
+                    elif raw == "chair":
+                        role = "CHAIR"
         entry: dict = {"name": name}
         if role:
             entry["role"] = role
@@ -637,9 +645,11 @@ def parse_committee_detail(html: str, palegis_to_id: dict[str, str]) -> dict:
                     role_text = t
                     break
 
-        if re.search(r"\bMinority\s*Chair\b", role_text, re.I) and not min_chair_id:
+        # Normalize whitespace (palegis uses &nbsp; in House badges).
+        role_norm = re.sub(r"\s+", " ", role_text).strip()
+        if _MIN_CHAIR_RE.search(role_norm) and not min_chair_id:
             min_chair_id = canonical
-        elif re.fullmatch(r"\s*Chair\s*", role_text, re.I) and not chair_id:
+        elif _PLAIN_CHAIR_RE.match(role_norm) and not chair_id:
             chair_id = canonical
         # All cards (chair, min chair, vice chair, members) become members.
         member_ids.append(canonical)
