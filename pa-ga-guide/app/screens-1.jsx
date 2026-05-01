@@ -13,7 +13,7 @@ function TabBar({ active, go }) {
     <div className="tabbar">
       {tabs.map(t => (
         <div key={t.id} className={'tab' + (active === t.id ? ' active' : '')} onClick={() => go(t.id)}>
-          <Icon name={t.icon} size={20} stroke={active === t.id ? 2 : 1.6}/>
+          <Icon name={t.icon} size={26} stroke={active === t.id ? 2 : 1.6}/>
           <span>{t.label}</span>
         </div>
       ))}
