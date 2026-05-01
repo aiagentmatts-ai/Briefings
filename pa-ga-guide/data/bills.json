@@ -4711,7 +4711,7 @@
       "chamber": "H",
       "name": "Aging & Older Adult Services",
       "chair": "madden",
-      "minChair": null,
+      "minChair": "mentzer",
       "members": [
         "madden",
         "mentzer",
@@ -4772,7 +4772,7 @@
       "chamber": "H",
       "name": "Agriculture & Rural Affairs",
       "chair": "pashinski",
-      "minChair": null,
+      "minChair": "moul",
       "members": [
         "pashinski",
         "moul",
@@ -4839,7 +4839,7 @@
       "chamber": "H",
       "name": "Appropriations",
       "chair": "harris",
-      "minChair": null,
+      "minChair": "struzzi",
       "members": [
         "harris",
         "struzzi",
@@ -4917,7 +4917,7 @@
       "chamber": "H",
       "name": "Children & Youth",
       "chair": "mcneill",
-      "minChair": null,
+      "minChair": "klunk",
       "members": [
         "mcneill",
         "klunk",
@@ -4984,7 +4984,7 @@
       "chamber": "H",
       "name": "Commerce",
       "chair": "conklin",
-      "minChair": null,
+      "minChair": "lawrence",
       "members": [
         "conklin",
         "lawrence",
@@ -5051,7 +5051,7 @@
       "chamber": "H",
       "name": "Committee On Committees",
       "chair": null,
-      "minChair": null,
+      "minChair": "pickett",
       "members": [
         "pickett",
         "daley"
@@ -5063,7 +5063,7 @@
       "chamber": "H",
       "name": "Communications & Technology",
       "chair": "ciresi",
-      "minChair": null,
+      "minChair": "ortitay",
       "members": [
         "ciresi",
         "ortitay",
@@ -5131,7 +5131,7 @@
       "chamber": "H",
       "name": "Consumer Protection, Technology & Utilities",
       "chair": "burgos",
-      "minChair": null,
+      "minChair": "metzgar",
       "members": [
         "burgos",
         "metzgar",
@@ -5198,7 +5198,7 @@
       "chamber": "H",
       "name": "Education",
       "chair": "schweyer",
-      "minChair": null,
+      "minChair": "cutler",
       "members": [
         "schweyer",
         "cutler",
@@ -5265,7 +5265,7 @@
       "chamber": "H",
       "name": "Energy",
       "chair": "fiedler",
-      "minChair": null,
+      "minChair": "causer",
       "members": [
         "fiedler",
         "causer",
@@ -5332,7 +5332,7 @@
       "chamber": "H",
       "name": "Environmental & Natural Resource Protection",
       "chair": "vitali",
-      "minChair": null,
+      "minChair": "rader",
       "members": [
         "vitali",
         "rader",
@@ -5399,7 +5399,7 @@
       "chamber": "H",
       "name": "Ethics Committee",
       "chair": "schweyer",
-      "minChair": null,
+      "minChair": "metzgar",
       "members": [
         "schweyer",
         "metzgar",
@@ -5417,7 +5417,7 @@
       "chamber": "H",
       "name": "Finance",
       "chair": "samuelson",
-      "minChair": null,
+      "minChair": "greiner",
       "members": [
         "samuelson",
         "greiner",
@@ -5484,7 +5484,7 @@
       "chamber": "H",
       "name": "Game & Fisheries",
       "chair": "kulik",
-      "minChair": null,
+      "minChair": "maloney",
       "members": [
         "kulik",
         "maloney",
@@ -5551,7 +5551,7 @@
       "chamber": "H",
       "name": "Gaming Oversight",
       "chair": "harkins",
-      "minChair": null,
+      "minChair": "diamond",
       "members": [
         "harkins",
         "diamond",
@@ -5611,7 +5611,7 @@
       "chamber": "H",
       "name": "Government Oversight",
       "chair": "cephas",
-      "minChair": null,
+      "minChair": "williams160",
       "members": [
         "cephas",
         "williams160",
@@ -5632,7 +5632,7 @@
       "chamber": "H",
       "name": "Health",
       "chair": "frankel",
-      "minChair": null,
+      "minChair": "rapp",
       "members": [
         "frankel",
         "rapp",
@@ -5699,7 +5699,7 @@
       "chamber": "H",
       "name": "Housing & Community Development",
       "chair": "markosek",
-      "minChair": null,
+      "minChair": "irvin",
       "members": [
         "markosek",
         "irvin",
@@ -5766,7 +5766,7 @@
       "chamber": "H",
       "name": "Human Services",
       "chair": "williams74",
-      "minChair": null,
+      "minChair": "heffley",
       "members": [
         "williams74",
         "heffley",
@@ -5833,7 +5833,7 @@
       "chamber": "H",
       "name": "Insurance",
       "chair": "warren",
-      "minChair": null,
+      "minChair": "pickett",
       "members": [
         "warren",
         "pickett",
@@ -5900,7 +5900,7 @@
       "chamber": "H",
       "name": "Intergovernmental Affairs & Operations",
       "chair": "delloso",
-      "minChair": null,
+      "minChair": "staats",
       "members": [
         "delloso",
         "staats",
@@ -5967,7 +5967,7 @@
       "chamber": "H",
       "name": "Judiciary",
       "chair": "briggs",
-      "minChair": null,
+      "minChair": "kauffman",
       "members": [
         "briggs",
         "kauffman",
@@ -6034,7 +6034,7 @@
       "chamber": "H",
       "name": "Labor & Industry",
       "chair": "dawkins",
-      "minChair": null,
+      "minChair": "james",
       "members": [
         "dawkins",
         "james",
@@ -6101,7 +6101,7 @@
       "chamber": "H",
       "name": "Liquor Control",
       "chair": "deasy",
-      "minChair": null,
+      "minChair": "fee",
       "members": [
         "deasy",
         "fee",
@@ -6163,7 +6163,7 @@
       "chamber": "H",
       "name": "Local Government",
       "chair": "freeman",
-      "minChair": null,
+      "minChair": "miller41",
       "members": [
         "freeman",
         "miller41",
@@ -6230,7 +6230,7 @@
       "chamber": "H",
       "name": "Professional Licensure",
       "chair": "burns",
-      "minChair": null,
+      "minChair": "emrick",
       "members": [
         "burns",
         "emrick",
@@ -6297,7 +6297,7 @@
       "chamber": "H",
       "name": "Rules",
       "chair": "bradford",
-      "minChair": null,
+      "minChair": "topper",
       "members": [
         "bradford",
         "topper",
@@ -6371,7 +6371,7 @@
       "chamber": "H",
       "name": "State Government",
       "chair": "hillevans",
-      "minChair": null,
+      "minChair": "roae",
       "members": [
         "hillevans",
         "roae",
@@ -6438,7 +6438,7 @@
       "chamber": "H",
       "name": "Tourism, Recreation & Economic Development",
       "chair": "daley",
-      "minChair": null,
+      "minChair": "warner",
       "members": [
         "daley",
         "warner",
@@ -6505,7 +6505,7 @@
       "chamber": "H",
       "name": "Transportation",
       "chair": "neilson",
-      "minChair": null,
+      "minChair": "benninghoff",
       "members": [
         "neilson",
         "benninghoff",
@@ -6572,7 +6572,7 @@
       "chamber": "H",
       "name": "Veterans Affairs & Emergency Preparedness",
       "chair": "solomon",
-      "minChair": null,
+      "minChair": "gillen",
       "members": [
         "solomon",
         "gillen",

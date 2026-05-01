@@ -26,6 +26,17 @@ function ByCoopScreen({ go }) {
         </div>
       </div>
       <div className="scroll" style={{ marginTop: 12 }}>
+        <a href="https://www.prea.com/member-cooperatives" target="_blank" rel="noopener" style={{ display: 'block', margin: '0 16px 12px', textDecoration: 'none' }}>
+          <div className="card" style={{ overflow: 'hidden' }}>
+            <img src="./data/images/prea-coop-map.jpg" alt="Pennsylvania electric cooperative service territories" style={{ display: 'block', width: '100%', height: 'auto' }}/>
+            <div style={{ padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 8, borderTop: '1px solid var(--line)' }}>
+              <Icon name="ext" size={13} color="var(--ink-4)"/>
+              <div style={{ flex: 1, fontSize: 12, color: 'var(--ink-3)' }}>
+                Service territories · prea.com
+              </div>
+            </div>
+          </div>
+        </a>
         <div className="card" style={{ margin: '0 16px' }}>
           {rows.map(r => (
             <div key={r.name} className="row" onClick={() => go('coop', { name: r.name })}>
@@ -59,17 +70,9 @@ function ByCoopScreen({ go }) {
 // State members sorted Senate first, then House by district number.
 function CoopDetailScreen({ name, go }) {
   const members = LEGISLATORS.filter(m => (m.coops || []).includes(name));
-  const federal = members.filter(m => FEDERAL_IDS.has(m.id))
-                         .sort((a, b) => {
-                           // Senators first, then House by district number
-                           if (a.chamber !== b.chamber) return a.chamber === 'US' ? -1 : 1;
-                           return Number(a.district || 0) - Number(b.district || 0);
-                         });
-  const state   = members.filter(m => !FEDERAL_IDS.has(m.id))
-                         .sort((a, b) => {
-                           if (a.chamber !== b.chamber) return a.chamber === 'S' ? -1 : 1;
-                           return Number(a.district || 0) - Number(b.district || 0);
-                         });
+  const byLastName = (a, b) => lastName(a.name).localeCompare(lastName(b.name));
+  const federal = members.filter(m => FEDERAL_IDS.has(m.id)).sort(byLastName);
+  const state   = members.filter(m => !FEDERAL_IDS.has(m.id)).sort(byLastName);
 
   return (
     <>

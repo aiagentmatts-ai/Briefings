@@ -6,7 +6,6 @@ function TabBar({ active, go }) {
     { id: 'search',    label: 'Search',  icon: 'search' },
     { id: 'federal',   label: 'Federal', icon: 'flag' },
     { id: 'bycoop',    label: 'Co-ops',  icon: 'bolt' },
-    { id: 'bookmarks', label: 'Saved',   icon: 'bookmark' },
     { id: 'committees',label: 'Cmtes',   icon: 'cmt' },
     { id: 'settings',  label: 'More',    icon: 'gear' },
   ];
@@ -24,6 +23,27 @@ function TabBar({ active, go }) {
 
 // ── Member row (used in search results & lists) ─────────────────
 function MemberRow({ m, onClick, showCmte }) {
+  if (m.vacant) {
+    return (
+      <div className="row" style={{ opacity: 0.7 }}>
+        <div style={{ width: 48, height: 48, borderRadius: 24, background: 'rgba(28,24,20,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <Icon name="circle" size={20} color="var(--ink-4)"/>
+        </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 15, fontWeight: 500, fontStyle: 'italic', color: 'var(--ink-3)' }}>
+            (Vacant)
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--ink-3)', marginTop: 2 }}>
+            <span className="mono">{districtLabel(m)}</span>
+            {(m.counties || [])[0] && (<>
+              <span style={{ color: 'var(--ink-4)' }}>·</span>
+              <span>{m.counties.join(', ')}</span>
+            </>)}
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="row" onClick={onClick}>
       <PortraitAvatar id={m.id} photo={m.photo} size={48}/>
@@ -66,12 +86,12 @@ function SearchScreen({ go }) {
       const needle = q.toLowerCase();
       list = list.filter(m =>
         m.name.toLowerCase().includes(needle) ||
-        m.counties.some(c => c.toLowerCase().includes(needle)) ||
+        (m.counties || []).some(c => c.toLowerCase().includes(needle)) ||
         String(m.district).includes(needle) ||
         officeShort(m.office).toLowerCase().includes(needle)
       );
     }
-    return list;
+    return [...list].sort((a, b) => lastName(a.name).localeCompare(lastName(b.name)));
   }, [q, scope]);
 
   const recent = LEGISLATORS.filter(m => ['causer','yaw','phillipshill','nelson'].includes(m.id));
@@ -137,21 +157,14 @@ function SearchScreen({ go }) {
 // ── SCREEN: Profile (D1 briefing) ────────────────────────────────
 function ProfileScreen({ id, go }) {
   const m = LEGISLATORS.find(x => x.id === id);
-  const [starred, setStarred] = React.useState(m.starred);
   if (!m) return null;
-  const bills = (BILLS_BY_SPONSOR[id] || []);
-  const reaBills = bills.filter(b => b.rea);
 
   return (
     <>
       <div className="navbar">
         <div className="back" onClick={() => go('back')}><Icon name="back" size={18}/></div>
         <div className="title"></div>
-        <div className="actions">
-          <div className="icon-btn" onClick={() => setStarred(s => !s)}>
-            <Icon name={starred ? 'star-fill' : 'star'} size={18} color={starred ? 'var(--brass)' : 'var(--ink)'}/>
-          </div>
-        </div>
+        <div className="actions"/>
       </div>
 
       <div className="scroll">
@@ -221,14 +234,24 @@ function ProfileScreen({ id, go }) {
           </div>
         </div>
 
-        {/* District / counties + map */}
+        {/* District / counties + official-page link */}
         <div style={{ padding: '0 16px 12px' }}>
           <div className="card" style={{ overflow: 'hidden' }}>
-            <DistrictMap m={m}/>
             <div style={{ padding: '12px 16px' }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--ink-3)', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 4 }}>District</div>
               <div style={{ fontSize: 14, lineHeight: 1.4 }}>{m.counties.join(' · ')}</div>
             </div>
+            {officialPageUrl(m) && (
+              <a href={officialPageUrl(m)} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div className="row" style={{ borderTop: '1px solid var(--line)' }}>
+                  <Icon name="pin" size={18} color="var(--fed-blue)"/>
+                  <div style={{ flex: 1, fontSize: 14, fontWeight: 500, color: 'var(--fed-blue)' }}>
+                    {officialPageLabel(m)}
+                  </div>
+                  <Icon name="ext" size={14} color="var(--ink-4)"/>
+                </div>
+              </a>
+            )}
           </div>
         </div>
 
@@ -260,23 +283,29 @@ function ProfileScreen({ id, go }) {
           ))}
         </div>
 
-        {/* Recent legislation */}
-        <div className="section-head">
-          <span className="label">Recent legislation</span>
-          <span className="meta">Updated {fmtDate(LAST_SYNC)}</span>
-        </div>
-        <div className="card" style={{ margin: '0 16px' }}>
-          {bills.slice(0, 3).map((b, i) => (
-            <BillRow key={i} b={b}/>
-          ))}
-          {bills.length > 3 && (
-            <div className="row" onClick={() => go('bills', { id: m.id })} style={{ justifyContent: 'center' }}>
-              <div style={{ fontSize: 13, fontWeight: 500, color: 'var(--fed-blue)' }}>
-                See all {bills.length} bills{reaBills.length > 0 ? ` · ${reaBills.length} REA-relevant` : ''}
-              </div>
+        {/* Legislation — link out to palegis for the latest */}
+        {officialPageUrl(m) && (
+          <>
+            <div className="section-head">
+              <span className="label">Legislation</span>
             </div>
-          )}
-        </div>
+            <div className="card" style={{ margin: '0 16px' }}>
+              <a href={officialPageUrl(m)} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div className="row">
+                  <Icon name="ext" size={18} color="var(--fed-blue)"/>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--fed-blue)' }}>
+                      Bills & co-sponsorship memos
+                    </div>
+                    <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>
+                      View latest on {isFederal(m.chamber) ? (m.chamber === 'US' ? 'senate.gov' : 'house.gov') : 'palegis.us'}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </>
+        )}
 
         <div className="tab-padding"/>
       </div>
@@ -284,108 +313,6 @@ function ProfileScreen({ id, go }) {
   );
 }
 
-// Bill row (used in profile + bills screen)
-function BillRow({ b }) {
-  return (
-    <a href={palegisUrl(b.num)} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <div className={'bill' + (b.rea ? ' rea' : '')}>
-        <div className="head">
-          <span className="num">{b.num}</span>
-          <span className="role">{b.role}</span>
-          {b.rea && <span className="tag coop" style={{ height: 16, fontSize: 10, padding: '0 6px' }}>REA</span>}
-          <div style={{ flex: 1 }}/>
-          <Icon name="ext" size={13} color="var(--ink-4)"/>
-        </div>
-        <div className="summary">{b.title}</div>
-        <div className={'status ' + statusClass(b.statusKind)}>
-          <span className="dot"/>
-          <span>{b.status}</span>
-          <span style={{ color: 'var(--ink-4)' }}>·</span>
-          <span>{b.lastAction}</span>
-        </div>
-      </div>
-    </a>
-  );
-}
-
-// ── DistrictMap ──────────────────────────────────────────────────
-// Renders the legislator's territory as inline SVG. PA outline drawn
-// once from data/maps/pa-counties.geojson; counties listed in
-// m.counties are filled in --fed-blue. Federal senators (counties =
-// ["Statewide"]) highlight the entire state. Geometry fetched once
-// per session and cached on window.
-
-const _PA_COUNTY_KEYS = (name) => name?.toLowerCase().replace(/[\s.]+/g, '');
-
-function projectPath(geometry, bbox, w, h, pad = 4) {
-  const [minX, minY, maxX, maxY] = bbox;
-  const sx = (w - 2 * pad) / (maxX - minX);
-  const sy = (h - 2 * pad) / (maxY - minY);
-  const s = Math.min(sx, sy);
-  const tx = pad + (w - 2 * pad - (maxX - minX) * s) / 2;
-  const ty = pad + (h - 2 * pad - (maxY - minY) * s) / 2;
-  const px = (lng) => tx + (lng - minX) * s;
-  const py = (lat) => ty + (maxY - lat) * s; // flip y
-  const ringToPath = (ring) => ring.map((pt, i) => `${i === 0 ? 'M' : 'L'}${px(pt[0]).toFixed(1)},${py(pt[1]).toFixed(1)}`).join('') + 'Z';
-  const polysToPath = (polys) => polys.map(rings => rings.map(ringToPath).join('')).join('');
-  if (geometry.type === 'Polygon') return polysToPath([geometry.coordinates]);
-  if (geometry.type === 'MultiPolygon') return polysToPath(geometry.coordinates);
-  return '';
-}
-
-function computeBBox(features) {
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  const visit = (pt) => {
-    if (pt[0] < minX) minX = pt[0]; if (pt[0] > maxX) maxX = pt[0];
-    if (pt[1] < minY) minY = pt[1]; if (pt[1] > maxY) maxY = pt[1];
-  };
-  for (const f of features) {
-    const c = f.geometry.coordinates;
-    if (f.geometry.type === 'Polygon') c.forEach(ring => ring.forEach(visit));
-    else if (f.geometry.type === 'MultiPolygon') c.forEach(poly => poly.forEach(ring => ring.forEach(visit)));
-  }
-  return [minX, minY, maxX, maxY];
-}
-
-function DistrictMap({ m }) {
-  const [geo, setGeo] = React.useState(window._paCounties || null);
-  React.useEffect(() => {
-    if (geo) return;
-    fetch('./data/maps/pa-counties.geojson')
-      .then(r => r.json())
-      .then(g => { window._paCounties = g; setGeo(g); })
-      .catch(() => {});
-  }, [geo]);
-
-  if (!geo) {
-    return (
-      <div style={{ height: 160, background: 'var(--paper-2)' }}/>
-    );
-  }
-
-  const W = 320, H = 160;
-  const bbox = window._paBBox || (window._paBBox = computeBBox(geo.features));
-  const inDistrict = new Set((m.counties || []).map(_PA_COUNTY_KEYS));
-  const isStatewide = inDistrict.has('statewide') || (m.chamber === 'US');
-
-  return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="160" preserveAspectRatio="xMidYMid meet"
-         style={{ display: 'block', background: 'var(--paper-2)' }}>
-      {geo.features.map((f, i) => {
-        const key = _PA_COUNTY_KEYS(f.properties.name);
-        const hit = isStatewide || inDistrict.has(key);
-        const d = projectPath(f.geometry, bbox, W, H);
-        return (
-          <path key={i} d={d}
-            fill={hit ? 'var(--fed-blue)' : '#ffffff'}
-            fillOpacity={hit ? 0.85 : 1}
-            stroke={hit ? 'var(--fed-blue)' : 'rgba(168,160,148,0.6)'}
-            strokeWidth={0.5}/>
-        );
-      })}
-    </svg>
-  );
-}
 
 // ── SCREEN: Federal Delegation ───────────────────────────────────
 // Lists the 19 PA federal members (2 senators, 17 House). Tapping a
@@ -412,9 +339,9 @@ function FederalScreen({ go }) {
     return list;
   }, [scope, q, all]);
 
-  const senate = filtered.filter(m => m.chamber === 'US');
-  const house  = filtered.filter(m => m.chamber === 'UH')
-                         .sort((a, b) => Number(a.district) - Number(b.district));
+  const byLastName = (a, b) => lastName(a.name).localeCompare(lastName(b.name));
+  const senate = filtered.filter(m => m.chamber === 'US').sort(byLastName);
+  const house  = filtered.filter(m => m.chamber === 'UH').sort(byLastName);
 
   return (
     <>
@@ -478,5 +405,3 @@ window.MemberRow = MemberRow;
 window.SearchScreen = SearchScreen;
 window.ProfileScreen = ProfileScreen;
 window.FederalScreen = FederalScreen;
-window.DistrictMap = DistrictMap;
-window.BillRow = BillRow;

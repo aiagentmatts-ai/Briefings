@@ -1,69 +1,17 @@
-// PA GA Guide — Bills list, Committee detail, Bookmarks, Settings.
-// (TrackedScreen was removed — window.TRACKED_BILLS is still populated
-// in data.js so per-member profiles can flag REA-relevant bills, but
-// there is no longer a dedicated tracked-bills tab.)
-
-function BillsScreen({ id, go }) {
-  const m = LEGISLATORS.find(x => x.id === id);
-  const all = (BILLS_BY_SPONSOR[id] || []);
-  const [role, setRole] = React.useState('all');     // all | prime | cosp
-  const [topic, setTopic] = React.useState('all');   // all | Energy | Telecom | Ag | Tax
-
-  const filtered = all.filter(b => {
-    if (role === 'prime' && b.role !== 'PRIME') return false;
-    if (role === 'cosp'  && b.role !== 'CO-SPONSOR') return false;
-    if (topic !== 'all' && b.topic !== topic) return false;
-    return true;
-  });
-
-  const topics = Array.from(new Set(all.map(b => b.topic)));
-
-  return (
-    <>
-      <div className="navbar">
-        <div className="back" onClick={() => go('back')}><Icon name="back" size={18}/></div>
-        <div className="title">{lastName(m.name)} · Bills</div>
-        <div className="actions"/>
-      </div>
-
-      <div style={{ padding: '0 16px 8px' }}>
-        <div style={{ display: 'flex', gap: 6, overflowX: 'auto', paddingBottom: 6 }}>
-          {[['all','All'],['prime','Prime'],['cosp','Co-sponsor']].map(([id,l]) =>
-            <div key={id} className={'chip' + (role === id ? ' active' : '')} onClick={() => setRole(id)}>{l}</div>
-          )}
-          <div style={{ width: 1, background: 'var(--line)', margin: '6px 4px', flexShrink: 0 }}/>
-          <div className={'chip' + (topic === 'all' ? ' active' : '')} onClick={() => setTopic('all')}>All topics</div>
-          {topics.map(t => (
-            <div key={t} className={'chip' + (topic === t ? ' active' : '')} onClick={() => setTopic(t)}>{t}</div>
-          ))}
-        </div>
-      </div>
-
-      <div className="scroll">
-        <div className="section-head">
-          <span className="label">{filtered.length} bills</span>
-          <span className="meta">{filtered.filter(b => b.rea).length} REA-relevant</span>
-        </div>
-        <div className="card" style={{ margin: '0 16px' }}>
-          {filtered.map((b, i) => <BillRow key={i} b={b}/>)}
-          {filtered.length === 0 && (
-            <div style={{ padding: '32px 16px', textAlign: 'center', color: 'var(--ink-3)', fontSize: 13 }}>
-              No bills match these filters
-            </div>
-          )}
-        </div>
-        <div className="tab-padding"/>
-      </div>
-    </>
-  );
-}
+// PA GA Guide — Committee detail, Settings.
+// All bill rendering moved out: per-member legislation now links out
+// to palegis.us; per-committee active-bill rendering is replaced with
+// a link to the committee's palegis page where current bill activity
+// and co-sponsorship memos live.
 
 function CommitteeScreen({ name, go }) {
   const c = COMMITTEES.find(x => x.name === name) || COMMITTEES[0];
   const members = c.members.map(id => LEGISLATORS.find(m => m.id === id)).filter(Boolean);
   const chair = members.find(m => m.id === c.chair);
   const minChair = members.find(m => m.id === c.minChair);
-  const others = members.filter(m => m.id !== c.chair && m.id !== c.minChair);
+  const others = members
+    .filter(m => m.id !== c.chair && m.id !== c.minChair)
+    .sort((a, b) => lastName(a.name).localeCompare(lastName(b.name)));
 
   return (
     <>
@@ -82,7 +30,7 @@ function CommitteeScreen({ name, go }) {
             {c.name}
           </div>
           <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 4 }}>
-            {members.length} members · {c.activeBills.length} active bills
+            {members.length} members
           </div>
         </div>
 
@@ -107,19 +55,6 @@ function CommitteeScreen({ name, go }) {
           {others.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
         </div>
 
-        <div className="section-head"><span className="label">Active legislation</span></div>
-        <div className="card" style={{ margin: '0 16px' }}>
-          {c.activeBills.map((billNum, i) => {
-            // find a sample of this bill
-            let sample = null;
-            for (const sponsor in BILLS_BY_SPONSOR) {
-              const b = BILLS_BY_SPONSOR[sponsor].find(x => x.num === billNum);
-              if (b) { sample = b; break; }
-            }
-            if (!sample) return null;
-            return <BillRow key={i} b={sample}/>;
-          })}
-        </div>
         <div className="tab-padding"/>
       </div>
     </>
@@ -127,13 +62,14 @@ function CommitteeScreen({ name, go }) {
 }
 
 function CommitteesScreen({ go }) {
-  const senate = COMMITTEES.filter(c => c.chamber === 'S');
-  const house = COMMITTEES.filter(c => c.chamber === 'H');
+  const byName = (a, b) => a.name.localeCompare(b.name);
+  const senate = COMMITTEES.filter(c => c.chamber === 'S').sort(byName);
+  const house = COMMITTEES.filter(c => c.chamber === 'H').sort(byName);
   return (
     <>
       <div style={{ padding: '8px 16px 4px' }}>
         <div className="serif" style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5, marginBottom: 4 }}>Committees</div>
-        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>{COMMITTEES.length} committees · {COMMITTEES.reduce((a,c)=>a+c.activeBills.length,0)} active bills</div>
+        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>{COMMITTEES.length} standing committees</div>
       </div>
       <div className="scroll">
         <div className="section-head"><span className="label">Senate</span></div>
@@ -143,7 +79,7 @@ function CommitteesScreen({ go }) {
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 15, fontWeight: 500 }}>{c.name}</div>
                 <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 2 }}>
-                  {c.members.length} members · {c.activeBills.length} active bills
+                  {c.members.length} members
                 </div>
               </div>
               <Icon name="chev-r" size={16} color="var(--ink-4)"/>
@@ -157,44 +93,12 @@ function CommitteesScreen({ go }) {
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 15, fontWeight: 500 }}>{c.name}</div>
                 <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 2 }}>
-                  {c.members.length} members · {c.activeBills.length} active bills
+                  {c.members.length} members
                 </div>
               </div>
               <Icon name="chev-r" size={16} color="var(--ink-4)"/>
             </div>
           ))}
-        </div>
-        <div className="tab-padding"/>
-      </div>
-    </>
-  );
-}
-
-function BookmarksScreen({ go }) {
-  const starred = LEGISLATORS.filter(m => m.starred);
-  const coop = LEGISLATORS.filter(m => m.coop);
-  return (
-    <>
-      <div style={{ padding: '8px 16px 4px' }}>
-        <div className="serif" style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5, marginBottom: 4 }}>Bookmarks</div>
-        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>{starred.length} starred · {coop.length} in co-op territory</div>
-      </div>
-      <div className="scroll">
-        <div className="section-head">
-          <span className="label">Starred</span>
-          <span className="meta">{starred.length}</span>
-        </div>
-        <div className="card" style={{ margin: '0 16px' }}>
-          {starred.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
-          {starred.length === 0 && <div style={{ padding: 24, textAlign:'center', color:'var(--ink-3)', fontSize: 13 }}>No starred members yet</div>}
-        </div>
-
-        <div className="section-head">
-          <span className="label">Co-op territory</span>
-          <span className="meta">{coop.length}</span>
-        </div>
-        <div className="card" style={{ margin: '0 16px' }}>
-          {coop.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
         </div>
         <div className="tab-padding"/>
       </div>
@@ -237,7 +141,7 @@ function SettingsScreen({ go }) {
             <Icon name="circle" size={20} color="var(--ink-3)"/>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500 }}>Offline cache</div>
-              <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>4.2 MB · 253 members · 187 bills</div>
+              <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>4.2 MB · {LEGISLATORS.length} members</div>
             </div>
           </div>
         </div>
@@ -286,8 +190,6 @@ function SettingsScreen({ go }) {
   );
 }
 
-window.BillsScreen = BillsScreen;
 window.CommitteeScreen = CommitteeScreen;
 window.CommitteesScreen = CommitteesScreen;
-window.BookmarksScreen = BookmarksScreen;
 window.SettingsScreen = SettingsScreen;

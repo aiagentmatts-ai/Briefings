@@ -8765,6 +8765,50 @@
       "phone": "(717) 783-4111",
       "email": "abellmon@pahouse.net",
       "photo": "https://www.palegis.us/resources/images/members/300/1984.jpg"
+    },
+    {
+      "id": "vacant-h-12",
+      "chamber": "H",
+      "name": "(Vacant)",
+      "party": null,
+      "district": 12,
+      "counties": [
+        "Butler"
+      ],
+      "committees": [],
+      "office": {
+        "room": "",
+        "building": "",
+        "floor": "",
+        "wing": null
+      },
+      "phone": null,
+      "email": null,
+      "photo": null,
+      "role": null,
+      "vacant": true
+    },
+    {
+      "id": "vacant-h-196",
+      "chamber": "H",
+      "name": "(Vacant)",
+      "party": null,
+      "district": 196,
+      "counties": [
+        "York"
+      ],
+      "committees": [],
+      "office": {
+        "room": "",
+        "building": "",
+        "floor": "",
+        "wing": null
+      },
+      "phone": null,
+      "email": null,
+      "photo": null,
+      "role": null,
+      "vacant": true
     }
   ]
 }
