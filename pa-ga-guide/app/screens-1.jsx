@@ -309,33 +309,81 @@ function BillRow({ b }) {
 }
 
 // ── DistrictMap ──────────────────────────────────────────────────
-// Renders a static district-shape PNG when one exists at the path
-// produced by scripts/build-district-maps.mjs. If the file is missing
-// (rollout in progress, federal map not yet generated, etc.) we
-// gracefully render a placeholder strip so the profile layout stays
-// stable.
+// Renders the legislator's territory as inline SVG. PA outline drawn
+// once from data/maps/pa-counties.geojson; counties listed in
+// m.counties are filled in --fed-blue. Federal senators (counties =
+// ["Statewide"]) highlight the entire state. Geometry fetched once
+// per session and cached on window.
+
+const _PA_COUNTY_KEYS = (name) => name?.toLowerCase().replace(/[\s.]+/g, '');
+
+function projectPath(geometry, bbox, w, h, pad = 4) {
+  const [minX, minY, maxX, maxY] = bbox;
+  const sx = (w - 2 * pad) / (maxX - minX);
+  const sy = (h - 2 * pad) / (maxY - minY);
+  const s = Math.min(sx, sy);
+  const tx = pad + (w - 2 * pad - (maxX - minX) * s) / 2;
+  const ty = pad + (h - 2 * pad - (maxY - minY) * s) / 2;
+  const px = (lng) => tx + (lng - minX) * s;
+  const py = (lat) => ty + (maxY - lat) * s; // flip y
+  const ringToPath = (ring) => ring.map((pt, i) => `${i === 0 ? 'M' : 'L'}${px(pt[0]).toFixed(1)},${py(pt[1]).toFixed(1)}`).join('') + 'Z';
+  const polysToPath = (polys) => polys.map(rings => rings.map(ringToPath).join('')).join('');
+  if (geometry.type === 'Polygon') return polysToPath([geometry.coordinates]);
+  if (geometry.type === 'MultiPolygon') return polysToPath(geometry.coordinates);
+  return '';
+}
+
+function computeBBox(features) {
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  const visit = (pt) => {
+    if (pt[0] < minX) minX = pt[0]; if (pt[0] > maxX) maxX = pt[0];
+    if (pt[1] < minY) minY = pt[1]; if (pt[1] > maxY) maxY = pt[1];
+  };
+  for (const f of features) {
+    const c = f.geometry.coordinates;
+    if (f.geometry.type === 'Polygon') c.forEach(ring => ring.forEach(visit));
+    else if (f.geometry.type === 'MultiPolygon') c.forEach(poly => poly.forEach(ring => ring.forEach(visit)));
+  }
+  return [minX, minY, maxX, maxY];
+}
+
 function DistrictMap({ m }) {
-  const url = districtMapUrl(m);
-  const [failed, setFailed] = React.useState(false);
-  if (!url || failed) {
+  const [geo, setGeo] = React.useState(window._paCounties || null);
+  React.useEffect(() => {
+    if (geo) return;
+    fetch('./data/maps/pa-counties.geojson')
+      .then(r => r.json())
+      .then(g => { window._paCounties = g; setGeo(g); })
+      .catch(() => {});
+  }, [geo]);
+
+  if (!geo) {
     return (
-      <div style={{
-        height: 140, background: 'linear-gradient(135deg, var(--paper-2) 0%, #e2dac8 100%)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        color: 'var(--ink-3)', fontSize: 11, letterSpacing: 1.2, textTransform: 'uppercase', fontWeight: 600,
-      }}>
-        <Icon name="map" size={14} color="var(--ink-3)"/>
-        <span style={{ marginLeft: 6 }}>{districtLabel(m)}</span>
-      </div>
+      <div style={{ height: 160, background: 'var(--paper-2)' }}/>
     );
   }
+
+  const W = 320, H = 160;
+  const bbox = window._paBBox || (window._paBBox = computeBBox(geo.features));
+  const inDistrict = new Set((m.counties || []).map(_PA_COUNTY_KEYS));
+  const isStatewide = inDistrict.has('statewide') || (m.chamber === 'US');
+
   return (
-    <img
-      src={url}
-      alt={`District map for ${districtLabel(m)}`}
-      onError={() => setFailed(true)}
-      style={{ display: 'block', width: '100%', height: 160, objectFit: 'cover', background: 'var(--paper-2)' }}
-    />
+    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="160" preserveAspectRatio="xMidYMid meet"
+         style={{ display: 'block', background: 'var(--paper-2)' }}>
+      {geo.features.map((f, i) => {
+        const key = _PA_COUNTY_KEYS(f.properties.name);
+        const hit = isStatewide || inDistrict.has(key);
+        const d = projectPath(f.geometry, bbox, W, H);
+        return (
+          <path key={i} d={d}
+            fill={hit ? 'var(--fed-blue)' : '#ffffff'}
+            fillOpacity={hit ? 0.85 : 1}
+            stroke={hit ? 'var(--fed-blue)' : 'rgba(168,160,148,0.6)'}
+            strokeWidth={0.5}/>
+        );
+      })}
+    </svg>
   );
 }
 
