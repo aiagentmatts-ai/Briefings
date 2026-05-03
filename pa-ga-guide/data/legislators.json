@@ -1,6 +1,6 @@
 {
   "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py from www.palegis.us. Edit overlays in rea-overlay.json, not here.",
-  "lastSync": "2026-04-29T23:25:57Z",
+  "lastSync": "2026-05-03T14:35:43Z",
   "members": [
     {
       "id": "saval",
@@ -15,7 +15,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Urban Affairs & Housing"
+          "name": "Urban Affairs & Housing",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Environmental Resources & Energy"
@@ -52,7 +53,8 @@
       "role": "Minority Whip",
       "committees": [
         {
-          "name": "Intergovernmental Operations"
+          "name": "Intergovernmental Operations",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Consumer Protection & Professional Licensure"
@@ -89,7 +91,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Banking & Insurance"
+          "name": "Banking & Insurance",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Agriculture & Rural Affairs"
@@ -127,7 +130,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Health & Human Services"
+          "name": "Health & Human Services",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Appropriations"
@@ -254,7 +258,8 @@
       "role": "Minority Appropriations Committee Chair",
       "committees": [
         {
-          "name": "Appropriations"
+          "name": "Appropriations",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Intergovernmental Operations"
@@ -286,7 +291,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Community, Economic & Recreational Development"
+          "name": "Community, Economic & Recreational Development",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Banking & Insurance"
@@ -320,7 +326,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Labor & Industry"
+          "name": "Labor & Industry",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Communications & Technology"
@@ -354,7 +361,8 @@
       "role": "Minority Caucus Secretary",
       "committees": [
         {
-          "name": "State Government"
+          "name": "State Government",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Consumer Protection & Professional Licensure"
@@ -391,7 +399,8 @@
       "role": "Minority Caucus Administrator",
       "committees": [
         {
-          "name": "Agriculture & Rural Affairs"
+          "name": "Agriculture & Rural Affairs",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Appropriations"
@@ -425,7 +434,8 @@
       "role": "Minority Caucus Chair",
       "committees": [
         {
-          "name": "Aging & Youth"
+          "name": "Aging & Youth",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Health & Human Services"
@@ -496,7 +506,8 @@
       "role": "Minority Policy Committee Chairman",
       "committees": [
         {
-          "name": "Communications & Technology"
+          "name": "Communications & Technology",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Community, Economic & Recreational Development"
@@ -533,7 +544,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Local Government"
+          "name": "Local Government",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Aging & Youth"
@@ -616,7 +628,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Judiciary"
+          "name": "Judiciary",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Appropriations"
@@ -651,7 +664,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Consumer Protection & Professional Licensure"
+          "name": "Consumer Protection & Professional Licensure",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Banking & Insurance"
@@ -688,7 +702,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Environmental Resources & Energy"
+          "name": "Environmental Resources & Energy",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Aging & Youth"
@@ -813,7 +828,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Transportation"
+          "name": "Transportation",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Banking & Insurance"
@@ -991,7 +1007,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Institutional Sustainability & Innovation"
+          "name": "Institutional Sustainability & Innovation",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Appropriations"
@@ -1434,7 +1451,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Game & Fisheries"
+          "name": "Game & Fisheries",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Aging & Youth"
@@ -1516,7 +1534,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Education"
+          "name": "Education",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Game & Fisheries"
@@ -1650,7 +1669,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Law & Justice"
+          "name": "Law & Justice",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Community, Economic & Recreational Development"
@@ -1684,7 +1704,8 @@
       "role": "Minority Floor Leader",
       "committees": [
         {
-          "name": "Rules & Executive Nominations"
+          "name": "Rules & Executive Nominations",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Appropriations"
@@ -1717,7 +1738,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Veterans Affairs & Emergency Preparedness"
+          "name": "Veterans Affairs & Emergency Preparedness",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Community, Economic & Recreational Development"
@@ -1754,7 +1776,8 @@
       "role": "",
       "committees": [
         {
-          "name": "Finance"
+          "name": "Finance",
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Consumer Protection & Professional Licensure"
@@ -2174,7 +2197,7 @@
       "committees": [
         {
           "name": "State Government",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Health"
@@ -2384,7 +2407,7 @@
       "committees": [
         {
           "name": "Commerce",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Agriculture & Rural Affairs",
@@ -3226,7 +3249,7 @@
       "committees": [
         {
           "name": "Liquor Control",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -3361,7 +3384,7 @@
       "committees": [
         {
           "name": "Local Government",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -3420,7 +3443,7 @@
       "committees": [
         {
           "name": "Finance",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Insurance"
@@ -3512,7 +3535,7 @@
       "committees": [
         {
           "name": "Communications & Technology",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Education"
@@ -3704,7 +3727,7 @@
       "committees": [
         {
           "name": "Tourism, Recreation & Economic Development",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {},
@@ -4053,7 +4076,7 @@
       "committees": [
         {
           "name": "Appropriations",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Rules"
@@ -4118,7 +4141,7 @@
       "committees": [
         {
           "name": "Labor & Industry",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Environmental & Natural Resource Protection"
@@ -4148,7 +4171,7 @@
       "committees": [
         {
           "name": "Health",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Energy"
@@ -4214,7 +4237,7 @@
       "committees": [
         {
           "name": "Energy",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -4268,11 +4291,11 @@
       "committees": [
         {
           "name": "Consumer Protection, Technology & Utilities",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Ethics Committee",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -4544,7 +4567,7 @@
       "committees": [
         {
           "name": "Rules",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -4643,7 +4666,7 @@
       "committees": [
         {
           "name": "Housing & Community Development",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Communications & Technology"
@@ -4915,7 +4938,7 @@
       "committees": [
         {
           "name": "Judiciary",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Consumer Protection, Technology & Utilities"
@@ -4983,7 +5006,7 @@
       "committees": [
         {
           "name": "Agriculture & Rural Affairs",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -5174,7 +5197,7 @@
       "committees": [
         {
           "name": "Aging & Older Adult Services",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Insurance"
@@ -5275,7 +5298,7 @@
       "committees": [
         {
           "name": "Education",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Rules"
@@ -5337,7 +5360,7 @@
       "committees": [
         {
           "name": "Gaming Oversight",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "State Government"
@@ -5619,11 +5642,11 @@
       "committees": [
         {
           "name": "Committee On Committees",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Insurance",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Rules"
@@ -6054,7 +6077,7 @@
       "committees": [
         {
           "name": "Human Services",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -6259,7 +6282,7 @@
       "committees": [
         {
           "name": "Veterans Affairs & Emergency Preparedness",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -6324,7 +6347,7 @@
       "committees": [
         {
           "name": "Game & Fisheries",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -6517,7 +6540,7 @@
       "committees": [
         {
           "name": "Professional Licensure",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -6792,7 +6815,7 @@
       "committees": [
         {
           "name": "Intergovernmental Affairs & Operations",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -7324,7 +7347,7 @@
       "committees": [
         {
           "name": "Government Oversight",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Consumer Protection, Technology & Utilities"
@@ -7624,7 +7647,7 @@
       "committees": [
         {
           "name": "Children & Youth",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Ethics Committee"
@@ -7685,7 +7708,7 @@
       "committees": [
         {
           "name": "Transportation",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         },
         {
           "name": "Gaming Oversight"
@@ -7852,7 +7875,7 @@
       "committees": [
         {
           "name": "Environmental & Natural Resource Protection",
-          "role": "CHAIR"
+          "role": "MIN. CHAIR"
         }
       ],
       "office": {
@@ -8765,50 +8788,6 @@
       "phone": "(717) 783-4111",
       "email": "abellmon@pahouse.net",
       "photo": "https://www.palegis.us/resources/images/members/300/1984.jpg"
-    },
-    {
-      "id": "vacant-h-12",
-      "chamber": "H",
-      "name": "(Vacant)",
-      "party": null,
-      "district": 12,
-      "counties": [
-        "Butler"
-      ],
-      "committees": [],
-      "office": {
-        "room": "",
-        "building": "",
-        "floor": "",
-        "wing": null
-      },
-      "phone": null,
-      "email": null,
-      "photo": null,
-      "role": null,
-      "vacant": true
-    },
-    {
-      "id": "vacant-h-196",
-      "chamber": "H",
-      "name": "(Vacant)",
-      "party": null,
-      "district": 196,
-      "counties": [
-        "York"
-      ],
-      "committees": [],
-      "office": {
-        "room": "",
-        "building": "",
-        "floor": "",
-        "wing": null
-      },
-      "phone": null,
-      "email": null,
-      "photo": null,
-      "role": null,
-      "vacant": true
     }
   ]
 }
