@@ -6,7 +6,7 @@
    offline once it has been opened with a connection at least once.
 */
 
-const CACHE = 'pa-ga-guide-v11';
+const CACHE = 'pa-ga-guide-v14';
 
 const FED_IDS = [
   'us-fetterman','us-mccormick','us-fitzpatrick','us-boyle','us-evans','us-dean',
@@ -42,7 +42,11 @@ const PRECACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(PRECACHE))
+    caches.open(CACHE).then((cache) =>
+      Promise.all(PRECACHE.map((url) =>
+        fetch(url, { cache: 'reload' }).then((res) => cache.put(url, res))
+      ))
+    )
   );
   self.skipWaiting();
 });

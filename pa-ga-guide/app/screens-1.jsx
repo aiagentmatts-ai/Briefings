@@ -278,15 +278,20 @@ function ProfileScreen({ id, go }) {
           <span className="label">Committees</span>
         </div>
         <div className="card" style={{ margin: '0 16px' }}>
-          {m.committees.map((c, i) => (
-            <div key={i} className="row" onClick={() => go('committee', { name: c.name })}>
-              <div style={{ flex: 1 }}>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>{c.name}</div>
-                {c.role && <div style={{ fontSize: 11, color: 'var(--brass)', fontWeight: 600, letterSpacing: 0.5, textTransform: 'uppercase', marginTop: 2 }}>{c.role}</div>}
+          {m.committees.map((c, i) => {
+            const match =
+              COMMITTEES.find(x => x.name === c.name && x.chamber === m.chamber) ||
+              COMMITTEES.find(x => x.name === c.name);
+            return (
+              <div key={i} className="row" onClick={() => match && go('committee', { id: match.id })}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 14, fontWeight: 500 }}>{c.name}</div>
+                  {c.role && <div style={{ fontSize: 11, color: 'var(--brass)', fontWeight: 600, letterSpacing: 0.5, textTransform: 'uppercase', marginTop: 2 }}>{c.role}</div>}
+                </div>
+                <Icon name="chev-r" size={16} color="var(--ink-4)"/>
               </div>
-              <Icon name="chev-r" size={16} color="var(--ink-4)"/>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Legislation — link out to palegis for the latest */}
