@@ -127,7 +127,7 @@
           case 'committees': return <CommitteesScreen go={go}/>;
           case 'settings':   return <SettingsScreen go={go}/>;
           case 'profile':    return <ProfileScreen id={current.id} go={go}/>;
-          case 'committee':  return <CommitteeScreen name={current.name} go={go}/>;
+          case 'committee':  return <CommitteeScreen id={current.id} go={go}/>;
           default:           return <SearchScreen go={go}/>;
         }
       };

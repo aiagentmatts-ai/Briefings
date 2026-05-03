@@ -4,8 +4,8 @@
 // a link to the committee's palegis page where current bill activity
 // and co-sponsorship memos live.
 
-function CommitteeScreen({ name, go }) {
-  const c = COMMITTEES.find(x => x.name === name) || COMMITTEES[0];
+function CommitteeScreen({ id, go }) {
+  const c = COMMITTEES.find(x => x.id === id) || COMMITTEES[0];
   const members = c.members.map(id => LEGISLATORS.find(m => m.id === id)).filter(Boolean);
   const chair = members.find(m => m.id === c.chair);
   const minChair = members.find(m => m.id === c.minChair);
@@ -75,7 +75,7 @@ function CommitteesScreen({ go }) {
         <div className="section-head"><span className="label">Senate</span></div>
         <div className="card" style={{ margin: '0 16px' }}>
           {senate.map(c => (
-            <div key={c.id} className="row" onClick={() => go('committee', { name: c.name })}>
+            <div key={c.id} className="row" onClick={() => go('committee', { id: c.id })}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 15, fontWeight: 500 }}>{c.name}</div>
                 <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 2 }}>
@@ -89,7 +89,7 @@ function CommitteesScreen({ go }) {
         <div className="section-head"><span className="label">House</span></div>
         <div className="card" style={{ margin: '0 16px' }}>
           {house.map(c => (
-            <div key={c.id} className="row" onClick={() => go('committee', { name: c.name })}>
+            <div key={c.id} className="row" onClick={() => go('committee', { id: c.id })}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 15, fontWeight: 500 }}>{c.name}</div>
                 <div style={{ fontSize: 12, color: 'var(--ink-3)', marginTop: 2 }}>
