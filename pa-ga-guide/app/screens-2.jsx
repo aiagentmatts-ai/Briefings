@@ -55,6 +55,23 @@ function CommitteeScreen({ id, go }) {
           {others.map(m => <MemberRow key={m.id} m={m} onClick={() => go('profile', { id: m.id })}/>)}
         </div>
 
+        <div className="section-head"><span className="label">Official page</span></div>
+        <div className="card" style={{ margin: '0 16px' }}>
+          <a href={`https://www.palegis.us/${c.chamber === 'S' ? 'senate' : 'house'}/committees`} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div className="row">
+              <Icon name="ext" size={18} color="var(--fed-blue)"/>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--fed-blue)' }}>
+                  {c.name} on palegis.us
+                </div>
+                <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>
+                  Meetings, votes, and current bills
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
         <div className="tab-padding"/>
       </div>
     </>
@@ -117,7 +134,7 @@ function SettingsScreen({ go }) {
     <>
       <div style={{ padding: '8px 16px 4px' }}>
         <div className="serif" style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5, marginBottom: 4 }}>Settings</div>
-        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>PA GA Guide · v1.0 · Pa. Rural Electric Assn.</div>
+        <div style={{ fontSize: 12, color: 'var(--ink-3)' }}>PA GA Guide · v1.0</div>
       </div>
       <div className="scroll">
         <div className="section-head"><span className="label">Data</span></div>
