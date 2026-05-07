@@ -88,8 +88,8 @@ TOPIC_RULES: list[tuple[str, re.Pattern[str]]] = [
 ]
 
 # Status -> statusKind heuristic. Order matters; first hit wins.
-STATUS_STOP = re.compile(r"\b(veto|failed|tabled|withdrawn|defeated)\b", re.I)
-STATUS_GO = re.compile(r"\b(passed|signed|adopted|reported.out|act\s+no|second consideration|third consideration|approved by governor)\b", re.I)
+STATUS_STOP = re.compile(r"\b(veto(?:ed)?|failed|tabled|withdrawn|defeated)\b", re.I)
+STATUS_GO = re.compile(r"\b(passed|signed|adopted|reported.out|act\s+no|second consideration|third consideration|approved by(?:\s+the)?\s+governor)\b", re.I)
 
 
 @dataclass
@@ -280,20 +280,36 @@ def derive_topic(title: str) -> str:
     return "Other"
 
 
-_MONTH_ABBR = {
-    "January": "Jan", "February": "Feb", "March": "Mar", "April": "Apr",
-    "May": "May", "June": "Jun", "July": "Jul", "August": "Aug",
-    "September": "Sep", "October": "Oct", "November": "Nov", "December": "Dec",
+# Map both spelled-out and abbreviated month tokens (with or without a
+# trailing period) to the canonical 3-letter abbreviation we emit.
+_MONTH_NORM = {
+    "january": "Jan", "february": "Feb", "march": "Mar", "april": "Apr",
+    "may": "May", "june": "Jun", "july": "Jul", "august": "Aug",
+    "september": "Sep", "october": "Oct", "november": "Nov", "december": "Dec",
+    "jan": "Jan", "feb": "Feb", "mar": "Mar", "apr": "Apr",
+    "jun": "Jun", "jul": "Jul", "aug": "Aug",
+    "sep": "Sep", "sept": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dec",
 }
+
+# palegis bill-detail "Last Action" lines render as e.g. "Aug.\xa015,\xa02025"
+# (abbreviated month, optional period, non-breaking space). We accept full
+# names, 3-4 letter abbreviations, and either kind of whitespace separator.
+_DATE_TOKEN_RE = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December|"
+    r"Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)\.?\s+(\d{1,2})\b",
+    re.I,
+)
 
 
 def format_last_action(text: str) -> str:
     """Pull the most recent date out of a status/action string and format it 'Mon DD'."""
     if not text:
         return ""
-    m = re.search(r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})", text)
+    m = _DATE_TOKEN_RE.search(text)
     if m:
-        return f"{_MONTH_ABBR[m.group(1)]} {int(m.group(2)):02d}"
+        token = m.group(1).lower()
+        if token in _MONTH_NORM:
+            return f"{_MONTH_NORM[token]} {int(m.group(2)):02d}"
     m = re.search(r"\b(\d{1,2})/(\d{1,2})(?:/\d{2,4})?\b", text)
     if m:
         try:
@@ -307,7 +323,15 @@ def format_last_action(text: str) -> str:
 
 # -- Roster parsing -------------------------------------------------------
 
-_BIO_PATH_RE = re.compile(r"/(senate|house)/members/bio/(\d+)/(sen|rep)-([a-z0-9-]+)")
+# Bio links appear in two forms on palegis:
+#   /senate/members/bio/1870/sen-pittman           (roster + most internal links)
+#   /senate/members/bio/1802/senator-katie-muth    (bill-detail Prime Sponsor block,
+#                                                   committee detail occasionally)
+# We accept either prefix so the bill-detail prime-sponsor lookup doesn't
+# silently roll past a long-form link onto the first co-sponsor's short-form
+# link (which is exactly the bug that misattributed SB 970 to Wayne Fontana
+# instead of prime sponsor Katie Muth).
+_BIO_PATH_RE = re.compile(r"/(senate|house)/members/bio/(\d+)/(sen|senator|rep|representative)-([a-z0-9-]+)")
 
 
 def _titlecase_county(c: str) -> str:
