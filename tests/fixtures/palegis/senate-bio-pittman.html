@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--BeginNoIndex-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Legislative or Congressional district|Pennsylvania General Assembly">
+
+		<meta name="Author" content="Legislativate Data Processing Center">
+<meta name="Copyright" content="Copyright 2026">
+<meta name="language" content="English">
+<meta name="Description" content="Stay connected to your PA Senator. Find contact information, see a district map, view legislation sponsored and co-sponsored, and read personal biographies about your legislator.">
+<meta name="Keywords" content="Legislative or Congressional district|Pennsylvania General Assembly">
+<meta name="Robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta property="og:title" content="">
+<meta property="og:url" content="https://www.palegis.us/"/>
+<meta property="og:image" content="https://www.palegis.us/resources/images/head-bg.jpg"/>
+<meta property="og:type" content="website">
+<meta property="og:description" content="Stay connected to your PA Senator. Find contact information, see a district map, view legislation sponsored and co-sponsored, and read personal biographies about your legislator.">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-touch-icon.png?t=20250522">
+		<link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon/favicon-32x32.png?t=20250522">
+		<link rel="icon" type="image/png" sizes="16x16" href="/resources/images/favicon/favicon-16x16.png?t=20250522">
+		<link rel="manifest" href="/resources/images/favicon/site.webmanifest?t=20250522">
+
+		
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kit.fontawesome.com/057290b911.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="/layout/resources/css/bootstrap.custom.css?t=20231101132719">
+<link rel="stylesheet" href="/layout/resources/theme/css/theme.min.css?t=20230306074712">
+<link rel="stylesheet" href="/layout/resources/css/ldpc.css?t=20251003111204">
+		<link rel="stylesheet" href="/resources/css/palegis.css?id=20250522">
+<link rel="stylesheet" href="/content/Members/app.css?id=20250522">
+
+		<script>
+			const _LDPCApp = { dirs: {}, servers: {} };
+
+			_LDPCApp.dirs = new Object();
+_LDPCApp.dirs["genasm"] = "D:\\Inetpub\\wwwroot\\GenAsm\\";
+_LDPCApp.dirs["layoutroot"] = "/layout";
+;
+			_LDPCApp.servers = new Object();
+_LDPCApp.servers["genasm"] = new Object();
+_LDPCApp.servers["genasm"]["fs"] = new Object();
+_LDPCApp.servers["genasm"]["fs"]["url"] = "http://www.fs.legis.state.pa.us";
+_LDPCApp.servers["genasm"]["fs"]["servername"] = "www.fs.legis.state.pa.us";
+_LDPCApp.servers["genasm"]["url"] = "https://www.legis.state.pa.us";
+_LDPCApp.servers["genasm"]["servername"] = "www.legis.state.pa.us";
+_LDPCApp.servers["senate"] = new Object();
+_LDPCApp.servers["senate"]["url"] = "https://www.pasen.gov";
+_LDPCApp.servers["senate"]["servername"] = "www.pasen.gov";
+_LDPCApp.servers["house"] = new Object();
+_LDPCApp.servers["house"]["url"] = "https://www.house.state.pa.us";
+_LDPCApp.servers["house"]["servername"] = "www.house.state.pa.us";
+_LDPCApp.servers["servername"] = "www.palegis.us";
+_LDPCApp.servers["servertype"] = "production";
+;
+		</script>
+
+		
+		
+		<script src="/layout/resources/js/ldpc.js?t=20250321105624"></script>
+<script src="/layout/resources/js/clipboard.js?t=20251002165812"></script>
+		
+		<!--EndNoIndex-->
+				<!-- accessibility library -->
+				<script src="https://cdn.userway.org/widget.js" data-account="J6OxeZAThZ"></script>
+			
+				<!-- Google tag (gtag.js) -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF0TXGDX9Q"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag("js", new Date());
+					gtag("config", "G-MF0TXGDX9Q");
+				</script>
+			
+				
+				<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+				<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+				
+				<script src='https://www.legis.state.pa.us/cfdocs/cfc/UTIL/togeojson-0.16.0/togeojson.js'></script>
+				
+				<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+				<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+				
+				
+
+				<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.js"></script>
+				<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.css" type="text/css">
+			<link rel="alternate" type="application/rss+xml" title="PA Senate - Senator Pittman 2025-2026 Co-Sponsorship Memos" href="/senate/rss/legislation/memos?sessionYear=2025&memberId=1870"><title>Senator Joe Pittman - PA State Senate</title>
+<meta property="og:site_name" content="Senator Joe Pittman - PA State Senate"/>
+</head>
+	<body>
+		<!--BeginNoIndex-->
+		
+			<div class="beta-alert-container fixed-top d-print-none">
+				
+			<nav class="navbar navbar-expand-lg  d-print-none">
+				<div class="container-lg">
+					<a class="navbar-brand" href="/senate" aria-label="Senate Home">
+						<img src="/resources/images/logo-dome.svg" class="logo" alt="Pennsylvania Capitol Dome">
+						<div class="d-flex flex-column" aria-labelledby="logo">
+							<div class="logo-state">Pennsylvania</div>
+							<div class="logo-text">State Senate</div>
+						</div>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link " href="/"  aria-label="General Assembly Home">General Assembly</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navMenuItem_2" role="button" data-bs-toggle="dropdown" aria-label="Senate">Senate</a>
+						<ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navMenuItem_2">
+							<li><a class="dropdown-item " href="/senate"  aria-label="Senate Home">Senate Home</a></li><li><a class="dropdown-item " href="/senate/members"  aria-label="Members of the Senate">Members of the Senate</a></li><li><a class="dropdown-item " href="/senate/members/senate-officers"  aria-label="Senate Leadership">Senate Leadership</a></li><li><a class="dropdown-item " href="/senate/co-sponsorship"  aria-label="Co-Sponsorship Memos">Co-Sponsorship Memos</a></li><li><a class="dropdown-item " href="/senate/committees"  aria-label="Senate Committees">Committees</a></li><li><a class="dropdown-item " href="/senate/session"  aria-label="Senate Session">Senate Session</a></li><li><a class="dropdown-item " href="/find-my-legislator"  aria-label="Find My Legislator">Find My Senator</a></li><li><a class="dropdown-item " href="/senate/right-to-know"  aria-label="Right To Know (RTKL)">Right To Know (RTKL)</a></li>
+						</ul>
+					</li>
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navMenuItem_3" role="button" data-bs-toggle="dropdown" aria-label="House">House</a>
+						<ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navMenuItem_3">
+							<li><a class="dropdown-item " href="/house"  aria-label="House Home">House Home</a></li><li><a class="dropdown-item " href="/house/members"  aria-label="Members of the House">Members of the House</a></li><li><a class="dropdown-item " href="/house/members/house-officers"  aria-label="House Leadership">House Leadership</a></li><li><a class="dropdown-item " href="/house/co-sponsorship"  aria-label="Co-Sponsorship Memos">Co-Sponsorship Memos</a></li><li><a class="dropdown-item " href="/house/committees"  aria-label="House Committees">Committees</a></li><li><a class="dropdown-item " href="/house/session"  aria-label="House Session">House Session</a></li><li><a class="dropdown-item " href="/find-my-legislator"  aria-label="Find My Legislator">Find My Representative</a></li><li><a class="dropdown-item " href="/house/right-to-know"  aria-label="Right To Know (RTKL)">Right To Know (RTKL)</a></li>
+						</ul>
+					</li>
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navMenuItem_4" role="button" data-bs-toggle="dropdown" aria-label="Session">Session</a>
+						<ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navMenuItem_4">
+							<li><a class="dropdown-item " href="/senate/session"  aria-label="Senate Session">Senate Session</a></li><li><a class="dropdown-item " href="/house/session"  aria-label="House Session">House Session</a></li>
+						</ul>
+					</li>
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navMenuItem_5" role="button" data-bs-toggle="dropdown" aria-label="Legislation">Legislation</a>
+						<ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navMenuItem_5">
+							<li><a class="dropdown-item " href="/legislation"  aria-label="Legislation Home">Legislation Home</a></li><li><a class="dropdown-item " href="/house/co-sponsorship"  aria-label="House Co-Sponsorship Memos">House Co-Sponsorship Memos</a></li><li><a class="dropdown-item " href="/senate/co-sponsorship"  aria-label="Senate Co-Sponsorship Memos">Senate Co-Sponsorship Memos</a></li><li><a class="dropdown-item " href="/legislation/bills"  aria-label="Bills">Bills</a></li><li><a class="dropdown-item " href="/legislation/amendments"  aria-label="Amendments">Amendments</a></li>
+						</ul>
+					</li>
+				<li class="nav-item"><a class="nav-link " href="/statutes"  aria-label="Statutes">Statutes</a></li><li class="nav-item"><a class="nav-link " href="/palegis-notifications"  aria-label="Notifications">Notifications</a></li>
+						</ul>
+						
+			<a class="btn btn-info btn-sm text-uppercase ms-lg-3 nav-tool d-none d-xl-inline-flex" href="/find-my-legislator" aria-label="Find My Legislator">
+				<i class="fa-duotone fa-user-magnifying-glass fa-lg me-2" aria-hidden="true"></i> Find My Legislator
+			</a>
+		
+					</div>
+				</div>
+			</nav>
+		
+			</div>
+			
+			<header class="header-alt bg-secondary text-light d-flex flex-column justify-content-center d-print-none" style="background-image: url(/resources/images/head-bg.jpg);">
+				
+				<div class="container-lg my-3 z-3 d-flex justify-content-center flex-column flex-lg-row justify-content-lg-between">
+					<div class="d-flex flex-column justify-content-center">
+						<h1 class="header-title text-white mb-0">Senator Biography</h1>
+						
+						
+			<nav class="d-none d-lg-block" aria-label="breadcrumb">
+				<ol class="breadcrumb mb-0">
+					<li class="breadcrumb-item" ><a href="/senate" title="PA State Senate">Home</a></li>
+<li class="breadcrumb-item" ><a href="/senate/members" title="Members of the Senate">Members of the Senate</a></li>
+<li class="breadcrumb-item active" aria-current="page">Senator Biography</li>
+				</ol>
+			</nav>
+		
+					</div>
+					
+			<div class="form-search-wrapper d-flex flex-column justify-content-center position-relative w-100">
+				<form class="form-search d-flex shadow" action="/quick-search" autocomplete="off">
+					<input type="text" title="Search" name="q" class="form-control border-lg-0 shadow-none quick-search" placeholder="What are you looking for today?" aria-label="Quick Search - What are you looking for today?" data-action="/quick-search">
+					<button type="submit" class="btn btn-primary btn-icon btn-sm" aria-label="Site Search"><i class="fa-solid fa-lg fa-search" aria-hidden="true"></i></button>
+				</form>
+				<div class="form-search-addon d-none d-lg-flex justify-content-around p-1">
+					<a class="text-white" href="/legislation/bills#billByKeyword" data-bs-toggle="tooltip" data-bs-placement="top" title="Advanced search Legislation">
+						<i class="fa-solid fa-fw fa-file-contract" aria-hidden="true"></i>
+						<span class="search-help-link-text d-none">Legislation</span>
+					</a>
+					<a class="text-white" href="/statutes/consolidated" data-bs-toggle="tooltip" data-bs-placement="top" title="Advanced search Consolidated Statutes">
+						<i class="fa-solid fa-fw fa-book-section" aria-hidden="true"></i>
+						<span class="search-help-link-text d-none">Consolidated Statutes</span>
+					</a>
+					<a class="text-white" href="/statutes/unconsolidated" data-bs-toggle="tooltip" data-bs-placement="top" title="Advanced search Unconsolidated Statutes">
+						<i class="fa-solid fa-fw fa-books" aria-hidden="true"></i>
+						<span class="search-help-link-text d-none">Unconsolidated Statutes</span>
+					</a>
+					<a class="text-white" href="/quick-search-tips" data-bs-toggle="tooltip" data-bs-placement="top" title="Tips to get the most out of our Quick Search feature">
+						<i class="fa-duotone fa-fw fa-messages-question" aria-hidden="true"></i>
+						<span class="search-help-link-text d-none">Search Help</span>
+					</a>
+				</div>
+			</div>
+		
+				</div>
+				
+			</header>
+		
+		
+		
+		<main>
+			<div class="container-fluid" id="bodyContainer">
+				
+		<!--EndNoIndex--> 
+
+
+    <style>
+    </style>
+
+    <script>
+    </script>
+
+
+
+		<section class="section bg-white pt-3" id="section_17781970704414261" style="">
+			<div class="section-container container-lg">
+	
+
+    <div class="float-md-end mt-md-2">
+        <button class='paLegis-login-redirect btn-warning btn text-nowrap' data-item='5EEDBDABEBA3576309AE8E22F2744608170D8C1AFE73484BF2F77281E08F573D8A6D9AE19DCAAAD487BFA7011823CED2E906E667642E1FE65593F1AAEA41660E9ADD1D3CD83E11861C35EEAE1DDE8C47E1E38975FC9DB414603B8C0C1B652CEE7DC2AD5E19D9A03DB740280DE3181E3C835DEC1647CFC39894793A48B13CC0929678FAA6D18E06A58FAFAC206C714334DEA2B5396EB41078DD42850FFE75373F270D4E4943A4E0122EE206996539F86F7B36A9D439AD97450D124CC57F5A1F5C36179C684A37307C03CC1A5B4B02EB1985A0DF932F4EB8E41DBE1740BD2BC23D98373DF453B34E747C916E29294E445C97B227A7FC180C494B98E1A05B4283FFC6611C8B9DC00AF10AC91C006E9C3FADA0E44D78BF0E4DEA2F74B959F1806486414EB551D067C9CE2A4E20532CC98EEE5F40B987436E2A2BFA02DEC0ECB94BBAADDFAC30BA579D892ABDB0EA45C063D3CCC245B690259C26D6E1B17FD858970602F91C6BCD27B94F0F1C116732D76C30D226BFC96F8624B7C84B0C295FD940B5BCC9B0DFAEC30D53E8D502EB3726592139A067F145E075FCAF69E57CEA8E4AADED2D9A7DA9C5262F74C5AB5A50A154F6D337170633AAED09C4E1A2AD9023C368CAEEBB52F3CFA12D9A19FE3CC3BF3AB92826EAF803028633467A706EA23867862DC01F8574DBB685B959E08D9E479FADE90AB40282B9191A32F6AED9EFDFB73C2C094F4A6C5E7CC42A6B8B0BA8480835EDD72BCE27D6D2778A32116EB2D897F484441F3B0EA13B03B3298CF05E104C3B1D39F9360AC87751879516236EE9E37DFC5B8834C0077C3C71EB531419B1F7EE' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow member</button>
+    </div>
+    <div class="h1 mb-1">Joe Pittman</div>
+
+    
+        <div class="h4 my-1">
+            Majority Floor Leader
+            <a href="/senate/members/senate-officers" title='View all Senate leadership' data-bs-toggle='tooltip' data-bs-placement='top' Aria-label="View all Senate leadership">
+                <i class="fa-duotone fa-star" aria-hidden="true"></i>
+            </a>
+        </div>
+    
+
+    <div class="h5 my-1">Senate District 41</div>
+    <hr class="mb-2">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-3">
+            <div>
+                <div class="">
+                    <figure class="figure rounded bg-party-R p-1 shadow-sm">
+                        <img src="https://www.palegis.us/resources/images/members/300/1870.jpg?20260507073750" class="img-fluid rounded hover-zoom" alt="Photo of Senator Joe Pittman" style="height:auto; width:auto;" />
+                        <figcaption class="figure-caption text-center text-white fs-5">
+                            Republican
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6">
+            <div id="MapData" class="row">
+                <div class="col-12">
+                    <div class="h5">Serving Armstrong, Indiana, Jefferson&nbsp;(part) & Westmoreland&nbsp;(part) Counties</div>
+                    <div class="d-print-none mb-3">
+						
+							<script>
+								LDPC.onReady(() => {
+									
+									globalThis.mymap.on('load', async function() {
+										var ele = document.getElementsByClassName('mapboxgl-ctrl-logo');
+
+										if (ele.length > 0) {
+											for (var i = 0; i < ele.length; ++i) {
+												var item = ele[i];
+
+												console.log(item.innerHTML)
+											}
+										}
+									});
+								});
+							</script>
+
+							
+					<div id="mapBox">
+						<div id="mapBox_canvas" style="margin-top:0px; width:100%; height: 250px"></div>
+					</div>
+				
+
+				<script type="module">
+                     
+						document.getElementById("mapBox").innerHTML = "Map data not loaded for bots";
+					
+				</script>
+			
+				<script type="module">
+                    mymap.on('load', function() {
+                    let marker = new mapboxgl.Marker().setLngLat([-79.151458,40.6226858]).addTo(mymap);
+
+                    
+                        marker.setPopup(new mapboxgl.Popup().setHTML("618 Philadelphia Street<br />Indiana, PA 15701    "));
+                    
+                });
+			
+				</script>
+			
+				<script type="module">
+                    mymap.on('load', function() {
+                    let marker = new mapboxgl.Marker().setLngLat([-79.5197,40.813889]).addTo(mymap);
+
+                    
+                        marker.setPopup(new mapboxgl.Popup().setHTML("109 South Jefferson Street<br />Kittanning, PA 16201    "));
+                    
+                });
+			
+				</script>
+			
+				<script type="module">
+                    mymap.on('load', function() {
+                    let marker = new mapboxgl.Marker().setLngLat([-79.7482093,40.58666]).addTo(mymap);
+
+                    
+                        marker.setPopup(new mapboxgl.Popup().setHTML("2400 Leechburg Rd.<br />New Kensington, PA 15068    "));
+                    
+                });
+			
+				</script>
+			
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="h5 mb-1">District Address</div>
+
+                    
+                        <div class="card ms-2 mb-1">
+                            <div class="card-body">
+                                <div>
+                                    <strong>
+                                    <i class="fa-solid fa-caret-right me-1" aria-hidden="true"></i>
+                                    Joe Pittman
+                                    </strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Address' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                                618 Philadelphia Street
+                                            </div>
+                                        
+
+                                        <div class="ms-3">
+                                            Indiana, PA 15701    
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Phone' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-phone" aria-hidden="true"></i> (724) 357-0151 
+                                            </div>
+                                        
+                                            <div>
+                                                <i title='District Office Fax' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-fax" aria-hidden="true"></i> (724) 357-0148
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card ms-2 mb-1">
+                            <div class="card-body">
+                                <div>
+                                    <strong>
+                                    <i class="fa-solid fa-caret-right me-1" aria-hidden="true"></i>
+                                    Joe Pittman
+                                    </strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Address' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                                109 South Jefferson Street
+                                            </div>
+                                        
+
+                                        <div class="ms-3">
+                                            Kittanning, PA 16201    
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Phone' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-phone" aria-hidden="true"></i> (724) 543-3026 
+                                            </div>
+                                        
+                                            <div>
+                                                <i title='District Office Fax' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-fax" aria-hidden="true"></i> (724) 548-4856
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card ms-2 mb-1">
+                            <div class="card-body">
+                                <div>
+                                    <strong>
+                                    <i class="fa-solid fa-caret-right me-1" aria-hidden="true"></i>
+                                    Joe Pittman
+                                    </strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Address' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                                2400 Leechburg Rd.
+                                            </div>
+                                        
+                                            <div class="ms-3">Suite 102</div>
+                                        
+
+                                        <div class="ms-3">
+                                            New Kensington, PA 15068    
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="col-6">
+                                        
+                                            <div>
+                                                <i title='District Office Phone' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-phone" aria-hidden="true"></i> (724) 216-6165 
+                                            </div>
+                                        
+                                            <div>
+                                                <i title='District Office Fax' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-fax" aria-hidden="true"></i> (724) 216-6076
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-3 col-md-6">
+            <div class="card">
+                <div class="ribbon">
+                    <span class="ribbon5 ribbon-info fs-4">Stay Connected</span>
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">
+                        <a class="btn btn-icon btn-outline-secondary btn-sm btn-telegram" target="_blank" Aria-label="Contact Member - opens in a new tab" href="https://senatorpittman.com/contact-me/"><i title="Email" data-bs-toggle="tooltip" data-bs-placement="top" class="fa-regular fa-envelope" aria-hidden="true"></i></a> <a class="btn btn-icon btn-outline-secondary btn-sm d-print-none" aria-label="Webpage - opens in a new tab" href="https://protect-us.mimecast.com/s/1LE2CwpvzMSLXZjUqr53a?domain=senatorpittman.com" target="_blank"><i title='Webpage' data-bs-toggle='tooltip' data-bs-placement='top' class='fab fa-edge' aria-hidden='true'></i></a> <a class="btn btn-icon btn-outline-secondary btn-sm d-print-none" aria-label="E-Newsletter - opens in a new tab" href="https://senatorpittman.com/enewsletters/" target="_blank"><i title='E-Newsletter' data-bs-toggle='tooltip' data-bs-placement='top' class='fa-solid fa-newspaper' aria-hidden='true'></i></a> <a class="btn btn-icon btn-outline-secondary btn-sm btn-facebook d-print-none" aria-label="Facebook - opens in a new tab" href="https://m.facebook.com/SenatorPittman/" target="_blank"><i title='Facebook' data-bs-toggle='tooltip' data-bs-placement='top' class='fa-brands fa-facebook-f' aria-hidden='true'></i></a> <a class="btn btn-icon btn-outline-secondary btn-sm btn-instagram d-print-none" aria-label="Instagram - opens in a new tab" href="https://protect-us.mimecast.com/s/ooKnC5yXkJCAznqIOF5uo?domain=instagram.com" target="_blank"><i title='Instagram' data-bs-toggle='tooltip' data-bs-placement='top' class='fa-brands fa-square-instagram' aria-hidden='true'></i></a> <a class="btn btn-icon btn-outline-secondary btn-sm btn-twitter d-print-none" aria-label="Twitter - opens in a new tab" href="https://protect-us.mimecast.com/s/Z9a5C4xPjECrnjLiO1gZi?domain=twitter.com" target="_blank"><i title='X/Twitter' data-bs-toggle='tooltip' data-bs-placement='top' class='fa-brands fa-x-twitter' aria-hidden='true'></i></a> 
+                    </p>
+
+                    
+                        <div class="h5 mb-1">Capitol Address</div>
+                        <ul class="list list-icons">
+                            <li>
+                                <i class="fa-solid fa-caret-right" aria-hidden="true"></i>
+                                <strong>Joe Pittman</strong>
+                            </li>
+                            
+                                    <li><i title='Capitol Office' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-landmark-flag" aria-hidden="true"></i>350 Main Capitol</li>
+                                 
+                                    <li>
+                                        <i title='Capitol Mailing Address' data-bs-toggle='tooltip' data-bs-placement='top' class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                        Senate Box 203041
+                                    </li>
+                                    <li>Harrisburg, PA 17120-3041</li>
+                                
+                                    <li>
+                                        <i title='Phone' data-bs-toggle='tooltip' data-bs-placement='top' class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        (717) 787-8724 
+                                    </li>
+                                
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+			</div>
+		</section>
+	
+		<section class="section bg-white committee-assign-section overlay-color-info-alt" id="section_17781970704428508" style="background-image: url(/resources/images/Hearing-Room-1-North-Office-Building-crop.jpg)">
+			<div class="section-container container-lg">
+	
+		<div class="card portlet portlet-none mt-3 text-white" id="portlet_17781970704421893" style="">
+			
+				<div class="card-header ">
+					<div class="h5 fw-medium d-flex align-items-center flex-grow-1 mb-0">
+						
+							
+							<span>
+								<span class="portlet-title">Committee Assignments</span> 
+							</span>
+						
+					</div>
+					
+						<div class="portlet-tools d-print-none">
+							
+				<button type="button" class="btn btn-portlet-collapse" data-bs-toggle="collapse" data-bs-target="#portlet_17781970704421893_collapse" aria-label="Toggle Portlet">
+					<i class="fa-solid fa-chevron-up" title="Collapse Portlet" aria-hidden="true"></i>
+					<i class="fa-solid fa-chevron-down d-none" title="Expand Portlet" aria-hidden="true"></i>
+				</button>
+			
+						</div>
+					
+				</div>
+			
+			<div class="collapse show" id="portlet_17781970704421893_collapse">
+				<div class="card-body " style="">
+					
+            <div class="p-3 text-primary rounded border-primary" style="background-color: rgba(var(--ldp-light-rgb), .7); page-break-inside: avoid;">
+                <div class="row">
+
+                    
+
+                                <div class="col-12 col-md-6 py-2">
+                                    <div class="h6 my-2">
+                                        <i class="fa-duotone fa-people-simple me-1" aria-hidden="true"></i>
+                                        <a href='/senate/committees/17/rules-and-executive-nominations' class='committee '>Rules & Executive Nominations</a> 
+                                            <span class="badge bg-primary ms-2 shadow-primary">
+                                                <i title="Committee Leadership" class="fa-regular fa-certificate me-2" aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                                                Chair
+                                            </span>
+                                        
+                                    </div>
+
+                                    
+                                </div>
+                            
+
+                                <div class="col-12 col-md-6 py-2">
+                                    <div class="h6 my-2">
+                                        <i class="fa-duotone fa-people-simple me-1" aria-hidden="true"></i>
+                                        <a href='/senate/committees/3/appropriations' class='committee '>Appropriations</a> 
+                                            <span class="badge bg-primary ms-2 shadow-primary">
+                                                <i title="Committee Leadership" class="fa-regular fa-certificate me-2" aria-hidden="true" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                                                Ex-Officio
+                                            </span>
+                                        
+                                    </div>
+
+                                    
+                                </div>
+                            
+                </div>
+            </div>
+        
+				</div>
+				
+			</div>
+		</div>
+	
+			</div>
+		</section>
+	
+		<section class="section bg-white " id="section_17781970705575213" style="">
+			<div class="section-container container-lg">
+	
+
+
+        <div class="h3 mt-3">Legislation Sponsored for the <span class="text-nowrap">2025-2026 Session</span><hr/></div>
+            
+                <div>
+                    
+				<style>
+					.legend-box{
+						width: 16px;
+						height: 16px;
+						display: inline-block;
+					}
+					#sponsor-graphic canvas { cursor: pointer; }
+			</style>
+			<div class="row gx-1 d-md-flex mb-3" id="sponsor-graphic">
+				<div class="col-md-4 d-flex flex-column align-items-center align-items-md-end justify-content-center order-2 order-md-1">
+					<div style="width:200px;">
+						<canvas id="bill-chart" data-chart-info='{"type": "B", "primeCount":4, "coCount": 4, "SessYr":2025, "SessInd":0, "billBody": "S", "MemberId":1870}' aria-label="Chart showing co-sponsored and prime sponsored bills"></canvas>
+						<div class="h6 text-center fw-medium">Bills</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex flex-column justify-content-between py-5 order-1 order-md-2">
+					<div class="h4 text-center mb-0">2025-2026 Regular Session</div>
+					<div class="text-center fw-bold text-dark-alt" style="font-size:44px;">23</div>
+					<div class="h5 text-center mb-0">Sponsored Bills/Resolutions</div>
+					<div class="row px-5">
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<span class="me-2 legend-box bg-primary-alt"></span> Prime Sponsor
+						</div>
+						<div class="col-6 d-flex justify-content-center align-items-center">
+							<span class="me-2 legend-box bg-info-alt"></span> Co-Sponsor
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex flex-column align-items-center align-items-md-start justify-content-center order-3">
+					<div style="width:200px;">
+						<canvas id="resolution-chart" data-chart-info='{"type": "R","primeCount":6, "coCount": 9, "SessYr":2025, "SessInd":0, "billBody": "S", "MemberId":1870}' aria-label="Chart showing co-sponsored and prime sponsored resolutions"></canvas>
+						<div class="h6 text-center fw-medium">Resolutions</div>
+					</div>
+				</div>
+			</div>
+			
+
+                </div>
+
+
+
+            
+	<div class="memos-listing">
+		
+		<div class="header" id="heading_17781970705452927">
+			<div class="header-body">
+				<div class="row align-items-start">
+					<div class="col">
+						
+
+						<div class="h3 header-title">
+							Recent Co-Sponsorship Memos for Senator Pittman 
+						</div>
+
+						
+					</div>
+
+					
+						<div class="col-auto">
+							<div class="d-flex align-items-end d-print-none">
+					
+        <a href="/senate/rss/legislation/memos?sessionYear=2025&memberId=1870" class="btn btn-outline-info btn-sm text-nowrap ms-1" target="_blank">
+            <i class="fa-solid fa-rss me-2" style="color: var(--ldp-rss-color);" aria-hidden="true"></i>
+            RSS Feed
+            <span class="sr-only"> - opens in a new tab</span>
+        </a>
+    
+				</div>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	
+			<div class="memo-wrapper" data-memoid="47830" data-clipboard-row="1">
+				<div class="d-none d-print-block" style="page-break-inside: avoid;">
+					<div class="row">
+						<div class="col-3">
+							<strong>Subject:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="3">
+							<a href="/senate/co-sponsorship/memo?memoID=47830" target="_blank">“Four Chaplains Day” in Pennsylvania  </a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated By:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="2">
+							
+							<a href="/senate/members/bio/1801/sen-phillips-hill" target="_blank">Sen Phillips-Hill</a>
+
+							
+								and <a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen. Joe Pittman</a>, <a href="/senate/members/bio/1748/sen-keefer" target="_blank">Sen. Dawn W. Keefer</a> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated Date:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="1">01/05/2026</div>
+					</div>
+					
+						<div>
+							<em>
+								Introduced as
+								<span data-clipboard-cell="4">
+									<a href="/legislation/bills/2025/sr217">SR 217</a>
+								</span>
+							</em>
+						</div>
+					
+					<div class="border-top my-2"></div>
+				</div>
+				<div class="row justify-content-center border-bottom py-3 d-print-none">
+					<div class="col-12 col-md-6 col-xl-5 d-flex">
+						<div class="d-flex flex-column me-4">
+							<a href="/senate/co-sponsorship/search-results?dateStart=2026-01-05">01/05/2026</a>
+							<button class='paLegis-login-redirect btn-warning btn-xs text-nowrap btn text-nowrap' data-item='E0FE100F8943C802D4F736025F80D915CF65F6602DCB2DA858647F8C71085678' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow</button>
+						</div>
+						<div class="d-flex flex-column ms-xl-4">
+							<div class="d-flex">
+								
+				<div class="float-sm-start me-3">
+					
+			<div style="width:50px">
+				<div class="ratio ratio-1x1 rounded-circle overflow-hidden">
+					<img src="https://www.palegis.us/resources/images/members/300/1801.jpg?20260507073750" 
+						class="image-cover" alt="Photo of Senator Sen. Kristin Phillips-Hill" loading="lazy">
+				</div>
+			</div>
+		
+				</div>
+				<div class="text-sm-start">
+					<strong>
+						<a href='/senate/members/bio/1801/sen-kristin-phillips-hill' target='_self'>Sen. Kristin Phillips-Hill</a> 
+					</strong>
+					
+						<div>
+							
+							<div>
+								<span class="badge bg-party-R">R</span> Senate District&nbsp;28
+							</div>
+							
+						</div>
+					
+				</div>
+			
+							</div>
+							
+								<div>
+									and <a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen. Joe Pittman<span class="sr-only"> - opens in a new tab</span></a>, <a href="/senate/members/bio/1748/sen-keefer" target="_blank">Sen. Dawn W. Keefer<span class="sr-only"> - opens in a new tab</span></a>
+								</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-7 mt-4 mt-md-0">
+						<div class="d-flex gap-2">
+							<div>
+								<strong class="text-muted text-nowrap">Subject:</strong>
+							</div>
+							<div>
+								<a href="/senate/co-sponsorship/memo?memoID=47830"><strong>“Four Chaplains Day” in Pennsylvania  </strong></a>
+							</div>
+						</div>
+
+						
+							<div class="mt-1">
+								Introduced as <a href="/legislation/bills/2025/sr217" title="&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Senate&#x20;Resolution&#x20;217&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Prime&#x20;Sponsor&#x3a;&lt;&#x2f;strong&gt;&#x20;SENATOR&#x20;PHILLIPS-HILL&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;A&#x20;Resolution&#x20;designating&#x20;February&#x20;3,&#x20;2026,&#x20;as&#x20;&quot;Four&#x20;Chaplains&#x20;Day&quot;&#x20;in&#x20;Pennsylvania.&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Memo&#x3a;&lt;&#x2f;strong&gt;&#x20;&amp;ldquo&#x3b;Four&#x20;Chaplains&#x20;Day&amp;rdquo&#x3b;&#x20;in&#x20;Pennsylvania&amp;&#x23;x202f&#x3b;&amp;&#x23;x202f&#x3b;&lt;&#x2f;p&gt;" data-bs-toggle="tooltip"><span class="badge text-bg-primary" target="_blank">SR 217</span><span class="sr-only"> - opens in a new tab</span></a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="memo-wrapper" data-memoid="47768" data-clipboard-row="2">
+				<div class="d-none d-print-block" style="page-break-inside: avoid;">
+					<div class="row">
+						<div class="col-3">
+							<strong>Subject:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="3">
+							<a href="/senate/co-sponsorship/memo?memoID=47768" target="_blank">Indiana University of Pennsylvania’s 150th Anniversary</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated By:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="2">
+							
+							<a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen Pittman</a>
+
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated Date:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="1">12/10/2025</div>
+					</div>
+					
+						<div>
+							<em>
+								Introduced as
+								<span data-clipboard-cell="4">
+									<a href="/legislation/bills/2025/sr316">SR 316</a>
+								</span>
+							</em>
+						</div>
+					
+					<div class="border-top my-2"></div>
+				</div>
+				<div class="row justify-content-center border-bottom py-3 d-print-none">
+					<div class="col-12 col-md-6 col-xl-5 d-flex">
+						<div class="d-flex flex-column me-4">
+							<a href="/senate/co-sponsorship/search-results?dateStart=2025-12-10">12/10/2025</a>
+							<button class='paLegis-login-redirect btn-warning btn-xs text-nowrap btn text-nowrap' data-item='93C102BEE1998C9657CC79F71282F95DCF65F6602DCB2DA858647F8C71085678' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow</button>
+						</div>
+						<div class="d-flex flex-column ms-xl-4">
+							<div class="d-flex">
+								
+				<div class="float-sm-start me-3">
+					
+			<div style="width:50px">
+				<div class="ratio ratio-1x1 rounded-circle overflow-hidden">
+					<img src="https://www.palegis.us/resources/images/members/300/1870.jpg?20260507073750" 
+						class="image-cover" alt="Photo of Senator Sen. Joe Pittman" loading="lazy">
+				</div>
+			</div>
+		
+				</div>
+				<div class="text-sm-start">
+					<strong>
+						<a href='/senate/members/bio/1870/sen-joe-pittman' target='_self'>Sen. Joe Pittman</a> 
+					</strong>
+					
+						<div>
+							
+							<div>
+								<span class="badge bg-party-R">R</span> Senate District&nbsp;41
+							</div>
+							
+						</div>
+					
+				</div>
+			
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-7 mt-4 mt-md-0">
+						<div class="d-flex gap-2">
+							<div>
+								<strong class="text-muted text-nowrap">Subject:</strong>
+							</div>
+							<div>
+								<a href="/senate/co-sponsorship/memo?memoID=47768"><strong>Indiana University of Pennsylvania’s 150th Anniversary</strong></a>
+							</div>
+						</div>
+
+						
+							<div class="mt-1">
+								Introduced as <a href="/legislation/bills/2025/sr316" title="&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Senate&#x20;Resolution&#x20;316&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Prime&#x20;Sponsor&#x3a;&lt;&#x2f;strong&gt;&#x20;SENATOR&#x20;PITTMAN&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;A&#x20;Resolution&#x20;congratulating&#x20;Indiana&#x20;University&#x20;of&#x20;Pennsylvania&#x20;on&#x20;the&#x20;occasion&#x20;of&#x20;its&#x20;sesquicentennial.&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Memo&#x3a;&lt;&#x2f;strong&gt;&#x20;Indiana&#x20;University&#x20;of&#x20;Pennsylvania&amp;rsquo&#x3b;s&#x20;150th&#x20;Anniversary&lt;&#x2f;p&gt;" data-bs-toggle="tooltip"><span class="badge text-bg-primary" target="_blank">SR 316</span><span class="sr-only"> - opens in a new tab</span></a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="memo-wrapper" data-memoid="46890" data-clipboard-row="3">
+				<div class="d-none d-print-block" style="page-break-inside: avoid;">
+					<div class="row">
+						<div class="col-3">
+							<strong>Subject:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="3">
+							<a href="/senate/co-sponsorship/memo?memoID=46890" target="_blank">Restoring Local Access to Interscholastic Athletics</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated By:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="2">
+							
+							<a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen Pittman</a>
+
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated Date:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="1">06/07/2025</div>
+					</div>
+					
+					<div class="border-top my-2"></div>
+				</div>
+				<div class="row justify-content-center border-bottom py-3 d-print-none">
+					<div class="col-12 col-md-6 col-xl-5 d-flex">
+						<div class="d-flex flex-column me-4">
+							<a href="/senate/co-sponsorship/search-results?dateStart=2025-06-07">06/07/2025</a>
+							<button class='paLegis-login-redirect btn-warning btn-xs text-nowrap btn text-nowrap' data-item='CC3AA5EF464209CD986D8F93F8ECE1DCCF65F6602DCB2DA858647F8C71085678' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow</button>
+						</div>
+						<div class="d-flex flex-column ms-xl-4">
+							<div class="d-flex">
+								
+				<div class="float-sm-start me-3">
+					
+			<div style="width:50px">
+				<div class="ratio ratio-1x1 rounded-circle overflow-hidden">
+					<img src="https://www.palegis.us/resources/images/members/300/1870.jpg?20260507073750" 
+						class="image-cover" alt="Photo of Senator Sen. Joe Pittman" loading="lazy">
+				</div>
+			</div>
+		
+				</div>
+				<div class="text-sm-start">
+					<strong>
+						<a href='/senate/members/bio/1870/sen-joe-pittman' target='_self'>Sen. Joe Pittman</a> 
+					</strong>
+					
+						<div>
+							
+							<div>
+								<span class="badge bg-party-R">R</span> Senate District&nbsp;41
+							</div>
+							
+						</div>
+					
+				</div>
+			
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-7 mt-4 mt-md-0">
+						<div class="d-flex gap-2">
+							<div>
+								<strong class="text-muted text-nowrap">Subject:</strong>
+							</div>
+							<div>
+								<a href="/senate/co-sponsorship/memo?memoID=46890"><strong>Restoring Local Access to Interscholastic Athletics</strong></a>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="memo-wrapper" data-memoid="45663" data-clipboard-row="4">
+				<div class="d-none d-print-block" style="page-break-inside: avoid;">
+					<div class="row">
+						<div class="col-3">
+							<strong>Subject:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="3">
+							<a href="/senate/co-sponsorship/memo?memoID=45663" target="_blank">Drugs Kill Dreams Day</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated By:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="2">
+							
+							<a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen Pittman</a>
+
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated Date:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="1">02/13/2025</div>
+					</div>
+					
+						<div>
+							<em>
+								Introduced as
+								<span data-clipboard-cell="4">
+									<a href="/legislation/bills/2025/sr50">SR 50</a>
+								</span>
+							</em>
+						</div>
+					
+					<div class="border-top my-2"></div>
+				</div>
+				<div class="row justify-content-center border-bottom py-3 d-print-none">
+					<div class="col-12 col-md-6 col-xl-5 d-flex">
+						<div class="d-flex flex-column me-4">
+							<a href="/senate/co-sponsorship/search-results?dateStart=2025-02-13">02/13/2025</a>
+							<button class='paLegis-login-redirect btn-warning btn-xs text-nowrap btn text-nowrap' data-item='BFC0F2FF83593A6A4ACABB4BA52C069DCF65F6602DCB2DA858647F8C71085678' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow</button>
+						</div>
+						<div class="d-flex flex-column ms-xl-4">
+							<div class="d-flex">
+								
+				<div class="float-sm-start me-3">
+					
+			<div style="width:50px">
+				<div class="ratio ratio-1x1 rounded-circle overflow-hidden">
+					<img src="https://www.palegis.us/resources/images/members/300/1870.jpg?20260507073750" 
+						class="image-cover" alt="Photo of Senator Sen. Joe Pittman" loading="lazy">
+				</div>
+			</div>
+		
+				</div>
+				<div class="text-sm-start">
+					<strong>
+						<a href='/senate/members/bio/1870/sen-joe-pittman' target='_self'>Sen. Joe Pittman</a> 
+					</strong>
+					
+						<div>
+							
+							<div>
+								<span class="badge bg-party-R">R</span> Senate District&nbsp;41
+							</div>
+							
+						</div>
+					
+				</div>
+			
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-7 mt-4 mt-md-0">
+						<div class="d-flex gap-2">
+							<div>
+								<strong class="text-muted text-nowrap">Subject:</strong>
+							</div>
+							<div>
+								<a href="/senate/co-sponsorship/memo?memoID=45663"><strong>Drugs Kill Dreams Day</strong></a>
+							</div>
+						</div>
+
+						
+							<div class="mt-1">
+								Introduced as <a href="/legislation/bills/2025/sr50" title="&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Senate&#x20;Resolution&#x20;50&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Prime&#x20;Sponsor&#x3a;&lt;&#x2f;strong&gt;&#x20;SENATOR&#x20;PITTMAN&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;A&#x20;Resolution&#x20;recognizing&#x20;March&#x20;28,&#x20;2025,&#x20;as&#x20;&quot;Drugs&#x20;Kill&#x20;Dreams&#x20;Day&quot;&#x20;in&#x20;Pennsylvania.&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Memo&#x3a;&lt;&#x2f;strong&gt;&#x20;Drugs&#x20;Kill&#x20;Dreams&#x20;Day&lt;&#x2f;p&gt;" data-bs-toggle="tooltip"><span class="badge text-bg-primary" target="_blank">SR 50</span><span class="sr-only"> - opens in a new tab</span></a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="memo-wrapper" data-memoid="45045" data-clipboard-row="5">
+				<div class="d-none d-print-block" style="page-break-inside: avoid;">
+					<div class="row">
+						<div class="col-3">
+							<strong>Subject:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="3">
+							<a href="/senate/co-sponsorship/memo?memoID=45045" target="_blank">Taxation and Regulation of Skill Gaming Machines</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated By:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="2">
+							
+							<a href="/senate/members/bio/1928/sen-gebhard" target="_blank">Sen Gebhard</a>
+
+							
+								and <a href="/senate/members/bio/1188/sen-k-ward" target="_blank">Sen. Kim L. Ward</a>, <a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen. Joe Pittman</a>, <a href="/senate/members/bio/1200/sen-brown" target="_blank">Sen. Rosemary M. Brown</a> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<strong>Circulated Date:</strong>
+						</div>
+						<div class="col-9 text-justify" data-clipboard-cell="1">01/15/2025</div>
+					</div>
+					
+						<div>
+							<em>
+								Introduced as
+								<span data-clipboard-cell="4">
+									<a href="/legislation/bills/2025/sb756">SB 756</a>
+								</span>
+							</em>
+						</div>
+					
+					<div class="border-top my-2"></div>
+				</div>
+				<div class="row justify-content-center border-bottom py-3 d-print-none">
+					<div class="col-12 col-md-6 col-xl-5 d-flex">
+						<div class="d-flex flex-column me-4">
+							<a href="/senate/co-sponsorship/search-results?dateStart=2025-01-15">01/15/2025</a>
+							<button class='paLegis-login-redirect btn-warning btn-xs text-nowrap btn text-nowrap' data-item='645170A9E9AA8DD228FF5EC56C88A462CF65F6602DCB2DA858647F8C71085678' title='Click to login to PA Legis Notifications.' data-bs-toggle='tooltip' data-bs-placement='top' data-currpage='/senate/members/bio/1870/sen-pittman'><i class='me-1 fa-solid fa-bell-plus' aria-hidden='true'></i>Follow</button>
+						</div>
+						<div class="d-flex flex-column ms-xl-4">
+							<div class="d-flex">
+								
+				<div class="float-sm-start me-3">
+					
+			<div style="width:50px">
+				<div class="ratio ratio-1x1 rounded-circle overflow-hidden">
+					<img src="https://www.palegis.us/resources/images/members/300/1928.jpg?20260507073750" 
+						class="image-cover" alt="Photo of Senator Sen. Chris Gebhard" loading="lazy">
+				</div>
+			</div>
+		
+				</div>
+				<div class="text-sm-start">
+					<strong>
+						<a href='/senate/members/bio/1928/sen-chris-gebhard' target='_self'>Sen. Chris Gebhard</a> 
+					</strong>
+					
+						<div>
+							
+							<div>
+								<span class="badge bg-party-R">R</span> Senate District&nbsp;48
+							</div>
+							
+						</div>
+					
+				</div>
+			
+							</div>
+							
+								<div>
+									and <a href="/senate/members/bio/1188/sen-k-ward" target="_blank">Sen. Kim L. Ward<span class="sr-only"> - opens in a new tab</span></a>, <a href="/senate/members/bio/1870/sen-pittman" target="_blank">Sen. Joe Pittman<span class="sr-only"> - opens in a new tab</span></a>, <a href="/senate/members/bio/1200/sen-brown" target="_blank">Sen. Rosemary M. Brown<span class="sr-only"> - opens in a new tab</span></a>
+								</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-xl-7 mt-4 mt-md-0">
+						<div class="d-flex gap-2">
+							<div>
+								<strong class="text-muted text-nowrap">Subject:</strong>
+							</div>
+							<div>
+								<a href="/senate/co-sponsorship/memo?memoID=45045"><strong>Taxation and Regulation of Skill Gaming Machines</strong></a>
+							</div>
+						</div>
+
+						
+							<div class="mt-1">
+								Introduced as <a href="/legislation/bills/2025/sb756" title="&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Senate&#x20;Bill&#x20;756&lt;&#x2f;strong&gt;&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Prime&#x20;Sponsor&#x3a;&lt;&#x2f;strong&gt;&#x20;SENATOR&#x20;GEBHARD&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;An&#x20;Act&#x20;amending&#x20;Titles&#x20;4&#x20;&#x28;Amusements&#x29;,&#x20;18&#x20;&#x28;Crimes&#x20;and&#x20;Offenses&#x29;&#x20;and&#x20;42&#x20;&#x28;Judiciary&#x20;and&#x20;Judicial&#x20;Procedure&#x29;&#x20;of&#x20;the&#x20;Pennsylvania&#x20;Consolidated&#x20;Statutes,&#x20;in&#x20;fantasy&#x20;contests,&#x20;further&#x20;providing&#x20;for&#x20;definitions,&#x20;for&#x20;general&#x20;and&#x20;specific&#x20;powers&#x20;of&#x20;board&#x20;and&#x20;&#x20;...&lt;&#x2f;p&gt;&lt;p&#x20;class&#x3d;&quot;text-start&quot;&gt;&lt;strong&gt;Memo&#x3a;&lt;&#x2f;strong&gt;&#x20;Taxation&#x20;and&#x20;Regulation&#x20;of&#x20;Skill&#x20;Gaming&#x20;Machines&lt;&#x2f;p&gt;" data-bs-toggle="tooltip"><span class="badge text-bg-primary" target="_blank">SB 756</span><span class="sr-only"> - opens in a new tab</span></a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="mt-3 d-print-none">
+				The 5 most recent are displayed.
+				<a class="btn btn-outline-light btn-sm text-dark" Aria-label="View all Co-sponsorship Memoranda" href="/senate/co-sponsorship/search-results?memberId=1870&sessYr=2025&sessYr=0">
+					<span class="me-2">View more</span>
+					<i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
+				</a>
+			</div>
+		
+	</div>
+
+			</div>
+		</section>
+	
+		<section class="section bg-white texture-pattern mb-5" id="member-info" style="">
+			<div class="section-container container-lg">
+	
+        <div class="h4 mb-5 text-white">
+            Biography
+            <hr>
+        </div>
+
+        <div class="text-white">
+                <div class="row">
+                    
+
+                        <div class="col-12 col-md-6">
+                            <div class="h5">Occupation</div>
+
+                            <blockquote class="bio">
+                                <ul class="list list-icons">
+                                    <li><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>State Senator</li>
+                                </ul>
+                            </blockquote>
+                        </div>
+                    
+
+                        <div class="col-12 col-md-6">
+                            <div class="h5">Career</div>
+
+                            <blockquote class="bio">
+                                <ul class="list list-icons">
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>Senate Majority Leader Joe Pittman is serving his second full term in the Pennsylvania Senate. Joe is a lifelong resident of Indiana County, and represents the 41st Senatorial District in Armstrong, Indiana, Jefferson and Westmoreland counties.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+As leader of the Senate Republican Caucus, Joe works with his colleagues to ensure the rights of Pennsylvania citizens remain safeguarded. He has been a champion for advancing legislative initiatives to create jobs, implement infrastructure improvements, support law enforcement and limit government overreach.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+Prior to being elected by his colleagues to serve as majority leader in 2022, Joe served as chairman of the Senate Urban Affairs and Housing Committee, vice chairman of the Senate Environmental Resources & Energy Committee, and as a member of the Appropriations, Banking & Insurance, Consumer Protection & Professional Licensure, and Judiciary committees. He was also a member of the Pennsylvania Infrastructure Investment Authority (PENNVEST) Board of Directors.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+Thanks in large part to his parents John and Mary Ann (Yevchak), Joe learned the importance of service and civic leadership at a young age. He has carried on the enduring tradition of working to better his community by serving as a past board member of the United Way of Indiana and as a member of the Purchase Line Red Dragon Foundation. Joe is also a life-member of the NRA, as well as a member of the Indiana County Republican Committee, Ford City Sportsmen’s Association and the Indiana-Franklin Lodge #313.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+Prior to joining the Senate, Joe served as former Sen. Don White’s chief of staff. In that role, he developed strong working relationships with members of the General Assembly, legislative staff and officials across several state agencies.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+Joe holds a bachelor’s degree in Political Science from Penn State University.</li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+ </li>
+                                    
+                                        <li class="text-justify"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+Joe resides in Indiana County with his wife Gina (DiMaio) and their four children: Joe Jr., Sam, Rosie and Frannie. He and Gina are members of the St. Thomas More University Parish in Indiana.</li>
+                                    
+                                </ul>
+                            </blockquote>
+                        </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    
+			</div>
+		</section>
+	<!--BeginNoIndex-->
+		</div>
+	</main>
+
+	<button type="button" class="btn btn-info btn-icon rounded-circle shadow-primary d-print-none" id="scroll-top" title="Scroll to Top" aria-label="Scroll to Top">
+		<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+	</button>
+
+	
+	
+			<footer id="footer" class="footer d-print-none" style="background-image: url(/resources/images/footer-bg.jpg);">
+				<div class="container-lg">
+					<div class="row">
+						<div class="col-lg-4 mb-4">
+							<div class="h4">Visitor Information</div>
+							<p class="mb-0">Interested in visiting the State Capitol? For information on visiting the Capitol Complex, please visit <a class="link-light text-decoration-underline" href="http://www.pacapitol.com/" target="_pacapitol">pacapitol.com</a></p>
+							<a href="/legal" class="btn btn-primary mt-3 me-2">Legal Notices</a>
+							<a href="/privacy-policy" class="btn btn-primary mt-3 me-2">Privacy Policy</a>
+							<a href="/site-credits" class="btn btn-primary mt-3">Site Credits</a>
+						</div>
+						<div class="col-lg-5 px-lg-5">
+						</div>
+						<div class="col-lg-3">
+							<div class="h4">Contact</div>
+							<p class="mb-2"><a href="/webmaster" class="link-light">Contact Webmaster</a></p>
+							<p class="mb-2"><a href="/senate/members" class="link-light" aria-label="Members of the Senate">Contact Your Senator</a></p>
+							<p class="mb-2"><a href="/house/members" class="link-light" aria-label="Members of the House">Contact Your Representative</a></p>
+
+							<div class="social-links mt-4">
+								<a href="/data" target="_rss" class="btn btn-icon btn-dark btn-rss rounded-circle" aria-label="PA Legis RSS Feed"><i class="fa-solid fa-rss" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		
+	
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-modbox@1.7.0/dist/bootstrap-modbox.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js" crossorigin="anonymous"></script>
+	<script type="module">
+import '/layout/resources/js/modules/bootstrap-5.js?t=20221222125604';
+import '/layout/resources/js/modules/bootstrap-modbox-1.js?t=20230821152430';
+import Autocomplete from '/layout/plugins/bootstrap5-autocomplete/1.1.21/autocomplete.js?t=20250317101636';
+globalThis.Autocomplete = Autocomplete;
+import '/layout/resources/js/modules/chart-4.js?t=20240916094722';
+</script>
+	
+	<script src="/resources/js/palegis.js?id=20250522"></script>
+<script src="/content/legislation/JS/sponsor.js?id=20250522"></script>
+	<!--EndNoIndex-->
+	</body>
+</html> 

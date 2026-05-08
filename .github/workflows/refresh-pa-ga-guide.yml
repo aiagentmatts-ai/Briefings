@@ -21,8 +21,14 @@ jobs:
           python-version: '3.11'
           cache: pip
 
-      - name: Install scraper dependencies
-        run: pip install -r requirements.txt
+      - name: Install scraper + dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run parser tests against committed fixtures
+        # Gate the live scrape on the parser tests passing. If a parser
+        # change broke fixture-level assertions, fail loudly here rather
+        # than committing a corrupted JSON refresh on top of production.
+        run: pytest tests/ -v
 
       - name: Scrape palegis.us
         run: python scripts/scrape-palegis.py

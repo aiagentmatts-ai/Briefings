@@ -1,0 +1,45 @@
+{
+  "_comment": "Source URLs for each palegis fixture, used by scripts/refetch-fixtures.py. Filenames are the test contract — rename here AND in tests/test_palegis.py together.",
+  "fixtures": {
+    "senate-roster.html": {
+      "url": "https://www.palegis.us/senate/members",
+      "purpose": "parse_roster — Senate cards (data-name, data-district, data-party, data-county, data-leadership)"
+    },
+    "house-roster.html": {
+      "url": "https://www.palegis.us/house/members",
+      "purpose": "parse_roster — House cards"
+    },
+    "senate-officers.html": {
+      "url": "https://www.palegis.us/senate/members/senate-officers",
+      "purpose": "parse_officers — leadership name->title fallback"
+    },
+    "house-officers.html": {
+      "url": "https://www.palegis.us/house/members/house-officers",
+      "purpose": "parse_officers — House leadership name->title fallback"
+    },
+    "senate-bio-pittman.html": {
+      "url": "https://www.palegis.us/senate/members/bio/1870/sen-pittman",
+      "purpose": "enrich_from_bio — Capitol office, phone, email JS block, committees + role badges (Chair, Ex-Officio)"
+    },
+    "house-bio-mcclinton.html": {
+      "url": "https://www.palegis.us/house/members/bio/1734/rep-mcclinton",
+      "purpose": "enrich_from_bio — House Speaker bio (committee badges in House layout)"
+    },
+    "senate-committee-index.html": {
+      "url": "https://www.palegis.us/senate/committees/committee-list",
+      "purpose": "parse_committee_index — list of Senate committees with palegis IDs and slugs"
+    },
+    "house-committee-index.html": {
+      "url": "https://www.palegis.us/house/committees/committee-list",
+      "purpose": "parse_committee_index — list of House committees"
+    },
+    "senate-committee-ere.html": {
+      "url": "https://www.palegis.us/senate/committees/9/environmental-resources-and-energy?sessyr=2025",
+      "purpose": "parse_committee_detail — chair/min-chair extraction (uses non-breaking space in 'Minority Chair' badge), active bills"
+    },
+    "bill-sb970.html": {
+      "url": "https://www.palegis.us/legislation/bills/2025/sb970",
+      "purpose": "parse_bill_detail — bill number from <title>, Memo Subject vs Short Title, last action with abbreviated month + non-breaking space, prime sponsor link in 'senator-firstname-lastname' long form"
+    }
+  }
+}
