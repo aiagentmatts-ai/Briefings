@@ -1,11 +1,12 @@
-name: Drift check — palegis fixtures
+name: Drift check — PJM fixtures
 
 on:
   schedule:
-    # Nightly at 09:00 UTC = 5am EDT / 4am EST. Catches upstream HTML
-    # restructures within a day rather than waiting for the weekly refresh
-    # to land a corrupted JSON commit.
-    - cron: '0 9 * * *'
+    # Nightly at 09:30 UTC (30 min after the palegis drift check, to spread
+    # rate-limited fetches across the hour). Catches structural changes on
+    # pjm.com/markets-and-operations within a day rather than waiting for
+    # the daily refresh to land a corrupted snapshot.
+    - cron: '30 9 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -26,10 +27,10 @@ jobs:
       - name: Install scraper dependencies
         run: pip install -r requirements.txt
 
-      - name: Compare live palegis structure against saved fixtures
+      - name: Compare live PJM structure against saved fixture
         id: drift
         run: |
-          python scripts/refetch-fixtures.py --diff-only --source palegis 2>&1 | tee drift.log
+          python scripts/refetch-fixtures.py --diff-only --source pjm 2>&1 | tee drift.log
           echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
 
       - name: Open follow-up issue on drift
@@ -39,8 +40,7 @@ jobs:
           script: |
             const fs = require('fs');
             const log = fs.readFileSync('drift.log', 'utf8');
-            // Avoid duplicate issues — only open if no existing open one for this title.
-            const title = 'palegis.us fixture drift detected';
+            const title = 'pjm.com fixture drift detected';
             const { data: existing } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -57,15 +57,15 @@ jobs:
               title,
               labels: ['fixture-drift'],
               body: [
-                'Nightly `scripts/refetch-fixtures.py --diff-only` detected structural drift on palegis.us.',
+                'Nightly `scripts/refetch-fixtures.py --diff-only --source pjm` detected structural drift on pjm.com/markets-and-operations.',
                 '',
                 '```',
                 log.trim(),
                 '```',
                 '',
                 'To investigate:',
-                '1. `python scripts/refetch-fixtures.py` to overwrite fixtures with current live HTML.',
-                '2. `pytest tests/` and inspect any failures — those are the parts of the parser that the source change broke.',
-                '3. Either fix the parser, or update assertions in `tests/test_palegis.py` if the new behavior is intentional.',
+                '1. `python scripts/refetch-fixtures.py --source pjm` to overwrite fixtures with current live HTML.',
+                '2. `pytest tests/test_pjm.py` and inspect any failures — those are the parts of the parser that the source change broke.',
+                '3. Either fix the parser, or update assertions in `tests/test_pjm.py` if the new behavior is intentional.',
               ].join('\n'),
             });

@@ -1,0 +1,48 @@
+name: Refresh PJM energy markets snapshot
+
+on:
+  schedule:
+    # Daily at 11:30 UTC = 7:30am EDT / 6:30am EST. Lands the snapshot
+    # before the morning briefing (~8am ET) so the briefing flow can read
+    # fresh numbers if it wants to. Fixed UTC keeps the cadence predictable
+    # across DST changeovers.
+    - cron: '30 11 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install scraper + dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run parser tests against committed fixtures
+        # Gate the live scrape on tests passing — if a parser change broke
+        # fixture-level assertions, fail loudly here rather than committing
+        # corrupted JSON on top of production.
+        run: pytest tests/test_pjm.py -v
+
+      - name: Scrape pjm.com/markets-and-operations
+        run: python scripts/scrape-pjm-markets.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name 'pjm-markets-bot'
+          git config user.email 'pjm-markets-bot@users.noreply.github.com'
+          git add data/energy-markets.json
+          if git diff --staged --quiet; then
+            echo "No changes from PJM today."
+          else
+            git commit -m "Refresh PJM energy markets snapshot"
+            git push
+          fi
