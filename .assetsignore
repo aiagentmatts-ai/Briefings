@@ -7,6 +7,8 @@
 # Python scraper + its deps (server-side only)
 scripts/
 requirements.txt
+requirements-dev.txt
+tests/
 
 # Internal docs
 PUBLISHING.md
