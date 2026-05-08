@@ -4,9 +4,10 @@ Daily PJM market snapshot scraper.
 
 Pulls Today's Outlook (current load, forecasted peak, RTO LMP, tomorrow's
 peak), the zone LMP table (PA zones METED / PECO / PENELEC / PPL plus the
-rest of the PJM footprint), and the generation fuel mix from
-www.pjm.com/markets-and-operations and writes the result to
-data/energy-markets.json.
+rest of the PJM footprint), the trading-hub LMP table (Western Hub —
+the canonical PA wholesale benchmark — plus Eastern Hub, NJ Hub, Dominion
+Hub, etc.), and the generation fuel mix from www.pjm.com/markets-and-operations
+and writes the result to data/energy-markets.json.
 
 The PJM markets page server-renders all three blocks — the LMP table is a
 plain <ul class="lmp-price-table">, Today's Outlook values are <h2> tags
@@ -48,6 +49,12 @@ DEFAULT_OUT_PATH = REPO_ROOT / "data" / "energy-markets.json"
 # RECO, OVEC, EKPC etc. as well, and the scraper returns ALL of them. This list
 # is just for the convenience flag "isPaZone" on each entry.
 PA_ZONES = {"METED", "PECO", "PENELEC", "PPL"}
+
+# Hubs whose LMPs matter most for PA/NJ co-op wholesale settlement. Western
+# Hub is THE primary PA trading benchmark; Eastern + NJ are the eastern-half
+# benchmarks; Dominion is the VA/southern-PA benchmark. The scraper returns
+# ALL hubs (12 in the fixture); this set just drives the isPaHub convenience flag.
+PA_NJ_HUBS = {"WESTERN HUB", "EASTERN HUB", "NEW JERSEY HUB", "DOMINION HUB"}
 
 
 # -- HTTP -----------------------------------------------------------------
@@ -122,29 +129,21 @@ def parse_todays_outlook(html: str) -> dict:
     return out
 
 
-def parse_zone_lmps(html: str) -> dict:
-    """Extract the zone LMP tables from the 'Zones' tab.
+def _parse_lmp_tab(html: str, tab_id: str) -> dict:
+    """Walk every <ul class="lmp-price-table"> inside the given tab div and
+    return {name: lmp_dollars}. The PJM markets page splits each tab into a
+    two-column layout (2 ULs per tab), so we concatenate.
 
-    The PJM markets page has three tabs of LMP data:
-      #pricing-tab-zones       — utility service-area LMPs (PA: METED, PECO,
-                                  PENELEC, PPL; plus AECO, AEP, BGE, COMED,
-                                  PSEG, etc., and the PJM-RTO benchmark line)
-      #pricing-tab-hubs        — trading-hub LMPs (Western Hub etc.)
-      #pricing-tab-interfaces  — external-intertie LMPs (NYIS, MISO, etc.)
-
-    For the briefing we only want zones — the PA-territory zones plus the
-    PJM-RTO benchmark are the load-relevant numbers. Each tab contains 2 ULs
-    (the page uses a 2-column flex layout), each of class lmp-price-table.
-
-    Each <li> contains two <div>s: zone name and dollar-prefixed LMP.
-    Returns a dict of {zone_name: lmp_dollars}.
+    Used by both parse_zone_lmps (#pricing-tab-zones) and parse_hub_lmps
+    (#pricing-tab-hubs). The schema of each <li> is two <div>s: name on the
+    left, dollar-prefixed LMP on the right.
     """
     s = soup(html)
-    zones_tab = s.find(id="pricing-tab-zones")
-    if zones_tab is None:
-        raise ValueError("zone LMP table not found on PJM markets page (#pricing-tab-zones missing)")
+    tab = s.find(id=tab_id)
+    if tab is None:
+        raise ValueError(f"LMP tab not found on PJM markets page (#{tab_id} missing)")
     out: dict = {}
-    for table in zones_tab.find_all("ul", class_="lmp-price-table"):
+    for table in tab.find_all("ul", class_="lmp-price-table"):
         for li in table.find_all("li"):
             divs = li.find_all("div")
             if len(divs) < 2:
@@ -160,6 +159,34 @@ def parse_zone_lmps(html: str) -> dict:
                 # than failing the whole scrape.
                 continue
     return out
+
+
+def parse_zone_lmps(html: str) -> dict:
+    """Extract the zone LMP tables from the 'Zones' tab (utility service-area
+    LMPs: METED/PECO/PENELEC/PPL + neighboring zones + the PJM-RTO benchmark).
+
+    The PJM markets page has three tabs of LMP data:
+      #pricing-tab-zones       — utility service-area LMPs (this fn)
+      #pricing-tab-hubs        — trading-hub LMPs (parse_hub_lmps)
+      #pricing-tab-interfaces  — external-intertie LMPs (NYIS, MISO, etc.;
+                                  not surfaced — relevant only to transmission
+                                  analysts, not to PA/NJ co-op briefing)
+    """
+    return _parse_lmp_tab(html, "pricing-tab-zones")
+
+
+def parse_hub_lmps(html: str) -> dict:
+    """Extract trading-hub LMPs from the 'Hubs' tab (#pricing-tab-hubs).
+
+    Hubs are the price points wholesale energy contracts settle against —
+    Western Hub in particular is the canonical PA trading benchmark. For a
+    PA/NJ co-op briefing these are arguably more decision-relevant than the
+    utility-zone LMPs above: when an REA member negotiates a wholesale
+    supply contract or hedges a position, Western Hub is the index.
+
+    Returns {hub_name: lmp_dollars} (e.g. 'WESTERN HUB' -> 44.78).
+    """
+    return _parse_lmp_tab(html, "pricing-tab-hubs")
 
 
 def parse_fuel_mix(html: str) -> dict:
@@ -235,11 +262,12 @@ def parse_fuel_mix(html: str) -> dict:
 def build_record(html: str, last_sync: str) -> dict:
     outlook = parse_todays_outlook(html)
     zone_lmps_raw = parse_zone_lmps(html)
+    hub_lmps_raw = parse_hub_lmps(html)
     fuel_mix = parse_fuel_mix(html)
 
-    # Normalize zoneLmps into a list of objects (more iterable in JS) and
-    # flag the PA zones so the briefing UI can highlight them without
-    # hardcoding the PA_ZONES set on the consumer side.
+    # Normalize zoneLmps + hubLmps into lists of objects (easier for JS to
+    # iterate) with PA-relevance flags. The briefing UI can highlight PA
+    # zones / PA-NJ hubs without hardcoding the membership sets.
     zone_lmps = [
         {
             "zone": name,
@@ -248,6 +276,14 @@ def build_record(html: str, last_sync: str) -> dict:
         }
         for name, price in sorted(zone_lmps_raw.items())
     ]
+    hub_lmps = [
+        {
+            "hub": name,
+            "lmpDollars": price,
+            "isPaNjHub": name in PA_NJ_HUBS,
+        }
+        for name, price in sorted(hub_lmps_raw.items())
+    ]
 
     return {
         "_comment": "PJM market snapshot scraped from pjm.com/markets-and-operations. Server-rendered widget data. Refreshed daily by .github/workflows/refresh-energy-markets.yml. Do not edit by hand — overlays should live in a separate file if ever needed.",
@@ -255,6 +291,7 @@ def build_record(html: str, last_sync: str) -> dict:
         "source": URL,
         "todaysOutlook": outlook,
         "zoneLmps": zone_lmps,
+        "hubLmps": hub_lmps,
         "fuelMix": fuel_mix,
     }
 
@@ -277,10 +314,13 @@ def main(argv: Iterable[str] | None = None) -> int:
     out_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"Wrote {out_path}", file=sys.stderr)
+    western = next((h["lmpDollars"] for h in record["hubLmps"] if h["hub"] == "WESTERN HUB"), None)
     print(
         f"  current load: {record['todaysOutlook'].get('currentLoadMw')} MW; "
         f"RTO LMP: ${record['todaysOutlook'].get('rtoLmpDollars')}; "
-        f"zones: {len(record['zoneLmps'])}; fuels: {len(record['fuelMix']['byFuel'])}",
+        f"Western Hub: ${western}; "
+        f"zones: {len(record['zoneLmps'])}; hubs: {len(record['hubLmps'])}; "
+        f"fuels: {len(record['fuelMix']['byFuel'])}",
         file=sys.stderr,
     )
     return 0
