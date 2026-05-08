@@ -220,6 +220,73 @@ def test_build_record_zone_entries_have_required_fields(html):
 
 
 # ---------------------------------------------------------------------------
+# Hub LMPs — Western Hub is THE PA wholesale benchmark; assertions pin
+# WESTERN/EASTERN/NJ/DOMINION as the PA-NJ-relevant set, plus the count.
+# ---------------------------------------------------------------------------
+
+def test_hub_lmps_returns_pa_nj_relevant_hubs(html):
+    h = sp.parse_hub_lmps(html)
+    for required in ("WESTERN HUB", "EASTERN HUB", "NEW JERSEY HUB", "DOMINION HUB"):
+        assert required in h, f"hub {required!r} missing from LMP table; got {sorted(h)}"
+
+
+def test_hub_lmps_count(html):
+    """Snapshot count — 12 hubs in the fixture (AEP GEN HUB, AEP-DAYTON HUB,
+    ATSI GEN HUB, CHICAGO GEN HUB, CHICAGO HUB, DOMINION HUB, EASTERN HUB,
+    N ILLINOIS HUB, NEW JERSEY HUB, OHIO HUB, WEST INT HUB, WESTERN HUB).
+    PJM occasionally adds or drops hubs; pinning the count surfaces those
+    as a test failure for triage."""
+    h = sp.parse_hub_lmps(html)
+    assert len(h) == 12
+
+
+def test_hub_lmps_specific_values(html):
+    """Snapshotted from the fixture. WESTERN HUB is the PA trading benchmark."""
+    h = sp.parse_hub_lmps(html)
+    assert h["WESTERN HUB"] == 44.78
+    assert h["EASTERN HUB"] == 45.52
+    assert h["NEW JERSEY HUB"] == 44.80
+    assert h["DOMINION HUB"] == 44.11
+
+
+def test_hub_lmps_all_floats(html):
+    h = sp.parse_hub_lmps(html)
+    for hub, price in h.items():
+        assert isinstance(price, float), f"{hub}: {price!r} not float"
+        assert -200 <= price <= 5000, f"{hub}: ${price} outside plausible LMP range"
+
+
+def test_hub_and_zone_tables_are_distinct(html):
+    """The Hubs tab should not contain any of the utility-zone names; if it
+    does, the parser is reading from the wrong tab."""
+    z = sp.parse_zone_lmps(html)
+    h = sp.parse_hub_lmps(html)
+    assert not (set(z) & set(h)), f"zone/hub overlap: {set(z) & set(h)}"
+
+
+def test_build_record_includes_hub_lmps(html):
+    rec = sp.build_record(html, "now")
+    assert "hubLmps" in rec
+    pa_nj_flagged = {x["hub"] for x in rec["hubLmps"] if x["isPaNjHub"]}
+    assert pa_nj_flagged == {"WESTERN HUB", "EASTERN HUB", "NEW JERSEY HUB", "DOMINION HUB"}
+
+
+def test_build_record_hub_entries_have_required_fields(html):
+    rec = sp.build_record(html, "now")
+    for hub in rec["hubLmps"]:
+        assert set(hub.keys()) == {"hub", "lmpDollars", "isPaNjHub"}
+        assert isinstance(hub["hub"], str) and hub["hub"]
+        assert isinstance(hub["lmpDollars"], float)
+        assert isinstance(hub["isPaNjHub"], bool)
+
+
+def test_build_record_hub_list_sorted(html):
+    rec = sp.build_record(html, "now")
+    names = [h["hub"] for h in rec["hubLmps"]]
+    assert names == sorted(names), f"hubLmps not alphabetized: {names}"
+
+
+# ---------------------------------------------------------------------------
 # Defensive — parser should fail loudly on a malformed page, not silently
 # produce empty/zero data
 # ---------------------------------------------------------------------------
@@ -232,6 +299,11 @@ def test_parse_todays_outlook_raises_on_missing_block():
 def test_parse_zone_lmps_raises_on_missing_tab():
     with pytest.raises(ValueError, match="pricing-tab-zones"):
         sp.parse_zone_lmps("<html><body></body></html>")
+
+
+def test_parse_hub_lmps_raises_on_missing_tab():
+    with pytest.raises(ValueError, match="pricing-tab-hubs"):
+        sp.parse_hub_lmps("<html><body></body></html>")
 
 
 def test_parse_fuel_mix_raises_on_missing_chart():
