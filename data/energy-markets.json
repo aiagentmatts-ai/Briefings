@@ -1,0 +1,170 @@
+{
+  "_comment": "PJM market snapshot scraped from pjm.com/markets-and-operations. Server-rendered widget data. Refreshed daily by .github/workflows/refresh-energy-markets.yml. Do not edit by hand — overlays should live in a separate file if ever needed.",
+  "lastSync": "2026-05-08T01:07:09Z",
+  "source": "https://www.pjm.com/markets-and-operations",
+  "todaysOutlook": {
+    "asOf": "9:07 p.m. EPT",
+    "currentLoadMw": 88596,
+    "forecastedPeakMw": 85302,
+    "rtoLmpDollars": 75.23,
+    "tomorrowPeakMw": 81928
+  },
+  "zoneLmps": [
+    {
+      "zone": "AECO",
+      "lmpDollars": 76.28,
+      "isPaZone": false
+    },
+    {
+      "zone": "AEP",
+      "lmpDollars": 74.55,
+      "isPaZone": false
+    },
+    {
+      "zone": "APS",
+      "lmpDollars": 75.82,
+      "isPaZone": false
+    },
+    {
+      "zone": "ATSI",
+      "lmpDollars": 74.37,
+      "isPaZone": false
+    },
+    {
+      "zone": "BGE",
+      "lmpDollars": 77.69,
+      "isPaZone": false
+    },
+    {
+      "zone": "COMED",
+      "lmpDollars": 71.9,
+      "isPaZone": false
+    },
+    {
+      "zone": "DAY",
+      "lmpDollars": 76.49,
+      "isPaZone": false
+    },
+    {
+      "zone": "DEOK",
+      "lmpDollars": 74.68,
+      "isPaZone": false
+    },
+    {
+      "zone": "DOM",
+      "lmpDollars": 76.97,
+      "isPaZone": false
+    },
+    {
+      "zone": "DPL",
+      "lmpDollars": 76.97,
+      "isPaZone": false
+    },
+    {
+      "zone": "DUQ",
+      "lmpDollars": 74.26,
+      "isPaZone": false
+    },
+    {
+      "zone": "EKPC",
+      "lmpDollars": 73.54,
+      "isPaZone": false
+    },
+    {
+      "zone": "JCPL",
+      "lmpDollars": 76.58,
+      "isPaZone": false
+    },
+    {
+      "zone": "METED",
+      "lmpDollars": 76.06,
+      "isPaZone": true
+    },
+    {
+      "zone": "OVEC",
+      "lmpDollars": 73.26,
+      "isPaZone": false
+    },
+    {
+      "zone": "PECO",
+      "lmpDollars": 75.18,
+      "isPaZone": true
+    },
+    {
+      "zone": "PENELEC",
+      "lmpDollars": 75.27,
+      "isPaZone": true
+    },
+    {
+      "zone": "PEPCO",
+      "lmpDollars": 77.52,
+      "isPaZone": false
+    },
+    {
+      "zone": "PJM-RTO",
+      "lmpDollars": 75.23,
+      "isPaZone": false
+    },
+    {
+      "zone": "PPL",
+      "lmpDollars": 74.63,
+      "isPaZone": true
+    },
+    {
+      "zone": "PSEG",
+      "lmpDollars": 75.74,
+      "isPaZone": false
+    },
+    {
+      "zone": "RECO",
+      "lmpDollars": 75.05,
+      "isPaZone": false
+    }
+  ],
+  "fuelMix": {
+    "byFuel": [
+      {
+        "name": "Coal",
+        "mw": 11455
+      },
+      {
+        "name": "Gas",
+        "mw": 30200
+      },
+      {
+        "name": "Hydro",
+        "mw": 3121
+      },
+      {
+        "name": "Multiple Fuels",
+        "mw": 2326
+      },
+      {
+        "name": "Nuclear",
+        "mw": 29605
+      },
+      {
+        "name": "Oil",
+        "mw": 1138
+      },
+      {
+        "name": "Other Renewables",
+        "mw": 572
+      },
+      {
+        "name": "Solar",
+        "mw": 2099
+      },
+      {
+        "name": "Storage",
+        "mw": 18
+      },
+      {
+        "name": "Wind",
+        "mw": 4323
+      }
+    ],
+    "totalMw": 84857,
+    "renewablesMw": 10115
+  }
+}
