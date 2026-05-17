@@ -1,6 +1,6 @@
 {
   "_comment": "Objective legislator data. Populated by scripts/scrape-palegis.py from www.palegis.us. Edit overlays in rea-overlay.json, not here.",
-  "lastSync": "2026-05-03T14:35:43Z",
+  "lastSync": "2026-05-17T15:05:07Z",
   "members": [
     {
       "id": "saval",
